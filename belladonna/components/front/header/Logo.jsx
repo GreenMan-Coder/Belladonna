@@ -1,7 +1,7 @@
 const Logo = ({col}) => {
     return <div className="container">
 
-        <img src="./img/header/belladonnaLogo2.png" alt="bellaDonna" />
+        <img src="./img/header/belladonnaLogo.png" alt="bellaDonna" />
 
         <style jsx>{`
 
@@ -12,8 +12,8 @@ const Logo = ({col}) => {
             }
 
             img{
-                height: 9rem;
-                width: 14rem;
+                height: 6rem;
+                width: auto;
             }
 
         `}</style>

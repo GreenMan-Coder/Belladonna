@@ -11,10 +11,12 @@ const Header = () => {
 
             .container {
                 width: 100%;
-                height: 150px;
+                height: 73px;
                 display: grid;
                 grid-template-columns: 0.7fr 3fr;
+                grid-column-gap: 22px;
                 font-family: 'Karla', sans-serif;
+                font-weight: 500;
             }
 
         `}</style>

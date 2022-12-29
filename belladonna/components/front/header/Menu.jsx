@@ -16,17 +16,18 @@ const Menu = ({col}) => {
             .container {
                 grid-column: ${col};
                 display: grid;
-                border: 1px solid red;
+                
             }
             ul{
-                width: 1000px;
-                border: 1px solid green;
+                width: 55rem;
                 padding: 0;
                 margin: 0;
-                justify-self: start;
+                justify-self: center;
                 align-self: center;
-                padding-left: 50px;
-                
+                display: grid;
+                grid-template-columns: 1.8fr 1fr 1fr 1fr 1fr;
+                justify-items: center;
+                align-self: center;
             }
 
             li{
