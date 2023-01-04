@@ -1,5 +1,5 @@
-import Header from './Header'
-import Trunk from './Trunk'
+import Header from '../components/front/Header'
+import Trunk from '../components/front/Trunk'
 
 const Front = () => {
     return <article className="container">

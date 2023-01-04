@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Front from '../components/front/Front'
+import Front from '../pages/Front'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
