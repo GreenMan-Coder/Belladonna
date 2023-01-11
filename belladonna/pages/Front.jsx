@@ -12,7 +12,8 @@ const Front = () => {
         <style jsx>{`
 
             .container {
-                
+                display: grid;
+                grid-row-gap: 40px;
             }
 
         `}</style>

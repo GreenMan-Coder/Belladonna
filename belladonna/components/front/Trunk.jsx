@@ -20,8 +20,7 @@ const Trunk = () => {
             .container {
                 width: 100%;
                 position: relative;
-                margin-top: 20px;
-                height: 45rem;
+                height: 50rem;
                 background-image: url(./img/header/front.jpg);
                 background-position: center;
                 background-size: 100%;
@@ -45,7 +44,7 @@ const Trunk = () => {
                 color: #fefae0; 
                 margin: 0;
                 z-index: 1;
-                text-align: center;
+                text-align: center
             }
 
         `}</style>
