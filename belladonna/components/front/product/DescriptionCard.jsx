@@ -3,7 +3,10 @@ const DescriptionCard = ({zone}) => {
     return <section className="container">
 
         <div className="header">zonas del cuerpo</div>
-        <div className={zone}></div>
+        <div className={zone}>
+            
+        </div>
+
 
         <style jsx>{`
 
@@ -37,6 +40,11 @@ const DescriptionCard = ({zone}) => {
 
             .prueba1{
                 background: black;
+                width: 100px;
+                height: 100px;
+            }
+            .prueba2{
+                background: yellow;
                 width: 100px;
                 height: 100px;
             }

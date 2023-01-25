@@ -1,12 +1,16 @@
-const Cards = ({row, col, text, back}) => {
-    return <article className="container">
+import DescriptionCard from './DescriptionCard'
+
+
+const Cards = ({row, text, back, id, cardSelected, setcardSelected}) => {
+    console.log('id')
+
+    return <article onClick={() => setcardSelected(id)} className="container">
 
         <h1>{text}</h1>
 
         <style jsx>{`
 
             .container {
-                grid-column: ${col};
                 grid-row: ${row};
                 font-family: 'Karla', sans-serif;
                 background-image: ${back};
@@ -17,6 +21,7 @@ const Cards = ({row, col, text, back}) => {
                 width: 80%;
                 height: 100px;
                 display: grid;
+                grid-template-columns: 1fr 1fr;
                 justify-items: center; 
                 align-items: center;
                 border: 0;

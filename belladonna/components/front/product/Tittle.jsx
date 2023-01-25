@@ -1,4 +1,4 @@
-const Tittle = ({row, col}) => {
+const Tittle = ({row}) => {
     return <hgroup className="container">
 
         <h1>Elige la zona <br />y <br />conoce el plan</h1>
@@ -8,7 +8,6 @@ const Tittle = ({row, col}) => {
         <style jsx>{`
 
             .container {
-                grid-column: ${col};
                 grid-row: ${row};
                 font-family: 'Karla', sans-serif;
                 width: 100%;
