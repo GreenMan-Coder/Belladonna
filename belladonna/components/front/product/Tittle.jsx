@@ -1,4 +1,5 @@
-const Tittle = ({row}) => {
+const Tittle = ({row, col}) => {
+
     return <hgroup className="container">
 
         <h1>Elige la zona <br />y <br />conoce el plan</h1>
@@ -9,6 +10,7 @@ const Tittle = ({row}) => {
 
             .container {
                 grid-row: ${row};
+                grid-column: ${col};
                 font-family: 'Karla', sans-serif;
                 width: 100%;
                 height: 300px;

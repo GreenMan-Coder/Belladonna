@@ -1,8 +1,5 @@
-import DescriptionCard from './DescriptionCard'
-
 
 const Cards = ({row, text, back, id, cardSelected, setcardSelected}) => {
-    console.log('id')
 
     return <article onClick={() => setcardSelected(id)} className="container">
 
@@ -21,7 +18,6 @@ const Cards = ({row, text, back, id, cardSelected, setcardSelected}) => {
                 width: 80%;
                 height: 100px;
                 display: grid;
-                grid-template-columns: 1fr 1fr;
                 justify-items: center; 
                 align-items: center;
                 border: 0;
