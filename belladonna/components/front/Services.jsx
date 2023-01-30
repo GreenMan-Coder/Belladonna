@@ -2,6 +2,7 @@ import Tittle from './product/Tittle'
 import Cards from './product/Cards'
 import { useState } from 'react'
 import DescriptionCard from './product/DescriptionCard'
+import Promotion from './product/Promotion'
 
 const Services = () => {
 
@@ -9,14 +10,15 @@ const Services = () => {
 
     return <section className="container">
 
-        <Tittle row="1/2" col="1/3" />
-        <Cards id={1} cardSelected={cardSelected} setcardSelected={setcardSelected} row="3/4" col="1/2" text ="bikini" back="url(./img/trunk/bikini.jpg)"/>
-        <Cards id={2} cardSelected={cardSelected} setcardSelected={setcardSelected} row="4/5" col="1/2" text ="superior" back="url(./img/trunk/superior.jpg)"/>
-        <Cards id={3} cardSelected={cardSelected} setcardSelected={setcardSelected} row="5/6" col="1/2" text ="inferior" back="url(./img/trunk/inferior.jpg)"/>
+        <Tittle row="1/2" col="1/5" />
+        <Cards id={1} cardSelected={cardSelected} setcardSelected={setcardSelected} row="3/4" col="2/3" text ="bikini" back="url(./img/trunk/bikini.jpg)" />
+        <Cards id={2} cardSelected={cardSelected} setcardSelected={setcardSelected} row="3/4" col="1/2" text ="superior" back="url(./img/trunk/superior.jpg)" />
+        <Cards id={3} cardSelected={cardSelected} setcardSelected={setcardSelected} row="3/4" col="3/4" text ="inferior" back="url(./img/trunk/inferior.jpg)" />
         <p className="parag">Al depilarte con cera tendrás un <span>efecto duradero</span>, pues solo se aplica una vez al mes dejando que la piel descanse y el vello crezca sin interrupciones evitando usar máquina de afeitar, cremas y demás productos de depilación que producen irritación en la piel, permitiendo así, lucir una piel sedosa y saludable.</p>
 
-        <DescriptionCard zone="prueba" cardSelected={cardSelected}/>
+        <DescriptionCard cardSelected={cardSelected}/>
         
+        <Promotion/>
         
         <style jsx>{`
 
@@ -25,15 +27,15 @@ const Services = () => {
                 height: 52rem;
                 width: 100%;
                 display: grid;
-                grid-template-rows: 0.8fr 0.2fr 0.3fr 0.3fr 0.3fr;
-                grid-template-columns: 1fr 1fr; 
+                grid-template-rows: 0.8fr 0.2fr 0.3fr 1fr;
+                grid-template-columns: 0.6fr 0.6fr 0.6fr 0.7fr; 
                 justify-items: center;
                 align-items: center;
                 grid-row-gap: 10px;
             }
             .parag{
                 grid-row: 2/3;
-                grid-column: 1/3;
+                grid-column: 1/5;
                 width: 100%;
                 height: auto;
                 font-size: 21px;

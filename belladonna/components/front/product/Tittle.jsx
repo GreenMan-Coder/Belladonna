@@ -40,6 +40,7 @@ const Tittle = ({row, col}) => {
                 text-transform: uppercase;
                 color: #fefae0;
                 z-index: 2;
+                padding-top: 25px;
             }
 
         `}</style>
