@@ -1,5 +1,5 @@
-import Logo from '../front/header/Logo'
-import Menu from '../front/header/Menu'
+import Logo from './Logo'
+import Menu from './Menu'
 
 const Header = () => {
     return <section className="container">
@@ -15,8 +15,11 @@ const Header = () => {
                 display: grid;
                 grid-template-columns: 0.7fr 3fr;
                 grid-column-gap: 22px;
-                font-family: 'Karla', sans-serif;
                 font-weight: 500;
+                font-family: 'Karla', sans-serif;
+                font-size: 22px;
+                font-weight: 500;
+                margin-bottom: 20px;
             }
 
         `}</style>

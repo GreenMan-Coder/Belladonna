@@ -14,9 +14,6 @@ export default function Home() {
 
       <main className={styles.main}>
         <Front/>
-
-
-
       </main>
     
     

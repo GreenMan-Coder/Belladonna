@@ -1,4 +1,4 @@
-import ButtonContact from './trunk/ButtonContact'
+import ButtonContact from './ButtonContact'
 
 const Trunk = () => {
     return <section className="container">

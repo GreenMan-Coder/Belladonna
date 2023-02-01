@@ -1,8 +1,8 @@
-import Tittle from './product/Tittle'
-import Cards from './product/Cards'
+import Tittle from './Tittle'
+import Cards from './Cards'
 import { useState } from 'react'
-import DescriptionCard from './product/DescriptionCard'
-import Promotion from './product/Promotion'
+import DescriptionCard from './DescriptionCard'
+import Promotion from './Promotion'
 
 const Services = () => {
 

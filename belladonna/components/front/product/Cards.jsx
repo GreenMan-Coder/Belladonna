@@ -19,7 +19,7 @@ const Cards = ({row, col, text, back, id, cardSelected, setcardSelected}) => {
                 width: 60%;
                 height: 70px;
                 display: grid;
-                justify-items: center; 
+                justify-items: center;
                 align-items: center;
                 border: 0;
                 outline: 0;
