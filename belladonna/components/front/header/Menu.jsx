@@ -6,8 +6,6 @@ const Menu = ({col}) => {
             <li>Depilación para mujeres</li>
             <li>Tienda</li>
             <li>Belladonna</li>
-            <li>Blog</li>
-            <li>Contacto</li>
 
         </ul>
 
@@ -25,7 +23,7 @@ const Menu = ({col}) => {
                 justify-self: center;
                 align-self: center;
                 display: grid;
-                grid-template-columns: 1.8fr 1fr 1fr 1fr 1fr;
+                grid-template-columns: 1.8fr 1fr 1fr;
                 justify-items: center;
                 align-self: center;
             }
