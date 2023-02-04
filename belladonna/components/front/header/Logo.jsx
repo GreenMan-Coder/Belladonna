@@ -1,18 +1,19 @@
 const Logo = ({col}) => {
     return <div className="container">
 
-        <img src="./img/header/belladonnaLogo.png" alt="bellaDonna" />
+        <img src="./img/header/belladonnaLogoWhite.png" alt="bellaDonna" />
 
         <style jsx>{`
 
             .container {
-                grid-column: ${col};
+                grid-row: ${col};
                 justify-self: center;
                 align-self: center;
+                padding-top: 15px;
             }
 
             img{
-                height: 6rem;
+                height: 8rem;
                 width: auto;
             }
 

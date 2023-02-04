@@ -1,13 +1,10 @@
-import Header from '../components/front/header/Header'
 import Trunk from '../components/front/trunk/Trunk'
-import Services from '../components/front/product/Services'
+import Services from './Services'
 
 const Front = () => {
     return <article className="container">
 
-        <Header/>
         <Trunk/>
-        <Services/>
 
         <style jsx>{`
 

@@ -2,39 +2,31 @@ const Menu = ({col}) => {
     return <section className="container">
 
 
-        <ul>
-            <li>Depilación para mujeres</li>
-            <li>Tienda</li>
-            <li>Belladonna</li>
-
-        </ul>
+        <div className="container2">
+            <h1>ESTETICISTA DE CONFIANZA</h1>
+        </div>
 
         <style jsx>{`
 
             .container {
-                grid-column: ${col};
-                display: grid;
-                
-            }
-            ul{
-                width: 55rem;
-                padding: 0;
-                margin: 0;
+                grid-row: ${col};
+                align-self: center;
                 justify-self: center;
-                align-self: center;
-                display: grid;
-                grid-template-columns: 1.8fr 1fr 1fr;
-                justify-items: center;
-                align-self: center;
             }
 
-            li{
-                display: inline;
-            }
-            li:hover{
-                cursor: pointer;
+            h1 {
+                font-size: 20px;
+                text-transform: uppercase;
+                letter-spacing: -1px;
+                transition: 700ms ease;
+                color: #fefae0;
+                outline: none;
+                text-align: center;
             }
 
+            h1:hover {
+            letter-spacing: 1px;
+            }
         `}</style>
     </section>
 }
