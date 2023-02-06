@@ -1,19 +1,19 @@
-const Logo = ({col}) => {
+const Logo = ({image, tam}) => {
+
     return <div className="container">
 
-        <img src="./img/header/belladonnaLogoWhite.png" alt="bellaDonna" />
+        {image === "one" ? <img src="./img/header/logo.png" alt="bellaDonna" /> : <img src="./img/header/logo2.png" alt="bellaDonna" />}
+        
 
         <style jsx>{`
 
             .container {
-                grid-row: ${col};
-                justify-self: center;
-                align-self: center;
-                padding-top: 15px;
+                padding: 0;
+                margin: 0;
             }
 
             img{
-                height: 8rem;
+                height: ${tam};
                 width: auto;
             }
 

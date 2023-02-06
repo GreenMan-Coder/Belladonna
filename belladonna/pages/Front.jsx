@@ -1,16 +1,16 @@
 import Trunk from '../components/front/trunk/Trunk'
-import Services from './Services'
+import Header from '../components/front/header/Header'
 
 const Front = () => {
     return <article className="container">
 
+        <Header image="one" tam="11rem"/>
         <Trunk/>
 
         <style jsx>{`
 
             .container {
                 display: grid;
-                grid-row-gap: 40px;
             }
 
         `}</style>

@@ -4,7 +4,7 @@ import Front from '../components/store/Front'
 const Store = () => {
     return <section className="container">
         
-        <Header/>
+        <Header image="two" tam="5rem"/>
         <Front/>
         <style jsx>{`
 

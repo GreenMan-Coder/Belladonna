@@ -1,25 +1,21 @@
-import Link from "next/link"
-import { Children } from "react"
+import Link from 'next/link';
 
-const LinkPageSections = ({href, clase, text, numberLink}) => {
+const LinkPageSections = ({href, clase, text, numberLink, col}) => {
+
     return <div className={clase}>
         <div className="link-container">
-            <Link href={href} className={numberLink}>
-                    {text}
+            <Link href={href} legacyBehavior>
+                    <a className={numberLink}>{text}</a>
             </Link>
         </div>
 
         <style jsx>{`
 
             .${clase}{
-                background-color: #151515;
+                background-color: #fefae0;
+                grid-column: ${col};
             }
-            .background-two {
-                background-color: #151515;
-            }
-            .background-three {
-            background-color: #151515;
-            }
+            
 
             .link-container {
                 display: flex;
@@ -32,21 +28,21 @@ const LinkPageSections = ({href, clase, text, numberLink}) => {
                 
             }
 
-            .${numberLink} {
-                font-family: 'Karla', sans-serif; 
-                font-size: 2.5em;
+            .${numberLink}{
+                font-family: 'Karla', sans-serif;
+                font-size: 3rem;
                 text-align: center;
                 text-decoration: none;
-                border: 1px solid red;
+                font-weight: 700;
             }
 
             .link-one {
-                color: #fefae0;
+                color: #151515;
                 transition: color 1s cubic-bezier(0.32, 0, 0.67, 0);
                 line-height: 1em;
             }
             .link-one:hover {
-                color: #111;
+                color: #fefae0;
                 transition: color 1s cubic-bezier(0.33, 1, 0.68, 1);
             }
             .link-one::before {
@@ -99,11 +95,11 @@ const LinkPageSections = ({href, clase, text, numberLink}) => {
             }
 
             .link-two {
-                color: #fefae0;
+                color: #151515;
                 transition: color 1s cubic-bezier(0.32, 0, 0.67, 0);
             }
             .link-two:hover {
-                color: #111;
+                color: #fefae0;
                 transition: color 1s cubic-bezier(0.33, 1, 0.68, 1);
             }
             .link-two::before {
@@ -156,7 +152,11 @@ const LinkPageSections = ({href, clase, text, numberLink}) => {
             }
 
             .link-three {
+                color: #151515;
+            }
+            .link-three:hover {
                 color: #fefae0;
+                transition: color 1s cubic-bezier(0.33, 1, 0.68, 1);
             }
             .link-three::after {
                 content: "";
