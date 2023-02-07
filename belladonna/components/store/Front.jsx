@@ -1,64 +1,57 @@
-import ButtonStore from "./ButtonStore"
 import BuySteps from "./BuySteps"
+import Jewelry from "./Jewelry"
 
 const Front = () => {
     return <section className="container">
         
-        <hgroup>
-            <h1>!BIENVENIDAS A MI TIENDA!</h1>
-            <h3>En esta sección encontrarás joyeria en acero, oro y plata.</h3>
-            <p>Elige lo que quieras y ¡haz tu pedido!</p>
-            <ButtonStore/>
-            <ButtonStore/>
-        </hgroup>
-
+        <h2>Descubre nuestras joyas de acero inoxidable, oro y plata, con una amplia variedad de estilos para elegir.</h2>
         <BuySteps/>
+        <Jewelry/>
+        <h3>Encontrarás la pieza perfecta para complementar tu look y reflejar tu personalidad única.</h3>
+        
 
         <style jsx>{`
 
             .container {
-                width: 95%;
+                width: 98%;
                 height: 30rem;
                 justify-self: center;
                 align-self: center;
                 display: grid;
+                grid-row-gap: 30px;
+                grid-template-rows: 70px 1fr 0.5fr;
                 grid-template-columns: 1fr 1fr;
+                grid-gap: 10px;
                 box-sizing: border-box;
-                border-radius: 10px;
                 justify-items: center;
                 align-items: center;
+                border-radius: 15px;
+                overflow: hidden;
             }
 
-            hgroup{
-                grid-column: 1/2;
-                display: grid;
-                grid-template-rows: 11rem 6rem 5rem 5rem;
-                align-self: center;
-                align-items: center;
-                box-sizing: border-box;
-                padding-right: 15px;
-
-            }
-            h1{
+            h2 {
+                align-self: flex-start;
                 margin: 0;
                 grid-row: 1/2;
-                font-size: 5rem;
-                color: #e7592f;
+                grid-column: 1/4;
+                color: #312e1c;
+                box-sizing: border-box;
                 text-align: center;
+                font-size: 1.5rem;
+                line-height: 150%;
             }
+
             h3{
-                margin: 0;
-                font-size: 2rem;
-                grid-row: 2/3;
-                text-align: center;
-                align-self: flex-end;
-            }
-            p{
                 grid-row: 3/4;
-                font-size: 2rem;
-                font-weight: 900;
-                color: #e7592f;
+                grid-column: 1/3;
+                font-size: 1.2rem;
+                background: #fdf09a;
+                width: 100%;
+                height: 100%;
                 text-align: center;
+                box-sizing: border-box;
+                padding-top: 3.5rem;
+                border-radius: 15px;
             }
 
         `}</style>
