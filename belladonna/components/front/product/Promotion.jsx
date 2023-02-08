@@ -1,13 +1,14 @@
 const Promotion = () => {
     
     return <section className="container">
-        <h1>Si te deplias más de 3 zonas del cuerpo, ¡obten el 10% de descuento!</h1>
+        <h1>Depila más de 3 zonas y recibe un descuento del 10% en el total de tu servicio.</h1>
         <button>RESERVA</button>
 
         <style jsx>{`
             .container{
-                grid-row: 4/5;
+                grid-row: 5/6;
                 grid-column: 4/5;
+                justify-self: flex-start;
                 display: grid;
                 text-align: center;
                 color: #e7592f;
@@ -15,6 +16,7 @@ const Promotion = () => {
                 font-size: 30px;
                 justify-items: center;
                 align-items: center;
+                box-sizing: border-box;
             }
 
             button{

@@ -1,5 +1,5 @@
 
-const Cards = ({row, col, text, back, id, cardSelected, setcardSelected}) => {
+const Cards = ({pos, text, back, id, cardSelected, setcardSelected}) => {
 
     return <article onClick={() => setcardSelected(id)} className="container">
 
@@ -8,15 +8,16 @@ const Cards = ({row, col, text, back, id, cardSelected, setcardSelected}) => {
         <style jsx>{`
 
             .container {
-                grid-row: ${row};
-                grid-column: ${col};
+                grid-row: 4/5;
+                grid-column: 1/5;
+                justify-self: ${pos};
                 font-family: 'Karla', sans-serif;
                 background-image: ${back};
                 background-position: center;
                 background-size: 100%;
                 background-attachment: local;
                 cursor: pointer;
-                width: 60%;
+                width: 20%;
                 height: 70px;
                 display: grid;
                 justify-items: center;
@@ -24,6 +25,7 @@ const Cards = ({row, col, text, back, id, cardSelected, setcardSelected}) => {
                 border: 0;
                 outline: 0;
                 box-sizing: border-box;
+                margin: 0 3rem;
                 box-shadow: -5px -5px 10px #c4b78c,  5px 5px 10px #968c6c;
                 border-radius: 10px;
                 line-height: 0;

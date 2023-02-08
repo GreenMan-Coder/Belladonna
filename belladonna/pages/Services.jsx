@@ -3,6 +3,7 @@ import Cards from '../components/front/product/Cards'
 import { useState } from 'react'
 import DescriptionCard from '../components/front/product/DescriptionCard'
 import Promotion from '../components/front/product/Promotion'
+import Header from '../components/front/header/Header'
 
 const Services = () => {
 
@@ -10,11 +11,13 @@ const Services = () => {
 
     return <section className="container">
 
-        <Tittle row="1/2" col="1/5" />
-        <Cards id={1} cardSelected={cardSelected} setcardSelected={setcardSelected} row="3/4" col="2/3" text ="bikini" back="url(./img/trunk/bikini.jpg)" />
-        <Cards id={2} cardSelected={cardSelected} setcardSelected={setcardSelected} row="3/4" col="1/2" text ="superior" back="url(./img/trunk/superior.jpg)" />
-        <Cards id={3} cardSelected={cardSelected} setcardSelected={setcardSelected} row="3/4" col="3/4" text ="inferior" back="url(./img/trunk/inferior.jpg)" />
-        <p className="parag">Al depilarte con cera tendrás un <span>efecto duradero</span>, pues solo se aplica una vez al mes dejando que la piel descanse y el vello crezca sin interrupciones evitando usar máquina de afeitar, cremas y demás productos de depilación que producen irritación en la piel, permitiendo así, lucir una piel sedosa y saludable.</p>
+        <Header image="one" tam="10rem"/>
+        <Tittle row="2/3" col="1/5" />
+        <h2>Área a depilar</h2>
+
+        <Cards id={1} cardSelected={cardSelected} setcardSelected={setcardSelected} pos="center" text ="bikini" back="url(./img/trunk/bikini.jpg)" />
+        <Cards id={2} cardSelected={cardSelected} setcardSelected={setcardSelected} pos="flex-start" text ="superior" back="url(./img/trunk/superior.jpg)" />
+        <Cards id={3} cardSelected={cardSelected} setcardSelected={setcardSelected} pos="flex-end" text ="inferior" back="url(./img/trunk/inferior.jpg)" />
 
         <DescriptionCard cardSelected={cardSelected}/>
         
@@ -24,24 +27,30 @@ const Services = () => {
 
             .container {
                 font-family: 'Karla', sans-serif; 
-                height: 52rem;
+                height: auto;
                 width: 100%;
                 display: grid;
-                grid-template-rows: 0.8fr 0.2fr 0.3fr 1fr;
-                grid-template-columns: 0.6fr 0.6fr 0.6fr 0.7fr; 
+                grid-template-rows: 11rem 33rem 20rem 6rem 18rem;
+                grid-template-columns: 0.6fr 0.6fr 15rem 30rem; 
                 justify-items: center;
                 align-items: center;
-                grid-row-gap: 10px;
             }
-            .parag{
-                grid-row: 2/3;
+            h2{
+                grid-row: 3/4;
                 grid-column: 1/5;
-                width: 100%;
+                width: auto;
                 height: auto;
-                font-size: 21px;
-                text-align: start;
+                font-size: 4rem;
                 box-sizing: border-box;
-                padding: 0 20px;
+                text-transform: uppercase;
+                color: #fefae0;
+                text-shadow: 0 8px 9px #c4b59d, 0px -2px 1px #fff;
+                font-weight: bold;
+                letter-spacing: -1px;
+                text-align: center;
+                background: linear-gradient(to bottom, #ece4d9 0%,#e9dfd1 100%);
+                padding: 100px 200px;
+                border-radius: 20px;
             }
 
             span{

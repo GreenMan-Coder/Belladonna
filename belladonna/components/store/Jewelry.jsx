@@ -22,8 +22,9 @@ const Jewelry = () => {
         
         <style jsx>{`
             .container {
-                grid-row: 2/3;
-                align-self: flex-start;
+                grid-row: 3/4;
+                align-self: center;
+                justify-self: center;
                 background-color: #fff;
                 border-radius: 10px;
                 box-shadow: 0 0px 15px rgba(0, 0, 0, 0.2);
@@ -46,6 +47,10 @@ const Jewelry = () => {
                 align-items: center;
                 letter-spacing: 1px;
                 font-size: 1.4rem;
+            }
+
+            h2{
+                font-weight: 900;
             }
             
         `}</style>

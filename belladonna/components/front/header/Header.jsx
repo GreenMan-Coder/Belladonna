@@ -8,7 +8,7 @@ const Header = ({image, tam}) => {
 
             .container {
                 grid-row: 1/2;
-                grid-column: 1/4;
+                grid-column: 1/5;
                 display: grid;
                 justify-content: center;
                 align-items: center;

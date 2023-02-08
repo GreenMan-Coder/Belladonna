@@ -4,72 +4,67 @@ const bodyZone = [
     {
         id: 1,
         name: "Bikini parcial",
-        price: "$40.000",
+        price: "$30.000",
     },
     {
         id: 1,
         name: "Bikini completo",
-        price: "$80.000",
-    },
-    {
-        id: 1,
-        name: "Zona interglutea",
-        price: "$50.000",
+        price: "$45.000",
     },
     {
         id: 1,
         name: "Glúteos",
-        price: "$60.000" 
+        price: "$30.000" 
     },
     {
         id: 2,
         name: "Rostro completo",
-        price: "$60.000",
+        price: "$35.000",
     },
     {
         id: 2,
         name: "Cejas",
-        price: "$60.000",
+        price: "$15.000",
     },
     {
         id: 2,
         name: "Bozo",
-        price: "$60.000",
+        price: "$10.000",
     },
     {
         id: 2,
         name: "Mentón",
-        price: "$60.000",
+        price: "$15.000",
     },
     {
         id: 2,
         name: "Axilas",
-        price: "$60.000",
+        price: "$15.000",
     },
     {
         id: 2,
         name: "Brazos",
-        price: "$60.000",
+        price: "$25.000",
     },
     {
         id: 2,
         name: "Abdomen",
-        price: "$60.000",
+        price: "$25.000",
     },
     {
         id: 2,
         name: "Espalda",
-        price: "$60.000",
+        price: "$30.000",
     },
     {
         id: 3,
         name: "Pierna completa",
-        price: "$60.000",
+        price: "$45.000",
     },
     {
         id: 3,
         name: "Media pierna",
-        price: "60.000",
+        price: "$30.000",
     },
     ]
 
@@ -99,7 +94,7 @@ const DescriptionCard = ({ zone, cardSelected }) => {
         <style jsx>{`
             .container {
                 grid-column: 1/4;
-                grid-row: 4/5;
+                grid-row: 5/6;
                 height: 90%;
                 width: 80%;
                 background: #fff;

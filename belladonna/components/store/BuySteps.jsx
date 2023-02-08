@@ -20,9 +20,10 @@ const BuySteps = () => {
         <style jsx>{`
 
             .container{
-                grid-row: 2/4;
+                grid-row: 3/4;
                 grid-column: 1/2;
-                align-self: flex-start;
+                justify-self: center;
+                align-self: center;
                 width: 38rem;
                 height: 15rem;
                 box-sizing: border-box;
