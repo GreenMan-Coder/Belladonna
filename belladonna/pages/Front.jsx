@@ -4,7 +4,7 @@ import Header from '../components/front/header/Header'
 const Front = () => {
     return <article className="container">
 
-        <Header image="one" tam="11rem"/>
+        <Header image="one" tam="11rem" pos="center" num={2}/>
         <Trunk/>
 
         <style jsx>{`

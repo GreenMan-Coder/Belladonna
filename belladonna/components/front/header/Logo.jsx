@@ -8,6 +8,8 @@ const Logo = ({image, tam}) => {
         <style jsx>{`
 
             .container {
+                grid-row: 1/2;
+                justify-self: center;
                 padding: 0;
                 margin: 0;
             }

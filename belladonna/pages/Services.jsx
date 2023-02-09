@@ -11,9 +11,9 @@ const Services = () => {
 
     return <section className="container">
 
-        <Header image="one" tam="10rem"/>
+        <Header image="one" tam="11rem" num={1}/>
         <Tittle row="2/3" col="1/5" />
-        <h2>Área a depilar</h2>
+        <h2>Elige la zona</h2>
 
         <Cards id={1} cardSelected={cardSelected} setcardSelected={setcardSelected} pos="center" text ="bikini" back="url(./img/trunk/bikini.jpg)" />
         <Cards id={2} cardSelected={cardSelected} setcardSelected={setcardSelected} pos="flex-start" text ="superior" back="url(./img/trunk/superior.jpg)" />
@@ -30,26 +30,26 @@ const Services = () => {
                 height: auto;
                 width: 100%;
                 display: grid;
-                grid-template-rows: 11rem 33rem 20rem 6rem 18rem;
+                grid-template-rows: auto 21rem 10rem 8rem 18rem;
                 grid-template-columns: 0.6fr 0.6fr 15rem 30rem; 
                 justify-items: center;
                 align-items: center;
+                background: #f8f0b6;
             }
             h2{
                 grid-row: 3/4;
                 grid-column: 1/5;
                 width: auto;
                 height: auto;
-                font-size: 4rem;
+                font-size: 3.5rem;
                 box-sizing: border-box;
-                text-transform: uppercase;
                 color: #fefae0;
                 text-shadow: 0 8px 9px #c4b59d, 0px -2px 1px #fff;
                 font-weight: bold;
                 letter-spacing: -1px;
                 text-align: center;
-                background: linear-gradient(to bottom, #ece4d9 0%,#e9dfd1 100%);
-                padding: 100px 200px;
+                background: linear-gradient(to bottom, #f0acaa 0%,#db99e2 100%);
+                padding: 20px 500px;
                 border-radius: 20px;
             }
 

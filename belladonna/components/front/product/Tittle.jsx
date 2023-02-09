@@ -26,13 +26,13 @@ const Tittle = ({row, col}) => {
             header {
                 text-align: center;
                 width: 100%;
-                height: 32rem;
+                height: 20rem;
                 overflow: hidden;
                 border-radius: 0 0 85% 85% / 30%;
             }
             header .overlay{
                 width: 100%;
-                height: 100%;
+                height: 20rem;
                 padding: 50px;
                 color: #FFF;
                 text-shadow: 1px 1px 1px #333;
@@ -41,20 +41,21 @@ const Tittle = ({row, col}) => {
             }
 
             h1 {
-                font-family: 'Dancing Script', cursive;
-                font-size: 7rem;
+                font-size: 4rem;
                 margin-bottom: 30px;
+                font-family: 'Karla', sans-serif; 
             }
 
             h3, p {
-                font-family: 'Open Sans', sans-serif;
                 margin-bottom: 30px;
             }
             h3{
-                font-size: 35px;
+                font-size: 25px;
+                text-transform: uppercase;
             }
             p{
-                font-size: 25px;
+                font-size: 20px;
+                letter-spacing: 1px;
             }
 
             span{

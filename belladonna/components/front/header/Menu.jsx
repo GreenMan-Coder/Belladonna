@@ -1,28 +1,28 @@
-const Test = () => {
+const Menu = () => {
     return <div className="container">
-        
+
         <div className="nav">
             <input type="checkbox"/>
                 <span></span>
                 <span></span>
                 <div className="menu">
-                    <li><a href="#">home</a></li>
-                    <li><a href="#">about</a></li>
-                    <li><a href="#">cursos</a></li>
-                    <li><a href="#">blog</a></li>
-                    <li><a href="#">contactos</a></li>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Depilación</a></li>
+                    <li><a href="#">Belladonna</a></li>
                 </div>
         </div>
 
         <style jsx>{`
-            .container {
-                height: 100%;
-                width: 100%;
+        .container {
+                position: fixed;
+                left: 10px;
+                top: 0;
+                z-index: 2;
+                height: 5rem;
+                width: auto;
                 margin: 0;
                 padding: 0;
-                min-height: 100vh;
-                background-color: #dcdc39;
-                font-family: 'Open Sans', Verdana, Geneva, Tahoma, sans-serif;
+                background-color: transparent;
             }
 
             .container, .nav, .menu {
@@ -34,7 +34,7 @@ const Test = () => {
             .nav {
                 position: relative;
                 background-color: #fff;
-                padding: 20px;
+                padding: 10px;
                 transition: 0.5s;
                 border-radius: 50px;
                 overflow: hidden;
@@ -50,7 +50,7 @@ const Test = () => {
             }
 
             .nav input:checked ~ .menu {
-                width: 450px;
+                width: 300px;
             }
 
             .menu li {
@@ -64,6 +64,7 @@ const Test = () => {
                 text-transform: uppercase;
                 font-weight: 600;
                 transition: 0.5s;
+                font-size: 15px;
             }
 
             .menu li a:hover {
@@ -71,16 +72,16 @@ const Test = () => {
             }
 
             .nav input {
-                width: 40px;
-                height: 40px;
+                width: 30px;
+                height: 30px;
                 cursor: pointer;
                 opacity: 0;
             }
 
             .nav span {
                 position: absolute;
-                left: 30px;
-                width: 30px;
+                left: 17px;
+                width: 25px;
                 height: 4px;
                 border-radius: 50px;
                 background-color: #666;
@@ -109,4 +110,4 @@ const Test = () => {
         `}</style>
     </div>
 }
-export default Test
+export default Menu

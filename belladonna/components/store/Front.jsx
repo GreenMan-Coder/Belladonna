@@ -15,10 +15,11 @@ const Front = () => {
         <style jsx>{`
 
             .container {
-                width: 98%;
+                width: 100%;
                 height: 46rem;
                 display: grid;
                 grid-template-rows: 750px 150px 470px;
+                background: #f8f0b6;
             }
 
             h2{

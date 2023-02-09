@@ -12,7 +12,7 @@ const LinkPageSections = ({href, clase, text, numberLink, col}) => {
         <style jsx>{`
 
             .${clase}{
-                background-color: #fefae0;
+                background-color: #f8f0b6;
                 grid-column: ${col};
             }
             
@@ -25,7 +25,6 @@ const LinkPageSections = ({href, clase, text, numberLink, col}) => {
                 height: 100%;
                 position: relative;
                 z-index: 0;
-                
             }
 
             .${numberLink}{

@@ -8,11 +8,12 @@ const Img = () => {
         <style jsx>{`
             .container {
                 grid-column: 1/2;
-                align-self: flex-start;
+                align-self: center;
                 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 25px 0 rgba(0, 0, 0, 0.19);
                 border-radius: 10px;
                 display: grid;
                 grid-template-rows: 26.5rem 3.2rem;
+                height: 31rem;
             }
             img{
                 width: auto;
@@ -25,8 +26,8 @@ const Img = () => {
                 grid-row: 2/3;
                 box-sizing: border-box;
                 height: 100%;
-                background-color: #03071e;
-                color: #EBECF0;
+                background-color: #fefae0;
+                color: #111;
                 font-weight: 600;
                 font-size: 1.3rem;
                 text-align: center;
