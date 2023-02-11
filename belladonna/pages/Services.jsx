@@ -11,7 +11,7 @@ const Services = () => {
 
     return <section className="container">
 
-        <Header image="one" tam="11rem" num={1}/>
+        <Header image="one" tam="11rem" num={1} num2={3}/>
         <Tittle row="2/3" col="1/5" />
         <h2>Elige la zona</h2>
 
@@ -49,8 +49,8 @@ const Services = () => {
                 letter-spacing: -1px;
                 text-align: center;
                 background: linear-gradient(to bottom, #f0acaa 0%,#db99e2 100%);
-                padding: 20px 500px;
-                border-radius: 20px;
+                padding: 20px 400px;
+                border-radius: 85% 85% 85% 85%/ 30%;
             }
 
             span{

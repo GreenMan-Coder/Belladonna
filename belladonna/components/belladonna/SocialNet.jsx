@@ -1,5 +1,5 @@
-const SocialNet = ({text, color, children}) => {
-    return <button className="container">
+const SocialNet = ({text, color, children, href}) => {
+    return <a href={href} target="_blank" className="container">
 
         <div className="child">
             {children}
@@ -47,6 +47,6 @@ const SocialNet = ({text, color, children}) => {
             }
             }
         `}</style>
-    </button>
+    </a>
 }
 export default SocialNet

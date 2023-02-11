@@ -1,11 +1,11 @@
 import Logo from './Logo'
 import Menu from './Menu'
 
-const Header = ({image, tam, num}) => {
+const Header = ({image, tam, num, num2}) => {
     return <section className="container">
 
         <Logo image={image} tam={tam}/>
-        {num === 1 ? <Menu/> : ''}
+        {num === 1 ? <Menu num={num2}/> : ''}
 
         <style jsx>{`
 

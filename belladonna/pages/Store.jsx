@@ -4,7 +4,7 @@ import Front from '../components/store/Front'
 const Store = () => {
     return <section className="container">
         
-        <Header image="one" tam="11rem" num={1}/>
+        <Header image="one" tam="11rem" num={1} num2 = {2}/>
         <Front/>
         
 
@@ -19,6 +19,7 @@ const Store = () => {
                 grid-template-columns: 1fr;
                 justify-items: center;
                 align-items: center;
+                background: #f8f0b6;
             }
 
         `}</style>

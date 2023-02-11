@@ -36,7 +36,7 @@ const Tittle = ({row, col}) => {
                 padding: 50px;
                 color: #FFF;
                 text-shadow: 1px 1px 1px #333;
-            background-image: linear-gradient( 135deg, #9f05ff69 10%, #fd5e086b 100%);
+                background-image: linear-gradient( 135deg, #9f05ff69 10%, #fd5e086b 100%);
                 display: grid;
             }
 

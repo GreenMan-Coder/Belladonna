@@ -1,15 +1,77 @@
-const Menu = () => {
+import Link from "next/link"
+
+const Menu = ({num}) => {
     return <div className="container">
 
         <div className="nav">
             <input type="checkbox"/>
                 <span></span>
                 <span></span>
-                <div className="menu">
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Depilación</a></li>
-                    <li><a href="#">Belladonna</a></li>
-                </div>
+                {num === 2 ? 
+                    <div className="menu">
+                        <li>
+                            <Link href="/Front/" legacyBehavior>
+                                <a >Inicio</a>
+                            </Link>
+                        </li>
+                        
+                        <li>
+                            <Link href="/Services/" legacyBehavior>
+                                <a >Depilación</a>
+                            </Link>
+                        </li>
+
+                        <li>
+                            <Link href="/Belladonna/" legacyBehavior>
+                                <a >Belladonna</a>
+                            </Link>
+                        </li>
+                    </div> : ''
+                }
+
+                {num === 3 ? 
+                    <div className="menu">
+                        <li>
+                            <Link href="/Front/" legacyBehavior>
+                                <a >Inicio</a>
+                            </Link>
+                        </li>
+                        
+                        <li>
+                            <Link href="/Store/" legacyBehavior>
+                                <a >Tienda</a>
+                            </Link>
+                        </li>
+
+                        <li>
+                            <Link href="/Belladonna/" legacyBehavior>
+                                <a >Belladonna</a>
+                            </Link>
+                        </li>
+                    </div> : ''
+                }
+
+                {num === 4 ? 
+                    <div className="menu">
+                        <li>
+                            <Link href="/Front/" legacyBehavior>
+                                <a >Inicio</a>
+                            </Link>
+                        </li>
+                        
+                        <li>
+                            <Link href="/Store/" legacyBehavior>
+                                <a >Tienda</a>
+                            </Link>
+                        </li>
+
+                        <li>
+                            <Link href="/Services/" legacyBehavior>
+                                <a >Depilación</a>
+                            </Link>
+                        </li>
+                    </div> : ''
+                }
         </div>
 
         <style jsx>{`

@@ -1,5 +1,5 @@
-const SocialNetButtons = ({col, children, color}) => {
-    return <button className="container">
+const SocialNetButtons = ({col, children, color, href}) => {
+    return <a href={href}  target="_blank" className="container">
             <div className="child">
                 {children}
             </div>
@@ -10,7 +10,7 @@ const SocialNetButtons = ({col, children, color}) => {
                 grid-column: ${col};
                 grid-row: 1/2;
                 justify-self: center;
-                align-self: center;
+                align-self: flex-end;
                 width: 5rem;
                 height: 4rem;
                 border: none;
@@ -32,6 +32,7 @@ const SocialNetButtons = ({col, children, color}) => {
                 background-size: 50.5% calc(var(--_p,0%)/2 + .5%);
                 outline-offset: .1em;
                 transition: background-size .4s, background-position 0s .4s;
+                border-bottom: 5px solid ${color}; 
             }
             .container:hover {
                 --_p: 100%;
@@ -47,6 +48,6 @@ const SocialNetButtons = ({col, children, color}) => {
                 width: 3rem;
             }
         `}</style>
-    </button>
+    </a>
 }
 export default SocialNetButtons

@@ -1,5 +1,5 @@
-const WhatsappButton = ({children}) => {
-    return <button className="container">
+const WhatsappButton = ({children, color, href}) => {
+    return <a href={href} target="_blank" className="container">
         
         <div className="icon">
             {children}
@@ -12,12 +12,13 @@ const WhatsappButton = ({children}) => {
                 grid-row: 2/3;
                 grid-column: 2/4;
                 justify-self: center;
-                align-self: center;
+                align-self: flex-end;
                 outline: none;
                 text-decoration: none;
                 height: 50px;
                 width: 150px;
                 border-radius: 50px;
+                margin-bottom: 15px;
                 cursor: pointer;
                 text-transform: uppercase;
                 background-color: #fefae0;
@@ -29,6 +30,7 @@ const WhatsappButton = ({children}) => {
                 transition: letter-spacing 0.4s ease-in-out;
                 display: grid;
                 grid-template-columns: 0.5fr 1fr;
+                border-bottom: 5px solid ${color};
             }
             .container:hover {
                 animation: buttonRotate 0.7s ease-in-out both;
@@ -39,7 +41,7 @@ const WhatsappButton = ({children}) => {
                 grid-column: 1/2;
                 width: 35px;
                 justify-self: start;
-                padding-left: 5px;
+                padding-left: 15px;
             }
             p{
                 grid-column: 2/3;
@@ -67,6 +69,6 @@ const WhatsappButton = ({children}) => {
                 }
             }
         `}</style>
-    </button>
+    </a>
 }
 export default WhatsappButton
