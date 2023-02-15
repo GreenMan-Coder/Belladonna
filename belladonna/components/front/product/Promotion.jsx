@@ -62,8 +62,19 @@ const Promotion = () => {
                 color: #fefae0;
             }
 
-
-
+            @media (max-width: 1086px){
+                .container{
+                    grid-row: 4/5;
+                    grid-column: 1/5;
+                    grid-template-columns: 1fr 0.3fr;
+                    grid-template-rows: 1fr;
+                }
+                h1{
+                    grid-column: 1/2;
+                    font-size: 27px;
+                    padding-left: 30px;
+                }
+            }
         `}</style>
     </section>
 }

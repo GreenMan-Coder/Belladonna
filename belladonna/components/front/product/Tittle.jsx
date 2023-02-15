@@ -62,6 +62,21 @@ const Tittle = ({row, col}) => {
                 color: #feac5e;
             }
 
+            @media (max-width: 1029px){
+                p{
+                    font-size: 19px;
+                }
+            }
+            @media (max-width: 932px){
+                p{
+                    font-size: 18px;
+                }
+            }
+            @media (max-width: 620px){
+                p{
+                    font-size: 15px;
+                }
+            }
         `}</style>
     </hgroup>
 }

@@ -54,6 +54,27 @@ const Cards = ({pos, text, back, id, cardSelected, setcardSelected}) => {
                 font-size: 26px;
             }
 
+            @media (max-width: 1086px){
+                .container {
+                    grid-row: 5/6;
+                    grid-column: 1/2;
+                    justify-self: flex-end;
+                    align-self:  ${text === "bikini" ? 'flex-start' : ''} ${text === "superior" ? 'center' : ''} ${text === "inferior" ? 'flex-end' : ''};
+                    width: 10rem;
+                    height: auto;
+                    margin: 0;
+                    padding: 7px;
+                    margin-bottom: 20px;
+                }
+                h1{
+                    font-size: 15px;
+                }
+                .container:hover h1{
+                    letter-spacing: 0px;
+                    color: #f36e01;
+                    font-size: 17px;
+                }
+            }
         `}</style>
     </article>
 }

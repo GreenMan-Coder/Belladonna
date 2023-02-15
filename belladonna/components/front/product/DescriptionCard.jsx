@@ -144,6 +144,13 @@ const DescriptionCard = ({ zone, cardSelected }) => {
                 color: #e7822f;
                 font-weight: 400;
             }
+
+            @media (max-width: 1086px){
+                .container {
+                    grid-column: 2/5;
+                    grid-row: 5/6;
+                }
+            }
         `}</style>
     </section>
     );

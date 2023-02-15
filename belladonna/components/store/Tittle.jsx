@@ -39,7 +39,6 @@ const Tittle = () => {
 
             .headline {
                 color: var(--color-light);
-                font-size: 3.5rem;
                 font-family: "Montserrat", sans-serif;
                 text-shadow: -2px -2px #fdf09a, 2px 2px #f5c25d;
                 font-size: 7rem;
@@ -67,6 +66,72 @@ const Tittle = () => {
                 font-size: 3rem;
                 font-family: "Montserrat", sans-serif;
                 text-shadow: 2px 2px #fdf09a;
+            }
+
+            @media (max-width: 910px){
+                .container .text {
+                    width: 713px;
+                    top: 5rem;
+                }
+
+                .headline{
+                    font-size: 7rem;
+                }
+
+                .subhead {
+                    font-size: 2rem;
+                }
+
+                .container figure {
+                    height: 640px;
+                }
+            }
+            @media (max-width: 841px){
+                .container .text {
+                    width: 650px;
+                    top: 1rem;
+                }
+
+                .headline{
+                    font-size: 7rem;
+                    text-align: center;
+                }
+                .subhead {
+                    text-align: center;
+                }
+
+                .container img {
+                    height: 990px;
+                    width: auto;
+                }
+
+                .container figure {
+                    height: 640px;
+                    border-radius: 0 0 10px 10px;
+                }
+            }
+            @media (max-width: 793px){
+                .container .text {
+                    width: 600px;
+                    top: 1rem;
+                }
+            }
+            @media (max-width: 733px){
+                .container .text {
+                    width: 530px;
+                    top: 1rem;
+                }
+                .container figure {
+                    height: 600px;
+                    border-radius: 10px 10px 10px 10px;
+                    left: 0px;
+                }
+            }
+            @media (max-width: 667px){
+                .container .text {
+                    width: 450px;
+                    top: 1rem;
+                }
             }
         `}</style>
     </div>

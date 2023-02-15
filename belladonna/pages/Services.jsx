@@ -58,6 +58,30 @@ const Services = () => {
                 font-weight: 900;
             }
 
+            @media (max-width: 1126px){
+                h2{
+                    font-size: 2.5rem;
+                }
+            }
+            @media (max-width: 1086px){
+                .container{
+                    grid-template-columns: 1fr 0.6fr 15rem 30rem; 
+                }
+            }
+            @media (max-width: 1029px){
+                h2{
+                    font-size: 2rem;
+                }
+            }
+            @media (max-width: 988px){
+                .container{
+                    grid-template-columns: 14rem 8rem 15rem 30rem; 
+                }
+                h2{
+                    font-size: 2.5rem;
+                }
+            }
+
         `}</style>
     </section>
 }

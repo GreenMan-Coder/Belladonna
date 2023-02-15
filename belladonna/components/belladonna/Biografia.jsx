@@ -3,6 +3,8 @@ import SocialNet from "./SocialNet"
 const Biografia = () => {
     return <section className="container">
 
+    {/*         grid-template-rows: 27.7rem 2.5rem; */}
+
         <hgroup>
             <h1>¡Hola, soy Marta!</h1>
             <h3>Experta en depilación femenina con más de 30 años de experiencia.</h3>
@@ -76,6 +78,57 @@ const Biografia = () => {
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr 1fr;
                 grid-column-gap: 10px;
+            }
+
+            @media(max-width: 1124px){
+                .container {
+                    grid-template-rows: 27rem 2.5rem;
+                    grid-column: 2/5;
+                    box-sizing: border-box;
+                    width: 90%;
+                }
+
+                hgroup{
+                    grid-template-rows: 6.5rem 3rem 17.5rem;
+                }
+            }
+            @media(max-width: 1100px){
+                h3{
+                    font-size: 16px;
+                }
+
+                p{
+                    font-size: 15px;
+                }
+            }
+            @media(max-width: 1080px){
+                h3{
+                    font-size: 15.5px;
+                    padding: 0 8px;
+                }
+
+                p{
+                    font-size: 14.9px;
+                }
+            }
+            @media(max-width: 1040px){
+                h3{
+                    text-align: center;
+                }
+            }
+            @media(max-width: 986px){
+                h1{
+                    font-size: 3rem;
+                    padding-top: 22px;
+                }
+                p{
+                    font-size: 14px;
+                }
+            }
+            @media(max-width: 955px){
+                p{
+                    margin: 0 9px;
+                }
             }
         `}</style>
     </section>

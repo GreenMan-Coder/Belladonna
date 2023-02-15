@@ -25,7 +25,7 @@ const BuySteps = () => {
                 justify-self: center;
                 align-self: center;
                 width: 38rem;
-                height: 15rem;
+                height: auto;
                 box-sizing: border-box;
                 background-color: transparent;
                 background-image: linear-gradient(
@@ -88,6 +88,22 @@ const BuySteps = () => {
                 display: inline-block; 
                 width: 1em;
                 margin-left: -1em;
+            }
+
+            h1{
+                font-size: 1.7rem;
+                font-weight: 900;
+            }
+            h4{
+                font-size: 1.2rem;
+                font-weight: 800;
+            }
+
+            @media (max-width: 1212px){
+                .container{
+                    grid-row: 3/4;
+                    grid-column: 1/3;
+                }
             }
             
         `}</style>

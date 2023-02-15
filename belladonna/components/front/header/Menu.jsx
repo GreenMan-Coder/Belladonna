@@ -10,7 +10,7 @@ const Menu = ({num}) => {
                 {num === 2 ? 
                     <div className="menu">
                         <li>
-                            <Link href="/Front/" legacyBehavior>
+                            <Link href="/" legacyBehavior>
                                 <a >Inicio</a>
                             </Link>
                         </li>
@@ -32,7 +32,7 @@ const Menu = ({num}) => {
                 {num === 3 ? 
                     <div className="menu">
                         <li>
-                            <Link href="/Front/" legacyBehavior>
+                            <Link href="/" legacyBehavior>
                                 <a >Inicio</a>
                             </Link>
                         </li>
@@ -54,7 +54,7 @@ const Menu = ({num}) => {
                 {num === 4 ? 
                     <div className="menu">
                         <li>
-                            <Link href="/Front/" legacyBehavior>
+                            <Link href="/" legacyBehavior>
                                 <a >Inicio</a>
                             </Link>
                         </li>

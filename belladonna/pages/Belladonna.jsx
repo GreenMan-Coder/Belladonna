@@ -21,6 +21,32 @@ const Belladonna = () => {
                 font-family: 'Karla', sans-serif;
                 background: #f8f0b6;
             }
+
+            @media(max-width: 1308px){
+                .container {
+                    grid-template-columns: 35rem 40rem;
+                }
+            }
+            @media(max-width: 1230px){
+                .container {
+                    grid-template-columns: 33rem 40rem;
+                }
+            }
+            @media(max-width: 1194px){
+                .container {
+                    grid-template-columns: 31rem 40rem;
+                }
+            }
+            @media(max-width: 1160px){
+                .container {
+                    grid-template-columns: 29rem 40rem;
+                }
+            }
+            @media(max-width: 1124px){
+                .container {
+                    grid-template-columns: 29rem 28rem;
+                }
+            }
         `}</style>
     
         </article>

@@ -92,6 +92,14 @@ const Jewelry = () => {
                 font-weight: 700;
             }
             
+            @media (max-width: 1212px){
+                .container{
+                    grid-row: 4/5;
+                    grid-column: 1/3;
+                    align-self: flex-start;
+                }
+            }
+
         `}</style>
     </div>
 }
