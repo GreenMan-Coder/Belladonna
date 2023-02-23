@@ -16,13 +16,12 @@ const Header = ({image, tam, num, num2}) => {
                 justify-items: center;
                 align-items: center;
                 width: 100%;
-                height: auto;
+                height: 100%;
                 font-weight: 500;
                 font-family: 'Karla', sans-serif;
                 font-size: 22px;
                 background: #fefae0;
             }
-
         `}</style>
     </section>
 }

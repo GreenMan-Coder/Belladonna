@@ -11,7 +11,7 @@ const Services = () => {
 
     return <section className="container">
 
-        <Header image="one" tam="11rem" num={1} num2={3}/>
+        <Header image="one" tam="10rem" num={1} num2={3}/>
         <Tittle row="2/3" col="1/5" />
         <h2>Elige la zona</h2>
 
@@ -27,11 +27,11 @@ const Services = () => {
 
             .container {
                 font-family: 'Karla', sans-serif; 
-                height: auto;
+                height: 100%;
                 width: 100%;
                 display: grid;
-                grid-template-rows: auto 21rem 10rem 8rem 18rem;
-                grid-template-columns: 0.6fr 0.6fr 15rem 30rem; 
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                grid-template-rows: auto 1fr 0.2fr 0.4fr 1fr;
                 justify-items: center;
                 align-items: center;
                 background: #f8f0b6;
@@ -65,20 +65,17 @@ const Services = () => {
             }
             @media (max-width: 1086px){
                 .container{
-                    grid-template-columns: 1fr 0.6fr 15rem 30rem; 
+                    grid-template-rows: auto 1fr 0.1fr 0.1fr 0.5fr;
                 }
             }
             @media (max-width: 1029px){
                 h2{
-                    font-size: 2rem;
+                    padding: 20px 300px;
                 }
             }
-            @media (max-width: 988px){
-                .container{
-                    grid-template-columns: 14rem 8rem 15rem 30rem; 
-                }
+            @media (max-width: 829px){
                 h2{
-                    font-size: 2.5rem;
+                    padding: 20px 250px;
                 }
             }
 

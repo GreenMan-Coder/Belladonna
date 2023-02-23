@@ -2,19 +2,6 @@ import Link from 'next/link';
 
 const LinkPageSections = ({href, clase, text, numberLink, col}) => {
 
-    const changeStyle = () => {
-        return <>
-        <style jsx global>{`
-            @media (max-width: 1014px){
-                .${clase}{
-                    background-color: #151515;
-                }
-            }
-            `}
-        </style>
-        </>
-    }
-
     return <div className={clase}>
         <div className="link-container">
             <Link href={href} legacyBehavior>
@@ -26,6 +13,7 @@ const LinkPageSections = ({href, clase, text, numberLink, col}) => {
 
             .${clase}{
                 background-color: #f8f0b6;
+                height: 100%;
                 grid-column: ${col};
             }
 
@@ -228,7 +216,7 @@ const LinkPageSections = ({href, clase, text, numberLink, col}) => {
             @media (max-width: 1014px){
 
                 .${clase}{
-                    grid-row: ${text === 'tienda'? '1/2' : ''  } ${text === 'depilación femenina'? '2/3' : ''  } ${text === 'belladonna'? '3/4' : ''  };
+                    grid-row: ${text === 'tienda'? '2/3' : ''  } ${text === 'depilación femenina'? '1/2' : ''  } ${text === 'belladonna'? '3/4' : ''  };
                     grid-column: 1/6;
                     justify-self: center;
                     align-self: center;

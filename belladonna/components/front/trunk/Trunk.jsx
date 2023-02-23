@@ -12,7 +12,7 @@ const Trunk = () => {
             .container{
                 grid-column: 1/2;
                 margin: 0;
-                height: 27.2rem;
+                height: 100%;
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
                 grid-template-rows: 1fr;

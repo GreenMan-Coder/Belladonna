@@ -72,7 +72,26 @@ const Promotion = () => {
                 h1{
                     grid-column: 1/2;
                     font-size: 27px;
-                    padding-left: 30px;
+                }
+            }
+            @media (max-width: 1069px){
+                h1{
+                    font-size: 24px;
+                }
+            }
+            @media (max-width: 829px){
+                h1{
+                    font-size: 20px;
+                }
+            }
+
+            @media (max-width: 780px){
+                .container{
+                    grid-template-columns: 0.8fr 0.5fr;
+                    height: auto;
+                }
+                h1{
+                    font-size: 25px;
                 }
             }
         `}</style>

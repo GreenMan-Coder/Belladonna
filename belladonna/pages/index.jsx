@@ -12,7 +12,7 @@ const Front = () => {
         <link rel="icon" href="/favicon.ico" />
     </Head>
 
-        <Header image="one" tam="11rem" pos="center" num={2}/>
+        <Header image="one" tam="10rem" pos="center" num={2}/>
         <Trunk/>
 
         <style jsx>{`
@@ -20,6 +20,8 @@ const Front = () => {
             .container {
                 display: grid;
                 grid-template-columns: 1fr;
+                grid-template-rows: 0.4fr 1fr;
+                height: 100vh;
             }
 
         `}</style>
