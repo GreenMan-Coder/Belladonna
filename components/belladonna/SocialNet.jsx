@@ -1,5 +1,5 @@
 const SocialNet = ({text, color, children, href}) => {
-    return <a href={href} target="_blank" className="container">
+    return <a href={href} target="_blank" rel="noopener noreferrer" className="container">
 
         <div className="child">
             {children}

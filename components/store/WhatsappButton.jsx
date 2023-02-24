@@ -1,5 +1,5 @@
 const WhatsappButton = ({children, color, href}) => {
-    return <a href={href} target="_blank" className="container">
+    return <a href={href} target="_blank" rel="noopener noreferrer" className="container">
         
         <div className="icon">
             {children}
