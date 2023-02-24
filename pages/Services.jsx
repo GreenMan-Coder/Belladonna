@@ -27,7 +27,7 @@ const Services = () => {
 
             .container {
                 font-family: 'Karla', sans-serif; 
-                height: 100%;
+                height: 100vh;
                 width: 100%;
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -83,9 +83,14 @@ const Services = () => {
                     padding: 20px 200px;
                 }
             }
-            @media (max-width: 704px){
+            @media (max-width: 629px){
                 h2{
-                    padding: 20px 200px;
+                    padding: 20px 100px;
+                }
+            }
+            @media (max-width: 538px){
+                h2{
+                    margin: 15px 0;
                 }
             }
 

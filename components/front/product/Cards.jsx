@@ -75,6 +75,12 @@ const Cards = ({pos, text, back, id, cardSelected, setcardSelected}) => {
                     font-size: 17px;
                 }
             }
+            @media (max-width: 672px){
+                .container {
+                    width: 7rem;
+                    height: auto;
+                }
+            }
         `}</style>
     </article>
 }

@@ -173,6 +173,16 @@ const DescriptionCard = ({ zone, cardSelected }) => {
                 padding: 0 0 0 25px;
                 }
             }
+            @media (max-width: 633px){
+                li{
+                    font-size: 13px;
+                }
+            }
+            @media (max-width: 568px){
+                li{
+                    font-size: 11px;
+                }
+            }
         `}</style>
     </section>
     );

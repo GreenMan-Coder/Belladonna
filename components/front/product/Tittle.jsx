@@ -12,6 +12,7 @@ const Tittle = ({row, col}) => {
         </header>
 
         <style jsx>{`
+            *{padding: 0; margin: 0; box-sizing: border-box;}
             .container {
                 grid-row: ${row};
                 grid-column: ${col};
@@ -22,7 +23,6 @@ const Tittle = ({row, col}) => {
                 justify-content: center;
             }
 
-            *{padding: 0; margin: 0; box-sizing: border-box;}
             header {
                 text-align: center;
                 width: 100%;
@@ -32,7 +32,7 @@ const Tittle = ({row, col}) => {
             }
             header .overlay{
                 width: 100%;
-                height: 20rem;
+                height: auto;
                 padding: 50px;
                 color: #FFF;
                 text-shadow: 1px 1px 1px #333;
@@ -72,14 +72,68 @@ const Tittle = ({row, col}) => {
                     font-size: 18px;
                 }
             }
-            @media (max-width: 620px){
-                p{
-                    font-size: 15px;
-                }
-            }
             @media (max-width: 704px){
                 h1{
                     font-size: 3.5rem;
+                }
+            }
+            @media (max-width: 629px){
+                h1{
+                    font-size: 3.2rem;
+                }
+
+                h3{
+                    font-size: 20px;
+                }
+            }
+            @media (max-width: 583px){
+                h1{
+                    font-size: 3.1rem;
+                }
+
+                h3{
+                    font-size: 18px;
+                }
+
+                p{
+                    font-size: 16px;
+                }
+            }
+            @media (max-width: 568px){
+                header .overlay{
+                    height: 95%;
+                }
+                h1{
+                    font-size: 2.9rem;
+                }
+
+                h3{
+                    font-size: 16px;
+                }
+
+                p{
+                    font-size: 14px;
+                }
+            }
+            @media (max-width: 538px){
+                .container{
+                    height: 18rem;
+                    align-self: flex-start;
+                }
+                header .overlay{
+                    height: 85%;
+                    border-radius: 0 0 30% 30%;
+                }
+                h1{
+                    font-size: 2.7rem;
+                }
+
+                h3{
+                    font-size: 14px;
+                }
+
+                p{
+                    font-size: 12px;
                 }
             }
         `}</style>

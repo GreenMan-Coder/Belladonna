@@ -88,10 +88,25 @@ const Promotion = () => {
             @media (max-width: 780px){
                 .container{
                     grid-template-columns: 0.8fr 0.5fr;
-                    height: auto;
+                    height: 100%;
                 }
                 h1{
                     font-size: 25px;
+                }
+            }
+            @media (max-width: 629px){
+                h1{
+                    font-size: 21px;
+                }
+            }
+            @media (max-width: 568px){
+                .container{
+                    align-items: flex-end;
+                }
+                h1{
+                    padding: 0;
+                    margin: 0;
+                    font-size: 16px;
                 }
             }
         `}</style>
