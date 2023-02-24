@@ -15,9 +15,9 @@ const Services = () => {
         <Tittle row="2/3" col="1/5" />
         <h2>Elige la zona</h2>
 
-        <Cards id={1} cardSelected={cardSelected} setcardSelected={setcardSelected} pos="center" text ="bikini" back="url(./img/trunk/bikini.jpg)" />
-        <Cards id={2} cardSelected={cardSelected} setcardSelected={setcardSelected} pos="flex-start" text ="superior" back="url(./img/trunk/superior.jpg)" />
-        <Cards id={3} cardSelected={cardSelected} setcardSelected={setcardSelected} pos="flex-end" text ="inferior" back="url(./img/trunk/inferior.jpg)" />
+        <Cards id={1} cardSelected={cardSelected} setcardSelected={setcardSelected} pos="center" text ="bikini" back="url(/img/trunk/bikini.jpg)" />
+        <Cards id={2} cardSelected={cardSelected} setcardSelected={setcardSelected} pos="flex-start" text ="superior" back="url(/img/trunk/superior.jpg)" />
+        <Cards id={3} cardSelected={cardSelected} setcardSelected={setcardSelected} pos="flex-end" text ="inferior" back="url(/img/trunk/inferior.jpg)" />
 
         <DescriptionCard cardSelected={cardSelected}/>
         
