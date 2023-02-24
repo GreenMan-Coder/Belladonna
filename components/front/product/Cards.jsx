@@ -12,7 +12,7 @@ const Cards = ({pos, text, back, id, cardSelected, setcardSelected}) => {
                 grid-column: 1/5;
                 justify-self: ${pos};
                 font-family: 'Karla', sans-serif;
-                background-image: ${back};
+                background-image: url(/img/trunk/bikini.jpg);
                 background-position: center;
                 background-size: 100%;
                 background-attachment: local;
