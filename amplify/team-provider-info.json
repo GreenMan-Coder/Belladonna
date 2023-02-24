@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-belladonna-dev-190340-authRole",
+      "UnauthRoleArn": "arn:aws:iam::685332947576:role/amplify-belladonna-dev-190340-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::685332947576:role/amplify-belladonna-dev-190340-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-belladonna-dev-190340-deployment",
+      "UnauthRoleName": "amplify-belladonna-dev-190340-unauthRole",
+      "StackName": "amplify-belladonna-dev-190340",
+      "StackId": "arn:aws:cloudformation:us-east-1:685332947576:stack/amplify-belladonna-dev-190340/b36dbc80-b3d6-11ed-917b-120acb2ea075",
+      "AmplifyAppId": "d1ejdgk82ydm28"
+    }
+  }
+}
