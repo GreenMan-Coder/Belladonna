@@ -7,7 +7,7 @@ const Tittle = () => {
             </div>
 
             <figure className="picture skew-tl">
-                <img src="./img/joyas.jpg" alt="Gold" />
+                <img src="/img/joyas.jpg" alt="Gold" />
             </figure>
 
         <style jsx>{`

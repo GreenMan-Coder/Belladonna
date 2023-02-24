@@ -151,6 +151,28 @@ const DescriptionCard = ({ zone, cardSelected }) => {
                     grid-row: 5/6;
                 }
             }
+            @media (max-width: 780px){
+                .container {
+                    grid-column: 2/5;
+                    grid-row: 5/6;
+                }
+                
+                ul{
+                margin: 0;
+                padding: 0 0 0 25px;
+                }
+            }
+            @media (max-width: 730px){
+                .container {
+                    grid-column: 2/5;
+                    grid-row: 5/6;
+                }
+                
+                ul{
+                margin: 0;
+                padding: 0 0 0 25px;
+                }
+            }
         `}</style>
     </section>
     );
