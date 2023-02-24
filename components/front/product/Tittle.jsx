@@ -77,6 +77,11 @@ const Tittle = ({row, col}) => {
                     font-size: 15px;
                 }
             }
+            @media (max-width: 704px){
+                h1{
+                    font-size: 3.5rem;
+                }
+            }
         `}</style>
     </hgroup>
 }

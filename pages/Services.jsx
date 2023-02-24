@@ -78,6 +78,16 @@ const Services = () => {
                     padding: 20px 250px;
                 }
             }
+            @media (max-width: 729px){
+                h2{
+                    padding: 20px 200px;
+                }
+            }
+            @media (max-width: 704px){
+                h2{
+                    padding: 20px 200px;
+                }
+            }
 
         `}</style>
     </section>
