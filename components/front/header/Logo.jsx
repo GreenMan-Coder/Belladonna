@@ -2,7 +2,7 @@ const Logo = ({image, tam}) => {
 
     return <div className="container">
 
-        {image === "one" ? <img src="/img/header/logo.png" alt="bellaDonna" /> : <img src="/img/header/logo2.png" alt="bellaDonna" />}
+        {image === "one" ? <img src="/img/header/Logo.png" alt="bellaDonna" /> : <img src="/img/header/Logo2.png" alt="bellaDonna" />}
         
 
         <style jsx>{`
