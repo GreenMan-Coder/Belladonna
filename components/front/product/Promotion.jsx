@@ -109,6 +109,29 @@ const Promotion = () => {
                     font-size: 16px;
                 }
             }
+            @media (max-width: 456px){
+                a{
+                    width: 100px;
+                    height: 35px;
+                    grid-template-columns: 1fr;
+                    justify-items: center;
+                    padding: 0;
+                    margin: 0;
+                }
+                h1{
+                    font-size: 12px;
+                }
+                h3{
+                    visibility: hidden;
+                    overflow: hidden;
+                    padding: 0;
+                    margin: 0;
+                }
+                .child{
+                    box-sizing: border-box;
+                    margin: 0;
+            }
+            }
         `}</style>
     </section>
 }

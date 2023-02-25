@@ -127,13 +127,60 @@ const Tittle = ({row, col}) => {
                 h1{
                     font-size: 2.7rem;
                 }
-
                 h3{
                     font-size: 14px;
                 }
-
                 p{
                     font-size: 12px;
+                }
+            }
+            @media (max-width: 508px){
+                header .overlay{
+                    padding: 20px 50px 50px 50px;
+                    height: 75%;
+                    border-radius: 0 0 30% 30%;
+                }
+                h1{
+                    font-size: 2.5rem;
+                }
+            }
+            @media (max-width: 477px){
+                .container {
+                    grid-template-rows: auto 16rem 0.2fr 0.4fr 0.4fr 1fr;
+                }
+                h1{
+                    font-size: 2.2rem;
+                }
+            }
+            @media (max-width: 432px){
+                h1{
+                    font-size: 1.8rem;
+                }
+            }
+            @media (max-width: 372px){
+                h1{
+                    font-size: 1.4rem;
+                    
+                }
+                h3{
+                    font-size: 11px;
+                }
+                p{
+                    font-size: 12px;
+                }
+            }
+            @media (max-width: 358px){
+                h3{
+                    font-size: 12.5px;
+                }
+            }
+            @media (max-width: 337px){
+                header .overlay{
+                grid-template-rows: auto auto auto;
+                padding: 50px 0px;
+                justify-items: center;
+                align-content: center;
+                height: 14rem;
                 }
             }
         `}</style>

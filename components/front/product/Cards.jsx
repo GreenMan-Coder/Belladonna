@@ -19,7 +19,7 @@ const Cards = ({pos, text, back, id, cardSelected, setcardSelected}) => {
                 cursor: pointer;
                 width: 20%;
                 height: 70px;
-                display: grid;
+                disp    lay: grid;
                 justify-items: center;
                 align-items: center;
                 border: 0;
@@ -79,6 +79,22 @@ const Cards = ({pos, text, back, id, cardSelected, setcardSelected}) => {
                 .container {
                     width: 7rem;
                     height: auto;
+                }
+            }
+            @media (max-width: 508px){
+                .container {
+                    grid-row: 5/6;
+                    grid-column: 1/5;
+                    justify-self:  ${text === "bikini" ? 'center' : ''} ${text === "superior" ? 'flex-start' : ''} ${text === "inferior" ? 'flex-end' : ''};
+                    align-self: center;
+                    margin: 10px 8px;
+                }
+                h1{
+                    font-size: 12px;
+                    text-align: center;
+                }
+                .container:hover h1{
+                    font-size: 14px;
                 }
             }
         `}</style>

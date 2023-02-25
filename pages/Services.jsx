@@ -69,11 +69,17 @@ const Services = () => {
                 }
             }
             @media (max-width: 1029px){
+                .container{
+                    grid-template-rows: auto 0.4fr 0.1fr 0.1fr 0.5fr;
+                }
                 h2{
                     padding: 20px 300px;
                 }
             }
             @media (max-width: 829px){
+                .container{
+                    grid-template-rows: 0.4fr 0.4fr 0.1fr 0.1fr 0.5fr;
+                }
                 h2{
                     padding: 20px 250px;
                 }
@@ -91,6 +97,28 @@ const Services = () => {
             @media (max-width: 538px){
                 h2{
                     margin: 15px 0;
+                }
+            }
+            @media (max-width: 508px){
+                .container {
+                    grid-template-rows: auto auto 0.2fr 0.4fr 0.4fr 1fr;
+                }
+            }
+            @media (max-width: 477px){
+                .container {
+                    grid-template-rows: auto 16rem 0.2fr 0.4fr 0.4fr 1fr;
+                }
+            }
+            @media (max-width: 429px){
+                h2{
+                    margin: 15px 0;
+                    padding: 20px 50px;
+                    font-size: 1.6rem;
+                }
+            }
+            @media (max-width: 337px){
+                .container {
+                    grid-template-rows: auto 14.2rem 0.2fr 0.4fr 0.4fr 1fr;
                 }
             }
 

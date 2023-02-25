@@ -183,6 +183,14 @@ const DescriptionCard = ({ zone, cardSelected }) => {
                     font-size: 11px;
                 }
             }
+            @media (max-width: 508px){
+                .container {
+                    grid-row: 6/7;
+                    grid-column: 1/5;
+                    height: auto;
+                    width: 98%;
+                }
+            }
         `}</style>
     </section>
     );
