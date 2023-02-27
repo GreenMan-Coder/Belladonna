@@ -2,15 +2,14 @@ import SocialNet from "./SocialNet"
 
 const Biografia = () => {
     return <section className="container">
-
-    {/*         grid-template-rows: 27.7rem 2.5rem; */}
-
+        
         <hgroup>
             <h1>¡Hola, soy Marta!</h1>
+            <hr />
             <h3>Experta en depilación femenina con más de 30 años de experiencia.</h3>
 
             <p>
-                Durante mi carrera, he ayudado a muchas personas a lograr una piel suave y libre de vello no deseado.  Mi enfoque en ofrecer soluciones personalizadas y eficaces para cada uno de mis clientes ha llevado a una base de usuarios leales y satisfechos. <br/><br/>
+                Durante mi carrera, he ayudado a muchas personas a lograr una piel suave y libre de vello no deseado.  Mi enfoque en ofrecer soluciones personalizadas y eficaces para cada uno de mis clientes ha llevado a una base de usuarios leales y satisfechos. 
                 Además de mi práctica clínica,  también he desarrollado habilidades sobresalientes en otros aspectos de la belleza como el cuidado de la piel, tratamientos para el cabello y más. <br/><br/>
                 Estoy verdaderamente emocionada de compartir mi pasión y conocimientos en belleza a través de mi blog y redes sociales. Me siento afortunada de poder conectar con mujeres que comparten mi amor por cuidarse y verse bien.
             </p>
@@ -33,102 +32,70 @@ const Biografia = () => {
 
         <style jsx>{`
             .container {
-                grid-column: 2/3;
-                height: 95%;
+                grid-row: 3/4;
+                height: 100vh;
                 width: 100%;
-                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 25px 0 rgba(0, 0, 0, 0.19);
-                border-radius: 10px;
                 display: grid;
-                grid-template-rows: 27rem 2.5rem;
-                justify-items: center;
+                grid-template-rows: auto 0.6fr;
             }
-            
             hgroup{
+                margin: 1rem auto;
+                padding: 2rem;
                 display: grid;
-                grid-template-rows: 8rem 3rem 15.9rem;
-                justify-items: center;
-                align-items: center;
+                grid-template-rows: 0.3fr 0.2fr auto;
+                text-align: justify;
+                box-sizing: border-box;
             }
-
             h1{
-                background: #fefae0;
-                font-size: 3.5rem;
+                font-weight: 900;
+                font-size: 60px;
+                color: #f3b436;
                 text-align: center;
                 margin: 0;
-                padding: 0;
-                width: 100%;
-                height: 100%;
-                border-radius: 10px;
                 box-sizing: border-box;
-                padding-top: 30px;
             }
 
             h3{
-                font-size: 1.1rem;
-                color: #66b3f4;
+                font-size: 25px;
+                text-align: center; 
+                letter-spacing: 0.3px;
+                word-spacing: 2px;
+                color: #363636;
+                text-shadow: -1px -1px #fdf09a, 1px 1px #f5c25d;
+            }
+
+            hr{
+                width:200px;
+                border: none;
+                border-bottom: 1px solid #f5c25d;
             }
 
             p{
+                line-height: 1.5;
+                letter-spacing: 0.3px;
+                word-spacing: 2px;
                 box-sizing: border-box;
-                margin: 0 50px;
-                letter-spacing: 1px;
+                padding: 0 40px;
+            }
+
+            p:first-letter{
+                color:#f3b436;
+                font-weight: bold;
+                font-size: 70px;
+                float: left;
+                line-height: 60px;
+                padding-right: 8px;
+                margin-top: -3px;
             }
 
             .socialNetworks{
+                justify-self: center;
+                background-color: #494949;
+                height: 100%;
+                width: 95%;
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr 1fr;
-                grid-column-gap: 10px;
-            }
-
-            @media(max-width: 1124px){
-                .container {
-                    grid-template-rows: 27rem 2.5rem;
-                    grid-column: 2/5;
-                    box-sizing: border-box;
-                    width: 90%;
-                }
-
-                hgroup{
-                    grid-template-rows: 6.5rem 3rem 17.5rem;
-                }
-            }
-            @media(max-width: 1100px){
-                h3{
-                    font-size: 16px;
-                }
-
-                p{
-                    font-size: 15px;
-                }
-            }
-            @media(max-width: 1080px){
-                h3{
-                    font-size: 15.5px;
-                    padding: 0 8px;
-                }
-
-                p{
-                    font-size: 14.9px;
-                }
-            }
-            @media(max-width: 1040px){
-                h3{
-                    text-align: center;
-                }
-            }
-            @media(max-width: 986px){
-                h1{
-                    font-size: 3rem;
-                    padding-top: 22px;
-                }
-                p{
-                    font-size: 14px;
-                }
-            }
-            @media(max-width: 955px){
-                p{
-                    margin: 0 9px;
-                }
+                border-radius: 15px 15px 0 0;
             }
         `}</style>
     </section>

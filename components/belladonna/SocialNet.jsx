@@ -8,12 +8,12 @@ const SocialNet = ({text, color, children, href}) => {
             .container {
                 justify-self: center;
                 align-self: center;
-                width: 3rem;
-                height: 2rem;
+                width: auto;
+                height: auto;
                 border: none;
                 cursor: pointer;
                 margin:3px;
-                padding: 3px;
+                padding: 3px 10px;
                 display: grid;
                 justify-content: center;
                 align-content: center;
@@ -42,9 +42,8 @@ const SocialNet = ({text, color, children, href}) => {
             }
 
             .child{
-                width: 30px;
+                width: 50px;
                 padding-top: 3px;
-            }
             }
         `}</style>
     </a>
