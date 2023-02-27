@@ -126,16 +126,118 @@ const Biografia = () => {
                     align-self: flex-end;
                 }
             }
+            @media (max-width: 912px){
+                hgroup{
+                    grid-template-rows: 0.3fr 0 0.3fr auto;
+                }
+                h1{
+                    font-size: 80px;
+                }
+                h3{
+                    font-size: 40px;
+                }
+                p{
+                    font-size: 33px;
+                    align-self: center;
+                }
+            }
+            @media (max-width: 804px){
+                h1{
+                    font-size: 75px;
+                }
+                h3{
+                    font-size: 35px;
+                }
+                p{
+                    font-size: 28px;
+                    align-self: center;
+                }
+            }
+            @media (max-width: 768px){
+                h1{
+                    font-size: 70px;
+                }
+                h3{
+                    font-size: 34px;
+                }
+                p{
+                    margin-top: 60px;
+                    align-self: flex-end;
+                }
+            }
+            @media (max-width: 711px){
+                h1{
+                    font-size: 65px;
+                }
+                h3{
+                    font-size: 30px;
+                }
+                p{
+                    margin-top: 60px;
+                    font-size: 25px;
+                    align-self: flex-end;
+                }
+            }
+            @media (max-width: 665px){
+                h1{
+                    font-size: 45px;
+                }
+                h3{
+                    font-size: 23px;
+                }
+                p{
+                    font-size: 18px;
+                }
+            }
             @media (max-width: 540px){
                 h1{
                     font-size: 50px;
                 }
+                h3{
+                    font-size: 25px;
+                }
                 p{
-                    margin-top: 40px;
-                    align-self: flex-end;
+                    font-size: 20px;
                 }
             }
-            @media (max-width: 412px){
+            @media (max-width: 526px){
+                h1{
+                    font-size: 45px;
+                }
+                h3{
+                    font-size: 23px;
+                }
+                p{
+                    font-size: 18px;
+                }
+            }
+            @media (max-width: 480px){
+                h1{
+                    font-size: 40px;
+                }
+                h3{
+                    font-size: 22px;
+                }
+                p{
+                    font-size: 17px;
+                    margin-top: 40px;
+                    padding: 0;
+                }
+            }
+            @media (max-width: 434px){
+                h1{
+                    font-size: 37px;
+                }
+                h3{
+                    font-size: 20px;
+                }
+                p{
+                    font-size: 15px;
+                    margin-top: 35px;
+                    padding: 0;
+                }
+            }
+            @media (max-width: 414px){
                 .container {
                     grid-template-rows: auto 0.4fr;
                 }
@@ -146,13 +248,40 @@ const Biografia = () => {
                     font-size: 35px;
                 }
                 h3{
-                    font-size: 15px;
+                    font-size: 17px;
                 }
                 p{
                     font-size: 17px;
-                    padding: 0 10px;
-                    margin: 0;
+                    padding: 0 5px;
                     align-self: center;
+                }
+            }
+            @media (max-width: 387px){
+                h1{
+                    font-size: 33px;
+                }
+                h3{
+                    font-size: 18px;
+                }
+                p{
+                    font-size: 13px;
+                    margin-top: 35px;
+                    padding: 0;
+                }
+                p:first-letter{
+                    font-size: 55px;
+                }
+            }
+            @media (max-width: 369px){
+                h1{
+                    font-size: 31px;
+                }
+                h3{
+                    font-size: 15px;
+                }
+                p{
+                    font-size: 14.3px;
+                    padding: 0 10px;
                 }
             }
         `}</style>

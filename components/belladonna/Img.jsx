@@ -19,6 +19,20 @@ const Img = () => {
                     background-position: center;
                 }
             }
+            @media (max-width: 912px){
+                .container {
+                    height: 75vh;
+                    background-size: 60%;
+                    background-position: center;
+                }
+            }
+            @media (max-width: 804px){
+                .container {
+                    height: 75vh;
+                    background-size: 100%;
+                    background-position: center;
+                }
+            }
             @media (max-width: 540px){
                 .container {
                     height: 60vh;
@@ -26,14 +40,13 @@ const Img = () => {
                     background-position: top;
                 }
             }
-            @media (max-width: 412px){
+            @media (max-width: 414px){
                 .container {
                     height: 32vh;
                     background-size: 100%;
                     background-position: top;
                 }
             }
-            
         `}</style>
     </div>
     
