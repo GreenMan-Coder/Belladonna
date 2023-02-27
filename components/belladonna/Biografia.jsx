@@ -97,6 +97,23 @@ const Biografia = () => {
                 grid-template-columns: 1fr 1fr 1fr 1fr;
                 border-radius: 15px 15px 0 0;
             }
+
+            @media (max-width: 390px){
+                .container {
+                    height: 32vh;
+                    background-size: 100%;
+                    background-position: top;
+                }
+                h1{
+                    font-size: 35px;
+                }
+                h3{
+                    font-size: 15px;
+                }
+                p{
+                    padding: 0 10px;
+                }
+            }
         `}</style>
     </section>
 }

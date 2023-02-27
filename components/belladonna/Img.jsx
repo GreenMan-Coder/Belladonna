@@ -3,7 +3,6 @@ const Img = () => {
 
         <style jsx>{`
             .container {
-                position: relative;
                 height: 90vh;
                 background-image: url(/img/Bella.png);
                 background-repeat: no-repeat;
@@ -11,6 +10,14 @@ const Img = () => {
                 background-size: 45%;
                 background-attachment: fixed; 
                 background-color: #573f11;
+            }
+
+            @media (max-width: 390px){
+                .container {
+                    height: 32vh;
+                    background-size: 100%;
+                    background-position: top;
+                }
             }
         `}</style>
     </div>
