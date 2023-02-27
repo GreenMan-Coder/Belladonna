@@ -46,9 +46,25 @@ const SocialNet = ({text, color, children, href}) => {
                 padding-top: 3px;
             }
 
+            @media (max-width: 1280px){
+                .child{
+                    width: 60px;
+                }
+            }
+            @media (max-width: 1024px){
+                .child{
+                    width: 50px;
+                }
+            }
+            @media (max-width: 412px){
+                .child{
+                    width: 35px;
+                }
+            }
+
             @media (max-width: 390px){
                 .child{
-                    width: 30PX
+                    width: 30px;
                 }
             }
         `}</style>

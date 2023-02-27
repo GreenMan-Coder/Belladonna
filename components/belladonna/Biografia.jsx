@@ -42,7 +42,7 @@ const Biografia = () => {
                 margin: 1rem auto;
                 padding: 2rem;
                 display: grid;
-                grid-template-rows: 0.3fr 0.2fr auto;
+                grid-template-rows: 0.3fr 0 0.3fr auto;
                 text-align: justify;
                 box-sizing: border-box;
             }
@@ -61,6 +61,7 @@ const Biografia = () => {
                 letter-spacing: 0.3px;
                 word-spacing: 2px;
                 color: #363636;
+                box-sizing: border-box;
                 text-shadow: -1px -1px #fdf09a, 1px 1px #f5c25d;
             }
 
@@ -98,11 +99,48 @@ const Biografia = () => {
                 border-radius: 15px 15px 0 0;
             }
 
-            @media (max-width: 390px){
+            @media (max-width: 1280px){
                 .container {
-                    height: 32vh;
-                    background-size: 100%;
-                    background-position: top;
+                    grid-template-rows: auto 0.4fr;
+                }
+                .socialNetworks {
+                    background-size: 60%;
+                    background-position: center;
+                }
+                p{
+                    font-size: 22px;
+                    align-self: center;
+                }
+                h3{
+                    font-size: 25px;
+                    padding-top: 50px;
+                    margin: 0;
+                }
+                hr{
+                    align-self: top;
+                }
+            }
+            @media (max-width: 1024px){
+                p{
+                    font-size: 16.2px;
+                    align-self: flex-end;
+                }
+            }
+            @media (max-width: 540px){
+                h1{
+                    font-size: 50px;
+                }
+                p{
+                    margin-top: 40px;
+                    align-self: flex-end;
+                }
+            }
+            @media (max-width: 412px){
+                .container {
+                    grid-template-rows: auto 0.4fr;
+                }
+                hgroup{
+                    grid-template-rows: 0.3fr 0 0.3fr auto;
                 }
                 h1{
                     font-size: 35px;
@@ -111,7 +149,10 @@ const Biografia = () => {
                     font-size: 15px;
                 }
                 p{
+                    font-size: 17px;
                     padding: 0 10px;
+                    margin: 0;
+                    align-self: center;
                 }
             }
         `}</style>

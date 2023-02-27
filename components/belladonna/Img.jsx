@@ -12,13 +12,28 @@ const Img = () => {
                 background-color: #573f11;
             }
 
-            @media (max-width: 390px){
+            @media (max-width: 1280px){
+                .container {
+                    height: 75vh;
+                    background-size: 60%;
+                    background-position: center;
+                }
+            }
+            @media (max-width: 540px){
+                .container {
+                    height: 60vh;
+                    background-size: 100%;
+                    background-position: top;
+                }
+            }
+            @media (max-width: 412px){
                 .container {
                     height: 32vh;
                     background-size: 100%;
                     background-position: top;
                 }
             }
+            
         `}</style>
     </div>
     
