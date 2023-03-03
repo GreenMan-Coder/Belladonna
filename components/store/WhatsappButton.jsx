@@ -91,7 +91,7 @@ const WhatsappButton = ({col, row, children, color, href}) => {
             @media (max-width: 375px){
                 .container{
                     margin: 0;
-                    margin-top: 5em;
+                    margin-top: 3em;
                 }
             }
         `}</style>
