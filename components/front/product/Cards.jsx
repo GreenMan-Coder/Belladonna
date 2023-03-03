@@ -8,6 +8,7 @@ const Cards = ({pos, text, back, id, cardSelected, setcardSelected}) => {
         <style jsx>{`
 
             .container {
+                user-select: none;
                 grid-row: 4/5;
                 grid-column: 1/5;
                 justify-self: ${pos};
@@ -19,7 +20,7 @@ const Cards = ({pos, text, back, id, cardSelected, setcardSelected}) => {
                 cursor: pointer;
                 width: 20%;
                 height: 70px;
-                disp    lay: grid;
+                display: grid;
                 justify-items: center;
                 align-items: center;
                 border: 0;
