@@ -1,5 +1,6 @@
-const SocialNetButtons = ({col, children, color, href}) => {
+const SocialNetButtons = ({col, row, children, color, href}) => {
     return <a href={href}  target="_blank" rel="noopener noreferrer"className="container">
+            
             <div className="child">
                 {children}
             </div>
@@ -8,15 +9,16 @@ const SocialNetButtons = ({col, children, color, href}) => {
 
             .container {
                 grid-column: ${col};
-                grid-row: 1/2;
+                grid-row: ${row};
                 justify-self: center;
-                align-self: flex-end;
-                width: 5rem;
-                height: 4rem;
+                align-self: center;
+                box-sizing: border-box;
+                padding: 3px;
+                margin-top: 4.5em;
+                width: 5.5rem;
+                height: 6rem;
                 border: none;
                 cursor: pointer;
-                margin:3px;
-                padding: 3px;
                 display: grid;
                 justify-content: center;
                 align-content: center;
@@ -45,7 +47,45 @@ const SocialNetButtons = ({col, children, color, href}) => {
             }
 
             .child{
-                width: 3rem;
+                width: 5rem;
+                box-sizing: border-box;
+                padding-top: 5px;
+            }
+
+            @media (max-width: 1280px){
+                .container{
+                    margin-top: 5.5em;
+                }
+            }
+            @media (max-width: 586px){
+                .container{
+                    margin-top: 5em;
+                }
+                .child{
+                    width: 3.5rem;
+                }
+            }
+            @media (max-width: 440px){
+                .container{
+                    width: auto;
+                    height: 3.5em;
+                    margin-top: 3.5em;
+                }
+                .child{
+                    width: 3rem;
+                }
+            }
+            @media (max-width: 414px){
+                .container{
+                    width: auto;
+                    height: 4em;
+                    margin-top: 4.2em;
+                }
+                .child{
+                    width: 3rem;
+                    box-sizing: border-box;
+                    padding-top: 5px;
+                }
             }
         `}</style>
     </a>

@@ -1,6 +1,6 @@
 import ButtonStore from "./Jewelry"
 
-const BuySteps = () => {
+const BuySteps = ({row}) => {
     return <div className="container">
 
         <h1>Pasos para realizar pedido:</h1>
@@ -12,19 +12,18 @@ const BuySteps = () => {
                 Elige entre una amplia variedad.
             </li>
             <li>
-                Haz tu pedido fácilmente por el canal de whatsapp o redes sociales.
+                Haz tu pedido fácilmente dando clic en el botón o por mensaje directo en las redes sociales.
             </li>
         </ol>
-        <h4 align="right">Estoy a la espera de tu mensaje.</h4>
+        <h4 align="right">Pago contra entrega.</h4>
 
         <style jsx>{`
 
             .container{
-                grid-row: 3/4;
-                grid-column: 1/2;
+                grid-row: ${row};
                 justify-self: center;
                 align-self: center;
-                width: 38rem;
+                width: 40%;
                 height: auto;
                 box-sizing: border-box;
                 background-color: transparent;
@@ -53,16 +52,16 @@ const BuySteps = () => {
                 height: 4rem;
                 content: "";
                 z-index: 0;
-                font-size: 8rem;
+                font-size: 6rem;
                 font-family: Georgia, Times, Garamond, serif;
             }
             .container::before {
-                top: -2rem;
+                top: -1.5rem;
                 left: 1rem;
                 content: open-quote;
             }
             .container::after {
-                bottom: -1rem;
+                bottom: -2.30rem;
                 right: 1rem;
                 content: close-quote;
             }
@@ -76,7 +75,7 @@ const BuySteps = () => {
                 font-size: 1rem;
                 list-style: none;
                 counter-reset: li;
-                padding-left: 4rem;
+                padding-left: 1rem;
             }
             li{
                 margin-top: 10px;
@@ -87,7 +86,6 @@ const BuySteps = () => {
                 color: #b8a633;
                 display: inline-block; 
                 width: 1em;
-                margin-left: -1em;
             }
 
             h1{
