@@ -4,7 +4,7 @@ const Biografia = () => {
     return <section className="container">
         
         <hgroup>
-            <h1>¡Hola, soy Marta!</h1>
+            <h1>¡Hola, soy Belladonna!</h1>
             <hr />
             <h3>Experta en depilación femenina con más de 30 años de experiencia.</h3>
 
