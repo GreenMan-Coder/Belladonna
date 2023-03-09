@@ -1,4 +1,4 @@
-import Header from '../components/front/header/Header'
+import Header from '../components/header/Header'
 import BuySteps from "../components/store/BuySteps"
 import Jewelry from "../components/store/Jewelry"
 import Tittle from "../components/store/Tittle"

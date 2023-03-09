@@ -1,4 +1,4 @@
-import Header from "../components/front/header/Header"
+import Header from "../components/header/Header"
 import Img from "../components/belladonna/Img"
 import Biografia from "../components/belladonna/Biografia"
 

@@ -1,5 +1,5 @@
-import Trunk from '../components/front/trunk/Trunk'
-import Header from '../components/front/header/Header'
+import Trunk from '../components/trunk/Trunk'
+import Header from '../components/header/Header'
 import Head from 'next/head'
 
 const Front = () => {
