@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react"
 
-const Cards = ({pos, text, pageLoaded, id, setcardSelected}) => {
+const Cards = ({pos, text, id, setcardSelected}) => {
 
 
-    return <article onClick={() => setcardSelected(id)} className={'container ' + text}>
+    return <article onClick={() => setcardSelected(id)} className="container">
 
         <h1>{text}</h1>
 
@@ -27,7 +27,6 @@ const Cards = ({pos, text, pageLoaded, id, setcardSelected}) => {
                 outline: 0;
                 box-sizing: border-box;
                 margin: 0 3rem;
-                box-shadow: -5px -5px 10px #c4b78c,  5px 5px 10px #968c6c;
                 border-radius: 10px;
                 line-height: 0;
                 transition: all 0.2s ease-in-out;
@@ -45,13 +44,13 @@ const Cards = ({pos, text, pageLoaded, id, setcardSelected}) => {
                 font-size: 24px;
                 font-weight: 800;
                 letter-spacing: -1px;
-                color: #e7822f;
+                color: #FFF;
                 transition: color 0.1s ease-in-out;
                 transition: font-size 0.1s ease-in-out;
             }
             .container:hover h1{
                 letter-spacing: 0px;
-                color: #f36e01;
+                color: ##FFF;
                 font-size: 26px;
             }
 
