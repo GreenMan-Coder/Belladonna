@@ -9,14 +9,9 @@ const Cards = ({pos, text, pageLoaded, id, setcardSelected}) => {
 
         <style jsx>{`
 
-            .bikini{
-                background-image: url(/img/trunk/bikini.jpg);
-                background-position: center;
-                background-size: 100%;
-                background-attachment: local;
-            }
             
             .container {
+                background: linear-gradient(to bottom, #f0acaa 0%,#db99e2 100%);
                 user-select: none;
                 grid-row: 4/5;
                 grid-column: 1/5;
