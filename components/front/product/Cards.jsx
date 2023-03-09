@@ -50,7 +50,7 @@ const Cards = ({pos, text, id, setcardSelected}) => {
             }
             .container:hover h1{
                 letter-spacing: 0px;
-                color: ##FFF;
+                color: #FFF;
                 font-size: 26px;
             }
 
@@ -71,7 +71,7 @@ const Cards = ({pos, text, id, setcardSelected}) => {
                 }
                 .container:hover h1{
                     letter-spacing: 0px;
-                    color: #f36e01;
+                    color: #FFF;
                     font-size: 17px;
                 }
             }
