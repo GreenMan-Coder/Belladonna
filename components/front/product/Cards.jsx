@@ -15,18 +15,7 @@ const Cards = ({pos, text, pageLoaded, id, setcardSelected}) => {
                 background-size: 100%;
                 background-attachment: local;
             }
-            .inferior{
-                background-image: url(/img/trunk/inferior.jpg);
-                background-position: center;
-                background-size: 100%;
-                background-attachment: local;
-            }
-            .superior{
-                background-image: url(/img/trunk/superior.jpg);
-                background-position: center;
-                background-size: 100%;
-                background-attachment: local;
-            }
+            
             .container {
                 user-select: none;
                 grid-row: 4/5;
