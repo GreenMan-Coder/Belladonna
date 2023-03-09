@@ -1,103 +1,109 @@
-const Test = () => {
-    return <div className="container">
-        
-        <div className="nav">
-            hello
-        </div>
+{/* <Cards id={1} cardSelected={cardSelected} setcardSelected={setcardSelected} pos="center" text ="bikini" back="/img/trunk/bikini.jpg" />
+        <Cards id={2} cardSelected={cardSelected} setcardSelected={setcardSelected} pos="flex-start" text ="superior" back="/img/trunk/superior.jpg" />
+        <Cards id={3} cardSelected={cardSelected} setcardSelected={setcardSelected} pos="flex-end" text ="inferior" back="/img/trunk/inferior.jpg" />
+ */}
+
+const Cards = ({pos, text, back, id, cardSelected, setcardSelected}) => {
+
+    return <article onClick={() => setcardSelected(id)} className="container">
+
+        <h1>{text}</h1>
 
         <style jsx>{`
+
             .container {
-                height: 100%;
-                width: 100%;
-                margin: 0;
-                padding: 0;
-                min-height: 100vh;
-                background-color: #dcdc39;
-                font-family: 'Open Sans', Verdana, Geneva, Tahoma, sans-serif;
-            }
-
-            .container, .nav, .menu {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-
-            .nav {
-                position: relative;
-                background-color: #fff;
-                padding: 20px;
-                transition: 0.5s;
-                border-radius: 50px;
-                overflow: hidden;
-                box-shadow: 0 8px 15px rgba(0,0,0,.2);
-            }
-
-            .menu {
-                margin: 0;
-                padding: 0;
-                width: 0;
-                overflow: hidden;
-                transition: 0.5s;
-            }
-
-            .nav input:checked ~ .menu {
-                width: 450px;
-            }
-
-            .menu li {
-                list-style: none;
-                margin: 0 10px;
-            }
-
-            .menu li a {
-                text-decoration: none;
-                color: #666;
-                text-transform: uppercase;
-                font-weight: 600;
-                transition: 0.5s;
-            }
-
-            .menu li a:hover {
-                color: #161919;
-            }
-
-            .nav input {
-                width: 40px;
-                height: 40px;
+                user-select: none;
+                grid-row: 4/5;
+                grid-column: 1/5;
+                justify-self: ${pos};
+                font-family: 'Karla', sans-serif;
+                background-image: url(${back});
+                background-position: center;
+                background-size: 100%;
+                background-attachment: local;
                 cursor: pointer;
-                opacity: 0;
+                width: 20%;
+                height: 70px;
+                display: grid;
+                justify-items: center;
+                align-items: center;
+                border: 0;
+                outline: 0;
+                box-sizing: border-box;
+                margin: 0 3rem;
+                box-shadow: -5px -5px 10px #c4b78c,  5px 5px 10px #968c6c;
+                border-radius: 10px;
+                line-height: 0;
+                transition: all 0.2s ease-in-out;
+            }
+            .container:hover{
+                box-shadow: -2px -2px 5px #c4b78c, 2px 2px 5px #968c6c;
+                opacity: 0.9;
+            }
+            .container:active {
+                box-shadow: inset 1px 1px 2px #968c6c, inset -1px -1px 2px #c4b78c;
             }
 
-            .nav span {
-                position: absolute;
-                left: 30px;
-                width: 30px;
-                height: 4px;
-                border-radius: 50px;
-                background-color: #666;
-                pointer-events: none;
-                transition: 0.5s;
+            h1{
+                text-transform: uppercase;
+                font-size: 24px;
+                font-weight: 800;
+                letter-spacing: -1px;
+                color: #e7822f;
+                transition: color 0.1s ease-in-out;
+                transition: font-size 0.1s ease-in-out;
+            }
+            .container:hover h1{
+                letter-spacing: 0px;
+                color: #f36e01;
+                font-size: 26px;
             }
 
-            .nav input:checked ~ span {
-                background-color: #f974a1;
+            @media (max-width: 1086px){
+                .container {
+                    grid-row: 5/6;
+                    grid-column: 1/2;
+                    justify-self: flex-end;
+                    align-self:  ${text === "bikini" ? 'flex-start' : ''} ${text === "superior" ? 'center' : ''} ${text === "inferior" ? 'flex-end' : ''};
+                    width: 10rem;
+                    height: auto;
+                    margin: 0;
+                    padding: 7px;
+                    margin-bottom: 20px;
+                }
+                h1{
+                    font-size: 15px;
+                }
+                .container:hover h1{
+                    letter-spacing: 0px;
+                    color: #f36e01;
+                    font-size: 17px;
+                }
             }
-
-            .nav span:nth-child(2) {
-                transform: translateY(-8px);
+            @media (max-width: 672px){
+                .container {
+                    width: 7rem;
+                    height: auto;
+                }
             }
-
-            .nav input:checked ~ span:nth-child(2) {
-                transform: translateY(0) rotate(-45deg);
-            }
-            .nav span:nth-child(3) {
-                transform: translateY(8px);
-            }
-
-            .nav input:checked ~ span:nth-child(3) {
-                transform: translateY(0) rotate(45deg);
+            @media (max-width: 508px){
+                .container {
+                    grid-row: 5/6;
+                    grid-column: 1/5;
+                    justify-self:  ${text === "bikini" ? 'center' : ''} ${text === "superior" ? 'flex-start' : ''} ${text === "inferior" ? 'flex-end' : ''};
+                    align-self: center;
+                    margin: 10px 8px;
+                }
+                h1{
+                    font-size: 12px;
+                    text-align: center;
+                }
+                .container:hover h1{
+                    font-size: 14px;
+                }
             }
         `}</style>
-    </div>
+    </article>
 }
-export default Test
+
+export default Cards

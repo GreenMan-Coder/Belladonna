@@ -1,6 +1,6 @@
 import Tittle from '../components/front/product/Tittle'
 import Cards from '../components/front/product/Cards'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import DescriptionCard from '../components/front/product/DescriptionCard'
 import Promotion from '../components/front/product/Promotion'
 import Header from '../components/front/header/Header'
@@ -15,9 +15,9 @@ const Services = () => {
         <Tittle row="2/3" col="1/5" />
         <h2>Elige la zona</h2>
 
-        <Cards id={1} cardSelected={cardSelected} setcardSelected={setcardSelected} pos="center" text ="bikini" back="/img/trunk/bikini.jpg" />
-        <Cards id={2} cardSelected={cardSelected} setcardSelected={setcardSelected} pos="flex-start" text ="superior" back="/img/trunk/superior.jpg" />
-        <Cards id={3} cardSelected={cardSelected} setcardSelected={setcardSelected} pos="flex-end" text ="inferior" back="/img/trunk/inferior.jpg" />
+        <Cards id={1} setcardSelected={setcardSelected} pos="center" text ="bikini"  />
+        <Cards id={2} setcardSelected={setcardSelected} pos="flex-start" text ="superior"  />
+        <Cards id={3} setcardSelected={setcardSelected} pos="flex-end" text ="inferior"/>
 
         <DescriptionCard cardSelected={cardSelected}/>
         

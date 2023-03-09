@@ -1,22 +1,38 @@
+import { useEffect, useState } from "react"
 
-const Cards = ({pos, text, back, id, cardSelected, setcardSelected}) => {
+const Cards = ({pos, text, pageLoaded, id, setcardSelected}) => {
 
-    return <article onClick={() => setcardSelected(id)} className="container">
+
+    return <article onClick={() => setcardSelected(id)} className={'container ' + text}>
 
         <h1>{text}</h1>
 
         <style jsx>{`
 
+            .bikini{
+                background-image: url(/img/trunk/bikini.jpg);
+                background-position: center;
+                background-size: 100%;
+                background-attachment: local;
+            }
+            .inferior{
+                background-image: url(/img/trunk/inferior.jpg);
+                background-position: center;
+                background-size: 100%;
+                background-attachment: local;
+            }
+            .superior{
+                background-image: url(/img/trunk/superior.jpg);
+                background-position: center;
+                background-size: 100%;
+                background-attachment: local;
+            }
             .container {
                 user-select: none;
                 grid-row: 4/5;
                 grid-column: 1/5;
                 justify-self: ${pos};
                 font-family: 'Karla', sans-serif;
-                background-image: url(${back});
-                background-position: center;
-                background-size: 100%;
-                background-attachment: local;
                 cursor: pointer;
                 width: 20%;
                 height: 70px;
