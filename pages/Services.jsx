@@ -17,7 +17,7 @@ const Services = () => {
 
         <Cards id={1} setcardSelected={setcardSelected} pos="center" text ="bikini"  />
         <Cards id={2} setcardSelected={setcardSelected} pos="flex-start" text ="superior"  />
-        <Cards id={3} setcardSelected={setcardSelected} pos="flex-end" text ="inferior"/>
+        <Cards id={3} setcardSelected={setcardSelected} pos="flex-end" text ="bikini"/>
 
         <DescriptionCard cardSelected={cardSelected}/>
         
