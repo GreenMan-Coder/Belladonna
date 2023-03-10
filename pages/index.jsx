@@ -14,7 +14,6 @@ const Front = () => {
 
         <Header image="one" tam="10rem" pos="center" num={2}/>
         <Trunk/>
-
         <style jsx>{`
 
             .container {
