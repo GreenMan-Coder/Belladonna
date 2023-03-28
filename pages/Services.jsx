@@ -11,7 +11,7 @@ const Services = () => {
 
     return <section className="container">
 
-        <Header image="one" tam="10rem" num={1} num2={3}/>
+        <Header image="one" tam="12rem" num={1} num2={3}/>
         <Tittle row="2/3" col="1/5" />
         <h2>Elige la zona</h2>
 

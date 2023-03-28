@@ -5,7 +5,7 @@ import Biografia from "../components/belladonna/Biografia"
 const Belladonna = () => {
     return <article className="container">
 
-        <Header image="one" tam="10rem" num={1} num2={4}/>
+        <Header image="one" tam="12rem" num={1} num2={4}/>
         <Img/>
         <Biografia/>
         

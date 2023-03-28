@@ -6,7 +6,7 @@ import Tittle from "../components/store/Tittle"
 const Store = () => {
     return <section className="container">
         
-        <Header image="one" tam="11rem" num={1} num2 = {2}/>
+        <Header image="one" tam="12rem" num={1} num2 = {2}/>
         <Tittle row="2/3"/>
         <Jewelry row="3/4"/>
         {/* <BuySteps row="4/5"/> */}
