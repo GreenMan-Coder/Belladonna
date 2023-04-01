@@ -75,7 +75,7 @@ const Menu = ({num}) => {
         </div>
 
         <style jsx>{`
-        .container {
+            .container {
                 position: fixed;
                 left: 11px;
                 top: 0;
@@ -85,7 +85,7 @@ const Menu = ({num}) => {
                 margin: 0;
                 padding: 0;
                 background-color: transparent;
-            }
+                }
 
             .container, .nav, .menu {
                 display: flex;

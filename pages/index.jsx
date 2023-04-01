@@ -12,7 +12,7 @@ const Front = () => {
         <link rel="icon" href="/favicon.ico" />
     </Head>
 
-        <Header image="one" tam="12rem" pos="center" num={2}/>
+        <Header tam="9rem" num={2}/>
         <Trunk/>
         <style jsx>{`
 
