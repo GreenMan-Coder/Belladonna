@@ -1,17 +1,18 @@
-const Logo = ({image, tam}) => {
+const Logo = ({tam}) => {
 
     return <div className="container">
 
-        {image === "one" ? <img src="/img/header/Logo3.png" alt="bellaDonna" /> : <img src="/img/header/Logo2.png" alt="bellaDonna" />}
+        <img src="/img/header/Logo5.png" alt="bellaDonna" />
         
 
         <style jsx>{`
 
             .container {
                 grid-row: 1/2;
-                justify-self: center;
+                justify-self: start;
                 padding: 0;
                 margin: 0;
+                margin-left: 3em;
             }
 
             img{
