@@ -77,7 +77,7 @@ const Menu = ({num}) => {
         <style jsx>{`
         .container {
                 position: fixed;
-                left: 10px;
+                left: 11px;
                 top: 0;
                 z-index: 2;
                 height: 5rem;
