@@ -1,10 +1,26 @@
+/* Colors  */
 :root {
-  background-color: #ffe3fe;
-  margin: 0;
-  padding: 0;
+  --purple-blanco: #ffe3fe;
+  --light-purple: #cb9acb;
+  --normal-purple: #893c8a;
+  --tone-purple: #3f0c3a;
+  --dark-purple: #20051e;
+  --light-pink: #f9b5d0;
+  --tone-pink: #ff597b;
+  --right: 7.1em;
+  --left: 7.1em;
+  --prueba: #fff;
 }
 
+/* General */
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+:root {
+  --font: 'Karla', sans-serif;
+  background-color: var(--purple-blanco);
+}
 body{
   margin: 0;
   padding: 0;
+  margin-right: var(--right);
+  margin-left: var(--left);
 }

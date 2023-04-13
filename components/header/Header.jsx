@@ -1,25 +1,26 @@
 import Logo from './Logo'
 import Menu from './Menu'
 
-const Header = ({tam, num, num2}) => {
+const Header = ({row,color}) => {
     return <header>
 
-        <Logo tam={tam}/>
-        <Menu num={num}/>
+        <Logo col="1/2" tam="7.2em"/>
+        <Menu col="2/3"/>
 
         <style jsx>{`
 
             header{
-                grid-row: 1/2;
-                grid-column: 1/5;
+                background-color: var(${color});
+                box-sizing: border-box;
+                position: sticky;
+                top: 0.1px;
+                width: 100%;
+                height: 9em;
                 display: grid;
+                grid-template-columns: 0.2fr 1fr;
                 justify-items: center;
                 align-items: center;
-                width: 100%;
-                height: 100%;
-                font-weight: 500;
-                font-family: 'Karla', sans-serif;
-                font-size: 22px;
+                z-index: 10;
             }
         `}</style>
     </header>
