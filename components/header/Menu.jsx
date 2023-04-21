@@ -14,7 +14,7 @@ const Menu = ({num}) => {
                 </Link>
             </li>
             <li>
-                <Link href="/Services/" legacyBehavior>
+                <Link href="/Depilation/" legacyBehavior>
                     <a >Depilación</a>
                 </Link>
             </li>
