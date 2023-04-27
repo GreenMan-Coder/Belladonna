@@ -1,4 +1,4 @@
-import SocialNetButtons from "./SocialNetButtons"
+
 import WhatsappButton from "./WhatsappButton"
 
 const Jewelry = ({row}) => {
@@ -9,14 +9,8 @@ const Jewelry = ({row}) => {
             </div>
 
             <h3 className="goldStore">Oro Plata</h3>
-            <SocialNetButtons col="1/2" row ="2/3" color="#dd5348" href="https://instagram.com/bella_donnajoyas?igshid=ZDdkNTZiNTM=">
-                <svg viewBox="0 0 448 512"> <path color="#f5c25d" fill="currentcolor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
-            </SocialNetButtons>
 
             <h3 className="bronceStore"> Acero Inoxidable</h3>
-            <SocialNetButtons col="2/3" row ="2/3" color="#89929f" href="http://antojateaqui.com">
-                <svg viewBox="0 0 640 512"> <path color="#b6c1d2" fill="currentcolor" d="M36.8 192H603.2c20.3 0 36.8-16.5 36.8-36.8c0-7.3-2.2-14.4-6.2-20.4L558.2 21.4C549.3 8 534.4 0 518.3 0H121.7c-16 0-31 8-39.9 21.4L6.2 134.7c-4 6.1-6.2 13.2-6.2 20.4C0 175.5 16.5 192 36.8 192zM64 224V384v80c0 26.5 21.5 48 48 48H336c26.5 0 48-21.5 48-48V384 224H320V384H128V224H64zm448 0V480c0 17.7 14.3 32 32 32s32-14.3 32-32V224H512z"/></svg>
-            </SocialNetButtons>
 
             <h3 className="contact">¡Haz tu pedido!</h3>
             <WhatsappButton col="1/3" row ="3/4" color="green" href="https://wa.me/message/D4KMZ4C5TFU5N1">

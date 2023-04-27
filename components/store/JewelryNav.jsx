@@ -1,25 +1,20 @@
-import React, { useState } from "react";
-
-const Test = ({ zone }) => {
-
-    return (
-        <div className="container">
+const JewelryNav = ({row}) => {
+    return <div className="container">
+            
             <nav className="navMenu">
-                <a href="#">Home</a>
-                <a href="#">Blog</a>
-                <a href="#">Work</a>
-                <a href="#">About</a>
+                <p>oro y plata</p>
+                <p>acero inoxidable</p>
                 <div className="dot"></div>
-            </nav> 
+            </nav>
+        <style jsx>{`
 
-            <style jsx>{`   
             .container {
+                grid-row: ${row};
                 display: flex;
+                flex-direction: row;
                 justify-content: center;
                 align-items: center;
-                height: 100vh;
-                overflow: hidden;
-                background: #272727;
+                height: auto;
             }
             * {
                 margin: 0;
@@ -27,79 +22,65 @@ const Test = ({ zone }) => {
                 -webkit-box-sizing: border-box;
                 box-sizing: border-box;
             }
-
             .navMenu {
-                position: absolute;
-                top: 50%;
-                left: 50%;
                 -webkit-transform: translate(-50%, -50%);
-                transform: translate(-50%, -50%);
+                transform: translate(-0%, -0%);
             }
-
-            .navMenu a {
-                color: #f6f4e6;
-                text-decoration: none;
-                font-size: 1.2em;
+            .navMenu p {
+                margin: 0 50px;
+                width: auto;
+                font-size: 20px;
+                color: var(--normal-purple);
                 text-transform: uppercase;
-                font-weight: 500;
+                font-weight: 700;
                 display: inline-block;
-                width: 80px;
+                cursor: pointer;
                 -webkit-transition: all 0.2s ease-in-out;
                 transition: all 0.2s ease-in-out;
             }
-
-            .navMenu a:hover {
-                color: #fddb3a;
+            .navMenu p:hover {
+                color: var(--tone-pink);
             }
-
             .navMenu .dot {
                 width: 6px;
                 height: 6px;
-                background: #fddb3a;
+                background: var(--tone-pink);
                 border-radius: 50%;
                 opacity: 0;
-                -webkit-transform: translateX(30px);
-                transform: translateX(30px);
+                -webkit-transform: translateX(50px);
+                transform: translateX(50px);
                 -webkit-transition: all 0.2s ease-in-out;
                 transition: all 0.2s ease-in-out;
             }
-
-            .navMenu a:nth-child(1):hover ~ .dot {
-                -webkit-transform: translateX(30px);
-                transform: translateX(30px);
-                -webkit-transition: all 0.2s ease-in-out;
-                transition: all 0.2s ease-in-out;
-                opacity: 1;
-            }
-
-            .navMenu a:nth-child(2):hover ~ .dot {
-                -webkit-transform: translateX(110px);
-                transform: translateX(110px);
+            .navMenu p:nth-child(1):hover ~ .dot {
+                -webkit-transform: translateX(104px);
+                transform: translateX(104px);
                 -webkit-transition: all 0.2s ease-in-out;
                 transition: all 0.2s ease-in-out;
                 opacity: 1;
             }
-
-            .navMenu a:nth-child(3):hover ~ .dot {
+            .navMenu p:nth-child(2):hover ~ .dot {
+                -webkit-transform: translateX(350px);
+                transform: translateX(350px);
+                -webkit-transition: all 0.2s ease-in-out;
+                transition: all 0.2s ease-in-out;
+                opacity: 1;
+            }
+            .navMenu p:nth-child(3):hover ~ .dot {
                 -webkit-transform: translateX(200px);
                 transform: translateX(200px);
                 -webkit-transition: all 0.2s ease-in-out;
                 transition: all 0.2s ease-in-out;
                 opacity: 1;
             }
-
-            .navMenu a:nth-child(4):hover ~ .dot {
+            .navMenu p:nth-child(4):hover ~ .dot {
                 -webkit-transform: translateX(285px);
                 transform: translateX(285px);
                 -webkit-transition: all 0.2s ease-in-out;
                 transition: all 0.2s ease-in-out;
                 opacity: 1;
             }
-
-            
-            `}</style>
-        </div>
-    );
-};
-
-export default Test;
+        `}</style>
+    </div>
+}
+export default JewelryNav
