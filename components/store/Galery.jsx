@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const Test2 = ({ items }) => {
+const Galery = ({ items }) => {
     const [selectedImage, setSelectedImage] = useState(null);
 
     const handleImageClick = (image) => {
@@ -101,4 +101,4 @@ const Test2 = ({ items }) => {
     );
 };
 
-export default Test2;
+export default Galery;

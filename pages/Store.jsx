@@ -36,7 +36,8 @@ const Store = () => {
             .jewelry{
                 grid-row: 3/4;
                 display: grid;
-                grid-template-rows: 0.1fr 1fr;
+                grid-template-rows: 0.1fr 100vh;
+                border: 1px solid blue;
             }
         `}</style>
     </section>
