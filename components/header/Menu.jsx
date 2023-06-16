@@ -14,27 +14,27 @@ const Menu = ({num}) => {
                 </Link>
             </li>
             <li>
-                <Link href="/Depilation/" legacyBehavior>
+                <Link href="/Services/" legacyBehavior>
                     <a >Depilación</a>
                 </Link>
             </li>
             <li>
-                <Link href="/Belladonna/" legacyBehavior>
+                <Link href="/Bisuteria/" legacyBehavior>
                     <a >Bisutería</a>
                 </Link>
             </li>
             <li>
-                <Link href="/Belladonna/" legacyBehavior>
+                <Link href="/Nosotros/" legacyBehavior>
                     <a >Nosotros</a>
                 </Link>
             </li>
             <li>
-                <Link href="/Belladonna/" legacyBehavior>
-                    <a >Blog</a>
+                <Link href="/Comunidad/" legacyBehavior>
+                    <a >Comunidad</a>
                 </Link>
             </li>
             <li>
-                <Link href="/Belladonna/" legacyBehavior>
+                <Link href="/Contacto/" legacyBehavior>
                     <a >Contacto</a>
                 </Link>
             </li>

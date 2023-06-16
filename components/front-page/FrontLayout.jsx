@@ -7,8 +7,6 @@ const FrontLayout = ({row}) => {
         </hgroup>
         <p>Nuestra empresa con 30 años de experiencia en depilación con cera, donde cuidamos tu piel con atención personalizada y profesionalismo. Nuestro equipo de profesionales altamente calificadas te brinda la mejor calidad en servicio y asesoría para que te sientas segura y cómoda en todo momento. Descubre una experiencia de depilación con cera única en la comodidad de tu hogar. ¡Déjanos consentirte!</p>
 
-        {/* 31.6 */}
-
         <style jsx>{`
             .container {
                 position: absolute;

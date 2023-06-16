@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const Galery = ({ items }) => {
+const GaleryOroPlata = ({ items }) => {
     const [selectedImage, setSelectedImage] = useState(null);
 
     const handleImageClick = (image) => {
@@ -101,4 +101,4 @@ const Galery = ({ items }) => {
     );
 };
 
-export default Galery;
+export default GaleryOroPlata;

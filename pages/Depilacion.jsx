@@ -6,7 +6,7 @@ import Logo from '../components/header/Logo'
 import Nav from '../components/depilation/Nav'
 
 
-const Depilation = () => {
+const Depilacion = () => {
 
     const [cardSelected, SetcardSelected] = useState([]);
 
@@ -32,7 +32,6 @@ const Depilation = () => {
                 <Nav pos="" text="superior" id={2} setcardSelected={SetcardSelected}/>
                 <Nav pos="" text="bikini" id={3} setcardSelected={SetcardSelected}/>
                 <Nav pos="" text="inferior" id={4} setcardSelected={SetcardSelected}/>
-                <Nav pos="" text="promociones" id={5} setcardSelected={SetcardSelected}/>
             </div>
         </div>
 
@@ -165,4 +164,4 @@ const Depilation = () => {
     </section>
 }
 
-export default Depilation
+export default Depilacion

@@ -5,14 +5,14 @@ const LinkPageSections = ({href, clase, text, numberLink, col}) => {
     return <div className={clase}>
         <div className="link-container">
             <Link href={href} legacyBehavior>
-                    <a className={numberLink}>{text}</a>
+                    <a className={numberLink}>&bull; {text} &bull;</a>
             </Link>
         </div>
 
         <style jsx>{`
 
             .${clase}{
-                background-color: #f8f0b6;
+                background: transparent;
                 height: 100%;
                 grid-column: ${col};
             }
@@ -36,12 +36,12 @@ const LinkPageSections = ({href, clase, text, numberLink, col}) => {
             }
 
             .link-one {
-                color: #151515;
+                color: var(--normal-purple);
                 transition: color 1s cubic-bezier(0.32, 0, 0.67, 0);
                 line-height: 1em;
             }
             .link-one:hover {
-                color: #fefae0;
+                color: var(--purple-blanco);
                 transition: color 1s cubic-bezier(0.33, 1, 0.68, 1);
             }
             .link-one::before {
@@ -52,7 +52,7 @@ const LinkPageSections = ({href, clase, text, numberLink, col}) => {
                 height: 100%;
                 top: 0;
                 right: 0;
-                background-color: #53d9d1;
+                background-color: var(--dark-purple);
                 clip-path: circle(0% at 50% calc(50%));
                 transition: clip-path 1s cubic-bezier(0.65, 0, 0.35, 1);
             }
@@ -67,7 +67,7 @@ const LinkPageSections = ({href, clase, text, numberLink, col}) => {
                 height: 100%;
                 top: 0;
                 right: 0;
-                background-color: #151515;
+                background-color: var(--purple-blanco);
                 clip-path: polygon(
                     40% 0%,
                     60% 0%,
@@ -94,11 +94,11 @@ const LinkPageSections = ({href, clase, text, numberLink, col}) => {
             }
 
             .link-two {
-                color: #151515;
+                color: var(--normal-purple);
                 transition: color 1s cubic-bezier(0.32, 0, 0.67, 0);
             }
             .link-two:hover {
-                color: #fefae0;
+                color: var(--light-purple);
                 transition: color 1s cubic-bezier(0.33, 1, 0.68, 1);
             }
             .link-two::before {
@@ -119,7 +119,7 @@ const LinkPageSections = ({href, clase, text, numberLink, col}) => {
                     100% 100%,
                     0% 110%
                 );
-                background-color: #f27b9b;
+                background-color: var(--dark-purple);
                 transition: clip-path 1s cubic-bezier(0.25, 1, 0.5, 1);
             }
             .link-two:hover::before {
@@ -144,86 +144,10 @@ const LinkPageSections = ({href, clase, text, numberLink, col}) => {
                 right: 50%;
                 transform: translate(50%, -50%) rotate(0deg) scale(0);
                 transition: transform 1s ease;
-                background-color: #f27b9b;
+                background-color: var(--dark-purple);
             }
             .link-two:hover::after {
                 transform: translate(50%, -50%) rotate(135deg) scale(1);
-            }
-
-            .link-three {
-                color: #151515;
-            }
-            .link-three:hover {
-                color: #fefae0;
-                transition: color 1s cubic-bezier(0.33, 1, 0.68, 1);
-            }
-            .link-three::after {
-                content: "";
-                position: absolute;
-                z-index: 2;
-                width: 50%;
-                height: 100%;
-                top: 0%;
-                left: 0%;
-                transform: translate(0, -50%) scaleY(0);
-                transition: transform 1s ease;
-                mix-blend-mode: difference;
-                clip-path: polygon(
-                    20% 60%,
-                    100% 60%,
-                    100% 40%,
-                    20% 40%,
-                    20% 0%,
-                    60% 0%,
-                    60% 20%,
-                    20% 20%
-                );
-                background-color: #eb7132;
-            }
-
-            .link-three:hover::after {
-                transform: translate(0, 0%) scaleY(1);
-            }
-
-            .link-three::before {
-                content: "";
-                position: absolute;
-                z-index: 2;
-                width: 50%;
-                height: 100%;
-                bottom: 0%;
-                right: 0%;
-                transform: translate(0, 50%) scaleY(0);
-                transition: transform 1s ease;
-                mix-blend-mode: difference;
-                clip-path: polygon(
-                    80% 40%,
-                    0% 40%,
-                    0% 60%,
-                    80% 60%,
-                    80% 100%,
-                    40% 100%,
-                    40% 80%,
-                    80% 80%
-                );
-                background-color: #eb7132;
-            }
-
-            .link-three:hover::before {
-                transform: translate(0%, 0%) scaleY(1);
-            }
-
-            @media (max-width: 1014px){
-
-                .${clase}{
-                    grid-row: ${text === 'tienda'? '2/3' : ''  } ${text === 'depilación femenina'? '1/2' : ''  } ${text === 'belladonna'? '3/4' : ''  };
-                    grid-column: 1/6;
-                    justify-self: center;
-                    align-self: center;
-                    width: 100%;
-                    height: 100%;
-                }
-                
             }
 
         `}</style>

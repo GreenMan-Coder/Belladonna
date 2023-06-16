@@ -9,12 +9,18 @@ const JewelryNav = ({row}) => {
         <style jsx>{`
 
             .container {
+                position: sticky;
+                top: 23.2%;
+                z-index: 1;
                 grid-row: ${row};
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
                 align-items: center;
                 height: auto;
+                background-image: linear-gradient(to bottom, #ffe3fe 50%, #f7c0fc);
+                box-sizing: border-box;
+                padding-bottom: 5px;
             }
             * {
                 margin: 0;

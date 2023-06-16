@@ -1,7 +1,7 @@
 const Tittle = ({row}) => {
     return <div className="container">
 
-            <h1>Joyería Belladonna</h1>
+            <h1>Bisutería Belladonna</h1>
 
         <style jsx>{`
             .container {
@@ -37,7 +37,7 @@ const Tittle = ({row}) => {
                     left: -100%;
                 }
                 to {
-                    left: 5.6%;
+                    left: 0.7%;
                 }
             }
         `}</style>

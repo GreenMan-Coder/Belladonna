@@ -28,6 +28,7 @@ const Footer = () => {
                 flex-direction: column;
                 align-items: center;
                 position: relative;
+                height: 100%;
             }
             h1{
                 position: relative;

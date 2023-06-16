@@ -1,100 +1,92 @@
 import { useState } from "react";
+import Test from "./Test";
 
-const Test2 = ({ items }) => {
-    const [selectedImage, setSelectedImage] = useState(null);
+const bodyZone = [
+    {
+        id: 1,
+        name: "cuerpo completo",
+        price: "$98.000 COP",
+        image: "/img/depilation/fullbody.png",
+    },
+    {
+        id: 2,
+        name: "rostro completo",
+        price: "$45.000 COP",
+        image: "/img/depilation/rostro-completo.png",
+    },
+    {
+        id: 2,
+        name: "bigote",
+        price: "$10.000 COP", 
+        image: "/img/depilation/bigote.png",  
+    },
+    {
+        id: 2,
+        name: "cejas",
+        price: "$15.000 COP",
+        image: "/img/depilation/cejas.png",
+    },
+    {
+        id: 2,
+        name: "mentón",
+        price: "$10.000 COP",
+        image: "/img/depilation/menton.jpg",
+    },
+    {
+        id: 2,
+        name: "axilas",
+        price: "$15.000 COP",
+        image: "/img/depilation/axilas.jpeg",
+    },
+    {
+        id: 2,
+        name: "brazos",
+        price: "$25.000 COP",
+        image: "/img/depilation/brazos.jpeg",
+    },
+    {
+        id: 3,
+        name: "bikini completo (Brasileño)",
+        price: "$45.000 COP",
+        image: "/img/depilation/bikini-completo.jpeg",
+    },
+    {
+        id: 3,
+        name: "bikini parcial",
+        price: "$30.000 COP",
+        image: "/img/depilation/bikini-parcial.png",
+    },
+    {
+        id: 3,
+        name: "glúteos",
+        price: "$30.000 COP",
+        image: "/img/depilation/gluteos.jpeg",
+    },
+    {
+        id: 4,
+        name: "Pierna completa",
+        price: "$45.000 COP",
+        image: "/img/depilation/piernas-completas.jpg",
+    },
+    {
+        id: 4,
+        name: "Media pierna",
+        price: "$30.000 COP",
+        image: "/img/depilation/media-pierna.jpeg",
+    },
+    ]
 
-    const handleImageClick = (image) => {
-        setSelectedImage(image);
-    };
+const Test2 = () => {
 
     return (
         <div className="gallery">
-            {items.map((item) => (
-                <div
-                key={item.id}
-                className="gallery-item"
-                onClick={() => handleImageClick(item.image)}
-                >
-                    <img src={item.image} alt={item.name} />
-                    <div className="gallery-item-name">{item.name}</div>
-                    <div className="gallery-item-price">{item.price}</div>
-                </div>
-            ))}
-            {selectedImage && (
-                <div className="selected-image">
-                    <img src={selectedImage} alt="selected" />
-                    <button onClick={() => setSelectedImage(null)}>Cerrar</button>
-                </div>
-            )}
+            <Test items={bodyZone}/>
 
             <style jsx>{`
             .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            }
-
-            .gallery-item {
-            position: relative;
-            overflow: hidden;
-            cursor: pointer;
-            }
-
-            .gallery-item img {
             width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.3s ease-in-out;
-            }
+            height: 100vh;
 
-            .gallery-item:hover img {
-            transform: scale(1.1);
-            }
-
-            .gallery-item-name {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            padding: 10px;
-            background-color: rgba(0, 0, 0, 0.7);
-            color: white;
-            font-size: 1.2rem;
-            font-weight: bold;
-            text-align: center;
-            }
-
-            .gallery-item-price {
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            padding: 10px;
-            background-color: rgba(255, 255, 255, 0.7);
-            font-size: 1.2rem;
-            font-weight: bold;
-            }
-
-            .selected-image {
-            position: fixed;
-            top: 0;
-            left: 0;
-            bottom: 0;
-            right: 0;
-            background-color: rgba(0, 0, 0, 0.7);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            }
-
-            .selected-image img {
-            max-height: 80%;
-            max-width: 80%;
-            }
-
-            .selected-image button {
-            position: absolute;
-            top: 10px;
-            right: 10px;
             }
             `}</style>
         </div>
