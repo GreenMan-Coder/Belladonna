@@ -1,5 +1,5 @@
 
-const ResourcesCard = ({url, tam, title, text,pos}) => {
+const ResourcesCard = ({url, tam, title, text, pos, top}) => {
 
     return <section className="container">
 
@@ -54,6 +54,7 @@ const ResourcesCard = ({url, tam, title, text,pos}) => {
                 position: absolute;
                 grid-row: 1/2;
                 align-self: end;
+                font-size: 30px;
                 height: auto;
                 color: var(--purple-blanco);
                 z-index: 2;
@@ -70,6 +71,7 @@ const ResourcesCard = ({url, tam, title, text,pos}) => {
                 background: transparent;
             }
             p{
+              padding-top: ${top};
                 z-index: 1;
                 grid-row: 1/2;
                 align-self: ${pos};

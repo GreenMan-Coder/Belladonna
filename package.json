@@ -8,16 +8,27 @@
     "start": "next start",
     "lab": "nodemon pages/api/index.js",
     "init": "node pages/api/index.js",
-    "lint": "next lint"
+    "lint": "next lint",
+    "migrations:generate": "sequelize-cli migration:generate --name",
+    "migrations:run": "sequelize-cli db:migrate",
+    "migrations:revert": "sequelize-cli db:migrate:undo",
+    "migrations:delete": "sequelize-cli db:migrate:undo:all"
   },
   "dependencies": {
+    "@hapi/boom": "^10.0.1",
     "@next/font": "13.0.7",
     "@types/react-dom": "18.0.9",
+    "dotenv": "^16.3.1",
     "eslint-config-next": "^12.0.4",
     "express": "^4.18.2",
+    "joi": "^17.9.2",
+    "mysql2": "^3.4.0",
     "next": "13.0.7",
+    "pg": "^8.11.0",
+    "pg-hstore": "^2.3.4",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "sequelize": "^6.32.1"
   },
   "devDependencies": {
     "@types/node": "18.11.18",
@@ -27,6 +38,7 @@
     "eslint-plugin-prettier": "^4.2.1",
     "nodemon": "^2.0.22",
     "prettier": "^2.8.8",
+    "sequelize-cli": "^6.6.1",
     "typescript": "4.9.4"
   },
   "description": "This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).",

@@ -1,15 +1,23 @@
 const express = require('express');
 const JewelService = require('./../services/jewelService');
+const validatorHandler = require('./../middlewares/validatorHandler');
+const {createProductSchema, updateProductSchema, getProductSchema} = require('./../schemas/productSchema');
 
 const router = express.Router();
 const service = new JewelService();
 
 //GET
-router.get('/', (req, res) =>{
-  const jewelry = service.create();
-  res.json(jewelry);
+router.get('/', async (req, res) =>{
+  try {
+    const users = await service.find();
+    res.json(users);
+  } catch (error) {
+    next(error)
+  }
 });
-router.get('/:id', (req, res) =>{
+
+//ValidatorHandler to run a validation
+router.get('/:id', validatorHandler(getProductSchema, 'params'),validatorHandler(updateProductSchema, 'body'), async (req, res) =>{
   const { id } = req.params;
 
   if(id === '999'){
@@ -26,7 +34,7 @@ router.get('/:id', (req, res) =>{
 });
 
 //POST
-router.post('/', async (req, res) =>{
+router.post('/', validatorHandler(createProductSchema, 'body'), async (req, res) =>{
   const body = req.body;
   const newProduct = await service.create(body);
   res.status(201).json({

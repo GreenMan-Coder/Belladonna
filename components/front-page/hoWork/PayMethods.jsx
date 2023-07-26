@@ -1,8 +1,8 @@
 const PayMethods = ({image, tam}) => {
     return <section className="container">
-        
+
         <div className="child" title="Método de pago aceptado">
-            
+
         </div>
 
         <style jsx>{`
@@ -24,6 +24,9 @@ const PayMethods = ({image, tam}) => {
                 background-position: center;
                 background-size: ${tam};
                 background-attachment: local;
+            }
+            .child:hover{
+              cursor: grabbing;
             }
         `}</style>
     </section>
