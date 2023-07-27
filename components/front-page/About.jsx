@@ -4,30 +4,22 @@ import Footer from "../footer/Footer"
 const About = () => {
 
     return <section className="container">
-        
-        <div className="space"></div>
-        <div className="post">
-            <Post/>
-        </div>
-        <Footer/>
+      <Post/>
+      <Footer/>
 
-        <style jsx>{`
-            .container {
-                height: 100%;
-                width: 100%;
-                display: flex;
-                flex-direction: column;
-                background-color: var(--tone-purple);
-                font-family: var(--font);
-            }
-            .space{
-                width: 100%;
-                height: 23.3%;
-            }
-            .post{
-                flex-grow: 2;
-            }
-        `}</style>
+      <style jsx>{`
+          .container {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            box-sizing: border-box;
+            margin-top: 10%;
+            background-color: var(--tone-purple);
+            font-family: var(--font);
+            display: grid;
+            grid-template-rows: 1fr 0.25fr;
+          }
+      `}</style>
     </section>
 }
 export default About

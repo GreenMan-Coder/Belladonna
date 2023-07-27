@@ -28,36 +28,36 @@ const Front = () => {
     <About/>
 
         <style jsx>{`
-          .container {
-              position: relative;
-              display: grid;
-              grid-template-columns: 1fr;
-              grid-template-rows: 100vh auto 100vh 50vh 100vh 100vh 100vh;
-              box-sizing: border-box;
-              font-family: var(--font);
-          }
-          .space{
-              grid-row: 4/5;
-              height: 100%;
-              width: 100%;
-              display: flex;
-              flex-direction: column;
-          }
-          .head{
+        .container {
+            position: relative;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 100vh auto 100vh 50vh 100vh 100vh 100vh;
+            box-sizing: border-box;
+            font-family: var(--font);
+        }
+        .space{
+            grid-row: 4/5;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .head{
             grid-row: 2/3;
             width: 100%;
             height: 9em;
-          }
-          .head1{
-              width: 100%;
-              height: 9em;
-          }
-          h1{
-              text-align: center;
-              font-size: 60px;
-              font-weight: 700;
-              color: var(--tone-purple);
-          }
+        }
+        .head1{
+            width: 100%;
+            height: 9em;
+        }
+        h1{
+            text-align: center;
+            font-size: 60px;
+            font-weight: 700;
+            color: var(--tone-purple);
+        }
         `}</style>
     </main>
 }
