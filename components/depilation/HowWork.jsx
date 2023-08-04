@@ -16,7 +16,7 @@ const HowWork = ({left, id}) => {
         left: ${left};
         width: 8%;
         height: 30%;
-        background-color: var(--light-pink);
+        background-color: var(--normal-purple);
         clip-path: polygon(50% 0%, 100% 38.2%, 80.9% 100%, 19.1% 100%, 0% 38.2%);
         transform: rotate(180deg);
         display: grid;
@@ -38,7 +38,7 @@ const HowWork = ({left, id}) => {
         position: relative;
         top: 5%;
         transform: rotate(180deg);
-        fill: var(--light-purple);
+        fill: var(--normal-purple);
       }
     `}</style>
   </div>
