@@ -4,11 +4,11 @@ import Head from 'next/head'
 import Menu from '../components/header/Menu'
 import Logo from '../components/header/Logo'
 import Nav from '../components/depilation/Nav'
-
+import Front from '../components/depilation/Front'
 
 const Depilacion = () => {
 
-  const [cardSelected, SetcardSelected] = useState([]);
+  const [cardSelected, SetcardSelected] = useState(false);
 
   return <section className="container">
     <Head>
@@ -35,7 +35,7 @@ const Depilacion = () => {
     </div>
 
     <div className="wrapper">
-      <DescriptionCard cardSelected={cardSelected}/>
+      {cardSelected ? <DescriptionCard cardSelected={cardSelected}/> : <Front />}
     </div>
 
 
@@ -44,14 +44,14 @@ const Depilacion = () => {
 
     <style jsx>{`
       .container {
-        font-family: 'Karla', sans-serif;
+        font-family: var(--font);
         height: 100vh;
         width: 100%;
         position: relative;
         background-color: var(--purple-blanco);
         display: grid;
         grid-template-columns: 0.3fr 1fr;
-        grid-template-rows: 0.1fr 1fr 0.1fr;
+        grid-template-rows: 0.1fr 1fr;
       }
       header{
         grid-column: 2/3;
@@ -59,7 +59,7 @@ const Depilacion = () => {
       }
       .navegation{
         grid-column: 1/2;
-        grid-row: 1/4;
+        grid-row: 1/3;
         background: var(--prueba);
         display: flex;
         flex-direction: column;
@@ -68,20 +68,20 @@ const Depilacion = () => {
         background-color: var(--light-pink);
       }
       .logo{
-          height: 100%;
-          width: 90%;
-          display: grid;
+        height: 100%;
+        width: 90%;
+        display: grid;
       }
       .menu{
-          height: 100%;
-          width: 90%;
-          display: grid;
+        height: 100%;
+        width: 90%;
+        display: grid;
       }
       .wrapper{
-          grid-column: 2/3;
-          grid-row: 2/3;
-          box-sizing: border-box;
-          display: grid;
+        grid-column: 2/3;
+        grid-row: 2/3;
+        box-sizing: border-box;
+        display: grid;
       }
     `}</style>
   </section>

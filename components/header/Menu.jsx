@@ -14,7 +14,7 @@ const Menu = ({num}) => {
                 </Link>
             </li>
             <li>
-                <Link href="/Services/" legacyBehavior>
+                <Link href="/Depilacion/" legacyBehavior>
                     <a >Depilación</a>
                 </Link>
             </li>
@@ -48,7 +48,7 @@ const Menu = ({num}) => {
                 font-family: var(--font);
                 font-weight: 700;
             }
-            
+
             ul{
                 display: grid;
                 grid-template-columns: auto auto auto auto auto auto;
