@@ -1,175 +1,69 @@
 import Link from "next/link"
+import { useState } from "react"
 
 const Menu = ({num}) => {
-    return <div className="container">
 
-        <div className="nav">
-            <input type="checkbox"/>
-                <span></span>
-                <span></span>
-                {num === 2 ? 
-                    <div className="menu">
-                        <li>
-                            <Link href="/" legacyBehavior>
-                                <a >Inicio</a>
-                            </Link>
-                        </li>
-                        
-                        <li>
-                            <Link href="/Services/" legacyBehavior>
-                                <a >Depilación</a>
-                            </Link>
-                        </li>
+    const [clase, setClase] = useState('container')
 
-                        <li>
-                            <Link href="/Belladonna/" legacyBehavior>
-                                <a >Belladonna</a>
-                            </Link>
-                        </li>
-                    </div> : ''
-                }
+    return <nav className="container">
 
-                {num === 3 ? 
-                    <div className="menu">
-                        <li>
-                            <Link href="/" legacyBehavior>
-                                <a >Inicio</a>
-                            </Link>
-                        </li>
-                        
-                        <li>
-                            <Link href="/Store/" legacyBehavior>
-                                <a >Tienda</a>
-                            </Link>
-                        </li>
-
-                        <li>
-                            <Link href="/Belladonna/" legacyBehavior>
-                                <a >Belladonna</a>
-                            </Link>
-                        </li>
-                    </div> : ''
-                }
-
-                {num === 4 ? 
-                    <div className="menu">
-                        <li>
-                            <Link href="/" legacyBehavior>
-                                <a >Inicio</a>
-                            </Link>
-                        </li>
-                        
-                        <li>
-                            <Link href="/Store/" legacyBehavior>
-                                <a >Tienda</a>
-                            </Link>
-                        </li>
-
-                        <li>
-                            <Link href="/Services/" legacyBehavior>
-                                <a >Depilación</a>
-                            </Link>
-                        </li>
-                    </div> : ''
-                }
-        </div>
+        <ul>
+            <li>
+                <Link href="/" legacyBehavior>
+                    <a >Inicio</a>
+                </Link>
+            </li>
+            <li>
+                <Link href="/Depilacion/" legacyBehavior>
+                    <a >Depilación</a>
+                </Link>
+            </li>
+            <li>
+                <Link href="/Bisuteria/" legacyBehavior>
+                    <a >Bisutería</a>
+                </Link>
+            </li>
+            <li>
+                <Link href="/Nosotros/" legacyBehavior>
+                    <a >Nosotros</a>
+                </Link>
+            </li>
+            <li>
+                <Link href="/Comunidad/" legacyBehavior>
+                    <a >Comunidad</a>
+                </Link>
+            </li>
+            <li>
+                <Link href="/Contacto/" legacyBehavior>
+                    <a >Contacto</a>
+                </Link>
+            </li>
+        </ul>
 
         <style jsx>{`
-            .container {
-                position: fixed;
-                left: 11px;
-                top: 0;
-                z-index: 2;
-                height: 5rem;
-                width: auto;
-                margin: 0;
-                padding: 0;
-                background-color: transparent;
-                }
-
-            .container, .nav, .menu {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-
-            .nav {
+            .container{
                 position: relative;
-                background-color: #fff;
-                padding: 10px;
-                transition: 0.5s;
-                border-radius: 50px;
-                overflow: hidden;
-                box-shadow: 0 8px 15px rgba(0,0,0,.2);
+                width: 100%;
+                height: auto;
+                font-family: var(--font);
+                font-weight: 700;
             }
 
-            .menu {
-                margin: 0;
-                padding: 0;
-                width: 0;
-                overflow: hidden;
-                transition: 0.5s;
+            ul{
+                display: grid;
+                grid-template-columns: auto auto auto auto auto auto;
+                justify-items: center;
             }
-
-            .nav input:checked ~ .menu {
-                width: 300px;
-            }
-
-            .menu li {
+            li{
                 list-style: none;
-                margin: 0 10px;
+                box-sizing: border-box;
             }
-
-            .menu li a {
+            a{
                 text-decoration: none;
-                color: #666;
-                text-transform: uppercase;
-                font-weight: 600;
-                transition: 0.5s;
-                font-size: 15px;
-            }
-
-            .menu li a:hover {
-                color: #161919;
-            }
-
-            .nav input {
-                width: 30px;
-                height: 30px;
-                cursor: pointer;
-                opacity: 0;
-            }
-
-            .nav span {
-                position: absolute;
-                left: 17px;
-                width: 25px;
-                height: 4px;
-                border-radius: 50px;
-                background-color: #666;
-                pointer-events: none;
-                transition: 0.5s;
-            }
-
-            .nav input:checked ~ span {
-                background-color: #f974a1;
-            }
-
-            .nav span:nth-child(2) {
-                transform: translateY(-8px);
-            }
-
-            .nav input:checked ~ span:nth-child(2) {
-                transform: translateY(0) rotate(-45deg);
-            }
-            .nav span:nth-child(3) {
-                transform: translateY(8px);
-            }
-
-            .nav input:checked ~ span:nth-child(3) {
-                transform: translateY(0) rotate(45deg);
+                color: var(--normal-purple);
+                font-size: 20px;
             }
         `}</style>
-    </div>
+    </nav>
 }
 export default Menu
