@@ -27,6 +27,7 @@ const Depilacion = () => {
         <Logo tam="11em"/>
       </div>
       <div className="menu">
+        <Nav pos="" text="inicio" id={5} setcardSelected={SetcardSelected}/>
         <Nav pos="" text="cuerpo completo" id={1} setcardSelected={SetcardSelected}/>
         <Nav pos="" text="superior" id={2} setcardSelected={SetcardSelected}/>
         <Nav pos="" text="bikini" id={3} setcardSelected={SetcardSelected}/>
@@ -35,7 +36,7 @@ const Depilacion = () => {
     </div>
 
     <div className="wrapper">
-      {cardSelected ? <DescriptionCard cardSelected={cardSelected}/> : <Front />}
+      {cardSelected === 5 ? <Front /> : cardSelected ? <DescriptionCard cardSelected={cardSelected}/> : <Front />}
     </div>
 
 
