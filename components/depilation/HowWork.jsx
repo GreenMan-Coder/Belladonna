@@ -1,5 +1,5 @@
-const HowWork = ({left, id}) => {
-  return <div className="container">
+const HowWork = ({left, id, handleMouseEnter, handleMouseLeave, active, children}) => {
+  return <div className="container" onMouseEnter={() => handleMouseEnter(id)} onMouseLeave={handleMouseLeave}>
 
     {id === "1" ? <svg viewBox="0 0 384 512"><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
     :
@@ -16,7 +16,7 @@ const HowWork = ({left, id}) => {
         left: ${left};
         width: 8%;
         height: 30%;
-        background-color: var(--light-pink);
+        background-color: var(--normal-purple);
         clip-path: polygon(50% 0%, 100% 38.2%, 80.9% 100%, 19.1% 100%, 0% 38.2%);
         transform: rotate(180deg);
         display: grid;
@@ -32,13 +32,16 @@ const HowWork = ({left, id}) => {
         background-color: var(--purple-blanco);
         clip-path: polygon(50% 0%, 100% 38.2%, 80.9% 100%, 19.1% 100%, 0% 38.2%);
       }
+      .container:hover{
+        cursor: pointer;
+      }
       svg{
         z-index: 1;
         height: 50%;
         position: relative;
         top: 5%;
         transform: rotate(180deg);
-        fill: var(--light-purple);
+        fill: var(--normal-purple);
       }
     `}</style>
   </div>
