@@ -91,7 +91,7 @@ const Front = () => {
         align-self: start;
         position: relative;
         font-size: 1.5em;
-        color: var(--light-pink);
+        color: var(--tone-pink);
         font-weight: 900;
       }
       .service, .follow, .location{
@@ -100,7 +100,6 @@ const Front = () => {
         align-self: start;
         position: relative;
         font-size: 1.5em;
-        color: var(--normal-purple);
         font-weight: 100;
         text-align: center;
       }

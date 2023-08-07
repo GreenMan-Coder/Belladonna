@@ -1,7 +1,7 @@
 const express = require('express');
 const jewelRouter = require('./jewelRouter');
 const categoriesRouter = require('./categoriesRouter');
-const userRouter = require('./userRouter');
+const userRouter = require('./depilationRouter');
 
 function routerApi(app){
   //Master route to get control of versions
