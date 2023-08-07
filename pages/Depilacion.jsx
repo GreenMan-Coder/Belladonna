@@ -5,6 +5,7 @@ import Menu from '../components/header/Menu'
 import Logo from '../components/header/Logo'
 import Nav from '../components/depilation/Nav'
 import Front from '../components/depilation/Front'
+import About from '../components/front-page/About'
 
 const Depilacion = () => {
 
@@ -39,6 +40,11 @@ const Depilacion = () => {
       {cardSelected === 5 ? <Front /> : cardSelected ? <DescriptionCard cardSelected={cardSelected}/> : <Front />}
     </div>
 
+    <div className="aboutContainer">
+      <About/>
+    </div>
+
+
 
 
 
@@ -46,13 +52,13 @@ const Depilacion = () => {
     <style jsx>{`
       .container {
         font-family: var(--font);
-        height: 100vh;
+        height: 191vh;
         width: 100%;
         position: relative;
         background-color: var(--purple-blanco);
         display: grid;
         grid-template-columns: 0.3fr 1fr;
-        grid-template-rows: 0.1fr 1fr;
+        grid-template-rows: 0.1fr 1fr 1fr auto;
       }
       header{
         grid-column: 2/3;
@@ -83,6 +89,10 @@ const Depilacion = () => {
         grid-row: 2/3;
         box-sizing: border-box;
         display: grid;
+      }
+      .aboutContainer{
+        grid-column: 1/3;
+        grid-row: 3/4;
       }
     `}</style>
   </section>
