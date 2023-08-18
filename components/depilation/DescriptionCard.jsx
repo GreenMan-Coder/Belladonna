@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import Static from "./Static";
 import Galery from "./Galery";
+import { s3 } from '../../aws-config'
+require("dotenv").config();
 
 const bodyZone = [
   {
@@ -81,6 +83,28 @@ const DescriptionCard = ({cardSelected}) => {
   const [services, setServices] = useState([]);
   const [currentImage, setCurrentImage] = useState(0);
 
+  const [imageUrls, setImageUrls] = useState([]);
+
+  useEffect(() => {
+    async function fetchImageUrls(){
+      try {
+          const imageUrl = s3.getSignedUrl('getObject', {
+            Bucket: 'depilation',
+            Key: 'media-pierna.jpeg',
+            Expires: 60 * 5,
+          });
+
+
+
+        setImageUrls(imageUrl);
+      } catch (error) {
+        console.error('Error fetching image URLs:', error);
+      }
+    }
+
+    fetchImageUrls();
+  }, []);
+
   const handleNextImage = () => {
     setCurrentImage((currentImage + 1) % services.length);
   };
@@ -89,69 +113,78 @@ const DescriptionCard = ({cardSelected}) => {
     setCurrentImage(currentImage === 0 ? services.length - 1 : currentImage - 1);
   };
 
-  useEffect(() => {
-    if (cardSelected != 0){
-      let serviceSelected = bodyZone.filter((part) => part.id === cardSelected);
-      setServices(serviceSelected);
-      setCurrentImage(0);
-    }
-  }, [cardSelected]);
+  // useEffect(() => {
+  //   if (cardSelected != 0){
+  //     let serviceSelected = bodyZone.filter((part) => part.id === cardSelected);
+  //     setServices(serviceSelected);
+  //     setCurrentImage(0);
+  //   }
+  // }, [cardSelected]);
 
-  return (<section className="container">
-    {services.length === 1 ?
-      services.map((service, index ) => {
-        return <Static key={index} service={service}/>}) :
-    ''}
+  return <section className="container">
+    <h2>Image Gallery</h2>
+    <div>
+        <img src={imageUrls} alt="" style={{ maxWidth: '300px', margin: '10px' }} />
+      </div>
+  {/* //
+  //
+  //
 
-    {services.length === 6 ?
-      <section className="wrapper">
-        <div className="buttons">
-          <button className="prevButton" onClick={handlePrevImage}>
-          <svg viewBox="0 0 512 512"><path color="#3f0c3a" fill="currentcolor" d="M512 256A256 256 0 1 0 0 256a256 256 0 1 0 512 0zM217.4 376.9L117.5 269.8c-3.5-3.8-5.5-8.7-5.5-13.8s2-10.1 5.5-13.8l99.9-107.1c4.2-4.5 10.1-7.1 16.3-7.1c12.3 0 22.3 10 22.3 22.3l0 57.7 96 0c17.7 0 32 14.3 32 32l0 32c0 17.7-14.3 32-32 32l-96 0 0 57.7c0 12.3-10 22.3-22.3 22.3c-6.2 0-12.1-2.6-16.3-7.1z"/></svg>
-          </button>
-          <button className="nextButton "onClick={handleNextImage}>
-            <svg viewBox="0 0 512 512"><path color="#3f0c3a" fill="currentcolor" d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM294.6 135.1l99.9 107.1c3.5 3.8 5.5 8.7 5.5 13.8s-2 10.1-5.5 13.8L294.6 376.9c-4.2 4.5-10.1 7.1-16.3 7.1C266 384 256 374 256 361.7l0-57.7-96 0c-17.7 0-32-14.3-32-32l0-32c0-17.7 14.3-32 32-32l96 0 0-57.7c0-12.3 10-22.3 22.3-22.3c6.2 0 12.1 2.6 16.3 7.1z"/></svg>
-          </button>
-        </div>
-        <Galery services={services} currentImage={currentImage}/>
-        <h1 className="name">{services[currentImage].name}</h1>
-        <h2 className="price">{services[currentImage].price}</h2>
-        <button className="add">añadir servicio</button>
-      </section> :
-    ''}
-    {services.length === 3 ?
-      <section className="wrapper">
-        <div className="buttons">
-          <button className="prevButton" onClick={handlePrevImage}>
-          <svg viewBox="0 0 512 512"><path color="#3f0c3a" fill="currentcolor" d="M512 256A256 256 0 1 0 0 256a256 256 0 1 0 512 0zM217.4 376.9L117.5 269.8c-3.5-3.8-5.5-8.7-5.5-13.8s2-10.1 5.5-13.8l99.9-107.1c4.2-4.5 10.1-7.1 16.3-7.1c12.3 0 22.3 10 22.3 22.3l0 57.7 96 0c17.7 0 32 14.3 32 32l0 32c0 17.7-14.3 32-32 32l-96 0 0 57.7c0 12.3-10 22.3-22.3 22.3c-6.2 0-12.1-2.6-16.3-7.1z"/></svg>
-          </button>
-          <button className="nextButton "onClick={handleNextImage}>
-            <svg viewBox="0 0 512 512"><path color="#3f0c3a" fill="currentcolor" d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM294.6 135.1l99.9 107.1c3.5 3.8 5.5 8.7 5.5 13.8s-2 10.1-5.5 13.8L294.6 376.9c-4.2 4.5-10.1 7.1-16.3 7.1C266 384 256 374 256 361.7l0-57.7-96 0c-17.7 0-32-14.3-32-32l0-32c0-17.7 14.3-32 32-32l96 0 0-57.7c0-12.3 10-22.3 22.3-22.3c6.2 0 12.1 2.6 16.3 7.1z"/></svg>
-          </button>
-        </div>
-        <Galery services={services} currentImage={currentImage}/>
-        <h1 className="name">{services[currentImage].name}</h1>
-        <h2 className="price">{services[currentImage].price}</h2>
-        <button className="add">añadir servicio</button>
-      </section> :
-    ''}
+  // return (<section className="container"> */}
+  {/* {services.length === 1 ? */}
+  {/* //     services.map((service, index ) => {
+  //       return <Static key={index} service={service}/>}) :
+  //   ''}
 
-    {services.length === 2 ?
-      <section className="wrapper">
-          <div className="buttons">
-            <button className="prevButton" onClick={handlePrevImage}>
-            <svg viewBox="0 0 512 512"><path color="#3f0c3a" fill="currentcolor" d="M512 256A256 256 0 1 0 0 256a256 256 0 1 0 512 0zM217.4 376.9L117.5 269.8c-3.5-3.8-5.5-8.7-5.5-13.8s2-10.1 5.5-13.8l99.9-107.1c4.2-4.5 10.1-7.1 16.3-7.1c12.3 0 22.3 10 22.3 22.3l0 57.7 96 0c17.7 0 32 14.3 32 32l0 32c0 17.7-14.3 32-32 32l-96 0 0 57.7c0 12.3-10 22.3-22.3 22.3c-6.2 0-12.1-2.6-16.3-7.1z"/></svg>
-            </button>
-            <button className="nextButton "onClick={handleNextImage}>
-              <svg viewBox="0 0 512 512"><path color="#3f0c3a" fill="currentcolor" d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM294.6 135.1l99.9 107.1c3.5 3.8 5.5 8.7 5.5 13.8s-2 10.1-5.5 13.8L294.6 376.9c-4.2 4.5-10.1 7.1-16.3 7.1C266 384 256 374 256 361.7l0-57.7-96 0c-17.7 0-32-14.3-32-32l0-32c0-17.7 14.3-32 32-32l96 0 0-57.7c0-12.3 10-22.3 22.3-22.3c6.2 0 12.1 2.6 16.3 7.1z"/></svg>
-            </button>
-        </div>
-        <Galery services={services} currentImage={currentImage}/>
-        <h1 className="name">{services[currentImage].name}</h1>
-        <h2 className="price">{services[currentImage].price}</h2>
-        <button className="add">añadir servicio</button>
-      </section> :
-    ''}
+  //   {services.length === 6 ?
+  //     <section className="wrapper">
+  //       <div className="buttons">
+  //         <button className="prevButton" onClick={handlePrevImage}>
+  //         <svg viewBox="0 0 512 512"><path color="#3f0c3a" fill="currentcolor" d="M512 256A256 256 0 1 0 0 256a256 256 0 1 0 512 0zM217.4 376.9L117.5 269.8c-3.5-3.8-5.5-8.7-5.5-13.8s2-10.1 5.5-13.8l99.9-107.1c4.2-4.5 10.1-7.1 16.3-7.1c12.3 0 22.3 10 22.3 22.3l0 57.7 96 0c17.7 0 32 14.3 32 32l0 32c0 17.7-14.3 32-32 32l-96 0 0 57.7c0 12.3-10 22.3-22.3 22.3c-6.2 0-12.1-2.6-16.3-7.1z"/></svg>
+  //         </button>
+  //         <button className="nextButton "onClick={handleNextImage}>
+  //           <svg viewBox="0 0 512 512"><path color="#3f0c3a" fill="currentcolor" d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM294.6 135.1l99.9 107.1c3.5 3.8 5.5 8.7 5.5 13.8s-2 10.1-5.5 13.8L294.6 376.9c-4.2 4.5-10.1 7.1-16.3 7.1C266 384 256 374 256 361.7l0-57.7-96 0c-17.7 0-32-14.3-32-32l0-32c0-17.7 14.3-32 32-32l96 0 0-57.7c0-12.3 10-22.3 22.3-22.3c6.2 0 12.1 2.6 16.3 7.1z"/></svg>
+  //         </button>
+  //       </div>
+  //       <Galery services={services} currentImage={currentImage}/>
+  //       <h1 className="name">{services[currentImage].name}</h1>
+  //       <h2 className="price">{services[currentImage].price}</h2>
+  //       <button className="add">añadir servicio</button>
+  //     </section> :
+  //   ''}
+  //   {services.length === 3 ?
+  //     <section className="wrapper">
+  //       <div className="buttons">
+  //         <button className="prevButton" onClick={handlePrevImage}>
+  //         <svg viewBox="0 0 512 512"><path color="#3f0c3a" fill="currentcolor" d="M512 256A256 256 0 1 0 0 256a256 256 0 1 0 512 0zM217.4 376.9L117.5 269.8c-3.5-3.8-5.5-8.7-5.5-13.8s2-10.1 5.5-13.8l99.9-107.1c4.2-4.5 10.1-7.1 16.3-7.1c12.3 0 22.3 10 22.3 22.3l0 57.7 96 0c17.7 0 32 14.3 32 32l0 32c0 17.7-14.3 32-32 32l-96 0 0 57.7c0 12.3-10 22.3-22.3 22.3c-6.2 0-12.1-2.6-16.3-7.1z"/></svg>
+  //         </button>
+  //         <button className="nextButton "onClick={handleNextImage}>
+  //           <svg viewBox="0 0 512 512"><path color="#3f0c3a" fill="currentcolor" d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM294.6 135.1l99.9 107.1c3.5 3.8 5.5 8.7 5.5 13.8s-2 10.1-5.5 13.8L294.6 376.9c-4.2 4.5-10.1 7.1-16.3 7.1C266 384 256 374 256 361.7l0-57.7-96 0c-17.7 0-32-14.3-32-32l0-32c0-17.7 14.3-32 32-32l96 0 0-57.7c0-12.3 10-22.3 22.3-22.3c6.2 0 12.1 2.6 16.3 7.1z"/></svg>
+  //         </button>
+  //       </div>
+  //       <Galery services={services} currentImage={currentImage}/>
+  //       <h1 className="name">{services[currentImage].name}</h1>
+  //       <h2 className="price">{services[currentImage].price}</h2>
+  //       <button className="add">añadir servicio</button>
+  //     </section> :
+  //   ''}
+
+  //   {services.length === 2 ?
+  //     <section className="wrapper">
+  //         <div className="buttons">
+  //           <button className="prevButton" onClick={handlePrevImage}>
+  //           <svg viewBox="0 0 512 512"><path color="#3f0c3a" fill="currentcolor" d="M512 256A256 256 0 1 0 0 256a256 256 0 1 0 512 0zM217.4 376.9L117.5 269.8c-3.5-3.8-5.5-8.7-5.5-13.8s2-10.1 5.5-13.8l99.9-107.1c4.2-4.5 10.1-7.1 16.3-7.1c12.3 0 22.3 10 22.3 22.3l0 57.7 96 0c17.7 0 32 14.3 32 32l0 32c0 17.7-14.3 32-32 32l-96 0 0 57.7c0 12.3-10 22.3-22.3 22.3c-6.2 0-12.1-2.6-16.3-7.1z"/></svg>
+  //           </button>
+  //           <button className="nextButton "onClick={handleNextImage}>
+  //             <svg viewBox="0 0 512 512"><path color="#3f0c3a" fill="currentcolor" d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM294.6 135.1l99.9 107.1c3.5 3.8 5.5 8.7 5.5 13.8s-2 10.1-5.5 13.8L294.6 376.9c-4.2 4.5-10.1 7.1-16.3 7.1C266 384 256 374 256 361.7l0-57.7-96 0c-17.7 0-32-14.3-32-32l0-32c0-17.7 14.3-32 32-32l96 0 0-57.7c0-12.3 10-22.3 22.3-22.3c6.2 0 12.1 2.6 16.3 7.1z"/></svg>
+  //           </button>
+  //       </div>
+  //       <Galery services={services} currentImage={currentImage}/>
+  //       <h1 className="name">{services[currentImage].name}</h1>
+  //       <h2 className="price">{services[currentImage].price}</h2>
+  //       <button className="add">añadir servicio</button>
+  //     </section> :
+    // ''} */}
 
     <style jsx>{`
       .container {
@@ -263,7 +296,6 @@ const DescriptionCard = ({cardSelected}) => {
       }
     `}</style>
   </section>
-  );
 };
 
 export default DescriptionCard;
