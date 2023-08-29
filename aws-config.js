@@ -3,8 +3,8 @@ require("dotenv").config();
 const AWS = require("aws-sdk");
 
 AWS.config.update({
-  accessKeyId: 'AKIAZ7EIG4J4BQMDQC7A',
-  secretAccessKey: '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',
+  accessKeyId: 'AKIAZ7EIG4J4AIJ3DXUC',
+  secretAccessKey: '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',
   region: 'us-east-1',
 });
 
