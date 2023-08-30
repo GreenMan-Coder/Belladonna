@@ -1,46 +1,38 @@
 const Tittle = ({row}) => {
-    return <div className="container">
+  return <div className="container">
+    <h1>Bisutería y Joyería</h1>
 
-            <h1>Bisutería Belladonna</h1>
+    <style jsx>{`
+      .container {
+        grid-row: ${row};
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        box-sizing: border-box;
+        position: sticky;
+        top: 23.5%;
+      }
+      h1{
+        position: relative;
+        margin: 0;
+        margin: 0 5px 0.5em 5px;
+        font-size: 1.9em;
+        font-weight: 400;
+        color: var(--normal-purple);
+        text-align: center;
+        text-transform: uppercase;
+        animation: slideIn 0.5s forwards;
+      }
 
-        <style jsx>{`
-            .container {
-                position: relative;
-                grid-row: ${row};
-                width: 100%;
-                height: 100%;
-                overflow: hidden;
-                box-sizing: border-box;
-            }
-            h1{
-                position: relative;
-                margin: 0;
-                margin: 0.1em 5px;
-                font-size: 6.5em;
-                font-weight: 900;
-                color: #f7c0fc;
-                text-shadow: 
-                    -0.0075em 0.0075em 0 #fff,
-                    0.005em 0.005em 0 #ffc1e1,
-                    0.01em 0.01em 0 #ffa7d5, 
-                    0.015em 0.015em #ef97f7, 
-                    0.02em 0.02em 0 #ef97f7, 
-                    0.025em 0.025em 0 #ef97f7,
-                    0.03em 0.03em 0 #ef97f7,
-                    0.035em 0.035em 0 #ef97f7;
-                animation: slideIn 2s forwards;
-            }
-
-
-            @keyframes slideIn {
-                from {
-                    left: -100%;
-                }
-                to {
-                    left: 0.7%;
-                }
-            }
-        `}</style>
-    </div>
+      @keyframes slideIn {
+        from {
+          top: -100%;
+        }
+        to {
+          top: 0.7%;
+        }
+      }
+    `}</style>
+  </div>
 }
 export default Tittle

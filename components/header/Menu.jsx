@@ -20,7 +20,7 @@ const Menu = ({num}) => {
             </li>
             <li>
                 <Link href="/Bisuteria/" legacyBehavior>
-                    <a >Bisutería</a>
+                    <a>Joyería</a>
                 </Link>
             </li>
             <li>
