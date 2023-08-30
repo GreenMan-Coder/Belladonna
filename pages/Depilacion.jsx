@@ -35,7 +35,6 @@ const Depilacion = () => {
     </div>
     <div className="wrapper">
       {cardSelected === 5 ? <Front /> : cardSelected ? <DescriptionCard cardSelected={cardSelected}/> : <Front />}
-
     </div>
     <div className="aboutContainer">
       <About/>
