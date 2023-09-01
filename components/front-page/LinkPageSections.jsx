@@ -8,15 +8,12 @@ const LinkPageSections = ({href, clase, text, numberLink, col}) => {
                     <a className={numberLink}>&bull; {text} &bull;</a>
             </Link>
         </div>
-
         <style jsx>{`
-
             .${clase}{
                 background: transparent;
                 height: 100%;
                 grid-column: ${col};
             }
-
             .link-container {
                 display: flex;
                 flex-direction: column;
@@ -26,15 +23,13 @@ const LinkPageSections = ({href, clase, text, numberLink, col}) => {
                 position: relative;
                 z-index: 0;
             }
-
             .${numberLink}{
                 font-family: 'Karla', sans-serif;
-                font-size: 3rem;
+                font-size: 1.3rem;
                 text-align: center;
                 text-decoration: none;
-                font-weight: 700;
+                font-weight: 400;
             }
-
             .link-one {
                 color: var(--normal-purple);
                 transition: color 1s cubic-bezier(0.32, 0, 0.67, 0);
@@ -52,7 +47,7 @@ const LinkPageSections = ({href, clase, text, numberLink, col}) => {
                 height: 100%;
                 top: 0;
                 right: 0;
-                background-color: var(--dark-purple);
+                background-color: var(--light-purple);
                 clip-path: circle(0% at 50% calc(50%));
                 transition: clip-path 1s cubic-bezier(0.65, 0, 0.35, 1);
             }
@@ -119,7 +114,7 @@ const LinkPageSections = ({href, clase, text, numberLink, col}) => {
                     100% 100%,
                     0% 110%
                 );
-                background-color: var(--dark-purple);
+                background-color: var(--light-purple);
                 transition: clip-path 1s cubic-bezier(0.25, 1, 0.5, 1);
             }
             .link-two:hover::before {
@@ -144,7 +139,7 @@ const LinkPageSections = ({href, clase, text, numberLink, col}) => {
                 right: 50%;
                 transform: translate(50%, -50%) rotate(0deg) scale(0);
                 transition: transform 1s ease;
-                background-color: var(--dark-purple);
+                background-color: var(--normal-purple);
             }
             .link-two:hover::after {
                 transform: translate(50%, -50%) rotate(135deg) scale(1);

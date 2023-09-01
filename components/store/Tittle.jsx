@@ -1,6 +1,6 @@
 const Tittle = ({row}) => {
   return <div className="container">
-    <h1>Bisutería y Joyería</h1>
+    <h1>Joyería</h1>
 
     <style jsx>{`
       .container {

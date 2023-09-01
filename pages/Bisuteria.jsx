@@ -1,6 +1,7 @@
 import Header from '../components/header/Header'
 import BuySteps from "../components/store/BuySteps"
 import Jewelry from "../components/store/Jewelry"
+import Trunk from "../components/front-page/Trunk"
 import Tittle from "../components/store/Tittle"
 import FrontJewelry from '../components/store/FrontJewelry'
 import { useState } from 'react'
@@ -11,8 +12,9 @@ const Bisuteria = () => {
     <Header row="1/2" color="--purple-blanco"/>
     <Tittle row="2/3"/>
     <FrontJewelry row="3/4"/>
-    <Jewelry row="2/3"/>
+    <Trunk row="4/5"/>
     {/*
+      <Jewelry row="2/3"/>
       <BuySteps row="4/5"/>
       */}
     <style jsx>{`

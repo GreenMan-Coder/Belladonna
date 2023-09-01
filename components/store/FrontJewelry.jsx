@@ -2,10 +2,9 @@ const FrontJewelry = ({row}) => {
   return <div className="container">
     <div className="post">
       <h1 className="iron">Joyas Belladonna</h1>
-      <h4>descubre la colección</h4>
+      <h4>Descubre la colección</h4>
       <div className="span"></div>
     </div>
-    TRUNK EN LA PARTE DE ABAJO NO? OSEA PARA QUE ELIJAN ENTRE ORO PLATA Y ACERO
     <style jsx>{`
         .container {
           grid-row: ${row};
@@ -15,10 +14,25 @@ const FrontJewelry = ({row}) => {
           grid-template-rows: 1fr;
           justify-items: center;
           align-items: center;
-          background-color: var(--light-purple);
+          background-image: url('/img/joyaport.png');
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: 0px -110px;
+          background-attachment: fixed;
           box-sizing: border-box;
           border-radius: 3px;
           position: relative;
+        }
+        .container::before{
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          border-radius: 3px;
+          background-color: var(--light-purple);
+          opacity: 0.2;
         }
         *{
           margin: 0;
@@ -51,6 +65,7 @@ const FrontJewelry = ({row}) => {
           text-align: center;
           font-weight: 400;
           font-size: 3em;
+          color: var(--dark-purple);
           text-transform: capitalize;
           box-sizing: border-box;
           margin-bottom: 3%;
@@ -62,6 +77,7 @@ const FrontJewelry = ({row}) => {
           justify-self: center;
           position: relative;
           top: 15%;
+          color: var(--dark-purple);
         }
         .span{
           grid-row: 1/2;
