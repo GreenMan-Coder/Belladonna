@@ -1,7 +1,6 @@
 const express = require('express');
-const jewelRouter = require('./jewelRouter');
+const bisuRouter = require('./bisuRouter');
 const categoriesRouter = require('./categoriesRouter');
-const userRouter = require('./depilationRouter');
 
 function routerApi(app){
   //Master route to get control of versions
@@ -9,9 +8,8 @@ function routerApi(app){
   app.use('/api/v1', router);
 
   //Routing
-  router.use('/jewelry', jewelRouter);
+  router.use('/bisuteria', bisuRouter);
   router.use('/categories', categoriesRouter);
-  router.use('/users', userRouter);
 }
 
 module.exports = routerApi;

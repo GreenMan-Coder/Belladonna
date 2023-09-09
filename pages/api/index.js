@@ -1,9 +1,5 @@
 const express = require('express');
 const routerApi = require('./routes');
-const { send } = require("micro");
-const AWS = require("../aws-config.js");
-
-// const { logErrors, errorHandler, boomErrorHandler, ormErrorHandler } = require('./middlewares/errorHandler')
 
 const app = express();
 const port = 8000;
@@ -25,6 +21,6 @@ routerApi(app);
 // app.use(boomErrorHandler);
 // app.use(errorHandler);
 
-// app.listen(port, () =>{
-//   //console.log("sisas parce! mi port" + port);
-// })
+app.listen(port, () =>{
+  console.log("Puerto: " + port);
+})

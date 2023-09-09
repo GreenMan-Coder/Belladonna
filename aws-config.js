@@ -1,5 +1,4 @@
 require("dotenv").config();
-
 const AWS = require("aws-sdk");
 
 AWS.config.update({
@@ -10,7 +9,7 @@ AWS.config.update({
 
 const s3 = new AWS.S3();
 
-const dynamodb = new AWS.DynamoDB();
+const dynamodb = new AWS.DynamoDB.DocumentClient();
 
 module.exports = {
   s3,
