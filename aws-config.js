@@ -10,7 +10,10 @@ AWS.config.update({
 
 const s3 = new AWS.S3();
 
+const dynamodb = new AWS.DynamoDB();
+
 module.exports = {
   s3,
   AWS,
+  dynamodb,
 };

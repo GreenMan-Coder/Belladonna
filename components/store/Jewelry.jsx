@@ -17,8 +17,8 @@ const bodyZone = [
     {
         id: 2,
         name: "bigote",
-        price: "$10.000 COP", 
-        image: "/img/depilation/bigote.png",  
+        price: "$10.000 COP",
+        image: "/img/depilation/bigote.png",
     },
     {
         id: 2,
@@ -77,13 +77,13 @@ const bodyZone = [
     ]
 
 const Jewelry = ({row}) => {
-    
-    
+
+
     return <section className="container">
 
         <h1>Joyas</h1>
         <GaleryOroPlata items={bodyZone}/>
-        
+
         <style jsx>{`
             .container {
                 width: 100%;
