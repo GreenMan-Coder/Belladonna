@@ -10,14 +10,11 @@ class bisuService{
 
   async generate(){
     try {
-      const params = {
-        TableName: 'Jewelry'
-      };
-      const data = await dynamodb.query(params).promise();
-      console.log("data: ", data);
-      return data.Items;
+      const params = {TableName: 'Jewelry'};
+      const data = await dynamodb.scan(params).promise();
+      return data;
     } catch (error) {
-      console.error('Error al obtener los productos:', error);
+      console.error('Error al obtener las joyas:', error);
     }
   }
 

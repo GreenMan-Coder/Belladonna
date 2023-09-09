@@ -7,7 +7,7 @@ const service = new BisuService();
 
 //GET
 router.get('/', async (req, res) =>{
-  const bisuteria = service.generate();
+  const bisuteria = await service.generate();
   res.json(bisuteria);
 });
 

@@ -19,7 +19,7 @@ const Bisuteria = () => {
     <LinkPageSections setHref={setHref} clase="background-one" text="oro plata" numberLink="link-two" col="1/2"/>
     <LinkPageSections setHref={setHref} clase="background-two" text="bisutería" numberLink="link-one" col="2/3"/>
   </div>
-  {href === 'link-two' ? <Jewelry row="5/6"/> : href === 'link-one' ? <BuySteps row="5/6"/> : ''}
+  {href === 'link-two' ? <Jewelry row="5/6"/> : href === 'link-one' ? <Jewelry row="5/6"/> : ''}
   <style jsx>{`
     .container {
       font-family: var(--font);
