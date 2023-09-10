@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import Static from "./Static";
-import Galery from "./Galery";
 import { s3 } from '../../aws-config'
 import BodyZone from '../depilation/business/BodyZone';
 require("dotenv").config();
@@ -108,7 +107,7 @@ const DescriptionCard = ({cardSelected}) => {
             const url = s3.getSignedUrl('getObject', {
               Bucket: bucketName,
               Key: matchingImage.Key,
-              Expires: 60 * 5,
+              Expires: 60 * 10,
             });
             return { ...obj, image: url };
           };

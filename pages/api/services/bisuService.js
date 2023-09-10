@@ -12,7 +12,7 @@ class bisuService{
     try {
       const params = {TableName: 'Jewelry'};
       const data = await dynamodb.scan(params).promise();
-      return data;
+      return data.Items;
     } catch (error) {
       console.error('Error al obtener las joyas:', error);
     }
