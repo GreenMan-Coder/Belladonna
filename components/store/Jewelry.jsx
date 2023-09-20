@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import GaleryBisuteria from "./GaleryBisuteria"
+import Galery from "./Galery"
 
 const Jewelry = ({row}) => {
   const [jewelry, setJewelry] = useState([]);
@@ -10,11 +10,10 @@ const Jewelry = ({row}) => {
       .then((data) => setJewelry(data));
   }, []);
 
-
     return <section className="container">
 
         <h1>Joyas</h1>
-        <GaleryBisuteria items={jewelry}/>
+        <Galery items={jewelry}/>
 
         <style jsx>{`
             .container {

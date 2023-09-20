@@ -2,7 +2,7 @@ const FrontJewelry = ({row}) => {
   return <div className="container">
     <div className="post">
       <h1 className="iron">Joyas Belladonna</h1>
-      <h4>Descubre la colección</h4>
+      <h4>Descubre nuestra colección</h4>
       <div className="span"></div>
     </div>
     <style jsx>{`

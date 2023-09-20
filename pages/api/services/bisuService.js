@@ -1,6 +1,7 @@
 require("dotenv").config();
 const aws = require("../../../aws-config");
 const dynamodb = aws.dynamodb;
+const s3 = aws.s3;
 
 class bisuService{
 
@@ -10,9 +11,31 @@ class bisuService{
 
   async generate(){
     try {
-      const params = {TableName: 'Jewelry'};
+      const keyValue = 'bisu';
+      const params = {TableName: 'Jewelry', FilterExpression: 'category = :value', ExpressionAttributeValues: {':value': keyValue,},};
       const data = await dynamodb.scan(params).promise();
-      return data.Items;
+      const paramS3 = {Bucket: 'belladonna-store'};
+      const objects = await s3.listObjectsV2(paramS3).promise();
+      const imageUrls = objects.Contents.map((object) => {
+        const url = `https://${paramS3.Bucket}.s3.amazonaws.com/${object.Key}`;
+        const name = object.Key;
+        return { url, name };
+      });
+      function matchingObject(){
+        const dataWithUrl = data.Items.map((object) => {
+          const urlImage = imageUrls.find((obj) => {
+            if (obj.url.includes(object.image)){
+              return { url: obj.url, jewelID: obj.jewelID };
+            }else{
+              console.log("error");
+            };
+          });
+        return { ...object, imagenUrl: urlImage };
+        });
+        return dataWithUrl;
+      }
+      const dataWithUrl = matchingObject();
+      return dataWithUrl;
     } catch (error) {
       console.error('Error al obtener las joyas:', error);
     }

@@ -13,13 +13,12 @@ const Bisuteria = () => {
 
   return <section className="container">
   <Header row="1/2" color="--purple-blanco"/>
-  <Tittle row="2/3"/>
-  <FrontJewelry row="3/4"/>
+  <FrontJewelry row="2/3"/>
   <div className="trunk">
     <LinkPageSections setHref={setHref} clase="background-one" text="oro plata" numberLink="link-two" col="1/2"/>
     <LinkPageSections setHref={setHref} clase="background-two" text="bisutería" numberLink="link-one" col="2/3"/>
   </div>
-  {href === 'link-two' ? <Jewelry row="5/6"/> : href === 'link-one' ? <Jewelry row="5/6"/> : ''}
+  {href === 'link-two' ? <Jewelry row="4/5"/> : href === 'link-one' ? <Jewelry row="4/5"/> : ''}
   <style jsx>{`
     .container {
       font-family: var(--font);
@@ -28,12 +27,12 @@ const Bisuteria = () => {
       -webkit-box-sizing: border-box;
       box-sizing: border-box;
       display: grid;
-      grid-template-rows: auto 1fr auto auto auto;
+      grid-template-rows: auto auto auto auto;
       grid-template-columns: 1fr;
     }
     .trunk{
       margin: 0;
-      grid-row: 4/5;
+      grid-row: 3/4;
       height: 20vh;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
