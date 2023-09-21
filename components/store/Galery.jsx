@@ -2,49 +2,22 @@ import { useEffect, useState } from "react"
 require("dotenv").config();
 
 const Gallery = ({items}) => {
-  const [modalOpen, setModalOpen] = useState(false);
-  const [selectedItem, setSelectedItem] = useState(null);
-
-  const openModal = (item) => {
-    setSelectedItem(item);
-    setModalOpen(true);
-  };
-
-  const closeModal = () => {
-    setSelectedItem(null);
-    setModalOpen(false);
-  };
 
   return (
     <div className="gallery">
       {items.map((item) => (
-        <div key={item.jewelID} className="item" onClick={() => openModal(item)} // Abre el modal al hacer clic en una imagen.
-        >
+        <div key={item.jewelID} className="item">
           <img src={item.imagenUrl.url} alt={item.image} />
           <h3>{item.name}</h3>
         </div>
       ))}
-      {modalOpen && (
-        <div className="modal">
-          <div className="modal-content">
-            <span className="close-button" onClick={closeModal}>
-              &times;
-            </span>
-            {selectedItem && (
-              <div>
-                <img src={selectedItem.image} alt={selectedItem.name} />
-                <h3>{selectedItem.name}</h3>
-                <p>{selectedItem.description}</p>
-              </div>
-            )}
-          </div>
-        </div>
-      )}
       <style jsx>{`
         .gallery {
           display: flex;
           flex-wrap: wrap;
           justify-content: center;
+          box-sizing: border-box;
+          padding-bottom: 1.2%;
         }
         .item {
           position: relative;
@@ -52,18 +25,31 @@ const Gallery = ({items}) => {
           overflow: hidden;
           cursor: pointer;
           transition: transform 0.3s, box-shadow 0.3s;
-          width: 30%;
+          width: 20%;
           height: auto;
           display: grid;
+          grid-template-rows: 1fr 0.1fr;
           align-items: start;
           justify-items: center;
           border-radius: 5px;
         }
-
         .item img {
           width: 100%;
-          height: auto;
+          height: 100%;
           transition: transform 0.3s ease;
+        }
+        .item h3{
+          align-self: end;
+          text-align: center;
+          text-transform: capitalize;
+          box-sizing: border-box;
+          margin: 0;
+          height: 100%;
+          width: 100%;
+          background-color: var(--light-purple);
+          font-weight: 400;
+          font-size: 1.08rem;
+          color: var(--tone-purple);
         }
 
         /* Efecto de zoom al hacer hover */
