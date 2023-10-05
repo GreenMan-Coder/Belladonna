@@ -27,7 +27,7 @@ class bisuService{
             if (obj.url.includes(object.image)){
               return { url: obj.url, jewelID: obj.jewelID };
             }else{
-              console.log("error");
+              console.log("Buscando");
             };
           });
         return { ...object, imagenUrl: urlImage };
