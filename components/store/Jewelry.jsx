@@ -1,34 +1,63 @@
 import { useEffect, useState } from "react";
 import Galery from "./Galery"
 
-const Jewelry = ({row}) => {
+const Jewelry = ({name}) => {
   const [jewelry, setJewelry] = useState([]);
-
+  const [bisuteria, setBisuteria] = useState([])
+  const [identification, setIdentification] = useState(0)
   useEffect(() => {
-    fetch('http://localhost:8000/api/v1/bisuteria')
-      .then((response) => response.json())
-      .then((data) => setJewelry(data));
-  }, []);
-
+    if (name === "joyeria") {
+      fetch("http://localhost:8000/api/v1/joyeria/goldSilver")
+        .then((response) => response.json())
+        .then((data) => {
+          setJewelry(data);
+        })
+    } else {
+      fetch("http://localhost:8000/api/v1/joyeria/")
+        .then((response) => response.json())
+        .then((data) => setBisuteria(data));
+    }
+  }, [name]);
+  const handleClick = (num) =>{
+    setIdentification(num);
+  };
+  const filterJewelryByType = (type) =>{
+    if (name === "joyeria") {
+      return jewelry.filter((item) => item.type === type);
+    }else{
+      return bisuteria.filter((item) => item.type === type);
+    }
+  }
   return <section className="container">
-
     <div className="head">
-      <h1>Bisuteria</h1>
+      <h1>{name}</h1>
       <nav>
         <ul>
-          <li>anillos</li>
-          <li>pulseras</li>
-          <li>aretes</li>
-          <li>cadenas</li>
+          <li onClick={() => handleClick(1)}>anillos</li>
+          <li onClick={() => handleClick(2)}>pulseras</li>
+          <li onClick={() => handleClick(3)}>aretes</li>
+          <li onClick={() => handleClick(4)}>cadenas</li>
         </ul>
       </nav>
     </div>
-    <Galery items={jewelry}/>
-
+    {name === "link-two" ?
+      <Galery items={identification === 0 ? jewelry :
+        identification === 1 ? filterJewelryByType('anillo') :
+        identification === 2 ? filterJewelryByType('pulsera') :
+        identification === 3 ? filterJewelryByType('arete') :
+        identification === 4 ? filterJewelryByType('cadena') :""}/>
+    :
+      <Galery items={identification === 0 ? bisuteria :
+        identification === 1 ? filterJewelryByType('anillo') :
+        identification === 2 ? filterJewelryByType('pulsera') :
+        identification === 3 ? filterJewelryByType('arete') :
+        identification === 4 ? filterJewelryByType('cadena') :""}/>
+    }
     <style jsx>{`
       .container {
         width: 100%;
         height: 100%;
+        grid-row: 4/5;
       }
       .head{
         height: 7%;
@@ -52,6 +81,7 @@ const Jewelry = ({row}) => {
         left: 2%;
         font-weight: 400;
         font-size: 1.25rem;
+        text-transform: capitalize;
         color: var(--tone-purple);
       }
       .head nav{

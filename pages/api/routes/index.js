@@ -1,5 +1,5 @@
 const express = require('express');
-const bisuRouter = require('./bisuRouter');
+const JewelryRouter = require('./JewelryRouter');
 const categoriesRouter = require('./categoriesRouter');
 
 function routerApi(app){
@@ -8,7 +8,7 @@ function routerApi(app){
   app.use('/api/v1', router);
 
   //Routing
-  router.use('/bisuteria', bisuRouter);
+  router.use('/joyeria', JewelryRouter);
   router.use('/categories', categoriesRouter);
 }
 

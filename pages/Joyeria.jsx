@@ -1,9 +1,8 @@
 import Header from '../components/header/Header'
-import BuySteps from "../components/store/BuySteps"
 import Jewelry from "../components/store/Jewelry"
-import Tittle from "../components/store/Tittle"
 import FrontJewelry from '../components/store/FrontJewelry'
 import LinkPageSections from '../components/front-page/LinkPageSections'
+import About from '../components/front-page/About'
 
 import { useState } from 'react'
 
@@ -15,10 +14,13 @@ const Bisuteria = () => {
   <Header row="1/2" color="--purple-blanco"/>
   <FrontJewelry row="2/3"/>
   <div className="trunk">
-    <LinkPageSections setHref={setHref} clase="background-one" text="oro plata" numberLink="link-two" col="1/2"/>
+    <LinkPageSections setHref={setHref} clase="background-one" text="joyería" numberLink="link-two" col="1/2"/>
     <LinkPageSections setHref={setHref} clase="background-two" text="bisutería" numberLink="link-one" col="2/3"/>
   </div>
-  {href === 'link-two' ? <Jewelry row="4/5"/> : href === 'link-one' ? <Jewelry row="4/5"/> : ''}
+  {href === 'link-two' ? <Jewelry name ="joyeria"/> : href === 'link-one' ? <Jewelry name ="bisutería"/> : ''}
+  <div className="post">
+    <About/>
+  </div>
   <style jsx>{`
     .container {
       font-family: var(--font);
@@ -27,7 +29,7 @@ const Bisuteria = () => {
       -webkit-box-sizing: border-box;
       box-sizing: border-box;
       display: grid;
-      grid-template-rows: auto auto auto auto;
+      grid-template-rows: auto auto auto auto 25%;
       grid-template-columns: 1fr;
     }
     .trunk{
@@ -37,6 +39,9 @@ const Bisuteria = () => {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       text-transform: uppercase;
+    }
+    .post{
+      grid-row: 5/6;
     }
   `}</style>
   </section>

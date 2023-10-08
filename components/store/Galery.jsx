@@ -6,10 +6,10 @@ const Gallery = ({items}) => {
   const [selectedImage, setSelectedImage] = useState(null);
 
   const handleImageClick = (item) =>{
-    setSelectedImage(item);
-  };
+    setSelectedImage(item)
+  }
   const handleCloseModal = () => {
-    setSelectedImage(null);
+    setSelectedImage(null)
   }
   return (
     <div className="gallery">
@@ -18,13 +18,10 @@ const Gallery = ({items}) => {
           <img src={item.imagenUrl.url} alt={item.image} onClick={() => handleImageClick(item)}/>
           <h3>{item.name}</h3>
         </div>
-      ))};
+      ))}
       {selectedImage && (
         <ImageModal imageDetails={selectedImage} onClose={handleCloseModal}/>
-      )};
-
-
-
+      )}
       <style jsx>{`
         .gallery {
           display: flex;
