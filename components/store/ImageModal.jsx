@@ -1,16 +1,31 @@
-const ImageModal = ({ imageDetails, onClose, onAddToCart }) => {
+import { useState } from "react";
+import NumberInput from "./NumberInput";
+
+const ImageModal = ({ productDetails, onClose, addToCart }) => {
+  const [qa, setQa] = useState(0)
+  const handleAddToCart = () => {
+    const productAdded = {
+      product: productDetails,
+      quantity: qa
+    }
+    addToCart(productAdded);
+  };
   return <article className="container">
     <div className="modal-content">
-      <img src={imageDetails.imagenUrl.url} alt={imageDetails.image} />
+      <img src={productDetails.imagenUrl.url} alt={productDetails.image} />
       <div className="wrapper">
         <button className="close-button" onClick={onClose}>
           Cerrar
         </button>
-        <h3>Joya</h3>
-        <h1>{imageDetails.name}</h1>
+        <h3 className="jewel">Joya</h3>
+        <h1>{productDetails.name}</h1>
+        <div className="quantity">
+          <h3>Cantidad</h3>
+          <NumberInput setQa={setQa}/>
+        </div>
         <h4>Precio</h4>
-        <h2>${imageDetails.price} COP</h2>
-        <button className="carshop" onClick={onAddToCart}>
+        <h2>${productDetails.price} COP</h2>
+        <button className="carshop" onClick={handleAddToCart}>
           Agregar a
           <svg viewBox="0 0 576 512"><path fill="#ffe3fe" d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>
         </button>
@@ -56,7 +71,7 @@ const ImageModal = ({ imageDetails, onClose, onAddToCart }) => {
         width: 100%;
         height: 100%;
         display: grid;
-        grid-template-rows: 15% 30% 30% auto;
+        grid-template-rows: 15% 20% 20% 20% auto;
       }
       .close-button {
         grid-row: 1/2;
@@ -66,21 +81,22 @@ const ImageModal = ({ imageDetails, onClose, onAddToCart }) => {
         border: none;
         font-size: 1.3em;
         cursor: pointer;
-        color: var(--light-purple);
+        color: var(--tone-purple);
         width: 25%;
         height: 60%;
         align-self: flex-start;
         justify-self: end;
       }
-
       h3{
-        grid-row: 2/3;
-        grid-column: 1/2;
+        font-size: 1.2em;
+        color: var(--tone-pink);
         align-self: flex-start;
         justify-self: self-start;
+      }
+      .jewel{
         margin: 0 0 0 7%;
-        font-size: 1.2em;
-        color: var(--light-pink);
+        grid-row: 2/3;
+        grid-column: 1/2;
       }
       h1 {
         grid-row: 2/3;
@@ -89,23 +105,34 @@ const ImageModal = ({ imageDetails, onClose, onAddToCart }) => {
         align-self: center;
         margin: 0 0 0 7%;
         color: var(--normal-purple);
-        font-size: 1.8em;
+        font-size: 1.5em;
         text-align: left;
       }
-      h4{
+      .quantity{
         grid-row: 3/4;
+        display: grid;
+        align-items: center;
+        justify-items: center;
+      }
+      .quantity h3{
+        margin-left: 7%;
+        align-self: start;
+      }
+      h4{
+        grid-row: 4/5;
         grid-column: 1/2;
-        align-self: center;
+        align-self: start;
+        position: relative;
+        top: 30%;
         margin: 0 0 0 7%;
         justify-self: start;
-        position: relative;
-        top: 12%;
         font-size: 1.2em;
-        color: var(--light-pink);
+        color: var(--tone-pink);
       }
       h2 {
-        grid-row: 3/4;
+        grid-row: 4/5;
         grid-column: 1/2;
+        position: relative;
         font-size: 1.5em;
         margin: 0 0 0 7%;
         align-self: end;
@@ -121,7 +148,7 @@ const ImageModal = ({ imageDetails, onClose, onAddToCart }) => {
         font-size: 1em;
         width: 25%;
         height: 45%;
-        margin: 0 0 0 7%;
+        margin: 0;
         padding: 0;
         display: flex;
         align-items: center;
@@ -137,7 +164,7 @@ const ImageModal = ({ imageDetails, onClose, onAddToCart }) => {
       }
       .carshop{
         grid-column: 1/2;
-        grid-row: 4/5;
+        grid-row: 5/6;
         justify-self: center;
         align-self: end;
         width: 70%;

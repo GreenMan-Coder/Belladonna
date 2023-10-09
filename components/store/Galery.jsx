@@ -1,16 +1,23 @@
 import { useState } from "react";
 import ImageModal from './ImageModal';
+import CarShop from './CarShop'
 require("dotenv").config();
 
 const Gallery = ({items}) => {
   const [selectedImage, setSelectedImage] = useState(null);
-
+  const [cartItems, setCartItems] = useState([]);
   const handleImageClick = (item) =>{
     setSelectedImage(item)
   }
   const handleCloseModal = () => {
     setSelectedImage(null)
   }
+  const addToCart = (product) => {
+    setCartItems((prevCartItems) => {
+      const newCartItems = [...prevCartItems, product];
+      return newCartItems;
+    });
+  };
   return (
     <div className="gallery">
       {items.map((item) => (
@@ -20,8 +27,9 @@ const Gallery = ({items}) => {
         </div>
       ))}
       {selectedImage && (
-        <ImageModal imageDetails={selectedImage} onClose={handleCloseModal}/>
+        <ImageModal productDetails={selectedImage} onClose={handleCloseModal} addToCart={addToCart}/>
       )}
+      <CarShop items={cartItems}/>
       <style jsx>{`
         .gallery {
           display: flex;

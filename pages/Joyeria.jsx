@@ -3,6 +3,7 @@ import Jewelry from "../components/store/Jewelry"
 import FrontJewelry from '../components/store/FrontJewelry'
 import LinkPageSections from '../components/front-page/LinkPageSections'
 import About from '../components/front-page/About'
+import ButtonStore from '../components/store/ButtonStore'
 
 import { useState } from 'react'
 
@@ -16,6 +17,8 @@ const Bisuteria = () => {
   <div className="trunk">
     <LinkPageSections setHref={setHref} clase="background-one" text="joyería" numberLink="link-two" col="1/2"/>
     <LinkPageSections setHref={setHref} clase="background-two" text="bisutería" numberLink="link-one" col="2/3"/>
+    <ButtonStore side="right" type="shop"/>
+    <ButtonStore side="left" type="whatsapp"/>
   </div>
   {href === 'link-two' ? <Jewelry name ="joyeria"/> : href === 'link-one' ? <Jewelry name ="bisutería"/> : ''}
   <div className="post">
