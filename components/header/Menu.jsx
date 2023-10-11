@@ -19,8 +19,8 @@ const Menu = ({num}) => {
                 </Link>
             </li>
             <li>
-                <Link href="/Bisuteria/" legacyBehavior>
-                    <a >Bisutería</a>
+                <Link href="/Joyeria/" legacyBehavior>
+                    <a>Joyería</a>
                 </Link>
             </li>
             <li>

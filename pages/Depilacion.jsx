@@ -18,11 +18,9 @@ const Depilacion = () => {
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <link rel="icon" href="/favicon.ico" />
     </Head>
-
     <header>
       <Menu/>
     </header>
-
     <div className="navegation">
       <div className="logo">
         <Logo tam="11em"/>
@@ -35,20 +33,12 @@ const Depilacion = () => {
         <Nav pos="" text="inferior" id={4} setcardSelected={SetcardSelected}/>
       </div>
     </div>
-
     <div className="wrapper">
       {cardSelected === 5 ? <Front /> : cardSelected ? <DescriptionCard cardSelected={cardSelected}/> : <Front />}
     </div>
-
     <div className="aboutContainer">
       <About/>
     </div>
-
-
-
-
-
-
     <style jsx>{`
       .container {
         font-family: var(--font);
@@ -89,6 +79,7 @@ const Depilacion = () => {
         grid-row: 2/3;
         box-sizing: border-box;
         display: grid;
+        position: relative;
       }
       .aboutContainer{
         grid-column: 1/3;

@@ -1,11 +1,9 @@
 import Header from "../components/header/Header"
-import Trunk from "../components/front-page/Trunk"
 
 const Services = () => {
     return <article className="container">
 
         <Header row="1/2" color="#ffe3fe"/>
-        <Trunk/>
 
 
         <style jsx>{`
