@@ -1,9 +1,9 @@
 //Components import
 import Header from "../components/header/Header"
-import FrontPage from "../components/depilation/business/frontPage"
+import FrontPage from "../components/depilation/business/FrontPage"
 import Nav from "../components/depilation/business/Nav"
 import Footer from "../components/footer/Footer"
-import CompanyCommit from "../components/depilation/business/Companycommit"
+import CompanyCommit from "../components/depilation/business/CompanyCommit"
 import BelladonnaCommit from "../components/depilation/business/BelladonnaCommit"
 
 //Libraries import
@@ -48,7 +48,7 @@ const Business = () => {
                 grid-template-rows: auto 100vh 20% 25%;
                 font-family: var(--font);
             }
-            
+
             .nav{
                 grid-row: 3/4;
                 display: flex;

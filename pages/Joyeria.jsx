@@ -4,7 +4,7 @@ import FrontJewelry from '../components/store/FrontJewelry'
 import LinkPageSections from '../components/front-page/LinkPageSections'
 import About from '../components/front-page/About'
 import ButtonStore from '../components/store/ButtonStore'
-import CarShop from '../components/store/carShop'
+import CarShop from '../components/store/CarShop'
 
 import { useState } from 'react'
 
