@@ -1,12 +1,12 @@
 const express = require('express');
-const JewelryService = require('../services/JewelryService');
+const JewelryService = require('../../../backend/services/JewelryService');
 
 
 const router = express.Router();
 const service = new JewelryService();
 
 //BISUTERIA
-router.get('/', async (req, res) =>{
+router.get('/Bisuteria', async (req, res) =>{
   const data = await service.generate();
   res.json(data);
 });

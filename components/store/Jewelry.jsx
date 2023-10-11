@@ -1,19 +1,19 @@
 import { useEffect, useState } from "react";
 import Galery from "./Galery"
 
-const Jewelry = ({name}) => {
+const Jewelry = ({name, setProductsAdded}) => {
   const [jewelry, setJewelry] = useState([]);
   const [bisuteria, setBisuteria] = useState([])
   const [identification, setIdentification] = useState(0)
   useEffect(() => {
     if (name === "joyeria") {
-      fetch("http://localhost:8000/api/v1/joyeria/goldSilver")
+      fetch("/api/v1/joyeria/GoldSilver")
         .then((response) => response.json())
         .then((data) => {
           setJewelry(data);
         })
     } else {
-      fetch("http://localhost:8000/api/v1/joyeria/")
+      fetch("/api/v1/joyeria/Bisuteria")
         .then((response) => response.json())
         .then((data) => setBisuteria(data));
     }
@@ -28,6 +28,9 @@ const Jewelry = ({name}) => {
       return bisuteria.filter((item) => item.type === type);
     }
   }
+  const handleAddToCart = (product) => {
+    setProductsAdded(product);
+  };
   return <section className="container">
     <div className="head">
       <h1>{name}</h1>
@@ -41,13 +44,13 @@ const Jewelry = ({name}) => {
       </nav>
     </div>
     {name === "link-two" ?
-      <Galery items={identification === 0 ? jewelry :
+      <Galery handleAddToCart={handleAddToCart} items={identification === 0 ? jewelry :
         identification === 1 ? filterJewelryByType('anillo') :
         identification === 2 ? filterJewelryByType('pulsera') :
         identification === 3 ? filterJewelryByType('arete') :
         identification === 4 ? filterJewelryByType('cadena') :""}/>
     :
-      <Galery items={identification === 0 ? bisuteria :
+      <Galery handleAddToCart={handleAddToCart} items={identification === 0 ? bisuteria :
         identification === 1 ? filterJewelryByType('anillo') :
         identification === 2 ? filterJewelryByType('pulsera') :
         identification === 3 ? filterJewelryByType('arete') :

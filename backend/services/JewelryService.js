@@ -1,5 +1,5 @@
 require("dotenv").config();
-const aws = require("../../../aws-config");
+const aws = require("../../aws-config");
 const dynamodb = aws.dynamodb;
 const s3 = aws.s3;
 
