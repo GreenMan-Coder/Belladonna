@@ -68,7 +68,7 @@ const Jewelry = ({name, setProductsAdded}) => {
         grid-template-columns: 0.5fr 1fr;
         justify-items: start;
         align-items: center;
-        background-color: var(--light-pink);
+        background-color: var(--light-purple);
         border-radius: 5px;
         position: sticky;
         top: 23%;
