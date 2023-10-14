@@ -29,11 +29,6 @@ const Menu = ({num}) => {
                 </Link>
             </li>
             <li>
-                <Link href="/Comunidad/" legacyBehavior>
-                    <a >Comunidad</a>
-                </Link>
-            </li>
-            <li>
                 <Link href="/Contacto/" legacyBehavior>
                     <a >Contacto</a>
                 </Link>
