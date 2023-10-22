@@ -51,7 +51,7 @@ const Menu = ({num}) => {
           color: var(--normal-purple);
           font-size: 20px;
         }
-        @media screen and (max-width: 280px) {
+        @media screen and (max-width: 360px) {
         a{
           font-size: 0.85em;
         }

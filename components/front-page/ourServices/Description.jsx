@@ -69,7 +69,7 @@ const Description = ({sub, title, paragraph, href, pad}) => {
         font-weight: 900;
         color: var(--normal-purple);
       }
-      @media screen and (max-width: 280px) {
+      @media screen and (max-width: 360px) {
           .container{
             align-self: end;
             box-sizing: border-box;

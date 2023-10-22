@@ -19,7 +19,7 @@ const PayMethods = ({image, tam}) => {
         background-size: ${tam};
         background-attachment: local;
       }
-      @media screen and (max-width: 280px) {
+      @media screen and (max-width: 360px) {
         .child{
           width: ${image === "url(/img/front-page/nequi.png)" ? '60%' : '70%'};
           height: ${image === "url(/img/front-page/nequi.png)" ? '100%' : '95%'};
