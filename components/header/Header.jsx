@@ -20,6 +20,12 @@ const Header = ({row,color}) => {
         align-items: center;
         z-index: 10;
       }
+      @media screen and (max-width: 280px) {
+        header{
+          width: 100%;
+          height: 15%;
+        }
+      }
     `}</style>
   </header>
 }

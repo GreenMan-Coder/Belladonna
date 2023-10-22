@@ -3,19 +3,19 @@ import Information from "./Information"
 const Post = () => {
   return <section className="container">
 
-    <h1>Belladonna</h1>
+    <h1>Acerca de Belladonna</h1>
     <div className="info">
-      <Information sub="Nosotros" title="Conócenos" paragraph="Descubre información relevante y exclusiva sobre nuestra empresa y su trayectoria." href="/Belladona"/>
-      <Information sub="Blog" title="Comunidad" paragraph="Explora un mundo de cuidado personal en nuestro blog." href="/Belladona"/>
-      <Information sub="Contacto" title="Comunícate" paragraph="Déjanos correo electrónico o visita nuestros otros canales." href="/Belladona"/>
+      <Information sub="Nosotros" title="Conócenos" paragraph="Descubre información relevante y exclusiva sobre nuestra empresa y su trayectoria." href="/Nosotros" side="15%"/>
+      <Information sub="Contacto" title="Comunícate" paragraph="Déjanos correo electrónico o visita nuestros otros canales." href="/Joyeria" side="5%"/>
     </div>
 
     <style jsx>{`
       .container {
         width: 100%;
         height: 100%;
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-rows: 0.3fr 1fr;
+        justify-items: center;
         align-items: center;
         overflow: hidden;
         box-sizing: border-box;
@@ -23,24 +23,21 @@ const Post = () => {
         margin-top: 3%;
       }
       .info{
-        flex-grow: 2;
-        position: relative;
-        top: 30px;
+        align-self: start;
         width: 100%;
         height: 100%;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         justify-items: center;
+        align-items: center;
         box-sizing: border-box;
-        padding: 0 6em;
       }
       h1{
         flex-grow: 1;
         margin: 0;
         padding: 0;
         position: relative;
-        top: 20px;
+        bottom: 10%;
         text-align: center;
         font-size: 60px;
         font-weight: 700;
