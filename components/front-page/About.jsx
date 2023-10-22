@@ -19,7 +19,7 @@ const About = () => {
       }
       @media screen and (max-width: 280px) {
     .container{
-      border: 1px solid red;
+
     }
     }
     `}</style>
