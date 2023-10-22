@@ -1,5 +1,5 @@
 const SocialNetworks = ({children, marg, tam, href}) => {
-  return <a href={href} target="_blank" className="container">
+  return <a href={href} target="_blank" rel="noreferrer" className="container">
     {children}
     <style jsx>{`
       .container {
