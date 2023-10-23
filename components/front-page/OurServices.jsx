@@ -29,7 +29,7 @@ const OurServices = ({image, row, sub, title, paragraph, href, pad}) => {
           grid-column-gap: 20px;
           box-sizing: border-box;
         }
-        @media screen and (max-width: 360px) {
+        @media screen and (max-width: 390px) {
           .post{
             align-self: center;
             grid-template-columns: 0.7fr 1fr;

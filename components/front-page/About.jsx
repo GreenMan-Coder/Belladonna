@@ -17,7 +17,7 @@ const About = () => {
         display: grid;
         grid-template-rows: 1fr 0.25fr;
       }
-      @media screen and (max-width: 360px) {
+      @media screen and (max-width: 390px) {
     .container{
 
     }
