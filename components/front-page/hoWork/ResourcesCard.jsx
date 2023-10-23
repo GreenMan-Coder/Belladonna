@@ -75,6 +75,7 @@ const ResourcesCard = ({url, tam, title, text, pos, top}) => {
         color: var(--purple-blanco);
         opacity: 0;
         transition: opacity .2s ease-in-out;
+        user-select: none;
       }
       .card-content:hover p{
         opacity: 1;
