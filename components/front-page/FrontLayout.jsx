@@ -61,44 +61,49 @@ const FrontLayout = ({row}) => {
       }
       @media screen and (max-width: 415px) {
         .container{
-          background-position: 5em 100%;
-          background-size: 100%;
+          background-position: 20% 100%;
+          background-size: 150%;
           display: grid;
           justify-items: center;
           align-items: center;
-        }
-        h1{
-          font-size: 3.7em;
-          justify-self: center;
-          align-self: start;
         }
         hgroup{
           margin: 0;
           left: 0;
           height: 60%;
           display: grid;
-          justify-items: start;
-          align-items: center;
+          grid-template-rows: 0.4fr 1fr;
+        }
+        h1{
+          grid-row: 2/3;
+          grid-column: 1/2;
+          font-size: 5.5em;
+          justify-self: center;
+          align-self: start;
         }
         span{
           opacity: 0.7;
         }
         h3{
+          grid-row: 1/2;
+          grid-column: 1/2;
           margin: 0;
           align-self: end;
           position: relative;
           left: 4%;
-          font-size: 1.6em;
+          font-size: 3em;
           color: var(--tone-purple);
           opacity: 0.8;
         }
         p{
+          grid-row: 2/3;
+          grid-column: 1/2;
           margin: 0;
-          align-self: start;
+          align-self: center;
           top: 0;
           left: 5%;
           width: 55%;
-          font-size: 1.35em;
+          font-size: 2em;
           color: var(--light-purple);
         }
         p span{

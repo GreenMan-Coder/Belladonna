@@ -76,7 +76,7 @@ const Front = () => {
       @media screen and (max-width: 415px) {
         .container{
           width: 168%;
-          grid-template-rows: 90vh 50vh 86vh 50vh 60vh 60vh 100vh;
+          grid-template-rows: 150vh 50vh 86vh 50vh 60vh 60vh 100vh;
         }
         .title1{
           font-size: 2.6em;
