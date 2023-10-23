@@ -73,7 +73,7 @@ const Front = () => {
         color: var(--normal-purple);
         box-sizing: border-box;
       }
-      @media screen and (max-width: 280px) {
+      @media screen and (max-width: 360px) {
         .container{
           width: 168%;
           grid-template-rows: 90vh 50vh 86vh 50vh 60vh 60vh 100vh;
