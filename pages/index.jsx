@@ -18,7 +18,7 @@ const Front = () => {
     <Header row="1/2" color="--purple-blanco"/>
     <FrontLayout row="1/2"/>
     <h1 className='title1'>¿Cómo trabajamos?</h1>
-    <p>Disfruta de la mejor depilación profesional en Bogotá. Reserva tu cita y vive una experiencia única con nuestro dedicado equipo de expertas. ¡Embárcate en un viaje de cuidado y bienestar!</p>
+    <p>Disfruta de la mejor depilación profesional en Bogotá. ¡Reserva tu cita y vive una experiencia única!</p>
     <HoWork row="3/4"/>
     <h1 className='title2'>Nuestros servicios y joyería</h1>
     <OurServices row="5/6" image="/img/front-page/depilacion.jpeg" sub="Servicio exclusivo para mujeres" title="Depilación con cera" paragraph="Depilación con cera de alta calidad en todas las áreas del cuerpo." href={1} pad="4em"/>
@@ -76,7 +76,7 @@ const Front = () => {
       @media screen and (max-width: 415px) {
         .container{
           width: 168%;
-          grid-template-rows: 150vh 50vh 86vh 50vh 60vh 60vh 100vh;
+          grid-template-rows: 150vh 50vh 86vh 30vh 60vh 60vh 100vh;
         }
         .title1{
           font-size: 3em;
@@ -88,10 +88,9 @@ const Front = () => {
           padding: 0 4.6%;
         }
         .title2{
-          margin: 0;
-          top: 0;
-          text-align: center;
-          font-size: 2.6em;
+          font-size: 3em;
+          align-self: end;
+          bottom: 20%;
         }
       }
     `}</style>

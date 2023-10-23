@@ -69,7 +69,7 @@ const Description = ({sub, title, paragraph, href, pad}) => {
         font-weight: 900;
         color: var(--normal-purple);
       }
-      @media screen and (max-width: 360px) {
+      @media screen and (max-width: 415px) {
           .container{
             align-self: end;
             box-sizing: border-box;
@@ -88,11 +88,12 @@ const Description = ({sub, title, paragraph, href, pad}) => {
             grid-row: 1/2;
             grid-column: 1/2;
             width: 100%;
+            font-size: 1.6em;
           }
           h1{
             grid-row: 2/3;
             grid-column: 1/2;
-            font-size: 3.2em;
+            font-size: 3em;
             height: 100%;
             width: 100%;
             box-sizing: border-box;
@@ -102,9 +103,11 @@ const Description = ({sub, title, paragraph, href, pad}) => {
             grid-column: 1/2;
             box-sizing: border-box;
             margin: 0;
-            align-self: end;
             padding: 0;
             width: 100%;
+            align-self: center;
+            position: relative;
+            top: 24%;
           }
           .jewelInsta{
             grid-row: 2/3;
@@ -117,13 +120,14 @@ const Description = ({sub, title, paragraph, href, pad}) => {
           }
           p{
             margin: 0;
-            font-size: 1.1em;
-            align-self: ${title === "Depilación con cera" ? "end" : "start"};
+            font-size: 1.6em;
+            align-self: ${title === "Depilación con cera" ? "center" : "start"};
           }
           a{
             margin: 0;
             align-self: end;
             justify-self: start;
+            font-size: 1.6em;
           }
         }
     `}</style>

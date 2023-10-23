@@ -23,7 +23,7 @@ const Img = ({image}) => {
           height: 100%;
           object-fit: cover;
         }
-        @media screen and (max-width: 360px) {
+        @media screen and (max-width: 415px) {
           .container{
             justify-self: center;
             width: 95%;
