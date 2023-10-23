@@ -68,16 +68,17 @@ const FrontLayout = ({row}) => {
           align-items: center;
         }
         hgroup{
+          border: 1px solid green;
           margin: 0;
           left: 0;
-          height: 60%;
+          height: 100%;
           display: grid;
           grid-template-rows: 0.4fr 1fr;
         }
         h1{
           grid-row: 2/3;
           grid-column: 1/2;
-          font-size: 5.5em;
+          font-size: 6em;
           justify-self: center;
           align-self: start;
         }
@@ -89,8 +90,6 @@ const FrontLayout = ({row}) => {
           grid-column: 1/2;
           margin: 0;
           align-self: end;
-          position: relative;
-          left: 4%;
           font-size: 3em;
           color: var(--tone-purple);
           opacity: 0.8;
@@ -99,17 +98,21 @@ const FrontLayout = ({row}) => {
           grid-row: 2/3;
           grid-column: 1/2;
           margin: 0;
-          align-self: center;
+          box-sizing: border-box;
+          padding: 3% 0;
+          align-self: end;
           top: 0;
-          left: 5%;
-          width: 55%;
-          font-size: 2em;
+          width: 100%;
+          font-size: 2.3em;
           color: var(--light-purple);
+          background-color: var(--tone-purple);
+          text-align: center;
+          opacity: 0.8;
         }
         p span{
-          opacity: 0.7;
+          opacity: 1;
           font-weight: 700;
-          color: var(--normal-purple);
+          color: var(--light-purple);
         }
       }
     `}</style>
