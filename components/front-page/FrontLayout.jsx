@@ -68,7 +68,6 @@ const FrontLayout = ({row}) => {
           align-items: center;
         }
         hgroup{
-          border: 1px solid green;
           margin: 0;
           left: 0;
           height: 100%;
