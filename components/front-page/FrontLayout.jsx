@@ -59,7 +59,7 @@ const FrontLayout = ({row}) => {
         font-weight: 700;
         color: var(--normal-purple);
       }
-      @media screen and (max-width: 390px) {
+      @media screen and (max-width: 415px) {
         .container{
           background-position: 5em 100%;
           background-size: 100%;

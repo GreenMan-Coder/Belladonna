@@ -39,7 +39,7 @@ const HoWork = ({row}) => {
         display: grid;
         grid-template-rows: 1fr 1fr 1fr 1fr;
       }
-      @media screen and (max-width: 390px) {
+      @media screen and (max-width: 415px) {
         .resources{
           grid-template-columns: 1fr;
           grid-template-rows: 1fr 1fr 1fr 0.5fr;
