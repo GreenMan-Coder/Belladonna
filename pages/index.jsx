@@ -79,11 +79,13 @@ const Front = () => {
           grid-template-rows: 150vh 50vh 86vh 50vh 60vh 60vh 100vh;
         }
         .title1{
-          font-size: 2.6em;
+          font-size: 3em;
         }
         p{
-          font-size: 1.3em;
+          font-size: 1.7em;
           top: 20%;
+          box-sizing: border-box;
+          padding: 0 4.6%;
         }
         .title2{
           margin: 0;

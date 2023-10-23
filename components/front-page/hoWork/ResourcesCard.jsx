@@ -81,7 +81,7 @@ const ResourcesCard = ({url, tam, title, text, pos, top}) => {
         transition: opacity .6s ease-in-out;
         box-sizing: border-box;
       }
-      @media screen and (max-width: 360px) {
+      @media screen and (max-width: 415px) {
         .container{
           width: 100%;
           height: 98%;
