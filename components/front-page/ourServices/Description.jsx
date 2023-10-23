@@ -117,6 +117,8 @@ const Description = ({sub, title, paragraph, href, pad}) => {
             align-self: center;
             padding: 0;
             width: 100%;
+            position: relative;
+            bottom: 5%;
           }
           p{
             margin: 0;
