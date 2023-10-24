@@ -29,6 +29,22 @@ const OurServices = ({image, row, sub, title, paragraph, href, pad}) => {
           grid-column-gap: 20px;
           box-sizing: border-box;
         }
+        @media screen and (max-width: 2410px) {
+          .post{
+            position: relative;
+            top: -10%;
+            align-self: center;
+            grid-template-columns: 0.7fr 1fr;
+            grid-column-gap: 0;
+          }
+        }
+        @media screen and (max-width: 540px) {
+          .post{
+            align-self: center;
+            grid-template-columns: 0.7fr 1fr;
+            grid-column-gap: 0;
+          }
+        }
         @media screen and (max-width: 415px) {
           .post{
             align-self: center;

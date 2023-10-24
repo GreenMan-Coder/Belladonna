@@ -24,7 +24,7 @@ body{
   margin-right: var(--right);
   margin-left: var(--left);
 }
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 1333px) {
   body{
     margin-right: 0;
     margin-left: 0;

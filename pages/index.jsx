@@ -20,7 +20,7 @@ const Front = () => {
     <h1 className='title1'>¿Cómo trabajamos?</h1>
     <p>Disfruta de la mejor depilación profesional en Bogotá. ¡Reserva tu cita y vive una experiencia única!</p>
     <HoWork row="3/4"/>
-    <h1 className='title2'>Nuestros servicios y joyería</h1>
+    <h1 className='title2'>Nuestros servicios</h1>
     <OurServices row="5/6" image="/img/front-page/depilacion.jpeg" sub="Servicio exclusivo para mujeres" title="Depilación con cera" paragraph="Depilación con cera de alta calidad en todas las áreas del cuerpo." href={1} pad="4em"/>
     <OurServices row="6/7"image="/img/front-page/joyas.jpeg" sub="Oro, plata y bisutería" title="Joyería" paragraph="¡No te quedes sin conocer nuestra tienda de joyas!." href={2} pad="9em"/>
     <About/>
@@ -73,7 +73,50 @@ const Front = () => {
         color: var(--normal-purple);
         box-sizing: border-box;
       }
+      @media screen and (max-width: 2410px) {
+        .container{
+          grid-template-rows: 100vh 100vh 60vh 80vh 86vh 86vh 100vh;
+        }
+        .title1{
+          bottom: 15%;
+          text-align: center;
+          font-size: 8em;
+        }
+        p{
+          font-size: 2.5em;
+          top: 15%;
+          box-sizing: border-box;
+          padding: 0 4.6%;
+        }
+        .title2{
+          font-size: 8em;
+          bottom: 0;
+        }
+      }
+      @media screen and (max-width: 2014px) {
+
+      }
       @media screen and (max-width: 415px) {
+        .container{
+          width: 168%;
+          grid-template-rows: 150vh 50vh 86vh 30vh 60vh 60vh 100vh;
+        }
+        .title1{
+          font-size: 3em;
+        }
+        p{
+          font-size: 1.7em;
+          top: 20%;
+          box-sizing: border-box;
+          padding: 0 4.6%;
+        }
+        .title2{
+          font-size: 3em;
+          align-self: end;
+          bottom: 20%;
+        }
+      }
+      @media screen and (max-width: 540px) {
         .container{
           width: 168%;
           grid-template-rows: 150vh 50vh 86vh 30vh 60vh 60vh 100vh;

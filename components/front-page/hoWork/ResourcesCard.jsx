@@ -82,6 +82,30 @@ const ResourcesCard = ({url, tam, title, text, pos, top}) => {
         transition: opacity .6s ease-in-out;
         box-sizing: border-box;
       }
+      @media screen and (max-width: 2410px) {
+        h2{
+          font-size: 3.75em;
+        }
+        .card-content:hover h2{
+          transform: translateY(-320%);
+        }
+        p{
+          font-size: 1.8em;
+        }
+        .card-content:hover p{
+          opacity: 1;
+          transition: opacity .6s ease-in-out;
+          box-sizing: border-box;
+        }
+      }
+      @media screen and (max-width: 2037px) {
+        .card-content:hover h2{
+          transform: translateY(-320%);
+        }
+        p{
+          font-size: 1.6em;
+        }
+        }
       @media screen and (max-width: 415px) {
         .container{
           width: 100%;

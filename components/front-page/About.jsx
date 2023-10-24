@@ -11,17 +11,15 @@ const About = () => {
         width: 100%;
         margin: 0;
         box-sizing: border-box;
-        margin-top: 10%;
         background-color: var(--tone-purple);
         font-family: var(--font);
         display: grid;
         grid-template-rows: 1fr 0.25fr;
       }
-      @media screen and (max-width: 415px) {
-    .container{
-
-    }
-    }
+      @media screen and (max-width: 2410px) {
+        .container {
+      }
+      }
     `}</style>
   </section>
 }

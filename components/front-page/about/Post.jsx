@@ -43,6 +43,11 @@ const Post = () => {
         font-weight: 700;
         color: var(--purple-blanco);
       }
+      @media screen and (max-width: 2410px) {
+        h1{
+          font-size: 7.5em;
+      }
+      }
     `}</style>
   </section>
 }

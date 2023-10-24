@@ -18,6 +18,16 @@ const Logo = ({tam, deactivated}) => {
         height: ${tam};
         width: auto;
       }
+      @media screen and (max-width: 2410px) {
+        .container{
+          justify-items: center;
+        }
+        img{
+          height: 12em;
+          width: auto;
+          justify-self: end;
+        }
+      }
       @media screen and (max-width: 360px) {
         img{
           height: 4.5em;

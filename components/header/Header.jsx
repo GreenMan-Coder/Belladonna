@@ -20,7 +20,24 @@ const Header = ({row,color}) => {
         align-items: center;
         z-index: 10;
       }
+      @media screen and (max-width: 2410px) {
+        header{
+          width: 100%;
+          height: 22%;
+        }
+      }
+      @media screen and (max-width: 2332px) {
+        header{
+          height: 22%;
+        }
+      }
       @media screen and (max-width: 415px) {
+        header{
+          width: 100%;
+          height: 15%;
+        }
+      }
+      @media screen and (max-width: 540px) {
         header{
           width: 100%;
           height: 15%;

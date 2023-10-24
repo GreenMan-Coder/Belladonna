@@ -23,6 +23,25 @@ const Img = ({image}) => {
           height: 100%;
           object-fit: cover;
         }
+        @media screen and (max-width: 2410px) {
+          .container{
+            height: 80%;
+            justify-self: center;
+          }
+        }
+        @media screen and (max-width: 2037px) {
+          .container{
+            height: 90%;
+          }
+        }
+        @media screen and (max-width: 540px) {
+          .container{
+            justify-self: center;
+            width: 95%;
+            height: 100%;
+            box-sizing: content-box;
+          }
+        }
         @media screen and (max-width: 415px) {
           .container{
             justify-self: center;

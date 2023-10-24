@@ -74,6 +74,37 @@ const Information = ({sub, title, paragraph, href, side}) => {
         grid-column: 2/3;
         margin-left: 5px;
       }
+      @media screen and (max-width: 2410px) {
+        .container {
+          align-self: flex-start;
+          height: 88%;
+        }
+        hgroup{
+          top: 7%;
+        }
+        h3{
+          font-size: 3.5em;
+        }
+        h2{
+          font-size: 5.5em;
+        }
+        p{
+          font-size: 1.7em;
+          position: relative;
+          top: ${title === "Conócenos" ? '11%' : "0"};
+        }
+        a{
+          font-size: 2em;
+          bottom: 20%;
+        }
+        svg{
+          width: 0.7em;
+          left: 5%;
+          box-sizing: border-box;
+          padding-bottom: 1%;
+          margin: 0;
+        }
+      }
     `}</style>
   </article>
 }
