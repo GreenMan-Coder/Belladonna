@@ -12,8 +12,7 @@ const ResourcesCard = ({url, tam, title, text, pos, top}) => {
         height: 100%;
         background-image: ${url};
         background-repeat: no-repeat;
-        background-position: right;
-        background-size: ${tam};
+        background-size: cover;
         background-attachment: local;
         display: grid;
         justify-items: center;
@@ -98,14 +97,109 @@ const ResourcesCard = ({url, tam, title, text, pos, top}) => {
           box-sizing: border-box;
         }
       }
-      @media screen and (max-width: 2037px) {
-        .card-content:hover h2{
-          transform: translateY(-320%);
+      @media screen and (max-width: 2146px) {
+        p{
+          position: relative;
+          top: ${title === "SEGUIMIENTO" ? "4%" : "0"};
+        }
+      }
+      @media screen and (max-width: 2070px) {
+        h2{
+          font-size: 3.5em;
         }
         p{
+          top: 0;
           font-size: 1.6em;
         }
+      }
+      @media screen and (max-width: 2010px) {
+        .card-content:hover h2{
+          transform: translateY(-350%);
         }
+      }
+      @media screen and (max-width: 1802px) {
+        h2{
+          font-size: 3.3em;
+        }
+        .card-content:hover h2{
+          transform: translateY(-380%);
+        }
+        p{
+          top: ${title === "LOCACIÓN" ? "2%" : "5%"};
+          font-size: 1.5em;
+        }
+      }
+      @media screen and (max-width: 1650px) {
+        h2{
+          font-size: 2.8em;
+        }
+        .card-content:hover h2{
+          transform: translateY(-460%);
+        }
+        p{
+          top: ${title === "DEPILACIÓN" ? "5%" : "8%"};
+          font-size: 1.48em;
+        }
+      }
+      @media screen and (max-width: 1642px) {
+        p{
+          top: ${title === "LOCACIÓN" ? "4%" : ""};
+        }
+      }
+      @media screen and (max-width: 1510px) {
+        h2{
+          font-size: 2.7em;
+        }
+        .card-content:hover h2{
+          transform: translateY(-480%);
+        }
+        p{
+          top: ${title === "DEPILACIÓN" ? "10%" : title === "SEGUIMIENTO" ? "6.5%" : "14%"};
+          text-align: center;
+          padding: 0 5%;
+          font-size: 1.44em;
+        }
+      }
+      @media screen and (max-width: 1314px) {
+        p{
+          top: ${title === "DEPILACIÓN" ? "10%" : title === "SEGUIMIENTO" ? "6.5%" : "10.8%"};
+        }
+      }
+      @media screen and (max-width: 1146px) {
+        h2{
+          font-size: 2.3em;
+        }
+        .card-content:hover h2{
+          transform: translateY(-600%);
+        }
+        p{
+          top: ${title === "SEGUIMIENTO" ? "6%" : "9%"};
+          font-size: 1.38em;
+        }
+      }
+      @media screen and (max-width: 1094px) {
+        h2{
+          font-size: 2.2em;
+        }
+        .card-content:hover h2{
+          transform: translateY(-600%);
+        }
+        p{
+          top: ${title === "SEGUIMIENTO" ? "9%" : "13%"};
+          font-size: 1.2em;
+        }
+      }
+      @media screen and (max-width: 969px) {
+        h2{
+          font-size: 1.85em;
+        }
+        .card-content:hover h2{
+          transform: translateY(-750%);
+        }
+        p{
+          font-size: 1.08em;
+        }
+      }
       @media screen and (max-width: 415px) {
         .container{
           width: 100%;

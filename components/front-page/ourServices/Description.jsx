@@ -154,6 +154,86 @@ const Description = ({sub, title, paragraph, href, pad}) => {
           font-size: 2.6em;
         }
       }
+      @media screen and (max-width: 2005px) {
+        h3{
+          font-size: 2.3em;
+        }
+        h1{
+          font-size: 4.5em;
+        }
+        p{
+          font-size: 2em;
+        }
+        a{
+          font-size: 2.3em;
+          align-self: end;
+        }
+        .nets{
+          position: relative;
+          top: -6%;
+        }
+      }
+      @media screen and (max-width: 1457px) {
+        h3{
+          font-size: 2em;
+        }
+        h1{
+          font-size: 4em;
+        }
+        p{
+          font-size: 1.9em;
+        }
+        a{
+          font-size: 2.3em;
+          align-self: end;
+        }
+        .nets{
+          position: relative;
+          top: -6%;
+        }
+      }
+      @media screen and (max-width: 1094px) {
+        h3{
+          font-size: 1.8em;
+        }
+        h1{
+          font-size: 3.5em;
+        }
+        p{
+          font-size: 1.7em;
+        }
+        a{
+          font-size: 2em;
+          align-self: end;
+        }
+        .nets{
+          position: relative;
+          top: -6%;
+        }
+      }
+      @media screen and (max-width: 956px) {
+        h3{
+          position: relative;
+          top: 20%;
+          font-size: 1.5em;
+        }
+        h1{
+          position: relative;
+          top: 5%;
+          font-size: 3.2em;
+        }
+        p{
+          font-size: 1.7em;
+        }
+        a{
+          font-size: 2em;
+          align-self: end;
+        }
+        .nets{
+          position: relative;
+          top: -14%;
+        }
+      }
       @media screen and (max-width: 415px) {
         .container{
           align-self: end;

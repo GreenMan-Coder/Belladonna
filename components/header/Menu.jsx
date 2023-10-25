@@ -56,6 +56,18 @@ const Menu = ({num}) => {
             font-size: 2.2em;
           }
         }
+        @media screen and (max-width: 1890px) {
+        a{
+          font-size: 1.8em;
+        }
+        @media screen and (max-width: 1426px) {
+        a{
+          font-size: 1.6em;
+        }
+        @media screen and (max-width: 962px) {
+        a{
+          font-size: 1.4em;
+        }
         @media screen and (max-width: 360px) {
         a{
           font-size: 0.85em;

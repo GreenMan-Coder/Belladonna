@@ -93,8 +93,41 @@ const Front = () => {
           bottom: 0;
         }
       }
-      @media screen and (max-width: 2014px) {
-
+      @media screen and (max-width: 1478px) {
+        .title1{
+          font-size: 7em;
+        }
+        p{
+          top: 5%;
+          font-size: 2.35em;
+        }
+        .title2{
+          font-size: 7em;
+        }
+      }
+      @media screen and (max-width: 1126px) {
+        .title1{
+          font-size: 6em;
+        }
+        p{
+          top: 5%;
+          font-size: 2.1em;
+        }
+        .title2{
+          font-size: 6em;
+        }
+      }
+      @media screen and (max-width: 960px) {
+        .title1{
+          font-size: 5.5em;
+        }
+        p{
+          top: 5%;
+          font-size: 2em;
+        }
+        .title2{
+          font-size: 5.5em;
+        }
       }
       @media screen and (max-width: 415px) {
         .container{

@@ -28,6 +28,21 @@ const Logo = ({tam, deactivated}) => {
           justify-self: end;
         }
       }
+      @media screen and (max-width: 1890px) {
+        img{
+          height: 10em;
+        }
+      }
+      @media screen and (max-width: 1426px) {
+        img{
+          height: 9.5em;
+        }
+      }
+      @media screen and (max-width: 962px) {
+        img{
+          height: 9.2em;
+        }
+      }
       @media screen and (max-width: 360px) {
         img{
           height: 4.5em;

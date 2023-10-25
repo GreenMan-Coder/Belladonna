@@ -25,6 +25,24 @@ const PayMethods = ({image, tam}) => {
           height: ${image === "url(/img/front-page/nequi.png)" ? '100%' : '95%'};
         }
       }
+      @media screen and (max-width: 1642px) {
+        .child{
+          width: ${image === "url(/img/front-page/nequi.png)" ? '80%' : '100%'};
+          height: ${image === "url(/img/front-page/nequi.png)" ? '100%' : '100%'};
+        }
+      }
+      @media screen and (max-width: 1314px) {
+        .child{
+          width: ${image === "url(/img/front-page/nequi.png)" ? '73%' : '85%'};
+          height: ${image === "url(/img/front-page/nequi.png)" ? '100%' : '95%'};
+        }
+      }
+      @media screen and (max-width: 1146px) {
+        .child{
+          width: ${image === "url(/img/front-page/nequi.png)" ? '85%' : '98%'};
+          height: 100%;
+        }
+      }
       @media screen and (max-width: 415px) {
         .child{
           width: ${image === "url(/img/front-page/nequi.png)" ? '60%' : '70%'};

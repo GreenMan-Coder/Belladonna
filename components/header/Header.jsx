@@ -26,10 +26,6 @@ const Header = ({row,color}) => {
           height: 22%;
         }
       }
-      @media screen and (max-width: 2332px) {
-        header{
-          height: 22%;
-        }
       }
       @media screen and (max-width: 415px) {
         header{
