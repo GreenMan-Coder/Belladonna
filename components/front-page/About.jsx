@@ -18,6 +18,7 @@ const About = () => {
       }
       @media screen and (max-width: 2410px) {
         .container {
+
       }
       }
     `}</style>

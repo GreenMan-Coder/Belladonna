@@ -65,14 +65,45 @@ const Menu = ({num}) => {
           font-size: 1.6em;
         }
         @media screen and (max-width: 962px) {
-        a{
-          font-size: 1.4em;
+          a{
+            font-size: 1.4em;
+          }
         }
-        @media screen and (max-width: 360px) {
-        a{
-          font-size: 0.85em;
+        @media screen and (max-width: 703px) {
+          a{
+            font-size: 1.25em;
+          }
         }
-      }
+        @media screen and (max-width: 679px) {
+          a{
+            font-size: 1.1em;
+          }
+        }
+        @media screen and (max-width: 615px) {
+          a{
+            font-size: 1em;
+          }
+        }
+        @media screen and (max-width: 550px) {
+          a{
+            font-size: 0.85em;
+          }
+        }
+        @media screen and (max-width: 540px) {
+          a{
+            font-size: 1.5em;
+          }
+        }
+        @media screen and (max-width: 463px) {
+          a{
+            font-size: 1.3em;
+          }
+        }
+        @media screen and (max-width: 391px) {
+          a{
+            font-size: 1em;
+          }
+        }
     `}</style>
   </nav>
 }

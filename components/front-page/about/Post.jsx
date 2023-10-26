@@ -47,6 +47,30 @@ const Post = () => {
         h1{
           font-size: 7.5em;
       }
+      @media screen and (max-width: 1754px) {
+        h1{
+          font-size: 6.5em;
+        }
+      }
+      @media screen and (max-width: 1126px) {
+        h1{
+          font-size: 5em;
+        }
+      }
+      @media screen and (max-width: 850px) {
+        h1{
+          font-size: 4em;
+        }
+      }
+      @media screen and (max-width: 680px) {
+        h1{
+          font-size: 3.5em;
+        }
+      }
+      @media screen and (max-width: 586px) {
+        h1{
+          font-size: 3em;
+        }
       }
     `}</style>
   </section>

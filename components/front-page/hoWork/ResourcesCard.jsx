@@ -200,7 +200,7 @@ const ResourcesCard = ({url, tam, title, text, pos, top}) => {
           font-size: 1.08em;
         }
       }
-      @media screen and (max-width: 415px) {
+      @media screen and (max-width: 910px) {
         .container{
           width: 100%;
           height: 98%;
@@ -215,7 +215,7 @@ const ResourcesCard = ({url, tam, title, text, pos, top}) => {
           border-radius: 10px;
         }
         h2{
-          font-size: 2em;
+          font-size: 2.5em;
         }
         .card-content:hover h2{
           transform: translateY(0%);
@@ -223,15 +223,30 @@ const ResourcesCard = ({url, tam, title, text, pos, top}) => {
           transition: visibility 0.1s ease-in-out;
         }
         p{
-          padding: 2% 2%;
+          top: 0;
           margin: 0;
-          font-size: 1.2em;
+          font-size: 1.5em;
           text-align: justify;
         }
         .card-content:hover p{
           opacity: 1;
           transition: opacity .6s ease-in-out;
           box-sizing: border-box;
+        }
+      }
+      @media screen and (max-width: 810px) {
+        p{
+          font-size: 1.3em;
+        }
+      }
+      @media screen and (max-width: 540px) {
+        p{
+          font-size: 1.6em;
+        }
+      }
+      @media screen and (max-width: 430px) {
+        p{
+          font-size: 1.4em;
         }
       }
     `}</style>

@@ -15,6 +15,16 @@ const SocialNetworks = ({children, marg, tam, href}) => {
           width: ${tam === "7.4%" ? "6.4%" : {tam}};
         }
       }
+      @media screen and (max-width: 1575px) {
+        .container{
+          width: 8%;
+        }
+      }
+      @media screen and (max-width: 790px) {
+        .container{
+          width: 8%;
+        }
+      }
     `}</style>
   </a>
 }

@@ -440,6 +440,69 @@ const FrontLayout = ({row}) => {
           font-size: 1.5em;
         }
       }
+      @media screen and (max-width: 839px) {
+        .container{
+          background-size: 83%;
+          background-position: right -80% bottom 0%;
+        }
+        h1{
+          top: 5%;
+          font-size: 6em;
+        }
+        h3{
+          top: 18%;
+          left: 5%;
+          width: 50%;
+        }
+      }
+      @media screen and (max-width: 775px) {
+        .container{
+          background-size: 90%;
+          background-position: right -140% bottom 0%;
+        }
+        h3{
+          left: 1%;
+        }
+      }
+      @media screen and (max-width: 703px) {
+        .container{
+          background-size: 98%;
+          background-position: right -650% bottom 0%;
+        }
+        h1{
+          top: 0%;
+          font-size: 5.4em;
+        }
+        h3{
+          left: 5%;
+          top: 8%;
+          font-size: 2em;
+        }
+      }
+      @media screen and (max-width: 679px) {
+        h1{
+          font-size: 5.3em;
+        }
+        h3{
+          left: 1%;
+          font-size: 2em;
+        }
+      }
+
+      @media screen and (max-width: 630px) {
+        h1{
+          top: 5%;
+          font-size: 5em;
+        }
+        h3{
+          top: 19%;
+        }
+      }
+      @media screen and (max-width: 590px) {
+        h1{
+          font-size: 4.5em;
+        }
+      }
       @media screen and (max-width: 540px) {
         .container{
           background-position: 8em 100%;
@@ -462,20 +525,11 @@ const FrontLayout = ({row}) => {
           justify-self: center;
           align-self: start;
         }
-        span{
-          opacity: 0.7;
-        }
         h3{
-          grid-row: 1/2;
-          grid-column: 1/2;
-          margin: 0;
-          position: relative;
           left: 1.5%;
-          top: 7%;
-          align-self: end;
+          top: 15%;
           font-size: 4.5em;
-          color: var(--tone-purple);
-          opacity: 0.8;
+          width: 80%;
         }
         p{
           grid-row: 2/3;
@@ -498,6 +552,38 @@ const FrontLayout = ({row}) => {
           color: var(--light-purple);
         }
       }
+      @media screen and (max-width: 515px) {
+        h1{
+          font-size: 6.5em;
+        }
+        h3{
+          font-size: 4em;
+        }
+        p{
+          font-size: 2em;
+          padding-left: 3%;
+          padding-right: 3%;
+        }
+      }
+      @media screen and (max-width: 480px) {
+        .container{
+          background-size: 120%;
+          background-position: 0em 100%;
+        }
+        h1{
+          font-size: 6em;
+          top: 30%;
+        }
+        h3{
+          font-size: 3.5em;
+          top: 80%;
+        }
+        p{
+          font-size: 2em;
+          padding-left: 3%;
+          padding-right: 3%;
+        }
+      }
       @media screen and (max-width: 415px) {
         .container{
           background-position: 20% 100%;
@@ -516,7 +602,7 @@ const FrontLayout = ({row}) => {
         h1{
           grid-row: 2/3;
           grid-column: 1/2;
-          font-size: 6em;
+          font-size: 5em;
           justify-self: center;
           align-self: start;
         }
@@ -528,7 +614,7 @@ const FrontLayout = ({row}) => {
           grid-column: 1/2;
           margin: 0;
           align-self: end;
-          font-size: 3em;
+          font-size: 2.5em;
           color: var(--tone-purple);
           opacity: 0.8;
         }
@@ -541,7 +627,7 @@ const FrontLayout = ({row}) => {
           align-self: end;
           top: 0;
           width: 100%;
-          font-size: 2.3em;
+          font-size: 1.8em;
           color: var(--light-purple);
           background-color: var(--tone-purple);
           text-align: center;

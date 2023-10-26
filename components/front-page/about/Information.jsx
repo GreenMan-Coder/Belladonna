@@ -27,7 +27,7 @@ const Information = ({sub, title, paragraph, href, side}) => {
         position: relative;
         height: 90%;
         display: grid;
-        grid-template-rows: 10% 12% 35% 10%;
+        grid-template-rows: 14% 22% 35% 10%;
       }
       h3{
         grid-row: 1/2;
@@ -103,6 +103,101 @@ const Information = ({sub, title, paragraph, href, side}) => {
           box-sizing: border-box;
           padding-bottom: 1%;
           margin: 0;
+        }
+      }
+      @media screen and (max-width: 1754px) {
+        .container {
+          height: 100%;
+          width: 100%;
+          left: 0;
+          display: grid;
+          justify-items: center;
+          align-items: center;
+          padding: 0 3%;
+        }
+        hgroup{
+          top: 0;
+          height: 100%;
+        }
+        h3{
+          height: 100%;
+          width: 100%;
+          grid-row: 1/2;
+        }
+        h2{
+          height: 100%;
+          width: 100%;
+        }
+        p{
+          height: 100%;
+          top: 0;
+          box-sizing: border-box;
+          padding-top: 8%;
+        }
+      }
+      @media screen and (max-width: 1126px) {
+        h3{
+          font-size: 3em;
+          padding-top: 4%;
+        }
+        h2{
+          font-size: 4.5em;
+          box-sizing: border-box;
+        }
+        p{
+          box-sizing: border-box;
+          padding-top: 5%;
+        }
+        a{
+          font-size: 1.8em;
+          bottom: 30%;
+        }
+      }
+      @media screen and (max-width: 850px) {
+        h3{
+          font-size: 2.3em;
+          padding-top: 0;
+          top: 45%;
+        }
+        h2{
+          font-size: 3.5em;
+          box-sizing: border-box;
+        }
+        p{
+          font-size: 1.5em;
+        }
+        a{
+          font-size: 1.5em;
+        }
+      }
+      @media screen and (max-width: 705px) {
+        h3{
+          font-size: 2em;
+          top: 50%;
+        }
+        h2{
+          font-size: 3em;
+        }
+      }
+      @media screen and (max-width: 586px) {
+        h3{
+          font-size: 1.5em;
+          top: 0;
+        }
+        h2{
+          height: 50%;
+          width: 90%;
+          position: relative;
+          top: -40%;
+          font-size: 2.5em;
+        }
+        p{
+          position: relative;
+          top: -40%;
+          font-size: 1.5em;
+        }
+        a{
+          font-size: 1.5em;
         }
       }
     `}</style>

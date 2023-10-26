@@ -129,44 +129,93 @@ const Front = () => {
           font-size: 5.5em;
         }
       }
-      @media screen and (max-width: 415px) {
+      @media screen and (max-width: 851px) {
+        .title1{
+          font-size: 4.5em;
+        }
+        p{
+          top: 0;
+          font-size: 1.8em;
+        }
+        .title2{
+          font-size: 4.5em;
+        }
+      }
+      @media screen and (max-width: 710px) {
         .container{
-          width: 168%;
-          grid-template-rows: 150vh 50vh 86vh 30vh 60vh 60vh 100vh;
+          grid-template-rows: 93vh 90vh 60vh 80vh 86vh 86vh 100vh;
+        }
+        .title1{
+          bottom: 20%;
+          font-size: 4em;
+        }
+        p{
+          top: 0;
+          font-size: 1.7em;
+        }
+        .title2{
+          font-size: 4em;
+        }
+      }
+      @media screen and (max-width: 630px) {
+        .container{
+          grid-template-rows: 93vh 60vh 60vh 80vh 86vh 86vh 100vh;
         }
         .title1{
           font-size: 3em;
         }
         p{
-          font-size: 1.7em;
-          top: 20%;
-          box-sizing: border-box;
-          padding: 0 4.6%;
+          font-size: 1.6em;
         }
         .title2{
-          font-size: 3em;
-          align-self: end;
-          bottom: 20%;
+          font-size: 3.5em;
+        }
+      }
+      @media screen and (max-width: 590px) {
+        .container{
+          grid-template-rows: 85vh 60vh 60vh 80vh 86vh 86vh 100vh;
         }
       }
       @media screen and (max-width: 540px) {
+        .title1{
+          font-size: 4.5em;
+        }
+        p{
+          top: 5%;
+          font-size: 2em;
+        }
         .container{
           width: 168%;
-          grid-template-rows: 150vh 50vh 86vh 30vh 60vh 60vh 100vh;
+          grid-template-rows: 130vh 60vh 86vh 50vh 60vh 60vh 100vh;
+        }
+        .title2{
+          font-size: 5em;
+          align-self: center;
+          bottom: 0;
+        }
+      }
+      @media screen and (max-width: 480px) {
+        .container{
+          width: 168%;
+          grid-template-rows: 130vh 60vh 86vh 50vh 60vh 60vh 100vh;
+        }
+        .title2{
+          font-size: 4em;
+        }
+      }
+      @media screen and (max-width: 415px) {
+        .container{
+          width: 168%;
+          grid-template-rows: 130vh 60vh 86vh 50vh 60vh 60vh 100vh;
         }
         .title1{
-          font-size: 3em;
+          font-size: 3.8em;
         }
         p{
           font-size: 1.7em;
-          top: 20%;
-          box-sizing: border-box;
-          padding: 0 4.6%;
         }
         .title2{
-          font-size: 3em;
-          align-self: end;
-          bottom: 20%;
+          font-size: 4em;
         }
       }
     `}</style>

@@ -43,10 +43,28 @@ const PayMethods = ({image, tam}) => {
           height: 100%;
         }
       }
-      @media screen and (max-width: 415px) {
+      @media screen and (max-width: 910px) {
         .child{
-          width: ${image === "url(/img/front-page/nequi.png)" ? '60%' : '70%'};
-          height: ${image === "url(/img/front-page/nequi.png)" ? '100%' : '95%'};
+          width: ${image === "url(/img/front-page/nequi.png)" ? '40%' : '50%'};
+          height: 100%;
+          box-sizing: border-box;
+          padding: 20% 0;
+        }
+      }
+      @media screen and (max-width: 670px) {
+        .child{
+          width: ${image === "url(/img/front-page/pse.png)" ? '80%' : image === "url(/img/front-page/daviplata.png)" ? '70%' : image === "url(/img/front-page/nequi.png)" ? '45%' : '50%'};
+          height: 100%;
+          box-sizing: border-box;
+          padding: 20% 0;
+        }
+      }
+      @media screen and (max-width: 460px) {
+        .child{
+          width: ${image === "url(/img/front-page/pse.png)" ? '100%' : image === "url(/img/front-page/daviplata.png)" ? '80%' : image === "url(/img/front-page/nequi.png)" ? '55%' : '50%'};
+          height: 100%;
+          box-sizing: border-box;
+          padding: 20% 0;
         }
       }
     `}</style>

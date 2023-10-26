@@ -29,6 +29,20 @@ const Img = ({image}) => {
             justify-self: center;
           }
         }
+        @media screen and (max-width: 1575px) {
+          .container{
+            width: 100%;
+            position: relative;
+            top: 2%;
+          }
+        }
+        @media screen and (max-width: 1333px) {
+          .container{
+            width: 91%;
+            position: relative;
+            top: 2%;
+          }
+        }
         @media screen and (max-width: 2037px) {
           .container{
             height: 90%;

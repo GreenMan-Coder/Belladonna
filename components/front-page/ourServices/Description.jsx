@@ -139,7 +139,7 @@ const Description = ({sub, title, paragraph, href, pad}) => {
           font-size: 6.5em;
         }
         .jewelInsta{
-          top: 5%;
+          top: 0;
         }
         p{
           justify-self: start;
@@ -171,6 +171,11 @@ const Description = ({sub, title, paragraph, href, pad}) => {
         .nets{
           position: relative;
           top: -6%;
+        }
+      }
+      @media screen and (max-width: 1575px) {
+        .jewelInsta{
+          top: -8%;
         }
       }
       @media screen and (max-width: 1457px) {
@@ -215,12 +220,12 @@ const Description = ({sub, title, paragraph, href, pad}) => {
         h3{
           position: relative;
           top: 20%;
-          font-size: 1.5em;
+          font-size: 1.8em;
         }
         h1{
           position: relative;
           top: 5%;
-          font-size: 3.2em;
+          font-size: ${title === "Joyería" ? "4em" : "3.2em"};
         }
         p{
           font-size: 1.7em;
@@ -233,8 +238,67 @@ const Description = ({sub, title, paragraph, href, pad}) => {
           position: relative;
           top: -14%;
         }
+        .jewelInsta{
+          top: -8%;
+        }
       }
-      @media screen and (max-width: 415px) {
+      @media screen and (max-width: 875px) {
+        h3{
+          font-size: 1.55em;
+        }
+        h1{
+          position: relative;
+          top: 5%;
+          font-size: ${title === "Joyería" ? "4em" : "3em"};
+        }
+        p{
+          font-size: 1.5em;
+        }
+        a{
+          font-size: 1.6em;
+          align-self: end;
+          position: relative;
+          bottom: 30%;
+        }
+      }
+      @media screen and (max-width: 820px) {
+        h3{
+          top: 45%;
+          font-size: 1.5em;
+        }
+        h1{
+          top: 10%;
+          font-size: ${title === "Joyería" ? "4em" : "3.5em"};
+        }
+        .nets{
+          top: 15%;
+        }
+        p{
+          font-size: 1.5em;
+        }
+        a{
+          font-size: 1.6em;
+          align-self: end;
+          position: relative;
+          bottom: 30%;
+        }
+      }
+      @media screen and (max-width: 660px) {
+        h3{
+          top: 40%;
+          font-size: 1.4em;
+        }
+        h1{
+          font-size: ${title === "Joyería" ? "3.5em" : "3em"};
+        }
+        .nets{
+          top: 5%;
+        }
+        a{
+          font-size: 1.42em;
+        }
+      }
+      @media screen and (max-width: 540px) {
         .container{
           align-self: end;
           box-sizing: border-box;
@@ -264,26 +328,11 @@ const Description = ({sub, title, paragraph, href, pad}) => {
           box-sizing: border-box;
         }
         .nets{
-          grid-row: 2/3;
-          grid-column: 1/2;
-          box-sizing: border-box;
-          margin: 0;
-          padding: 0;
-          width: 100%;
-          align-self: center;
-          position: relative;
-          top: 24%;
+          top: 10%;
         }
         .jewelInsta{
-          grid-row: 2/3;
-          grid-column: 1/2;
-          box-sizing: border-box;
-          margin: 0;
-          align-self: center;
-          padding: 0;
-          width: 100%;
-          position: relative;
-          bottom: 5%;
+          bottom: 0%;
+          top: 4%;
         }
         p{
           margin: 0;
@@ -297,7 +346,21 @@ const Description = ({sub, title, paragraph, href, pad}) => {
           font-size: 1.6em;
         }
       }
-      @media screen and (max-width: 540px) {
+      @media screen and (max-width: 488px) {
+        .nets{
+          top: 28%;
+        }
+        }
+        p{
+          align-self: ${title === "Depilación con cera" ? "end" : "start"};
+        }
+        a{
+          bottom: 0;
+          top: 20%;
+          font-size: 1.6em;
+        }
+      }
+      @media screen and (max-width: 415px) {
         .container{
           align-self: end;
           box-sizing: border-box;
