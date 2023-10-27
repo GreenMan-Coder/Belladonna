@@ -218,6 +218,14 @@ const Front = () => {
           font-size: 4em;
         }
       }
+      @media (max-height: 790px) {
+        .title1{
+          font-size: 3.5em;
+        }
+        p{
+          font-size: 1.3em;
+        }
+      }
     `}</style>
     </main>
 }

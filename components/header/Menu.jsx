@@ -104,6 +104,11 @@ const Menu = ({num}) => {
             font-size: 1em;
           }
         }
+        @media (max-height: 790px) {
+          a{
+            font-size: 1.5em;
+          }
+      }
     `}</style>
   </nav>
 }

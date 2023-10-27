@@ -49,6 +49,11 @@ const Logo = ({tam, deactivated}) => {
           width: auto;
         }
       }
+      @media (max-height: 790px) {
+        img{
+          height: 8em;
+        }
+      }
     `}</style>
   </div>
 }

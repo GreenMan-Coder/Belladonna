@@ -249,6 +249,20 @@ const ResourcesCard = ({url, tam, title, text, pos, top}) => {
           font-size: 1.4em;
         }
       }
+      @media (max-height: 450px) {
+        h2{
+          font-size: 1.8em;
+        }
+        .card-content:hover h2{
+          transform: translateY(-350%);
+        }
+        p{
+          top: ${title === "DEPILACIÓN" ? "10%" : title === "SEGUIMIENTO" ? "2%" : "6%"};
+          margin: 0;
+          font-size: 0.8em;
+          text-align: justify;
+        }
+      }
     `}</style>
   </section>
 }
