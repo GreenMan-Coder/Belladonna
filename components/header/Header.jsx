@@ -32,15 +32,10 @@ const Header = ({row,color}) => {
           height: 15%;
         }
       }
-      @media screen and (max-width: 480px) {
+      @media screen and (max-width: 415px) {
         header{
           width: 100%;
           height: 15%;
-        }
-      }
-      @media (max-height: 720px) {
-        header{
-          border: 1px solid red;
         }
       }
     `}</style>

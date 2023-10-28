@@ -67,11 +67,6 @@ const PayMethods = ({image, tam}) => {
           padding: 20% 0;
         }
       }
-      @media (max-height: 450px) {
-        .child{
-          width: ${image === "url(/img/front-page/pse.png)" ? '95%' : image === "url(/img/front-page/daviplata.png)" ? '80%' : image === "url(/img/front-page/nequi.png)" ? '58%' : '70%'};
-        }
-      }
     `}</style>
   </section>
 }

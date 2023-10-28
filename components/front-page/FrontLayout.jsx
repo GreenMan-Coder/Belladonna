@@ -639,54 +639,6 @@ const FrontLayout = ({row}) => {
           color: var(--light-purple);
         }
       }
-      @media (max-height: 790px) {
-        .container{
-          background-position: 110% 100%;
-          background-size: 50%;
-        }
-        h1{
-          font-size: 9em;
-          align-self: start;
-          position: relative;
-          top: 15%;
-        }
-        h3{
-          top: 50%;
-          left: 4%;
-          font-size: 2em;
-        }
-        p{
-          top: 0;
-          width: 100%;
-          font-size: 1.7em;
-        }
-      }
-      @media (max-height: 680px) {
-        .container{
-          background-position: 105% 100%;
-          background-size: 44%;
-        }
-      }
-      @media (max-height: 600px) {
-        .container{
-          background-size: 40%;
-        }
-      }
-      @media (max-height: 550px) {
-        .container{
-          background-size: 35%;
-        }
-      }
-      @media (max-height: 480px) {
-        .container{
-          background-size: 32%;
-        }
-      }
-      @media (max-height: 435px) {
-        .container{
-          background-size: 25%;
-        }
-      }
     `}</style>
   </section>
 }

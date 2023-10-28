@@ -55,9 +55,6 @@ const HoWork = ({row}) => {
           grid-template-rows: 1fr;
         }
       }
-      @media (max-height: 450px) {
-
-      }
     `}</style>
     </section>
 }
