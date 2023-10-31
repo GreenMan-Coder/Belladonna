@@ -11,8 +11,6 @@ const PayMethods = ({image, tam}) => {
         align-items: center;
       }
       .child{
-        width: 70%;
-        height: 95%;
         background-image: ${image};
         background-repeat: no-repeat;
         background-position: center;
@@ -21,7 +19,7 @@ const PayMethods = ({image, tam}) => {
       }
       @media screen and (max-width: 2410px) {
         .child{
-          width: ${image === "url(/img/front-page/nequi.png)" ? '54%' : '65%'};
+          width: ${image === "url(/img/front-page/nequi.png)" ? '60%' : '80%'};
           height: ${image === "url(/img/front-page/nequi.png)" ? '100%' : '95%'};
         }
       }

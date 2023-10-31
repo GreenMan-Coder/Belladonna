@@ -17,8 +17,10 @@ const Front = () => {
     <WhatsappButton href="https://wa.me/message/D4KMZ4C5TFU5N1"/>
     <Header row="1/2" color="--purple-blanco"/>
     <FrontLayout row="1/2"/>
-    <h1 className='title1'>¿Cómo trabajamos?</h1>
-    <p>Disfruta de la mejor depilación profesional en Bogotá. ¡Reserva tu cita y vive una experiencia única!</p>
+    <div className="hoWorkTitle">
+      <h1 className='title1'>¿Cómo trabajamos?</h1>
+      <p>Disfruta de la mejor depilación profesional en Bogotá. ¡Reserva tu cita y vive una experiencia única!</p>
+    </div>
     <HoWork row="3/4"/>
     <h1 className='title2'>Nuestros servicios</h1>
     <OurServices row="5/6" image="/img/front-page/depilacion.jpeg" sub="Servicio exclusivo para mujeres" title="Depilación con cera" paragraph="Depilación con cera de alta calidad en todas las áreas del cuerpo." href={1} pad="4em"/>
@@ -30,22 +32,48 @@ const Front = () => {
         display: grid;
         width: 100%;
         height: 100%;
-        grid-template-rows: 100vh 86vh 60vh 86vh 86vh 86vh 100vh;
+        max-width: 2410px;
+        grid-template-rows: auto auto auto 86vh 86vh 86vh 100vh;
         box-sizing: border-box;
         font-family: var(--font);
       }
-      .title1{
+      .hoWorkTitle{
         grid-row: 2/3;
         grid-column: 1/2;
         justify-self: center;
         align-self: center;
         position: relative;
-        bottom: 10%;
+        height: 86vh;
+        width: 100%;
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-items: center;
+        min-height: 800px;
+        max-height: 1000px;
+      }
+      .title1{
+        grid-column: 1/2;
+        grid-row: 1/2;
         margin: 0;
         text-align: center;
-        font-size: 3.75em;
+        font-size: 10rem;
         font-weight: 700;
         color: var(--tone-purple);
+        position: relative;
+        bottom: 15%;
+      }
+      p{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        align-self: center;
+        position: absolute;
+        bottom: 20%;
+        text-align: center;
+        font-size: 3.5em;
+        color: var(--normal-purple);
+        box-sizing: border-box;
       }
       .title2{
         grid-row: 4/5;
@@ -60,32 +88,66 @@ const Front = () => {
         font-weight: 700;
         color: var(--tone-purple);
       }
-      p{
-        grid-row: 2/3;
-        grid-column: 1/2;
-        align-self: center;
-        position: relative;
-        top: 10%;
-        margin: 0;
-        width: 100%;
-        text-align: center;
-        font-size: 1.3em;
-        color: var(--normal-purple);
-        box-sizing: border-box;
-      }
-      @media screen and (max-width: 480px) {
-        .container{
-          width: 168%;
-          grid-template-rows: 130vh 60vh 86vh 50vh 60vh 60vh 100vh;
-        }
+      @media screen and (max-width: 1810px) {
         .title1{
-          font-size: 3.8em;
+          font-size: 9rem;
         }
         p{
-          font-size: 1.7em;
+          font-size: 3.3em;
         }
-        .title2{
-          font-size: 4em;
+      }
+      @media screen and (max-width: 1395px) {
+        .title1{
+          font-size: 7.5rem;
+        }
+        p{
+          font-size: 3.2em;
+          bottom: 25%;
+        }
+      }
+      @media screen and (max-width: 1160px) {
+        .title1{
+          font-size: 6rem;
+        }
+        p{
+          font-size: 3em;
+          bottom: 25%;
+        }
+      }
+      @media screen and (max-width: 930px) {
+        .hoWorkTitle{
+          height: auto;
+        }
+        .title1{
+          font-size: 5rem;
+        }
+        p{
+          font-size: 2.5em;
+          top: 45%;
+        }
+      }
+      @media screen and (max-width: 775px) {
+        .hoWorkTitle{
+          min-height: 600px;
+        }
+        .title1{
+          font-size: 4rem;
+        }
+        p{
+          font-size: 2em;
+          top: 45%;
+        }
+      }
+      @media screen and (max-width: 620px) {
+        .hoWorkTitle{
+          min-height: 500px;
+        }
+        .title1{
+          font-size: 3rem;
+        }
+        p{
+          font-size: 1.6em;
+          top: 50%;
         }
       }
     `}</style>

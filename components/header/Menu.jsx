@@ -33,6 +33,7 @@ const Menu = ({num}) => {
         .container{
           position: relative;
           width: 100%;
+          max-width: 2410px;
           height: auto;
           font-family: var(--font);
           font-weight: 700;
@@ -49,59 +50,59 @@ const Menu = ({num}) => {
         a{
           text-decoration: none;
           color: var(--normal-purple);
-          font-size: 20px;
+          font-size: 2rem;
         }
-        @media screen and (max-width: 2410px) {
+        @media screen and (max-width: 2560px) {
           a{
-            font-size: 2.2em;
+            font-size: 2.3rem;
           }
         }
         @media screen and (max-width: 1890px) {
         a{
-          font-size: 1.8em;
+          font-size: 1.8rem;
         }
         @media screen and (max-width: 1426px) {
         a{
-          font-size: 1.6em;
+          font-size: 1.6rem;
         }
         @media screen and (max-width: 962px) {
           a{
-            font-size: 1.4em;
+            font-size: 1.4rem;
           }
         }
         @media screen and (max-width: 703px) {
           a{
-            font-size: 1.25em;
+            font-size: 1.25rem;
           }
         }
         @media screen and (max-width: 679px) {
           a{
-            font-size: 1.1em;
+            font-size: 1.1rem;
           }
         }
         @media screen and (max-width: 615px) {
           a{
-            font-size: 1em;
+            font-size: 1rem;
           }
         }
         @media screen and (max-width: 550px) {
           a{
-            font-size: 0.85em;
+            font-size: 0.85rem;
           }
         }
         @media screen and (max-width: 540px) {
           a{
-            font-size: 1.5em;
+            font-size: 1.5rem;
           }
         }
         @media screen and (max-width: 463px) {
           a{
-            font-size: 1.3em;
+            font-size: 1.3rem;
           }
         }
         @media screen and (max-width: 391px) {
           a{
-            font-size: 1em;
+            font-size: 1rem;
           }
         }
     `}</style>

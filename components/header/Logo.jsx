@@ -16,38 +16,26 @@ const Logo = ({tam, deactivated}) => {
       }
       img{
         height: ${tam};
-        width: auto;
       }
-      @media screen and (max-width: 2410px) {
-        .container{
-          justify-items: center;
-        }
+      @media screen and (max-width: 2560px) {
         img{
-          height: 12em;
-          width: auto;
-          justify-self: end;
+          justify-self: center;
+          height: 8.5rem;
         }
       }
-      @media screen and (max-width: 1890px) {
+      @media screen and (max-width: 1000px) {
         img{
-          height: 10em;
+          height: 7rem;
         }
       }
       @media screen and (max-width: 1426px) {
-        img{
-          height: 9.5em;
-        }
+
       }
       @media screen and (max-width: 962px) {
-        img{
-          height: 9.2em;
-        }
+
       }
       @media screen and (max-width: 360px) {
-        img{
-          height: 4.5em;
-          width: auto;
-        }
+
       }
     `}</style>
   </div>

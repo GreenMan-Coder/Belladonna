@@ -59,6 +59,7 @@ const ResourcesCard = ({url, tam, title, text, pos, top}) => {
         border-radius: 10px;
         box-sizing: border-box;
         padding: 0 5px;
+        user-select: none;
       }
       .card-content:hover h2{
         transform: translateY(-550%);
@@ -82,161 +83,88 @@ const ResourcesCard = ({url, tam, title, text, pos, top}) => {
         box-sizing: border-box;
       }
       @media screen and (max-width: 2410px) {
+        .card-content::after{
+          width: 100%;
+        }
         h2{
-          font-size: 3.75em;
-        }
-        .card-content:hover h2{
-          transform: translateY(-320%);
-        }
-        p{
-          font-size: 1.8em;
-        }
-        .card-content:hover p{
-          opacity: 1;
-          transition: opacity .6s ease-in-out;
-          box-sizing: border-box;
-        }
-      }
-      @media screen and (max-width: 2146px) {
-        p{
-          position: relative;
-          top: ${title === "SEGUIMIENTO" ? "4%" : "0"};
-        }
-      }
-      @media screen and (max-width: 2070px) {
-        h2{
-          font-size: 3.5em;
-        }
-        p{
-          top: 0;
-          font-size: 1.6em;
-        }
-      }
-      @media screen and (max-width: 2010px) {
-        .card-content:hover h2{
-          transform: translateY(-350%);
-        }
-      }
-      @media screen and (max-width: 1802px) {
-        h2{
-          font-size: 3.3em;
+          font-size: 4rem;
         }
         .card-content:hover h2{
           transform: translateY(-380%);
         }
         p{
-          top: ${title === "LOCACIÓN" ? "2%" : "5%"};
-          font-size: 1.5em;
+          padding-top: 0;
+          position: relative;
+          top: ${title === "DEPILACIÓN" ? "10%" : title === "SEGUIMIENTO" ? "6.5%" : "9%"};
+          font-size: 1.8rem;
+          padding: 0 3%;
         }
       }
-      @media screen and (max-width: 1650px) {
+      @media screen and (max-width: 1885px) {
         h2{
-          font-size: 2.8em;
-        }
-        .card-content:hover h2{
-          transform: translateY(-460%);
-        }
-        p{
-          top: ${title === "DEPILACIÓN" ? "5%" : "8%"};
-          font-size: 1.48em;
-        }
-      }
-      @media screen and (max-width: 1642px) {
-        p{
-          top: ${title === "LOCACIÓN" ? "4%" : ""};
-        }
-      }
-      @media screen and (max-width: 1510px) {
-        h2{
-          font-size: 2.7em;
+          font-size: 3.5rem;
         }
         .card-content:hover h2{
           transform: translateY(-480%);
         }
         p{
-          top: ${title === "DEPILACIÓN" ? "10%" : title === "SEGUIMIENTO" ? "6.5%" : "14%"};
-          text-align: center;
-          padding: 0 5%;
-          font-size: 1.44em;
+          top: ${title === "DEPILACIÓN" ? "8%" : ""};
+          font-size: 1.7rem;
         }
       }
-      @media screen and (max-width: 1314px) {
-        p{
-          top: ${title === "DEPILACIÓN" ? "10%" : title === "SEGUIMIENTO" ? "6.5%" : "10.8%"};
-        }
-      }
-      @media screen and (max-width: 1146px) {
+      @media screen and (max-width: 1750px) {
         h2{
-          font-size: 2.3em;
+          font-size: 3.3rem;
+        }
+        p{
+          font-size: 1.5rem;
+        }
+      }
+      @media screen and (max-width: 1410px) {
+        h2{
+          font-size: 2.8rem;
         }
         .card-content:hover h2{
-          transform: translateY(-600%);
+          transform: translateY(-650%);
         }
         p{
-          top: ${title === "SEGUIMIENTO" ? "6%" : "9%"};
-          font-size: 1.38em;
+          top: ${title === "LOCACIÓN" ? "10%" : ""};
+          font-size: 1.7rem;
         }
       }
-      @media screen and (max-width: 1094px) {
+      @media screen and (max-width: 1210px) {
         h2{
-          font-size: 2.2em;
-        }
-        .card-content:hover h2{
-          transform: translateY(-600%);
-        }
-        p{
-          top: ${title === "SEGUIMIENTO" ? "9%" : "13%"};
-          font-size: 1.2em;
-        }
-      }
-      @media screen and (max-width: 969px) {
-        h2{
-          font-size: 1.85em;
+          font-size: 2.45rem;
         }
         .card-content:hover h2{
           transform: translateY(-750%);
         }
         p{
-          font-size: 1.08em;
+          font-size: 1.6rem;
         }
       }
-      @media screen and (max-width: 910px) {
-        .container{
-          width: 100%;
-          height: 98%;
-        }
-        .card-content{
-          margin: 0;
-          width: 97%;
-        }
-        .card-content::after{
-          width: 100%;
-          height: 100%;
-          border-radius: 10px;
-        }
+      @media screen and (max-width: 1150px) {
         h2{
-          font-size: 2.5em;
+          font-size: 2.35rem;
+        }
+        p{
+          font-size: 1.5rem;
+        }
+      }
+      @media screen and (max-width: 1084px) {
+        p{
+          font-size: 1.4em;
+        }
+      }
+      @media screen and (max-width: 1064px) {
+        h2{
+          font-size: 2.1rem;
         }
         .card-content:hover h2{
-          transform: translateY(0%);
-          visibility: hidden;
-          transition: visibility 0.1s ease-in-out;
+          transform: translateY(-850%);
         }
         p{
-          top: 0;
-          margin: 0;
-          font-size: 1.5em;
-          text-align: justify;
-        }
-        .card-content:hover p{
-          opacity: 1;
-          transition: opacity .6s ease-in-out;
-          box-sizing: border-box;
-        }
-      }
-      @media screen and (max-width: 810px) {
-        p{
-          font-size: 1.3em;
+          font-size: 1.35em;
         }
       }
       @media screen and (max-width: 540px) {

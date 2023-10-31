@@ -3,40 +3,30 @@ import Menu from './Menu'
 
 const Header = ({row,color}) => {
   return <header>
-    <Logo col="1/2" tam="7.2em"/>
+    <Logo col="1/2" tam="7.2rem"/>
     <Menu col="2/3"/>
     <style jsx>{`
       header{
-        position: -webkit-sticky;
-        position: sticky;
+        position: fixed;
         top: 0;
+        width: 90.57%;
         background-color: var(${color});
         box-sizing: border-box;
-        width: 100%;
-        height: 9em;
+        height: 9rem;
         display: grid;
-        grid-template-columns: 0.2fr 1fr;
+        grid-template-columns: 1fr 5fr;
         justify-items: center;
         align-items: center;
+        max-width: 2410px;
         z-index: 10;
       }
-      @media screen and (max-width: 2410px) {
+      @media screen and (max-width: 1650px) {
         header{
           width: 100%;
-          height: 22%;
-        }
-      }
-      @media screen and (max-width: 540px) {
-        header{
-          width: 100%;
-          height: 15%;
         }
       }
       @media screen and (max-width: 415px) {
-        header{
-          width: 100%;
-          height: 15%;
-        }
+
       }
     `}</style>
   </header>
