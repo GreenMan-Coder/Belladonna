@@ -19,13 +19,14 @@ const HoWork = ({row}) => {
         grid-row: ${row};
         width: 100%;
         height: 70vh;
-        max-height: 700px;
-        min-height: 620px;
+        min-height: 26rem;
+        max-height: 50rem;
         display: grid;
         justify-items: center;
         align-items: center;
         font-family: var(--font);
         box-sizing: border-box;
+        border: 1px solid black;
       }
       .resources{
         margin: 0;
@@ -36,11 +37,20 @@ const HoWork = ({row}) => {
         grid-template-columns: 1fr 1fr 1fr 0.3fr;
         grid-gap: 10px;
         text-align: center;
+        border: 1px solid red;
       }
       .payment{
         display: grid;
         grid-template-rows: 1fr 1fr 1fr 1fr;
       }
+
+      @media screen and (max-width: 2560px) and (max-height: 2560px) {
+        .resources{
+          grid-column-gap: 2rem;
+        }
+      }
+
+
       @media screen and (max-width: 1024px) {
         .resources{
           grid-template-columns: 1fr;

@@ -50,8 +50,8 @@ const Front = () => {
         grid-template-columns: 1fr;
         justify-items: center;
         align-items: center;
-        min-height: 800px;
-        max-height: 1000px;
+        min-height: 19rem;
+        max-height: 75rem;
       }
       .title1{
         grid-column: 1/2;
@@ -88,68 +88,158 @@ const Front = () => {
         font-weight: 700;
         color: var(--tone-purple);
       }
-      @media screen and (max-width: 1810px) {
+
+      @media screen and (max-width: 2560px) and (max-height: 2560px){
+        .title1{
+          font-size: 11rem;
+        }
+        p{
+          font-size: 5em;
+          box-sizing: border-box;
+          margin: 0;
+          top: 60%;
+          padding: 0 2%;
+        }
+      }
+      @media screen and (max-width: 2560px) and (max-height: 900px){
+        .title1{
+          font-size: 10.5rem;
+        }
+        p{
+          font-size: 3.5em;
+        }
+      }
+      @media screen and (max-width: 2560px) and (max-height: 580px){
+        .title1{
+          font-size: 10rem;
+        }
+        p{
+          top: 70%;
+          font-size: 2.7em;
+        }
+      }
+
+      @media screen and (max-width: 1970px) and (max-height: 2560px){
         .title1{
           font-size: 9rem;
         }
         p{
+          top: 55%;
+          font-size: 3.5em;
+        }
+      }
+
+      @media screen and (max-width: 1395px) and (max-height: 2560px){
+        .hoWorkTitle{
+          max-height: 60rem;
+        }
+        .title1{
+          font-size: 7rem;
+        }
+        p{
+          top: 48%;
           font-size: 3.3em;
         }
       }
-      @media screen and (max-width: 1395px) {
+      @media screen and (max-width: 1395px) and (max-height: 760px){
         .title1{
-          font-size: 7.5rem;
+          font-size: 7rem;
         }
         p{
-          font-size: 3.2em;
-          bottom: 25%;
+          top: 52%;
+          font-size: 3em;
         }
       }
-      @media screen and (max-width: 1160px) {
+
+      @media screen and (max-width: 1200px) and (max-height: 2560px){
+        .hoWorkTitle{
+          max-height: 55rem;
+        }
+        .title1{
+          font-size: 6.3rem;
+        }
+        p{
+          top: 52%;
+          font-size: 3em;
+          padding: 0 5%;
+        }
+      }
+      @media screen and (max-width: 1200px) and (max-height: 800px){
         .title1{
           font-size: 6rem;
         }
         p{
-          font-size: 3em;
-          bottom: 25%;
+          top: 54%;
+          font-size: 2.8em;
+          padding: 0 5%;
         }
       }
-      @media screen and (max-width: 930px) {
+
+      @media screen and (max-width: 975px) and (max-height: 2560px){
         .hoWorkTitle{
-          height: auto;
+          max-height: 50rem;
         }
         .title1{
           font-size: 5rem;
         }
         p{
-          font-size: 2.5em;
-          top: 45%;
+          top: 49%;
+          font-size: 2.7em;
+          padding: 0 5%;
         }
       }
-      @media screen and (max-width: 775px) {
+      @media screen and (max-width: 975px) and (max-height: 700px){
         .hoWorkTitle{
-          min-height: 600px;
+          max-height: 50rem;
+        }
+        .title1{
+          font-size: 5rem;
+        }
+        p{
+          top: 55%;
+          font-size: 2.1em;
+          padding: 0 5%;
+        }
+      }
+      @media screen and (max-width: 775px) and (max-height: 2560px){
+        .hoWorkTitle{
+          max-height: 30rem;
         }
         .title1{
           font-size: 4rem;
         }
         p{
-          font-size: 2em;
-          top: 45%;
+          top: 50%;
+          font-size: 1.8em;
         }
       }
-      @media screen and (max-width: 620px) {
+
+      @media screen and (max-width: 670px) and (max-height: 2560px){
         .hoWorkTitle{
-          min-height: 500px;
+          max-height: 25rem;
         }
         .title1{
           font-size: 3rem;
         }
         p{
-          font-size: 1.6em;
           top: 50%;
+          font-size: 1.55em;
         }
       }
+
+      @media screen and (max-width: 500px) and (max-height: 2560px){
+        .hoWorkTitle{
+          max-height: 20rem;
+        }
+        .title1{
+          font-size: 2rem;
+        }
+        p{
+          top: 50%;
+          font-size: 1.3em;
+        }
+      }
+
     `}</style>
     </main>
 }
