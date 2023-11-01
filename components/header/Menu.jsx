@@ -90,21 +90,6 @@ const Menu = ({num}) => {
             font-size: 0.85rem;
           }
         }
-        @media screen and (max-width: 540px) {
-          a{
-            font-size: 1.5rem;
-          }
-        }
-        @media screen and (max-width: 463px) {
-          a{
-            font-size: 1.3rem;
-          }
-        }
-        @media screen and (max-width: 391px) {
-          a{
-            font-size: 1rem;
-          }
-        }
     `}</style>
   </nav>
 }

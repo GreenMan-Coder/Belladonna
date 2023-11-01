@@ -11,7 +11,7 @@ const FrontLayout = ({row}) => {
         grid-row: ${row};
         font-family: var(--font);
         height: 100vh;
-        min-height: 600px;
+        min-height: 29rem;
         max-height: 50rem;
         background-image: url(/img/front-page/woman-front.png);
         background-repeat: no-repeat;
@@ -830,6 +830,7 @@ const FrontLayout = ({row}) => {
       }
 
       @media screen and (max-width: 1165px) and (max-height: 2560px){
+
         h3{
           font-size: 3rem;
         }
@@ -842,6 +843,9 @@ const FrontLayout = ({row}) => {
       }
 
       @media screen and (max-width: 1065px) and (max-height: 2560px){
+        .container{
+          max-height: 55rem;
+        }
         h3{
           top: 105%;
           font-size: 2.8rem;
@@ -890,7 +894,7 @@ const FrontLayout = ({row}) => {
 
       @media screen and (max-width: 980px)  and (max-height: 2560px){
         .container{
-          max-height: 62rem;
+          max-height: 50rem;
         }
         h1{
           top: 35%;
@@ -947,6 +951,7 @@ const FrontLayout = ({row}) => {
 
       @media screen and (max-width: 900px)  and (max-height: 2560px){
         .container{
+          max-height: 50rem;
           background-position: 110% 100%;
           background-size: 70%;
         }
@@ -1064,54 +1069,88 @@ const FrontLayout = ({row}) => {
         }
       }
 
-
-
-
-
-
-
-
-
-      @media screen and (max-width: 690px) {
+      @media screen and (max-width: 700px)  and (max-height: 2560px){
         .container{
-
+          max-height: 42rem;
+          background-position: 100% 100%;
+          background-size: 70%;
         }
         h1{
-
+          font-size: 4.5rem;
         }
         h3{
-
+          font-size: 1.5rem;
+          left: 7%;
         }
         p{
-
+          font-size: 1.1rem;
+          padding: 1.3rem 0;
         }
       }
-      @media screen and (max-width: 620px) {
+      @media screen and (max-width: 670px)  and (max-height: 2560px){
         .container{
-
-        }
-        h1{
-
-        }
-        h3{
-
+          max-height: 39rem;
+          background-position: 100% 100%;
+          background-size: 70%;
         }
         p{
-
+          font-size: 1rem;
+          padding: 1.2rem 0;
         }
       }
-      @media screen and (max-width: 560px) {
+      @media screen and (max-width: 610px)  and (max-height: 2560px){
         .container{
-
+          max-height: 37rem;
+          background-position: 100% 100%;
+          background-size: 70%;
         }
         h1{
-
+          font-size: 4.2rem;
         }
         h3{
-
+          font-size: 1.44rem;
+          left: 7%;
         }
         p{
+          font-size: 0.9rem;
+          padding: 1rem 0;
+        }
+      }
 
+      @media screen and (max-width: 570px)  and (max-height: 560px){
+        .container{
+          max-height: 33rem;
+        }
+      }
+
+      @media screen and (max-width: 540px)  and (max-height: 560px){
+        .container{
+          max-height: 31rem;
+        }
+        h1{
+          font-size: 3.5rem;
+        }
+        h3{
+          font-size: 1.3rem;
+        }
+        p{
+          font-size: 0.8rem;
+        }
+      }
+
+      @media screen and (max-width: 500px)  and (max-height: 560px){
+        .container{
+          max-height: 29rem;
+          min-width: 500px;
+        }
+        h1{
+          font-size: 3.5rem;
+        }
+        h3{
+          font-size: 1.3rem;
+        }
+        p{
+          font-size: 0.8rem;
         }
       }
     `}</style>
