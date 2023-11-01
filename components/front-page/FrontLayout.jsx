@@ -23,7 +23,6 @@ const FrontLayout = ({row}) => {
         justify-content: center;
         align-items: flex-start;
         flex-direction: column;
-        border: 1px solid green;
       }
       hgroup{
         margin: 0;
