@@ -24,6 +24,7 @@ const ResourcesCard = ({url, tam, title, text, pos, top}) => {
         box-sizing: border-box;
         position: relative;
         height: 90%;
+        min-height: 10rem;
         margin: 0 20px;
         display: grid;
         grid-template-rows: 1fr;
@@ -295,10 +296,298 @@ const ResourcesCard = ({url, tam, title, text, pos, top}) => {
         }
       }
 
-      @media screen and (max-width: 1800px) and (max-height: 2560px) {
+      @media screen and (max-width: 1850px) and (max-height: 2560px) {
+        h2{
+          font-size: 3.2rem;
+        }
+        .card-content:hover h2{
+          transform: translateY(-650%);
+        }
+      }
+      @media screen and (max-width: 1850px) and (max-height: 1125px) {
+        .card-content:hover h2{
+          transform: translateY(-600%);
+        }
+      }
+      @media screen and (max-width: 1850px) and (max-height: 1050px) {
+        .card-content:hover h2{
+          transform: translateY(-560%);
+        }
+      }
+      @media screen and (max-width: 1850px) and (max-height: 970px) {
+        .card-content:hover h2{
+          transform: translateY(-520%);
+        }
+      }
+      @media screen and (max-width: 1850px) and (max-height: 880px) {
+        .card-content:hover h2{
+          transform: translateY(-470%);
+        }
+      }
+      @media screen and (max-width: 1850px) and (max-height: 800px) {
+        .card-content:hover h2{
+          transform: translateY(-420%);
+        }
+      }
+      @media screen and (max-width: 1850px) and (max-height: 770px) {
+        .card-content:hover h2{
+          transform: translateY(-390%);
+        }
+        p{
+          font-size: 1.70em;
+          top: ${title === "DEPILACIÓN" ? "13%" : title === "SEGUIMIENTO" ? "9%" : "14%"};
+        }
+      }
+      @media screen and (max-width: 1850px) and (max-height: 700px) {
+        .card-content:hover h2{
+          transform: translateY(-340%);
+        }
+        p{
+          font-size: 1.65em;
+          top: ${title === "DEPILACIÓN" ? "13%" : title === "SEGUIMIENTO" ? "12%" : "14%"};
+        }
+      }
+      @media screen and (max-width: 1850px) and (max-height: 620px) {
+        .card-content:hover h2{
+          transform: translateY(-300%);
+        }
+        p{
+          font-size: 1.55em;
+          top: ${title === "DEPILACIÓN" ? "13%" : title === "SEGUIMIENTO" ? "12%" : "14%"};
+        }
+      }
+      @media screen and (max-width: 1420px) and (max-height: 2560px) {
+        h2{
+          font-size: 2.5rem;
+        }
+        .card-content:hover h2{
+          transform: translateY(-900%);
+        }
+      }
+      @media screen and (max-width: 1420px) and (max-height: 1120px) {
+        .card-content:hover h2{
+          transform: translateY(-750%);
+        }
+        p{
+          font-size: 1.65em;
+          top: ${title === "DEPILACIÓN" ? "13%" : title === "SEGUIMIENTO" ? "8.5%" : "13%"};
+        }
+      }
+      @media screen and (max-width: 1420px) and (max-height: 930px) {
+        .card-content:hover h2{
+          transform: translateY(-650%);
+        }
+        p{
+          font-size: 1.65em;
+          top: ${title === "SEGUIMIENTO" ? "6.5%" : ""};
+        }
+      }
+      @media screen and (max-width: 1420px) and (max-height: 830px) {
+        .card-content:hover h2{
+          transform: translateY(-600%);
+        }
+      }
+      @media screen and (max-width: 1420px) and (max-height: 750px) {
+        .card-content:hover h2{
+          transform: translateY(-550%);
+        }
+      }
+      @media screen and (max-width: 1420px) and (max-height: 690px) {
+        .card-content:hover h2{
+          transform: translateY(-460%);
+        }
+        p{
+          font-size: 1.5rem;
+          top: ${title === "DEPILACIÓN" ? "13%" : title === "SEGUIMIENTO" ? "8.5%" : "13%"};
+        }
+      }
 
+      @media screen and (max-width: 1300px) and (max-height: 930px) {
+        .card-content:hover h2{
+          transform: translateY(-700%);
+        }
+        p{
+          top: ${title === "SEGUIMIENTO" ? "9%" : ""};
+        }
       }
+      @media screen and (max-width: 1300px) and (max-height: 900px) {
+        .card-content:hover h2{
+          transform: translateY(-630%);
+        }
+        p{
+          font-size: 1.5rem;
+        }
       }
+      @media screen and (max-width: 1300px) and (max-height: 730px) {
+        .card-content:hover h2{
+          transform: translateY(-470%);
+        }
+        p{
+          font-size: 1.3rem;
+          top: ${title === "DEPILACIÓN" ? "9%" : ""};
+        }
+      }
+      @media screen and (max-width: 1300px) and (max-height: 630px) {
+        .card-content:hover h2{
+          transform: translateY(-490%);
+          font-size: 2.2rem;
+        }
+      }
+      @media screen and (max-width: 1170px) and (max-height: 2560px) {
+        .card-content:hover h2{
+          transform: translateY(-1100%);
+          font-size: 2.2rem;
+        }
+      }
+      @media screen and (max-width: 1170px) and (max-height: 1120px) {
+        .card-content:hover h2{
+          transform: translateY(-970%);
+          font-size: 2.2rem;
+        }
+      }
+      @media screen and (max-width: 1170px) and (max-height: 950px) {
+        .card-content:hover h2{
+          transform: translateY(-750%);
+          font-size: 2.2rem;
+        }
+        p{
+          font-size: 1.4rem;
+        }
+      }
+      @media screen and (max-width: 1170px) and (max-height: 815px) {
+        .card-content:hover h2{
+          transform: translateY(-660%);
+        }
+        p{
+          font-size: 1.4rem;
+        }
+      }
+      @media screen and (max-width: 1170px) and (max-height: 730px) {
+        .card-content:hover h2{
+          transform: translateY(-600%);
+        }
+        p{
+          font-size: 1.3rem;
+          top: ${title === "DEPILACIÓN" ? "12%" : title === "SEGUIMIENTO" ? "4%" : ""};
+        }
+      }
+      @media screen and (max-width: 1170px) and (max-height: 650px) {
+        .card-content:hover h2{
+          transform: translateY(-530%);
+        }
+        p{
+          font-size: 1.2rem;
+          top: ${title === "SEGUIMIENTO" ? "7%" : ""};
+        }
+      }
+      @media screen and (max-width: 1170px) and (max-height: 600px) {
+        .card-content:hover h2{
+          transform: translateY(-480%);
+        }
+        p{
+          font-size: 1.1rem;
+          top: ${title === "SEGUIMIENTO" ? "11.5%" : ""};
+        }
+      }
+
+      @media screen and (max-width: 1060px) and (max-height: 2560px) {
+        .card-content:hover h2{
+          transform: translateY(-1300%);
+          font-size: 1.85rem;
+        }
+        p{
+          font-size: 1.5rem;
+        }
+      }
+      @media screen and (max-width: 1060px) and (max-height: 1200px) {
+        .card-content:hover h2{
+          transform: translateY(-1100%);
+        }
+        p{
+          font-size: 1.4rem;
+        }
+      }
+      @media screen and (max-width: 1060px) and (max-height: 1125px) {
+        .card-content:hover h2{
+          transform: translateY(-1050%);
+        }
+        p{
+          font-size: 1.4rem;
+          top: ${title === "SEGUIMIENTO" ? "10%" : ""};
+        }
+      }
+      @media screen and (max-width: 1060px) and (max-height: 1000px) {
+        .card-content:hover h2{
+          transform: translateY(-950%);
+        }
+        p{
+          font-size: 1.4rem;
+          top: ${title === "SEGUIMIENTO" ? "12.5%" : ""};
+        }
+      }
+      @media screen and (max-width: 1060px) and (max-height: 850px) {
+        .card-content:hover h2{
+          transform: translateY(-760%);
+        }
+        p{
+          font-size: 1.3rem;
+        }
+      }
+      @media screen and (max-width: 1060px) and (max-height: 690px) {
+        .card-content:hover h2{
+          transform: translateY(-650%);
+        }
+      }
+
+      @media screen and (max-width: 1025px) and (max-height: 2560px) {
+        .card-content:hover h2{
+          transform: translateY(-330%);
+        }
+      }
+      @media screen and (max-width: 1025px) and (max-height: 1070px) {
+        .card-content:hover h2{
+          transform: translateY(-280%);
+        }
+      }
+      @media screen and (max-width: 1025px) and (max-height: 975px) {
+        .card-content:hover h2{
+          transform: translateY(-220%);
+        }
+        p{
+          top: ${title === "DEPILACIÓN" ? "18%" : title === "LOCACIÓN" ? "18%" : ""};
+        }
+      }
+
+      @media screen and (max-width: 810px) and (max-height: 2560px) {
+        .card-content:hover h2{
+          transform: translateY(-300%);
+        }
+        p{
+          top: ${title === "DEPILACIÓN" ? "18%" : title === "LOCACIÓN" ? "18%" : "16%"};
+        }
+      }
+      @media screen and (max-width: 810px) and (max-height: 1010px) {
+        .card-content:hover h2{
+          transform: translateY(-250%);
+        }
+        p{
+          top: ${title === "DEPILACIÓN" ? "18%" : title === "LOCACIÓN" ? "18%" : "16%"};
+        }
+      }
+
+      @media screen and (max-width: 720px) and (max-height: 2560px) {
+        p{
+          font-size: 1.3rem;
+        }
+      }
+
+      @media screen and (max-width: 505px) and (max-height: 2560px) {
+        p{
+          font-size: 1.1rem;
+        }
+      }
+
+
     `}</style>
   </section>
 }

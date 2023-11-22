@@ -26,7 +26,6 @@ const HoWork = ({row}) => {
         align-items: center;
         font-family: var(--font);
         box-sizing: border-box;
-        border: 1px solid black;
       }
       .resources{
         margin: 0;
@@ -37,7 +36,6 @@ const HoWork = ({row}) => {
         grid-template-columns: 1fr 1fr 1fr 0.3fr;
         grid-gap: 10px;
         text-align: center;
-        border: 1px solid red;
       }
       .payment{
         display: grid;
@@ -51,7 +49,7 @@ const HoWork = ({row}) => {
       }
 
 
-      @media screen and (max-width: 1024px) {
+      @media screen and (max-width: 1025px) and (max-height: 2560px){
         .resources{
           grid-template-columns: 1fr;
           grid-template-rows: 1fr 1fr 1fr 0.5fr;

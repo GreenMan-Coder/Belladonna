@@ -22,7 +22,9 @@ const Front = () => {
       <p>Disfruta de la mejor depilación profesional en Bogotá. ¡Reserva tu cita y vive una experiencia única!</p>
     </div>
     <HoWork row="3/4"/>
-    <h1 className='title2'>Nuestros servicios</h1>
+    <div className="title2">
+      <h1>Nuestros servicios</h1>
+    </div>
     <OurServices row="5/6" image="/img/front-page/depilacion.jpeg" sub="Servicio exclusivo para mujeres" title="Depilación con cera" paragraph="Depilación con cera de alta calidad en todas las áreas del cuerpo." href={1} pad="4em"/>
     <OurServices row="6/7"image="/img/front-page/joyas.jpeg" sub="Oro, plata y bisutería" title="Joyería" paragraph="¡No te quedes sin conocer nuestra tienda de joyas!." href={2} pad="9em"/>
     <About/>
@@ -33,7 +35,7 @@ const Front = () => {
         width: 100%;
         height: 100%;
         max-width: 2410px;
-        grid-template-rows: auto auto auto 86vh 86vh 86vh 100vh;
+        grid-template-rows: auto auto auto auto 86vh 86vh 100vh;
         box-sizing: border-box;
         font-family: var(--font);
       }
@@ -80,15 +82,26 @@ const Front = () => {
         grid-column: 1/2;
         justify-self: center;
         align-self: center;
+        height: 86vh;
+        width: 100%;
+        display: grid;
+        justify-items: center;
+        align-items: center;
         position: relative;
-        bottom: 10%;
+        height: 75rem;
+        width: 100%;
+        min-height: 17rem;
+        max-height: 75rem;
+      }
+      .title2 h1{
         margin: 0;
         text-align: center;
-        font-size: 3.75em;
         font-weight: 700;
         color: var(--tone-purple);
+        font-size: 10rem;
+        position: relative;
       }
-
+      }
       @media screen and (max-width: 2560px) and (max-height: 2560px){
         .title1{
           font-size: 11rem;
@@ -129,6 +142,12 @@ const Front = () => {
         }
       }
 
+      @media screen and (max-width: 1540px) and (max-height: 2560px){
+        .title2 h1{
+          font-size: 8rem;
+        }
+      }
+
       @media screen and (max-width: 1395px) and (max-height: 2560px){
         .hoWorkTitle{
           max-height: 60rem;
@@ -163,6 +182,9 @@ const Front = () => {
           font-size: 3em;
           padding: 0 5%;
         }
+        .title2 h1{
+          font-size: 6.5rem;
+        }
       }
       @media screen and (max-width: 1200px) and (max-height: 800px){
         .title1{
@@ -172,6 +194,12 @@ const Front = () => {
           top: 54%;
           font-size: 2.8em;
           padding: 0 5%;
+        }
+      }
+
+      @media screen and (max-width: 1000px) and (max-height: 2560px){
+        .title2 h1{
+          font-size: 5.5rem;
         }
       }
 
@@ -201,6 +229,21 @@ const Front = () => {
           padding: 0 5%;
         }
       }
+
+      @media screen and (max-width: 840px) and (max-height: 2560px){
+        .title2{
+          height: 30vh;
+        }
+        .title2 h1{
+          font-size: 4.5rem;
+        }
+      }
+      @media screen and (max-width: 840px) and (max-height: 1300px){
+        .title2{
+          min-height: 20rem;
+        }
+      }
+
       @media screen and (max-width: 775px) and (max-height: 2560px){
         .hoWorkTitle{
           max-height: 30rem;
@@ -224,6 +267,21 @@ const Front = () => {
         p{
           top: 50%;
           font-size: 1.55em;
+        }
+        .title2{
+          height: 18vh;
+        }
+        .title2 h1{
+          font-size: 3.5rem;
+        }
+      }
+
+      @media screen and (max-width: 650px) and (max-height: 2560px){
+        .title2{
+          height: 16vh;
+        }
+        .title2 h1{
+          font-size: 2.7rem;
         }
       }
 
