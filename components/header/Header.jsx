@@ -20,12 +20,14 @@ const Header = ({row,color}) => {
         max-width: 2410px;
         z-index: 10;
       }
+
       @media screen and (max-width: 1650px) {
         header{
           width: 100%;
         }
       }
-      @media screen and (max-width: 415px) {
+
+      @media screen and (max-width: 720px) and (max-height: 1280px){
 
       }
     `}</style>

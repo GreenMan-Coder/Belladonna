@@ -90,6 +90,12 @@ const Menu = ({num}) => {
             font-size: 0.85rem;
           }
         }
+
+        @media screen and (max-width: 480px) and (max-height: 800px){
+          a{
+            font-size: 0.85rem;
+          }
+      }
     `}</style>
   </nav>
 }

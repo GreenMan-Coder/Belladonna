@@ -1068,6 +1068,39 @@ const FrontLayout = ({row}) => {
         }
       }
 
+      @media screen and (max-width: 720px)  and (max-height: 1280px){
+        .container{
+          background-position: 140% 100%;
+          background-size: 73%;
+          height: 50vh;
+          min-height: 29rem;
+          max-height: 50rem;
+        }
+        h1{
+          font-size: 5.5rem;
+          top: 40%;
+        }
+        h3{
+          font-size: 1.4rem;
+          left: 5%;
+          top: 107%;
+        }
+        p{
+          font-size: 1.3rem;
+        }
+      }
+
+
+
+
+
+
+
+
+
+
+
+
       @media screen and (max-width: 700px)  and (max-height: 2560px){
         .container{
           max-height: 42rem;

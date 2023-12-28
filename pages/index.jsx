@@ -23,10 +23,9 @@ const Front = () => {
     </div>
     <HoWork row="3/4"/>
     <div className="title2">
-      <h1>Nuestros servicios</h1>
+      <h1>Servicios Depilación</h1>
     </div>
-    <OurServices row="5/6" image="/img/front-page/depilacion.jpeg" sub="Servicio exclusivo para mujeres" title="Depilación con cera" paragraph="Depilación con cera de alta calidad en todas las áreas del cuerpo." href={1} pad="4em"/>
-    <OurServices row="6/7"image="/img/front-page/joyas.jpeg" sub="Oro, plata y bisutería" title="Joyería" paragraph="¡No te quedes sin conocer nuestra tienda de joyas!." href={2} pad="9em"/>
+    <OurServices row="5/6" image="/img/front-page/depilacion.jpeg" sub="Servicio exclusivo para mujeres" title="Depilación con cera" paragraph="Depilación con cera de alta calidad en todas las áreas del cuerpo." href={1}/>
     <About/>
     <style jsx>{`
       .container {
@@ -35,7 +34,7 @@ const Front = () => {
         width: 100%;
         height: 100%;
         max-width: 2410px;
-        grid-template-rows: auto auto auto auto 86vh 86vh 100vh;
+        grid-template-rows: auto auto auto auto auto auto auto;
         box-sizing: border-box;
         font-family: var(--font);
       }
@@ -101,7 +100,7 @@ const Front = () => {
         font-size: 10rem;
         position: relative;
       }
-      }
+
       @media screen and (max-width: 2560px) and (max-height: 2560px){
         .title1{
           font-size: 11rem;
