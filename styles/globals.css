@@ -8,8 +8,6 @@
   --dark-purple: #20051e;
   --light-pink: #f9b5d0;
   --tone-pink: #ff597b;
-  --right: 7.1em;
-  --left: 7.1em;
 }
 
 /* General */
@@ -21,8 +19,6 @@
 body{
   margin: 0;
   padding: 0;
-  margin-right: var(--right);
-  margin-left: var(--left);
 }
 @media screen and (max-width: 1650px) {
   body{

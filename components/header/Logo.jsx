@@ -17,17 +17,14 @@ const Logo = ({tam, deactivated}) => {
       img{
         height: ${tam};
       }
-      @media screen and (max-width: 2560px) {
+
+      @media screen and (max-width: 2500px) and (max-height: 3840px) {
         img{
           justify-self: center;
-          height: 8.5rem;
+          height: 16rem;
         }
       }
-      @media screen and (max-width: 1000px) {
-        img{
-          height: 7rem;
-        }
-      }
+
       @media screen and (max-width: 1426px) {
 
       }

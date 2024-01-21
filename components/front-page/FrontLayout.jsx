@@ -3,20 +3,15 @@ const FrontLayout = ({row}) => {
     <hgroup>
       <h3>Bienvenida a</h3>
       <h1>BELLA<span>DONNA</span></h1>
-      <p>Excelencia y profesionalismo en depilación con cera: Tu piel, nuestro <span>compromiso</span>.</p>
     </hgroup>
+    <p>Excelencia y profesionalismo en depilación con cera: Tu piel, nuestro <span>compromiso</span>.</p>
     <style jsx>{`
       .container {
         position: relative;
         grid-row: ${row};
         font-family: var(--font);
-        height: 100vh;
-        min-height: 29rem;
-        max-height: 50rem;
         background-image: url(/img/front-page/woman-front.png);
         background-repeat: no-repeat;
-        background-position: right 0% bottom 0%;
-        background-size: 40%;
         background-attachment: local;
         z-index: 0;
         display: flex;
@@ -26,19 +21,15 @@ const FrontLayout = ({row}) => {
       }
       hgroup{
         margin: 0;
-        position: relative;
-        left: var(--left);
         box-sizing: border-box;
         color: var(--normal-purple);
       }
       h1{
-        font-size: 130px;
         font-weight: 700;
         margin: 0;
-        color: var(--normal-purple);
       }
       span{
-        opacity: 0.7;
+
       }
       h3{
         width: 20%;
@@ -47,476 +38,126 @@ const FrontLayout = ({row}) => {
         font-size: 1.5em;
         color: var(--tone-purple);
         opacity: 0.8;
+        border: 1px solid green;
       }
       p{
         margin: 0;
-        position: relative;
-        top: 15%;
-        width: 80%;
-        font-size: 1.35em;
         color: var(--light-purple);
-      }
-      p span{
-        opacity: 0.7;
-        font-weight: 700;
-        color: var(--normal-purple);
+        background-color: var(--tone-purple);
+        text-align: center;
+        opacity: 0.8;
       }
 
-      @media screen and (max-width: 2560px) and (max-height: 2560px) {
-        .container{
-          background-position: 150% 100%;
-          background-size: 76%;
-          width: 100%;
-          max-height: 120rem;
+      @media screen and (max-width: 2500px) and (max-height: 3840px) {
+        .container {
+          height: 45vh;
+          background-position: right -5% bottom 0%;
+          background-size: 50%;
         }
         hgroup{
-          margin: 0;
-          left: 0;
-          height: 100%;
+          position: relative;
+          align-self: center;
           width: 100%;
           display: grid;
-          grid-template-rows: 1fr 2.5fr;
+          grid-template-rows: 1fr 3fr;
+          justify-items: center;
+          border: 1px solid green;
         }
         h1{
           grid-row: 2/3;
           grid-column: 1/2;
-          font-size: 19rem;
+          font-size: 22rem;
           justify-self: center;
-          align-self: start;
-          position: relative;
-          top: 15%;
+          align-self: center;
         }
         h3{
-          width: 60%;
           grid-row: 1/2;
           grid-column: 1/2;
-          margin: 0;
-          position: relative;
-          top: 45%;
-          left: 0%;
+          font-size: 5.5em;
+          opacity: 0.8;
+          justify-self: start;
           align-self: end;
-          font-size: 5em;
+          position: relative;
+          left: 5%;
         }
         p{
-          grid-row: 2/3;
-          grid-column: 1/2;
-          margin: 0;
-          box-sizing: border-box;
-          padding: 1.5% 0;
-          align-self: end;
-          top: 0;
+          font-size: 4.3em;
           width: 100%;
-          font-size: 4.4em;
-          color: var(--light-purple);
-          background-color: var(--tone-purple);
-          text-align: center;
-          opacity: 0.8;
-        }
-        p span{
-          opacity: 1;
-          font-weight: 700;
-          color: var(--light-purple);
+          position: absolute;
+          bottom: 0;
+          box-sizing: border-box;
+          padding: 2% 0;
         }
       }
-      @media screen and (max-width: 2560px) and (max-height: 1800px) {
-        .container{
-          background-position: 120% 100%;
-          background-size: 65%;
+      @media screen and (max-width: 2500px) and (max-height: 3640px) {
+        .container {
+          background-size: 45%;
+          background-position: right -5% bottom 0%;
         }
       }
-      @media screen and (max-width: 2560px) and (max-height: 1550px) {
-        .container{
-          background-position: 120% 100%;
-          background-size: 55%;
-        }
-      }
-      @media screen and (max-width: 2560px) and (max-height: 1330px) {
-        .container{
-          background-position: 115% 100%;
-          background-size: 48%;
-        }
-      }
-      @media screen and (max-width: 2560px) and (max-height: 1180px) {
-        .container{
-          background-position: 107% 100%;
+      @media screen and (max-width: 2500px) and (max-height: 3340px) {
+        .container {
           background-size: 40%;
+          background-position: right -5% bottom 0%;
         }
       }
-      @media screen and (max-width: 2560px) and (max-height: 1000px) {
-        .container{
-          background-position: 95% 100%;
+      @media screen and (max-width: 2500px) and (max-height: 3060px) {
+        .container {
+          background-size: 37%;
+        }
+      }
+      @media screen and (max-width: 2500px) and (max-height: 2870px) {
+        .container {
+          background-size: 35%;
+        }
+      }
+      @media screen and (max-width: 2500px) and (max-height: 2750px) {
+        .container {
           background-size: 33%;
         }
-        h1{
-          font-size: 17rem;
-          top: 15%;
-        }
-        h3{
-          top: 50%;
-          left: 5%;
-          font-size: 4em;
-        }
-        p{
-          font-size: 3.5em;
-        }
       }
-      @media screen and (max-width: 2560px) and (max-height: 860px) {
-        .container{
-          background-position: 95% 100%;
-          background-size: 28%;
-        }
-        h1{
-          font-size: 15rem;
-          top: 15%;
-        }
-        h3{
-          top: 53%;
-          left: 12%;
-          font-size: 3.4em;
-        }
-        p{
-          font-size: 2.8em;
-        }
-      }
-      @media screen and (max-width: 2560px) and (max-height: 750px) {
-        .container{
-          background-position: 70% 100%;
-          background-size: 21%;
-        }
-        h1{
-          font-size: 14rem;
-          top: 15%;
-        }
-        h3{
-          top: 53%;
-          left: 12%;
-          font-size: 3.2em;
-        }
-        p{
-          font-size: 2.6em;
+      @media screen and (max-width: 2500px) and (max-height: 2640px) {
+        .container {
+          min-height: 74rem;
         }
       }
 
-      @media screen and (max-width: 2390px) and (max-height: 2560px) {
+
+      @media screen and (max-width: 2500px) and (max-height: 2590px) {
+        .container {
+          background-size: 35%;
+          background-position: right 10% bottom 0%;
+          min-height: 86rem;
+        }
+      }
+      @media screen and (max-width: 2500px) and (max-height: 2560px) {
+        .container {
+          background-size: 46%;
+          background-position: right 0% bottom 0%;
+        }
         h1{
-          font-size: 16.5rem;
-          top: 15%;
+          font-size: 18.5rem;
         }
         h3{
-          top: 45%;
-          left: 5%;
-          font-size: 5em;
+          font-size: 4.7rem;
         }
         p{
           font-size: 4.2em;
         }
       }
-      @media screen and (max-width: 2390px) and (max-height: 860px) {
-        .container{
-          background-position: 95% 100%;
-          background-size: 33%;
-        }
-        h1{
-          font-size: 17rem;
-          top: 15%;
-        }
-        h3{
-          top: 50%;
-          left: 5%;
-          font-size: 4em;
-        }
-        p{
-          font-size: 3.5em;
-        }
-      }
-      @media screen and (max-width: 2390px) and (max-height: 815px) {
-        .container{
-          background-position: 100% 100%;
-          background-size: 28%;
-        }
-        h1{
-          font-size: 15rem;
-        }
-        h3{
-          top: 55%;
-          left: 8%;
-          font-size: 3em;
-        }
-        p{
-          font-size: 3em;
-        }
-      }
-      @media screen and (max-width: 2390px) and (max-height: 700px) {
-        .container{
-          background-position: 90% 100%;
-          background-size: 23%;
-        }
-        h1{
-          font-size: 13rem;
-        }
-        h3{
-          top: 55%;
-          left: 14%;
-          font-size: 2.6em;
-        }
-        p{
-          font-size: 2.4em;
-        }
-      }
 
-      @media screen and (max-width: 2250px) and (max-height: 2560px){
-        .container{
-          max-height: 103rem;
-        }
-        h1{
-          font-size: 15.5rem;
-        }
-        h3{
-          font-size: 4.7rem;
-        }
-        p{
-          font-size: 4.3em;
-        }
-      }
-      @media screen and (max-width: 2250px) and (max-height: 1800px){
-        .container{
-          background-position: 150% 100%;
-          background-size: 76%;
-          max-height: 103rem;
-        }
-        h1{
-          font-size: 15.5rem;
-        }
-        h3{
-          font-size: 4.7rem;
-        }
-        p{
-          font-size: 4.3em;
-        }
-      }
-      @media screen and (max-width: 2250px) and (max-height: 1470px){
-        .container{
-          background-position: 120% 100%;
-          background-size: 60%;
-        }
-        h1{
-          font-size: 15.5rem;
-        }
-        h3{
-          font-size: 4.7rem;
-        }
-        p{
-          font-size: 4em;
-        }
-      }
-      @media screen and (max-width: 2250px) and (max-height: 1270px){
-        .container{
-          background-position: 107% 100%;
-          background-size: 52%;
-        }
-        p{
-          font-size: 4em;
-        }
-      }
-      @media screen and (max-width: 2250px) and (max-height: 1110px){
-        .container{
-          background-position: 107% 100%;
-          background-size: 43%;
-        }
-        h1{
-          font-size: 14rem;
-        }
-        h3{
-          font-size: 4rem;
-          top: 50%;
-          left: 8%;
-        }
-        p{
-          font-size: 3.5em;
-        }
-      }
-      @media screen and (max-width: 2250px) and (max-height: 940px){
-        .container{
-          background-position: 105% 100%;
-          background-size: 35%;
-        }
-      }
-      @media screen and (max-width: 2250px) and (max-height: 810px){
-        .container{
-          background-position: 95% 100%;
-          background-size: 30%;
-        }
-        h1{
-          font-size: 12.5rem;
-        }
-        h3{
-          font-size: 3.6rem;
-          left: 12%;
-        }
-        p{
-          font-size: 3.2em;
-        }
-      }
-      @media screen and (max-width: 2250px) and (max-height: 705px){
-        .container{
-          background-position: 95% 100%;
-          background-size: 24%;
-        }
-        h1{
-          font-size: 11.7rem;
-        }
-        h3{
-          font-size: 3.3rem;
-          left: 15%;
-        }
-        p{
-          font-size: 2.9em;
-        }
-      }
 
-      @media screen and (max-width: 2200px) and (max-height: 2560px){
-        h3{
-          left: 2.5%;
-        }
-      }
-      @media screen and (max-width: 2200px) and (max-height: 1525px){
-        .container{
-          background-position: 125% 100%;
-          background-size: 68%;
-        }
-        p{
-          font-size: 3.8em;
-        }
-      }
-      @media screen and (max-width: 2200px) and (max-height: 1375px){
-        .container{
-          background-position: 110% 100%;
-          background-size: 57%;
-        }
-        p{
-          font-size: 3.4em;
-        }
-      }
-      @media screen and (max-width: 2200px) and (max-height: 1180px){
-        .container{
-          background-size: 48%;
-        }
-        h1{
-          font-size: 15rem;
-        }
-        h3{
-          font-size: 4rem;
-          left: 5%;
-        }
-        p{
-          font-size: 3.35em;
-        }
-      }
-      @media screen and (max-width: 2200px) and (max-height: 1180px){
-        .container{
-          background-size: 39.5%;
-        }
-        h1{
-          font-size: 15rem;
-        }
-        h3{
-          font-size: 4rem;
-          left: 5%;
-        }
-        p{
-          font-size: 3.2rem;
-        }
-      }
-      @media screen and (max-width: 2200px) and (max-height: 870px){
-        .container{
-          background-position: 103% 100%;
-          background-size: 33%;
-        }
-        h1{
-          font-size: 14rem;
-        }
-        h3{
-          font-size: 3.5rem;
-          left: 6.5%;
-        }
-        p{
-          font-size: 3rem;
-        }
-      }
-      @media screen and (max-width: 2200px) and (max-height: 745px){
-        .container{
-          background-position: 97% 100%;
-          background-size: 28%;
-        }
-        h1{
-          font-size: 13rem;
-        }
-        h3{
-          font-size: 3.2rem;
-          top: 55%;
-          left: 10%;
-        }
-        p{
-          font-size: 2.8rem;
-        }
-      }
-      @media screen and (max-width: 2200px) and (max-height: 655px){
-        .container{
-          background-position: 85% 100%;
-          background-size: 24%;
-        }
-        h1{
-          font-size: 12.5rem;
-        }
-        h3{
-          font-size: 3rem;
-          top: 55%;
-          left: 12%;
-        }
-        p{
-          font-size: 2.6rem;
-        }
-      }
 
-      @media screen and (max-width: 2100px) and (max-height: 2560px){
-        h3{
-          left: 0;
-        }
-        p{
-          font-size: 3.9em;
-        }
-      }
-
-      @media screen and (max-width: 1960px) and (max-height: 2560px){
-        .container{
-          background-position: 110% 100%;
-          background-size: 68%;
-          max-height: 90rem;
-        }
-        h1{
-          font-size: 14rem;
-        }
-        h3{
-          font-size: 4.77rem;
-        }
-        p{
-          font-size: 3.7rem;
+      @media screen and (max-width: 1960px) and (max-height: 2730px){
+        .container {
+          background-size: 40%;
+          background-position: right -12% bottom 0%;
         }
       }
       @media screen and (max-width: 1960px) and (max-height: 2560px){
-        .container{
-          background-position: 110% 100%;
-          background-size: 68%;
-          max-height: 90rem;
-        }
-        h1{
-          font-size: 14rem;
-        }
         h3{
-          font-size: 4.77rem;
-        }
-        p{
-          font-size: 3.7rem;
+          font-size: 4rem;
+          left: 4%;
         }
       }
       @media screen and (max-width: 1960px) and (max-height: 1230px){
@@ -1068,13 +709,34 @@ const FrontLayout = ({row}) => {
         }
       }
 
+      @media screen and (max-width: 720px)  and (max-height: 1920px){
+        .container{
+          background-position: 140% 100%;
+          background-size: 73%;
+          height: 46vh;
+          min-height: 29rem;
+          max-height: 50rem;
+        }
+        h1{
+          font-size: 5.6rem;
+          top: 30%;
+        }
+        h3{
+          font-size: 1.5rem;
+          left: 4%;
+          top: 82%;
+        }
+        p{
+          font-size: 1.4rem;
+        }
+      }
+
       @media screen and (max-width: 720px)  and (max-height: 1280px){
         .container{
           background-position: 140% 100%;
           background-size: 73%;
           height: 50vh;
-          min-height: 29rem;
-          max-height: 50rem;
+          min-height: 40rem;
         }
         h1{
           font-size: 5.5rem;
@@ -1089,6 +751,45 @@ const FrontLayout = ({row}) => {
           font-size: 1.3rem;
         }
       }
+
+      @media screen and (max-width: 720px)  and (max-height: 1315px){
+        .container{
+          background-position: 140% 100%;
+          background-size: 73%;
+          height: 48vh;
+        }
+        h1{
+          font-size: 5.6rem;
+          top: 30%;
+        }
+        h3{
+          font-size: 1.5rem;
+          top: 85%;
+        }
+        p{
+          font-size: 1.4rem;
+        }
+      }
+
+      @media screen and (max-width: 720px)  and (max-height: 1371px){
+        .container{
+          height: 46vh;
+        }
+        h1{
+          font-size: 5.6rem;
+          top: 30%;
+        }
+        h3{
+          left: 4%;
+          font-size: 1.5rem;
+          top: 82%;
+        }
+        p{
+          font-size: 1.4rem;
+        }
+      }
+
+
 
 
 

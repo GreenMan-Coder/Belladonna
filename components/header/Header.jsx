@@ -9,7 +9,7 @@ const Header = ({row,color}) => {
       header{
         position: fixed;
         top: 0;
-        width: 90.57%;
+        width: 100%;
         background-color: var(${color});
         box-sizing: border-box;
         height: 9rem;
@@ -17,18 +17,14 @@ const Header = ({row,color}) => {
         grid-template-columns: 1fr 5fr;
         justify-items: center;
         align-items: center;
-        max-width: 2410px;
         z-index: 10;
       }
 
-      @media screen and (max-width: 1650px) {
+      @media screen and (max-width: 2500px) and (max-height: 3840px) {
         header{
-          width: 100%;
+          border: 1px solid red;
+          height: 20rem;
         }
-      }
-
-      @media screen and (max-width: 720px) and (max-height: 1280px){
-
       }
     `}</style>
   </header>

@@ -33,7 +33,6 @@ const Menu = ({num}) => {
         .container{
           position: relative;
           width: 100%;
-          max-width: 2410px;
           height: auto;
           font-family: var(--font);
           font-weight: 700;
@@ -52,11 +51,13 @@ const Menu = ({num}) => {
           color: var(--normal-purple);
           font-size: 2rem;
         }
-        @media screen and (max-width: 2560px) {
+
+        @media screen and (max-width: 2500px) and (max-height: 3840px) {
           a{
-            font-size: 2.3rem;
+            font-size: 3.5rem;
           }
         }
+
         @media screen and (max-width: 1890px) {
         a{
           font-size: 1.8rem;
