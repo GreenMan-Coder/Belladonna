@@ -1,9 +1,8 @@
-import Link from "next/link"
+import Link from "./Link";
 
 const Menu = ({num}) => {
   return <nav>
     <ul>
-      <Link
       <li>
         <Link href="/Depilacion/" legacyBehavior>
           <a >Depilación</a>

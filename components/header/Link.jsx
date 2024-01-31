@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 const Link = () => {
   return <li className="container">
     <Link href="/" legacyBehavior>
