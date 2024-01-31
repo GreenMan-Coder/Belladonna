@@ -22,7 +22,7 @@ const Description = ({sub, title, paragraph, href}) => {
     }
     <p>{paragraph}</p>
     <Link href={href} legacyBehavior>
-      <a className="know">¡Conoce más aquí!</a>
+      <a className="know">¡Conoce más!</a>
     </Link>
     <style jsx>{`
       .container {
@@ -31,449 +31,102 @@ const Description = ({sub, title, paragraph, href}) => {
         align-self: start;
         box-sizing: border-box;
         margin: 0;
+        padding: 0;
         width: 100%;
         height: 100%;
-        display: flex;
-        flex-direction: column;
+        position: relative;
+        display: grid;
+        grid-template-rows: 1fr 2fr 1fr;
       }
       h3{
+        box-sizing: border-box;
+        grid-row: 1/2;
+        grid-column: 1/2;
         margin: 0;
+        padding: 0;
         color: var(--light-purple);
       }
       h1{
-        font-size: 65px;
+        grid-row: 2/3;
+        grid-column: 1/2;
         font-weight: 700;
         margin: 0;
-        flex-grow: 2;
+        padding: 0;
+        box-sizing: border-box;
         color: var(--normal-purple);
       }
       .nets{
+        grid-row: 2/3;
+        grid-column: 1/2;
         box-sizing: border-box;
-        margin-top: 10px;
+        height: 30%;
+        align-self: center;
         display: flex;
         flex-direction: row;
       }
       p{
+        margin: 0;
+        padding: 0;
+        align-self: flex-start;
+        grid-row: 2/3;
+        grid-column: 1/2;
         box-sizing: border-box;
         overflow: hidden;
-        font-size: 17px;
         color: var(--normal-purple);
       }
+      .know{
+        align-self: center;
+        grid-row: 3/4;
+        grid-column: 1/2;
+        font-weight: 700;
+        box-sizing: border-box;
+        text-decoration: none;
+      }
 
-      @media screen and (max-width: 2560px) and (max-height: 2560px){
-        .container{
-          box-sizing: border-box;
-          margin: 0;
-          padding: 0 3%;
-          width: 100%;
-          height: 100%;
-          display: grid;
-          grid-template-rows: 0.3fr 1fr 0.5fr 0.3fr;
-          justify-items: center;
-          align-items: center;
-          position: relative;
-          right: 12%;
-        }
+      @media screen and (max-width: 2500px){
         h3{
-          justify-self: start;
+          height: 30%;
+          width: 90%;
           align-self: end;
-          grid-row: 1/2;
-          grid-column: 1/2;
-          width: 100%;
-          font-size: 3em;
-        }
-        h1{
-          grid-row: 2/3;
-          grid-column: 1/2;
-          font-size: 6.5rem;
-          height: 100%;
-          width: 100%;
-          box-sizing: border-box;
-        }
-        .nets{
-          grid-row: 2/3;
-          grid-column: 1/2;
-          grid-column-gap: 1.5%;
-          box-sizing: border-box;
-          margin: 0;
-          padding: 0;
-          width: 100%;
-          align-self: center;
-          position: relative;
-          bottom: 15%;
-        }
-        .jewelInsta{
-          grid-row: 2/3;
-          grid-column: 1/2;
-          box-sizing: border-box;
-          margin: 0;
-          align-self: center;
-          padding: 0;
-          width: 100%;
-          position: relative;
-          bottom: 15%;
-        }
-        p{
-          justify-self: start;
-          margin: 0;
-          font-size: 2.6em;
-          align-self: ${title === "Depilación con cera" ? "center" : "start"};
-          position: relative;
-          bottom: ${title === "Depilación con cera" ? "50%" : "-25%"};
-        }
-        a{
-          box-sizing: border-box;
-          overflow: hidden;
-          text-decoration: none;
-          font-weight: 900;
-          color: var(--normal-purple);
-          margin: 0;
-          align-self: start;
-          justify-self: start;
-          font-size: 2.6em;
-        }
-      }
-      @media screen and (max-width: 2560px) and (max-height: 2445px){
-        .container{
-          height: 90%;
-          align-self: center;
-        }
-        h1{
-          font-size: ${title === "Depilación con cera" ? "7rem" : ""};
-        }
-        .nets{
-          top: 0;
-        }
-        .jewelInsta{
-          top: 0;
-        }
-      }
-      @media screen and (max-width: 2560px) and (max-height: 2325px){
-
-      }
-      @media screen and (max-width: 2560px) and (max-height: 2200px){
-        .container{
-          height: 70%;
-        }
-      }
-
-      @media screen and (max-width: 2325px) and (max-height: 2560px){
-        .container{
-          padding: 0 0;
-          right: 10%;
-          border: 1px solid red;
-        }
-        h3{
-          font-size: 3em;
-        }
-        h1{
-          font-size: 6.5rem;
-        }
-        .nets{
-          bottom: 15%;
-        }
-        .jewelInsta{
-          bottom: 15%;
-        }
-        p{
-          font-size: 2.6em;
-          align-self: ${title === "Depilación con cera" ? "center" : "start"};
-          bottom: ${title === "Depilación con cera" ? "50%" : "-25%"};
-        }
-        a{
-          font-size: 2.6em;
-        }
-      }
-      @media screen and (max-width: 2325px) and (max-height: 2200px){
-        .container{
-          height: 100%;
-        }
-        h3{
-          font-size: 2.7em;
-        }
-        h1{
-          font-size: 5.8rem;
-        }
-        p{
-          font-size: 2.6em;
-          bottom: 80%;
-        }
-        .know{
-          font-size: 2.7em;
-          position: relative;
-          top: -30%;
-        }
-      }
-
-
-
-      @media screen and (max-width: 2005px) {
-        h3{
-          font-size: 2.3em;
-        }
-        h1{
-          font-size: 4.5em;
-        }
-        p{
-          font-size: 2em;
-        }
-        a{
-          font-size: 2.3em;
-          align-self: end;
-        }
-        .nets{
-          position: relative;
-          top: -6%;
-        }
-      }
-      @media screen and (max-width: 1575px) {
-        .jewelInsta{
-          top: -8%;
-        }
-      }
-      @media screen and (max-width: 1457px) {
-        h3{
-          font-size: 2em;
-        }
-        h1{
-          font-size: 4em;
-        }
-        p{
-          font-size: 1.9em;
-        }
-        a{
-          font-size: 2.3em;
-          align-self: end;
-        }
-        .nets{
-          position: relative;
-          top: -6%;
-        }
-      }
-      @media screen and (max-width: 1094px) {
-        h3{
-          font-size: 1.8em;
-        }
-        h1{
           font-size: 3.5em;
-        }
-        p{
-          font-size: 1.7em;
-        }
-        a{
-          font-size: 2em;
-          align-self: end;
-        }
-        .nets{
-          position: relative;
-          top: -6%;
-        }
-      }
-      @media screen and (max-width: 956px) {
-        h3{
-          position: relative;
-          top: 20%;
-          font-size: 1.8em;
+          padding-left: 0.5rem;
         }
         h1{
-          position: relative;
-          top: 5%;
-          font-size: ${title === "Joyería" ? "4em" : "3.2em"};
-        }
-        p{
-          font-size: 1.7em;
-        }
-        a{
-          font-size: 2em;
-          align-self: end;
-        }
-        .nets{
-          position: relative;
-          top: -14%;
-        }
-        .jewelInsta{
-          top: -8%;
-        }
-      }
-      @media screen and (max-width: 875px) {
-        h3{
-          font-size: 1.55em;
-        }
-        h1{
-          position: relative;
-          top: 5%;
-          font-size: ${title === "Joyería" ? "4em" : "3em"};
-        }
-        p{
-          font-size: 1.5em;
-        }
-        a{
-          font-size: 1.6em;
-          align-self: end;
-          position: relative;
-          bottom: 30%;
-        }
-      }
-      @media screen and (max-width: 820px) {
-        h3{
-          top: 45%;
-          font-size: 1.5em;
-        }
-        h1{
-          top: 10%;
-          font-size: ${title === "Joyería" ? "4em" : "3.5em"};
-        }
-        .nets{
-          top: 15%;
-        }
-        p{
-          font-size: 1.5em;
-        }
-        a{
-          font-size: 1.6em;
-          align-self: end;
-          position: relative;
-          bottom: 30%;
-        }
-      }
-      @media screen and (max-width: 660px) {
-        h3{
-          top: 40%;
-          font-size: 1.4em;
-        }
-        h1{
-          font-size: ${title === "Joyería" ? "3.5em" : "3em"};
-        }
-        .nets{
-          top: 5%;
-        }
-        a{
-          font-size: 1.42em;
-        }
-      }
-      @media screen and (max-width: 540px) {
-        .container{
-          align-self: end;
-          box-sizing: border-box;
-          margin: 0;
-          padding: 0 3%;
-          width: 100%;
-          height: 100%;
-          display: grid;
-          grid-template-rows: 0.3fr 1fr 0.5fr 0.3fr;
-          justify-items: center;
-          align-items: center;
-        }
-        h3{
-          justify-self: start;
-          align-self: end;
-          grid-row: 1/2;
-          grid-column: 1/2;
-          width: 100%;
-          font-size: 1.6em;
-        }
-        h1{
-          grid-row: 2/3;
-          grid-column: 1/2;
-          font-size: 3em;
-          height: 100%;
-          width: 100%;
-          box-sizing: border-box;
-        }
-        .nets{
-          top: 10%;
-        }
-        .jewelInsta{
-          bottom: 0%;
-          top: 4%;
-        }
-        p{
-          margin: 0;
-          font-size: 1.6em;
-          align-self: ${title === "Depilación con cera" ? "center" : "start"};
-        }
-        a{
-          margin: 0;
-          align-self: end;
-          justify-self: start;
-          font-size: 1.6em;
-        }
-      }
-      @media screen and (max-width: 488px) {
-        .nets{
-          top: 28%;
-        }
-        }
-        p{
-          align-self: ${title === "Depilación con cera" ? "end" : "start"};
-        }
-        a{
-          bottom: 0;
-          top: 20%;
-          font-size: 1.6em;
-        }
-      }
-      @media screen and (max-width: 415px) {
-        .container{
-          align-self: end;
-          box-sizing: border-box;
-          margin: 0;
-          padding: 0 3%;
-          width: 100%;
-          height: 100%;
-          display: grid;
-          grid-template-rows: 0.3fr 1fr 0.5fr 0.3fr;
-          justify-items: center;
-          align-items: center;
-        }
-        h3{
-          justify-self: start;
-          align-self: end;
-          grid-row: 1/2;
-          grid-column: 1/2;
-          width: 100%;
-          font-size: 1.6em;
-        }
-        h1{
-          grid-row: 2/3;
-          grid-column: 1/2;
-          font-size: 3em;
-          height: 100%;
-          width: 100%;
-          box-sizing: border-box;
-        }
-        .nets{
-          grid-row: 2/3;
-          grid-column: 1/2;
-          box-sizing: border-box;
-          margin: 0;
-          padding: 0;
-          width: 100%;
-          align-self: center;
-          position: relative;
-          top: 24%;
-        }
-        .jewelInsta{
-          grid-row: 2/3;
-          grid-column: 1/2;
-          box-sizing: border-box;
-          margin: 0;
-          align-self: center;
-          padding: 0;
-          width: 100%;
+          align-self: start;
           position: relative;
           bottom: 5%;
+          height: 25%;
+          font-size: 7rem;
+          padding-left: 0.5rem;
+        }
+        .nets{
+          align-self: start;
+          position: relative;
+          top: 15%;
+          padding-left: 0.5rem;
         }
         p{
-          margin: 0;
-          font-size: 1.6em;
-          align-self: ${title === "Depilación con cera" ? "center" : "start"};
-        }
-        a{
-          margin: 0;
+          position: relative;
+          bottom: 15%;
           align-self: end;
-          justify-self: start;
-          font-size: 1.6em;
+          padding-left: 0.5rem;
+          padding-right: 10rem;
+          font-size: 2.6rem;
+        }
+        .know{
+          background-color: var(--tone-purple);
+          padding-left: 0;
+          font-size: 2.5em;
+          align-self: start;
+          position: relative;
+          left: .5%;
+          width: 25%;
+          height: 25%;
+          border-radius: 50px;
+          display: grid;
+          justify-items: center;
+          align-items: center;
+          color: var(--light-purple);
         }
       }
     `}</style>

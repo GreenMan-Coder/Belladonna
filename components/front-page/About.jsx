@@ -7,19 +7,17 @@ const About = () => {
     <Footer/>
     <style jsx>{`
       .container {
-        height: 100%;
-        width: 100%;
         margin: 0;
         box-sizing: border-box;
         background-color: var(--tone-purple);
         font-family: var(--font);
         display: grid;
-        grid-template-rows: 1fr 0.25fr;
+        grid-template-rows: 1fr;
       }
-      @media screen and (max-width: 2410px) {
+      @media screen and (max-width: 2500px){
         .container {
-
-      }
+          height: 90rem;
+        }
       }
     `}</style>
   </section>

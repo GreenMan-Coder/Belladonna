@@ -1,29 +1,48 @@
 import Logo from './Logo'
 import Menu from './Menu'
 
-const Header = ({row,color}) => {
+const Header = () => {
   return <header>
-    <Logo col="1/2" tam="7.2rem"/>
+    <Logo />
     <Menu col="2/3"/>
     <style jsx>{`
       header{
+        background: red;
         position: fixed;
         top: 0;
         width: 100%;
-        background-color: var(${color});
+        background-color: red;
         box-sizing: border-box;
-        height: 9rem;
         display: grid;
-        grid-template-columns: 1fr 5fr;
         justify-items: center;
         align-items: center;
         z-index: 10;
       }
 
-      @media screen and (max-width: 2500px) and (max-height: 3840px) {
+      @media screen and (max-width: 2500px){
         header{
+          height: 15em;
+          width: 100%;
           border: 1px solid red;
-          height: 20rem;
+        }
+      }
+
+      @media screen and (max-width: 1024px) and (max-height: 1366px) {
+        header{
+          height: 7rem;
+          border: 1px solid red;
+        }
+      }
+      @media screen and (max-width: 1024px) and (max-height: 600px) {
+        header{
+
+        }
+      }
+
+      @media screen and (max-width: 280px) and (max-height: 653px) {
+        header{
+          height: 7rem;
+          width: 100%;
         }
       }
     `}</style>

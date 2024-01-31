@@ -11,33 +11,19 @@ const SocialNetworks = ({children, marg, tam, href}) => {
         cursor: pointer;
       }
 
-      @media screen and (max-width: 2560px) and (max-height: 1890px){
+      @media screen and (max-width: 1280px) and (max-height: 800px) {
         .container{
           width: ${tam === "6.5%" ? "5.5%" : tam === "6%" ? "5%" : tam === "7.4%" ? "5.5%" : ""}
         }
       }
-      @media screen and (max-width: 2560px) and (max-height: 1470px){
+
+      @media screen and (max-width: 1024px) and (max-height: 1366px) {
         .container{
-          width: ${tam === "6.5%" ? "5%" : tam === "6%" ? "4.5%" : tam === "7.4%" ? "5%" : ""}
-        }
-      }
-      @media screen and (max-width: 2560px) and (max-height: 1240px){
-        .container{
-          width: ${tam === "6.5%" ? "4.5%" : tam === "6%" ? "4%" : tam === "7.4%" ? "4.5%" : ""}
+          width: ${tam === "6%" ? "8%" : "8%"}
         }
       }
 
 
-      @media screen and (max-width: 2277px) {
-        .container{
-          width: ${tam === "7.4%" ? "6.4%" : {tam}};
-        }
-      }
-      @media screen and (max-width: 1575px) {
-        .container{
-          width: 8%;
-        }
-      }
       @media screen and (max-width: 790px) {
         .container{
           width: 8%;

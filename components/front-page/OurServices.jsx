@@ -8,61 +8,38 @@ const OurServices = ({image, row, sub, title, paragraph, href, }) => {
       <Description sub={sub} title={title} paragraph={paragraph} href={href === 1 ? '/Depilacion' : '/Joyeria'}/>
     </div>
     <style jsx>{`
-        @media screen and (max-width: 2560px) and (max-height: 2560px){
-          .container {
-            margin: 0;
-            grid-row: ${row};
-            height: 50vh;
-            width: 100%;
-            display: grid;
-            justify-items: center;
-            align-items: center;
-            border: 1px solid red;
-            box-sizing: border-box;
-            margin-bottom: 15%;
-          }
-          .post{
-            border: 1px solid blue;
-            align-self: center;
-            margin: 0;
-            height: 100%;
-            width: 100%;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            align-items: start;
-            justify-items: center;
-            box-sizing: border-box;
-          }
-        }
-        @media screen and (max-width: 2560px) and (max-height: 2220px){
-          .container {
-            height: 80%;
-          }
-        }
+      .container {
+        margin: 0;
+        grid-row: ${row};
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        box-sizing: border-box;
+      }
+      .post{
+        align-self: center;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: 1fr 1.1fr;
+        align-items: center;
+        justify-items: center;
+        box-sizing: border-box;
+      }
 
-
-
-        @media screen and (max-width: 2560px) and (max-height: 2325px){
-          .container{
-            position: relative;
-            bottom: 7%;
-          }
+      @media screen and (max-width: 2500px){
+        .container {
+          height: 70em;
+          width: 100%;
+          box-sizing: border-box;
+          margin-bottom: 15em;
         }
-
-        @media screen and (max-width: 540px) {
-          .post{
-            align-self: center;
-            grid-template-columns: 0.7fr 1fr;
-            grid-column-gap: 0;
-          }
+        .post{
+          height: 100%;
+          width: 100%;
+          position: relative;
         }
-        @media screen and (max-width: 415px) {
-          .post{
-            align-self: center;
-            grid-template-columns: 0.7fr 1fr;
-            grid-column-gap: 0;
-          }
-        }
+      }
     `}</style>
   </section>
 }

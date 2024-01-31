@@ -20,7 +20,6 @@ const Post = () => {
         overflow: hidden;
         box-sizing: border-box;
         margin: 0;
-        margin-top: 3%;
       }
       .info{
         align-self: start;
@@ -39,37 +38,16 @@ const Post = () => {
         position: relative;
         bottom: 10%;
         text-align: center;
-        font-size: 60px;
         font-weight: 700;
         color: var(--purple-blanco);
       }
-      @media screen and (max-width: 2410px) {
+      @media screen and (max-width: 2500px){
         h1{
-          font-size: 7.5em;
-      }
-      @media screen and (max-width: 1754px) {
-        h1{
-          font-size: 6.5em;
+          font-size: 7.3em;
         }
-      }
-      @media screen and (max-width: 1126px) {
-        h1{
-          font-size: 5em;
-        }
-      }
-      @media screen and (max-width: 850px) {
-        h1{
-          font-size: 4em;
-        }
-      }
-      @media screen and (max-width: 680px) {
-        h1{
-          font-size: 3.5em;
-        }
-      }
-      @media screen and (max-width: 586px) {
-        h1{
-          font-size: 3em;
+        .info{
+          margin: 0;
+          padding: 0;
         }
       }
     `}</style>

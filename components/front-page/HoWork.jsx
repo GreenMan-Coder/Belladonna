@@ -4,9 +4,9 @@ import PayMethods from "./hoWork/PayMethods"
 const HoWork = ({row}) => {
   return <section className="container">
     <div className="resources">
-      <ResourcesCard url="url(/img/front-page/home.jpeg)" tam="100%" title="LOCACIÓN" text="Confirmamos tu cita previamente acordada vía WhatsApp de 5 a 3 horas antes. Nuestra especialista brindará un excelente servicio en la comodidad de tu hogar o en nuestro punto físico." pos="center" top="40px"/>
-      <ResourcesCard url="url(/img/front-page/cera.jpeg)" tam="100%" title="DEPILACIÓN" text="Queremos brindarte un servicio de depilación con cera de la más alta calidad. Nuestra especialista se encargan de minimizar cualquier molestia y asegurar que tu piel quede perfecta." pos="center" top="40px"/>
-      <ResourcesCard url="url(/img/front-page/folow.jpeg)" tam="150%" title="SEGUIMIENTO" text="Posterior a la depilación, mantendremos contacto contigo para verificar la evolución de la piel y estar al tanto de cualquier consulta adicional que puedas tener." pos="center" top="9px"/>
+      <ResourcesCard url="url(/img/front-page/home.jpeg)" tam="100%" title="RESERVA" text="¡Contáctanos por cualquier medio y agenda tu cita! nos aseguraremos de tener todo listo para recibirte de manera impecable en nuestras instalaciones la fecha acordada."/>
+      <ResourcesCard url="url(/img/front-page/cera.jpeg)" tam="100%" title="DEPILACIÓN" text="Queremos brindarte un servicio de depilación con cera de la más alta calidad. Nuestra especialista se encargará de minimizar cualquier molestia y asegurar que tu piel quede perfecta."/>
+      <ResourcesCard url="url(/img/front-page/folow.jpeg)" tam="150%" title="SEGUIMIENTO" text="Posterior a la depilación, mantendremos contacto contigo para verificar la evolución de la piel y estar al tanto de cualquier consulta adicional que puedas tener."/>
       <div className="payment">
         <PayMethods image="url(/img/front-page/pesoscop.png)" tam="85%"/>
         <PayMethods image="url(/img/front-page/pse.png)" tam="110%"/>
@@ -18,9 +18,6 @@ const HoWork = ({row}) => {
       .container {
         grid-row: ${row};
         width: 100%;
-        height: 70vh;
-        min-height: 26rem;
-        max-height: 50rem;
         display: grid;
         justify-items: center;
         align-items: center;
@@ -31,38 +28,26 @@ const HoWork = ({row}) => {
         margin: 0;
         align-self: center;
         width: 100%;
-        height: 80%;
+        height: 100%;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 0.3fr;
-        grid-gap: 10px;
         text-align: center;
       }
-      .payment{
-        display: grid;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-      }
 
-      @media screen and (max-width: 2560px) and (max-height: 2560px) {
+      @media screen and (max-width: 2500px){
         .resources{
-          grid-column-gap: 2rem;
-        }
-      }
-
-
-      @media screen and (max-width: 1025px) and (max-height: 2560px){
-        .resources{
-          grid-template-columns: 1fr;
-          grid-template-rows: 1fr 1fr 1fr 0.5fr;
-          grid-gap: 2%;
-          width: 95%;
-          height: 100%;
+          grid-template-columns: 1fr 1fr 1fr 0.3fr;
+          grid-template-rows: 1fr;
+          height: 45em;
         }
         .payment{
-          width: 100%;
-          height: 100%;
           display: grid;
-          grid-template-columns: 1fr 1fr 1fr 1fr;
-          grid-template-rows: 1fr;
+          grid-template-rows: 1fr 1fr 1fr 1fr;
+          justify-items: center;
+          align-items: center;
+        }
+        .container{
+          justify-self: center;
+          width: 90%;
         }
       }
     `}</style>

@@ -3,8 +3,8 @@ const FrontLayout = ({row}) => {
     <hgroup>
       <h3>Bienvenida a</h3>
       <h1>BELLA<span>DONNA</span></h1>
+      <p>Excelencia y profesionalismo en depilación con cera: Tu piel, nuestro <span>compromiso</span>.</p>
     </hgroup>
-    <p>Excelencia y profesionalismo en depilación con cera: Tu piel, nuestro <span>compromiso</span>.</p>
     <style jsx>{`
       .container {
         position: relative;
@@ -14,133 +14,265 @@ const FrontLayout = ({row}) => {
         background-repeat: no-repeat;
         background-attachment: local;
         z-index: 0;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        flex-direction: column;
+        display: grid;
+        justify-items: center;
+        align-items: center;
       }
       hgroup{
         margin: 0;
         box-sizing: border-box;
         color: var(--normal-purple);
+        display: grid;
+        justify-items: center;
+        align-items: center;
       }
       h1{
+        box-sizing: border-box;
         font-weight: 700;
         margin: 0;
       }
-      span{
-
-      }
       h3{
-        width: 20%;
         margin: 0;
-        margin-bottom: -18px;
-        font-size: 1.5em;
+        box-sizing: border-box;
         color: var(--tone-purple);
         opacity: 0.8;
-        border: 1px solid green;
       }
       p{
+        box-sizing: border-box;
         margin: 0;
         color: var(--light-purple);
         background-color: var(--tone-purple);
         text-align: center;
         opacity: 0.8;
+        align-self: end;
+        height: 50%;
+        width: 100%;
       }
 
-      @media screen and (max-width: 2500px) and (max-height: 3840px) {
+      @media screen and (min-width: 2500px){
         .container {
-          height: 45vh;
-          background-position: right -5% bottom 0%;
-          background-size: 50%;
+          height: 100vh;
+          min-height: 106em;
+          max-height: 110em;
+          width: 100%;
+          background-position: right -20% bottom 0%;
+          background-size: 63%;
+          box-sizing: border-box;
         }
         hgroup{
-          position: relative;
-          align-self: center;
           width: 100%;
-          display: grid;
-          grid-template-rows: 1fr 3fr;
-          justify-items: center;
-          border: 1px solid green;
+          height: 100%;
         }
         h1{
-          grid-row: 2/3;
-          grid-column: 1/2;
-          font-size: 22rem;
-          justify-self: center;
+          font-size: 20rem;
           align-self: center;
+          position: relative;
+          top: 10rem;
+        }
+        span{
+          opacity: 0.8;
         }
         h3{
-          grid-row: 1/2;
-          grid-column: 1/2;
-          font-size: 5.5em;
-          opacity: 0.8;
+          font-size: 6rem;
           justify-self: start;
           align-self: end;
           position: relative;
-          left: 5%;
+          bottom: -4em;
+          left: 3%;
         }
         p{
-          font-size: 4.3em;
-          width: 100%;
-          position: absolute;
-          bottom: 0;
-          box-sizing: border-box;
-          padding: 2% 0;
+          height: 50%;
+          font-size: 4.3rem;
+          padding: 0;
+          padding: 30px 20px 0 20px;
         }
       }
-      @media screen and (max-width: 2500px) and (max-height: 3640px) {
+
+      @media screen and (max-width: 2415px){
         .container {
-          background-size: 45%;
-          background-position: right -5% bottom 0%;
-        }
-      }
-      @media screen and (max-width: 2500px) and (max-height: 3340px) {
-        .container {
-          background-size: 40%;
-          background-position: right -5% bottom 0%;
-        }
-      }
-      @media screen and (max-width: 2500px) and (max-height: 3060px) {
-        .container {
-          background-size: 37%;
-        }
-      }
-      @media screen and (max-width: 2500px) and (max-height: 2870px) {
-        .container {
-          background-size: 35%;
-        }
-      }
-      @media screen and (max-width: 2500px) and (max-height: 2750px) {
-        .container {
-          background-size: 33%;
-        }
-      }
-      @media screen and (max-width: 2500px) and (max-height: 2640px) {
-        .container {
-          min-height: 74rem;
-        }
-      }
-      @media screen and (max-width: 2500px) and (max-height: 2590px) {
-        .container {
-          background-size: 35%;
-          background-position: right 10% bottom 0%;
-          min-height: 86rem;
-        }
-      }
-      @media screen and (max-width: 2500px) and (max-height: 2560px) {
-        .container {
-          background-size: 46%;
-          background-position: right 0% bottom 0%;
+          min-height: 105em;
+          max-height: 106em;
+          background-position: right -30% bottom 0%;
+          background-size: 65%;
         }
         h1{
           font-size: 18.5rem;
+          top: 9rem;
+        }
+        h3{
+          font-size: 5.5rem;
+          bottom: -4.3em;
+        }
+        p{
+          height: 35%;
+          font-size: 4rem;
+          padding: 30px 20px 0 20px;
+        }
+      }
+
+      @media screen and (max-width: 2255px){
+        .container{
+          min-height: 90.5em;
+          max-height: 90.5em;
+          background-position: right -20% bottom 0%;
+          background-size: 58%;
+        }
+        h1{
+          font-size: 17rem;
+          top: 10rem;
+        }
+        h3{
+          font-size: 5.3rem;
+          bottom: -4.3em;
+        }
+        p{
+          height: 35%;
+          font-size: 3.5rem;
+          padding: 30px 20px 0 20px;
+        }
+      }
+
+      @media screen and (max-width: 2088px){
+        .container{
+          min-height: 85em;
+          max-height: 85em;
+          background-position: right -20% bottom 0%;
+          background-size: 58%;
+        }
+        h1{
+          font-size: 15rem;
         }
         h3{
           font-size: 4.7rem;
+          bottom: -4.7em;
+          left: 5%;
         }
         p{
-          font-size: 4.2em;
+          font-size: 3.3rem;
+        }
+      }
+
+      @media screen and (max-width: 1935px){
+        .container{
+          min-height: 81em;
+          max-height: 81em;
+        }
+        h1{
+          font-size: 14rem;
+        }
+        h3{
+          font-size: 4.7rem;
+          bottom: -4.6em;
+          left: 5%;
+        }
+        p{
+          font-size: 3rem;
+        }
+      }
+
+      @media screen and (max-width: 1795px){
+        .container{
+          min-height: 72em;
+          max-height: 72em;
+          background-position: right -15% bottom 0%;
+          background-size: 55%;
+        }
+        h1{
+          font-size: 13.5rem;
+          top: 8rem;
+        }
+        h3{
+          font-size: 4.5rem;
+          bottom: -4em;
+          left: 5%;
+        }
+        p{
+          font-size: 2.7rem;
+        }
+      }
+
+      @media screen and (max-width: 1749px){
+        h3{
+          left: 2%;
+        }
+        p{
+          font-size: 2.6rem;
+        }
+      }
+
+      @media screen and (max-width: 1675px){
+        .container{
+          min-height: 68em;
+          max-height: 68em;
+        }
+      }
+
+      @media screen and (max-width: 1615px){
+        .container{
+          min-height: 66em;
+          max-height: 66em;
+        }
+        h3{
+          font-size: 4em;
+        }
+        h1{
+          font-size: 12.5rem;
+          top: 6.5rem;
+        }
+        p{
+          font-size: 2.6rem;
+        }
+      }
+
+      @media screen and (max-width: 1561px){
+        .container{
+          min-height: 60em;
+          max-height: 60em;
+          background-position: right -10% bottom 0%;
+          background-size: 50%;
+        }
+        h3{
+          font-size: 3.8em;
+          top: 95%;
+        }
+        h1{
+          font-size: 12.2rem;
+          top: 8rem;
+        }
+        p{
+          font-size: 2.3rem;
+        }
+      }
+
+      @media screen and (max-width: 1470px){
+        .container{
+          min-height: 57.3em;
+          max-height: 57.3em;
+        }
+        h3{
+          font-size: 3.6em;
+          top: 16rem;
+        }
+        h1{
+          font-size: 11.5rem;
+        }
+        p{
+          font-size: 2.2rem;
+        }
+      }
+
+      @media screen and (max-width: 1385px){
+        .container{
+
+        }
+        h3{
+
+        }
+        h1{
+
+        }
+        p{
+
         }
       }
     `}</style>

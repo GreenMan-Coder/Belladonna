@@ -15,17 +15,16 @@ const Front = () => {
       <link rel="icon" href="/favicon.ico" />
     </Head>
     <WhatsappButton href="https://wa.me/message/D4KMZ4C5TFU5N1"/>
-    <Header row="1/2" color="--purple-blanco"/>
+    <Header row="1/2" />
     <FrontLayout row="1/2"/>
     <div className="hoWorkTitle">
-      <h1 className='title1'>¿Cómo trabajamos?</h1>
-      <p>Disfruta de la mejor depilación profesional en Bogotá. ¡Reserva tu cita y vive una experiencia única!</p>
+      <h1>Cita reservada, experiencia única: la depilación profesional que mereces.</h1>
     </div>
     <HoWork row="3/4"/>
     <div className="title2">
-      <h1>Servicios Depilación</h1>
+      <h1>Entre mujeres, servicio de nivel superior.</h1>
     </div>
-    <OurServices row="5/6" image="/img/front-page/depilacion.jpeg" sub="Servicio exclusivo para mujeres" title="Depilación con cera" paragraph="Depilación con cera de alta calidad en todas las áreas del cuerpo." href={1}/>
+    <OurServices row="5/6" image="/img/front-page/depilacion.jpeg" sub="Servicio exclusivo para mujeres" title="Depilación con cera" paragraph="Descubre la excelencia en depilación con cera para todo el cuerpo." href={1}/>
     <About/>
     <style jsx>{`
       .container {
@@ -33,47 +32,28 @@ const Front = () => {
         display: grid;
         width: 100%;
         height: 100%;
-        max-width: 2410px;
-        grid-template-rows: auto auto auto auto auto auto auto;
+        grid-template-rows: auto auto auto auto auto auto;
         box-sizing: border-box;
         font-family: var(--font);
       }
       .hoWorkTitle{
+        margin: 0;
         grid-row: 2/3;
         grid-column: 1/2;
         justify-self: center;
         align-self: center;
         position: relative;
-        height: 86vh;
-        width: 100%;
         display: grid;
-        grid-template-rows: 1fr;
-        grid-template-columns: 1fr;
         justify-items: center;
         align-items: center;
-        min-height: 19rem;
-        max-height: 75rem;
-      }
-      .title1{
-        grid-column: 1/2;
-        grid-row: 1/2;
-        margin: 0;
-        text-align: center;
-        font-size: 10rem;
-        font-weight: 700;
-        color: var(--tone-purple);
-        position: relative;
-        bottom: 15%;
-      }
-      p{
-        grid-column: 1/2;
-        grid-row: 1/2;
-        align-self: center;
-        position: absolute;
-        bottom: 20%;
-        text-align: center;
-        font-size: 3.5em;
+        box-sizing: border-box;
         color: var(--normal-purple);
+      }
+
+      .hoWorkTitle h1{
+        margin: 0;
+        align-self: center;
+        text-align: center;
         box-sizing: border-box;
       }
       .title2{
@@ -81,24 +61,35 @@ const Front = () => {
         grid-column: 1/2;
         justify-self: center;
         align-self: center;
-        height: 86vh;
+        height: 100%;
         width: 100%;
         display: grid;
         justify-items: center;
         align-items: center;
         position: relative;
-        height: 75rem;
-        width: 100%;
-        min-height: 17rem;
-        max-height: 75rem;
+        box-sizing: border-box;
       }
       .title2 h1{
         margin: 0;
         text-align: center;
         font-weight: 700;
-        color: var(--tone-purple);
+        color: var(--normal-purple);
         font-size: 10rem;
         position: relative;
+      }
+
+      @media screen and (max-width: 2500px){
+        .hoWorkTitle h1{
+          font-size: 4em;
+          padding: 15rem 5rem;
+        }
+        .title2{
+          padding: 15rem 5rem;
+        }
+        .title2 h1{
+          box-sizing: border-box;
+          font-size: 4rem;
+        }
       }
     `}</style>
     </main>
