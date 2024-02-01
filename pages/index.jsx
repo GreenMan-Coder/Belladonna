@@ -13,8 +13,9 @@ const Index = () => {
         </Head>
         <Header/>
         <Super/>
-        {/* <h1 className="how-work-title">Cita reservada, experiencia única: la depilación profesional que mereces.</h1>
-        <HoWork />
+        <h1 className="how-work-title">Cita reservada, experiencia única: la depilación profesional que mereces.</h1>
+        {/* <HoWork /> */}
+        {/*
         <div className="title2">
             <h1>Entre mujeres, servicio de nivel superior.</h1>
         </div>
@@ -22,49 +23,16 @@ const Index = () => {
         <About/> */}
         <WhatsappButton href="https://wa.me/message/D4KMZ4C5TFU5N1"/>
         <style jsx>{`
-          .how-work-title {
-            color: var(--normal-purple);
-            margin: 0;
-            align-self: center;
-            text-align: center;
-            box-sizing: border-box;
-          }
-          
-          .title2{
-            grid-row: 4/5;
-            grid-column: 1/2;
-            justify-self: center;
-            align-self: center;
-            height: 100%;
-            width: 100%;
-            display: grid;
-            justify-items: center;
-            align-items: center;
-            position: relative;
-            box-sizing: border-box;
-          }
-          .title2 h1{
-            margin: 0;
-            text-align: center;
-            font-weight: 700;
-            color: var(--normal-purple);
-            font-size: 10rem;
-            position: relative;
-          }
-
-          @media screen and (max-width: 2500px){
-            .hoWorkTitle h1{
-              font-size: 4em;
-              padding: 15rem 5rem;
+            .how-work-title {
+                color: var(--normal-purple);
+                margin: 0;
+                align-self: center;
+                text-align: center;
+                box-sizing: border-box;
+                padding: 10rem 5rem;
+                font-size: 3rem;
+                font-weight: 400;
             }
-            .title2{
-              padding: 15rem 5rem;
-            }
-            .title2 h1{
-              box-sizing: border-box;
-              font-size: 4rem;
-            }
-          }
     `}</style>
     </div>
 }

@@ -8,59 +8,61 @@ const Super = () => {
 
         <style jsx>{`
             main {
-                height: calc(100vh - 10rem);
-                background-image: url(/img/front-page/super.jpeg);
+                height: calc(100vh - 5rem);
+                background-image: url(/img/front-page/super1.jpeg);
                 background-repeat: no-repeat;
-                background-position: right;
-                background-size: auto 100%;
+                background-position: top;
+                background-size: cover;
                 display: grid;
                 grid-template-rows: 1fr auto;
                 justify-items: center;
                 align-items: center;
                 box-sizing: border-box;
-                margin-bottom: 5rem;
-                font-size: 16px;
+                max-width: 1590px;
+                max-height: 800px;
+                margin: auto;
+                position: relative;
             }
 
             .title {
                 box-sizing: border-box;
                 width: 100%;
-                background-color: #3f0c3a66;
+                background-color: #3f0c3aaa;
                 padding: 2em 8em;
             }
 
             h1 {
-                color: var(--normal-purple);
+                color: var(--light-purple);
                 font-weight: 700;
                 font-size: 10em;
-                align-self: end;
+                text-align: center;
             }
-            
+
             span {
                 font-weight: 700;
-                color: var(--tone-purple);
+                color: var(--purple-blanco);
                 font-size: 3em;
                 padding-left: 2rem;
                 transform: translateY(-100%);
             }
-            
+
             p {
-                align-self: end;
+                position: absolute;
+                bottom: 0;
                 box-sizing: border-box;
                 color: var(--light-purple);
                 background-color: var(--tone-purple);
                 text-align: center;
                 opacity: 0.8;
-                width: 90%;
-                font-size: 1.5rem;
+                width: auto;
+                border-radius: 15px 15px 0 0;
+                font-size: 1.3rem;
                 padding: 2rem;
-                margin-bottom: 4rem;
-                
             }
 
             @media screen and (max-width: 1400px) {
                 main {
-                    font-size: 12px;
+                    font-size: 10px;
                 }
             }
 

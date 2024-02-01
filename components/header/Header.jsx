@@ -15,7 +15,7 @@ const Header = () => {
             display: flex;
             align-items: center;
             justify-content: center;
-            background-color: var(--light-purple);
+            background-color: var(--purple-blanco);
             top: 0;
             gap: 2rem
             background-color: red;
