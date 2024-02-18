@@ -1,6 +1,6 @@
-import Header from "../components/header/Header"
-import About from "../components/nosotros/About"
-import Footer from "../components/footer/Footer"
+import Footer from '../components/footer/Footer'
+import Header from '../components/header/Header'
+import About from '../components/nosotros/About'
 
 const Nosotros = () => {
     return <article className="container">
@@ -18,7 +18,7 @@ const Nosotros = () => {
                 width: 100%;
                 height: 100vh;
                 display: grid;
-                grid-template-rows: 0.3fr 1fr 70vh 70vh 70vh 20%; 
+                grid-template-rows: 0.3fr 1fr 70vh 70vh 70vh 20%;
             }
             h1{
                 margin: 0;
@@ -29,9 +29,8 @@ const Nosotros = () => {
                 color: var(--normal-purple);
             }
         `}</style>
-    
-        </article>
 
+    </article>
 }
 
 export default Nosotros
