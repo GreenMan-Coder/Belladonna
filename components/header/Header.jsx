@@ -17,8 +17,7 @@ const Header = () => {
             justify-content: center;
             background-color: var(--purple-blanco);
             top: 0;
-            gap: 2rem
-            background-color: red;
+            gap: 2rem;
             z-index: 1;
           }
     `}</style>

@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import WhatsappButton from '../components/WhatsappButton'
+import HoWork from '../components/front-page/HoWork'
 import Super from '../components/front-page/Super'
 import Header from '../components/header/Header'
 
@@ -13,8 +14,9 @@ const Index = () => {
         </Head>
         <Header/>
         <Super/>
-        <h1 className="how-work-title">Cita reservada, experiencia única: la depilación profesional que mereces.</h1>
-        {/* <HoWork /> */}
+        <h1 className="how-work-title">Descubre la depilación que mereces</h1>
+        <HoWork />
+        {/*  */}
         {/*
         <div className="title2">
             <h1>Entre mujeres, servicio de nivel superior.</h1>
@@ -29,9 +31,64 @@ const Index = () => {
                 align-self: center;
                 text-align: center;
                 box-sizing: border-box;
-                padding: 10rem 5rem;
-                font-size: 3rem;
-                font-weight: 400;
+                padding: 7rem 5rem;
+                font-size: 3em;
+                font-weight: 700;
+                min-width: 400px;
+            }
+
+            @media screen and (max-width: 1480px) {
+                .page{
+                    font-size: 15px;
+                }
+            }
+
+            @media screen and (max-width: 1250px) {
+                .page{
+                    font-size: 13px;
+                }
+            }
+
+            @media screen and (max-width: 1080px) {
+                .page{
+                    font-size: 12px;
+                }
+            }
+
+            @media screen and (max-width: 870px) {
+                .page{
+                    font-size: 11px;
+                }
+            }
+
+            @media screen and (max-width: 795px) {
+                .page{
+                    font-size: 10px;
+                }
+            }
+
+            @media screen and (max-width: 780px) {
+                .page{
+                    font-size: 9px;
+                }
+            }
+
+            @media screen and (max-width: 630px) {
+                .page{
+                    font-size: 8px;
+                }
+            }
+
+            @media screen and (max-width: 575px) {
+                .page{
+                    font-size: 7.5px;
+                }
+            }
+
+            @media screen and (max-width: 405px) {
+                .how-work-title {
+                    padding: 6rem 3rem;
+                }
             }
     `}</style>
     </div>
