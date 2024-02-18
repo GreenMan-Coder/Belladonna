@@ -1,17 +1,17 @@
-import Header from "../components/header/Header"
-import Email from "../components/contacto/Email"
-import Nets from "../components/contacto/Nets"
-import About from "../components/front-page/About"
+import Email from '../components/contacto/Email'
+import Nets from '../components/contacto/Nets'
+import About from '../components/front-page/About'
+import Header from '../components/header/Header'
 
 const Contacto = () => {
-  return <section className="container">
-      <Header row="1/2" color="--purple-blanco"/>
-      <Nets/>
-      <Email/>
-      <div className="post">
-        <About/>
-      </div>
-      <style jsx>{`
+    return <section className="container">
+        <Header row="1/2" color="--purple-blanco"/>
+        <Nets/>
+        <Email/>
+        <div className="post">
+            <About/>
+        </div>
+        <style jsx>{`
           .container {
               height: auto;
               width: 100%;
@@ -28,6 +28,6 @@ const Contacto = () => {
             grid-row: 4/5;
           }
       `}</style>
-  </section>
+    </section>
 }
 export default Contacto
