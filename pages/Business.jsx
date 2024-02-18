@@ -1,16 +1,14 @@
-//Components import
-import Header from "../components/header/Header"
-import FrontPage from "../components/depilation/business/FrontPage"
-import Nav from "../components/depilation/business/Nav"
-import Footer from "../components/footer/Footer"
-import CompanyCommit from "../components/depilation/business/CompanyCommit"
-import BelladonnaCommit from "../components/depilation/business/BelladonnaCommit"
+import BelladonnaCommit from '../components/depilation/business/BelladonnaCommit'
+import CompanyCommit from '../components/depilation/business/CompanyCommit'
+import FrontPage from '../components/depilation/business/FrontPage'
+import Nav from '../components/depilation/business/Nav'
+import Footer from '../components/footer/Footer'
+import Header from '../components/header/Header'
 
-//Libraries import
-import { useState } from "react"
+// Libraries import
+import { useState } from 'react'
 
 const Business = () => {
-
     const [section, setSection] = useState(1)
 
     return <section className="container">
