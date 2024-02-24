@@ -14,11 +14,9 @@ const Index = () => {
         </Head>
         <Header/>
         <Super/>
-        <h1 className="how-work-title">Descubre la depilación que mereces</h1>
+        <h1 className="how-work-title">¡Dale a tu piel el cuidado que merece con nuestra depilación de cera en Bogotá!</h1>
         <HoWork />
-        {/*  */}
-        {/*
-        <div className="title2">
+        {/* <div className="title2">
             <h1>Entre mujeres, servicio de nivel superior.</h1>
         </div>
         <OurServices row="5/6" image="/img/front-page/depilacion.jpeg" sub="Servicio exclusivo para mujeres" title="Depilación con cera" paragraph="Descubre la excelencia en depilación con cera para todo el cuerpo." href={1}/>
@@ -31,7 +29,7 @@ const Index = () => {
                 align-self: center;
                 text-align: center;
                 box-sizing: border-box;
-                padding: 7rem 5rem;
+                padding: 5em 5em;
                 font-size: 3em;
                 font-weight: 700;
                 min-width: 400px;
@@ -41,6 +39,18 @@ const Index = () => {
                 .page{
                     font-size: 15px;
                 }
+            }
+
+            @media screen and (max-width: 1335px) {
+              .how-work-title{
+                font-size: 2.9em;
+              }
+            }
+
+            @media screen and (max-width: 1288px) {
+              .how-work-title{
+                font-size: 2.8em;
+              }
             }
 
             @media screen and (max-width: 1250px) {
@@ -53,6 +63,18 @@ const Index = () => {
                 .page{
                     font-size: 12px;
                 }
+            }
+
+            @media screen and (max-width: 995px) {
+              .how-work-title{
+                font-size: 2.65em;
+              }
+            }
+
+            @media screen and (max-width: 945px) {
+              .how-work-title{
+                font-size: 2.48em;
+              }
             }
 
             @media screen and (max-width: 870px) {
@@ -73,22 +95,40 @@ const Index = () => {
                 }
             }
 
+            @media screen and (max-width: 945px) {
+              .how-work-title{
+                font-size: 2.37em;
+              }
+            }
+
             @media screen and (max-width: 630px) {
-                .page{
-                    font-size: 8px;
-                }
+              .page{
+                  font-size: 8px;
+              }
             }
 
             @media screen and (max-width: 575px) {
-                .page{
-                    font-size: 7.5px;
-                }
+              .page{
+                  font-size: 7.5px;
+              }
+            }
+
+            @media screen and (max-width: 526px) {
+              .how-work-title{
+                font-size: 2em;
+              }
+            }
+
+            @media screen and (max-width: 545px) {
+              .how-work-title{
+                font-size: 1.7em;
+              }
             }
 
             @media screen and (max-width: 405px) {
-                .how-work-title {
-                    padding: 6rem 3rem;
-                }
+              .how-work-title {
+                  padding: 6rem 3rem;
+              }
             }
     `}</style>
     </div>

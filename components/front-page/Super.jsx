@@ -12,8 +12,8 @@ const Super = () => {
                 height: calc(100vh - 5rem);
                 background-image: url(/img/front-page/super1.png);
                 background-repeat: no-repeat;
-                background-position: 140% 80px;
-                background-size: 100% 100%;
+                background-position: min(41vw) min(3vw);
+                background-size: min(100%, 1300px) min(100%, 1085px);
                 background-attachment: fixed;
                 display: grid;
                 grid-template-rows: 1fr auto;
@@ -22,7 +22,7 @@ const Super = () => {
                 box-sizing: border-box;
                 max-width: 1590px;
                 min-width: 400px;
-                max-height: 1000px;
+                max-height: 1080px;
                 min-height: 530px;
                 margin: auto;
                 position: relative;
@@ -39,6 +39,7 @@ const Super = () => {
                 font-weight: 700;
                 font-size: 6em;
                 text-align: center;
+                user-select: none;
             }
 
             span {
@@ -60,50 +61,79 @@ const Super = () => {
                 opacity: 0.8;
                 width: 100%;
                 border-radius: 15px 15px 0 0;
-                font-size: 1.5em;
+                font-size: 1.3em;
                 padding: 2rem;
             }
 
             @media screen and (max-width: 3000px) {
                 main{
-                    background-position: 500px 80px;
                     font-size: 28px;
-                    background-size: 80% 60%;
                 }
             }
-            @media screen and (max-width: 3000px) and (max-height: 1675px) {
+            @media screen and (min-width: 3000px) {
                 main{
-                    background-size: 80% 75%;
+                    font-size: 28px;
                 }
             }
-            @media screen and (max-width: 3000px) and (max-height: 1340px) {
+
+            @media screen and (max-width: 2580px) {
                 main{
-                    background-size: 80% 85%;
-                    background-position: 430px 80px;
+                    font-size: 28px;
+                    background-position: min(38vw) min(5vw);
                 }
             }
-            @media screen and (max-width: 3000px) and (max-height: 1185px) {
+
+            @media screen and (max-width: 2045px) {
                 main{
-                    background-size: 85% 95%;
+                  background-position: min(35vw) min(5vw);
+                }
+            }
+
+            @media screen and (max-width: 1725px) {
+                main{
+                  background-position: min(32vw) min(5vw);
+                }
+            }
+
+            @media screen and (max-width: 1540px) {
+                main{
+                  background-position: min(29vw) min(6vw);
+                }
+            }
+
+            @media screen and (max-width: 1475px){
+                main{
+                    font-size: 22px;
+                    background-size: min(100%, 1300px) min(100%, 1085px);
+                    background-position: min(28vw) min(6vw);
                 }
             }
 
             @media screen and (max-width: 1450px){
                 main{
-                    font-size: 25px;
+                    font-size: 22px;
+                    background-position: min(25vw) min(6vw);
                 }
             }
 
-            @media screen and (max-width: 1260px){
+            @media screen and (max-width: 1450px){
                 main{
-                    background-position: 400px 80px;
                     font-size: 22px;
+                    background-position: min(20vw) min(6vw);
+                }
+            }
+
+
+
+            @media screen and (max-width: 1270px){
+                main{
+                    font-size: 22px;
+                    background-position: min(18vw) min(9vw);
                 }
             }
 
             @media screen and (max-width: 1170px){
                 main{
-                    background-position: 350px 80px;
                     font-size: 20px;
                 }
             }
@@ -111,13 +141,29 @@ const Super = () => {
             @media screen and (max-width: 1090px){
                 main{
                     font-size: 19px;
+
                 }
             }
 
-            @media screen and (max-width: 1050px){
+            @media screen and (max-width: 1045px){
                 main{
-                    background-position: 280px 80px;
-                    font-size: 18px;
+                    font-size: 19px;
+                    background-position: min(15vw) min(10vw);
+                    background-size: min(100%, 1000px) min(100%, 800px);
+                    max-height: 770px;
+                }
+            }
+
+            @media screen and (max-width: 1010px){
+                main{
+                    font-size: 19px;
+                    background-position: min(15vw) min(12vw);
+                }
+            }
+
+            @media screen and (max-width: 995px){
+                main{
+                    background-position: min(10vw) min(11vw);
                 }
             }
 
@@ -129,7 +175,6 @@ const Super = () => {
 
             @media screen and (max-width: 870px){
                 main{
-                    background-position: 100px 80px;
                     font-size: 15px;
                 }
             }
@@ -140,31 +185,59 @@ const Super = () => {
                 }
             }
 
-            @media screen and (max-width: 680px){
+            @media screen and (max-width: 700px){
                 main{
                     font-size: 11px;
+                    background-position: min(10vw) min(15vw);
+                    background-size: min(100%, 900px) min(100%, 530px);
+                    max-height: 530px;
                 }
             }
 
             @media screen and (max-width: 560px){
                 main{
-                    background-position: 100px 80px;
-                    background-size: 100% 100%;
                     font-size: 9px;
+                    background-position: min(10vw) min(20vw);
                 }
             }
 
             @media screen and (max-width: 475px){
                 main{
                     font-size: 8px;
+                    min-height: 400px;
+                    max-height: 400px;
+                    background-size: min(100%, 900px) min(100%, 430px);
+                    background-position: min(19vw) min(20vw);
                 }
             }
 
-            @media screen and (max-width: 415px){
+            @media screen and (max-width: 430px){
                 main{
                     font-size: 7.5px;
                 }
+
+                span{
+                    position: relative;
+                    top: 1.3em;
+                }
+                h1 {
+                    position: relative;
+                    top: .5em;
+                }
             }
+
+            @media screen and (max-width: 390px){
+                main{
+                    background-position: min(19vw) min(23vw);
+                }
+            }
+
+            @media screen and (max-height: 650px){
+                main{
+                    background-size: min(100%, 1000px) min(530px, 1000px);
+                }
+            }
+
 
     `}</style>
     </main>
