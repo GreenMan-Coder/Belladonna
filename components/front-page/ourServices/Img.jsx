@@ -1,7 +1,7 @@
-const Img = ({image}) => {
-  return <div className="container">
-    <img src={image} alt="Depilación"/>
-    <style jsx>{`
+const Img = ({ image }) => {
+    return <div className="container">
+        <img src={image} alt="Depilación"/>
+        <style jsx>{`
       .container {
         grid-column: 1/2;
         justify-self: center;
@@ -11,6 +11,8 @@ const Img = ({image}) => {
         border-radius: 12px;
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
         transition: all 300ms;
+        height: 28em;
+        width: 28em;
       }
       .container:hover{
         transform: translateY(-2px);
@@ -22,16 +24,7 @@ const Img = ({image}) => {
         object-fit: cover;
       }
 
-      @media screen and (max-width: 2500px){
-        .container {
-          position: absolute;
-          right: 2%;
-          width: 75%;
-          height: 90%;
-          justify-self: end;
-        }
-      }
     `}</style>
-  </div>
+    </div>
 }
 export default Img

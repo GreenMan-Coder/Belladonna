@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import WhatsappButton from '../components/WhatsappButton'
 import HoWork from '../components/front-page/HoWork'
+import OurServices from '../components/front-page/OurServices'
 import Super from '../components/front-page/Super'
 import Header from '../components/header/Header'
 
@@ -16,14 +17,24 @@ const Index = () => {
         <Super/>
         <h1 className="how-work-title">¡Dale a tu piel el cuidado que merece con nuestra depilación con cera en Bogotá!</h1>
         <HoWork />
-        {/* <div className="title2">
-            <h1>Entre mujeres, servicio de nivel superior.</h1>
-        </div>
+        <h1 className="depilation-title">Entre mujeres, servicio de nivel superior. ¡Agenda tu cita ahora!</h1>
         <OurServices row="5/6" image="/img/front-page/depilacion.jpeg" sub="Servicio exclusivo para mujeres" title="Depilación con cera" paragraph="Descubre la excelencia en depilación con cera para todo el cuerpo." href={1}/>
-        <About/> */}
+        {/* <About/> */}
         <WhatsappButton href="https://wa.me/message/D4KMZ4C5TFU5N1"/>
         <style jsx>{`
             .how-work-title {
+                color: var(--normal-purple);
+                margin: 0;
+                align-self: center;
+                text-align: center;
+                box-sizing: border-box;
+                padding: 5em 5em;
+                font-size: 3em;
+                font-weight: 700;
+                min-width: 400px;
+            }
+
+            .depilation-title{
                 color: var(--normal-purple);
                 margin: 0;
                 align-self: center;
@@ -77,6 +88,12 @@ const Index = () => {
               }
             }
 
+            @media screen and (max-width: 905px) {
+                .depilation-title{
+                  font-size: 2.48em;
+                }
+            }
+
             @media screen and (max-width: 870px) {
                 .page{
                     font-size: 11px;
@@ -123,6 +140,12 @@ const Index = () => {
               .how-work-title{
                 font-size: 1.7em;
               }
+            }
+
+            @media screen and (max-width: 470px) {
+              .depilation-title{
+                  font-size: 2.1em;
+                }
             }
 
             @media screen and (max-width: 405px) {
