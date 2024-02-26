@@ -14,7 +14,7 @@ const Index = () => {
         </Head>
         <Header/>
         <Super/>
-        <h1 className="how-work-title">¡Dale a tu piel el cuidado que merece con nuestra depilación de cera en Bogotá!</h1>
+        <h1 className="how-work-title">¡Dale a tu piel el cuidado que merece con nuestra depilación con cera en Bogotá!</h1>
         <HoWork />
         {/* <div className="title2">
             <h1>Entre mujeres, servicio de nivel superior.</h1>

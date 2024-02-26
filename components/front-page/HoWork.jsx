@@ -22,15 +22,14 @@ const HoWork = () => {
                 align-items: center;
                 font-family: var(--font);
                 box-sizing: border-box;
-                min-width: 400px;
                 max-width: 1590px;
-                max-height: 600px;
+                max-height: 700px;
                 margin: auto;
             }
             .resources{
                 align-self: center;
-                width: 100%;
-                height: 30em;
+                width: 100em;
+                height: 28em;
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr 0.3fr;
                 grid-template-rows: 1fr;
@@ -44,57 +43,57 @@ const HoWork = () => {
                 align-items: center;
             }
 
-            @media screen and (max-width: 1600px){
+            @media screen and (max-width: 1700px){
                 .container {
-                    width: 1500px;
-                }
-            }
-
-            @media screen and (max-width: 1540px){
-                .container {
-                    width: 1450px;
                     font-size: 15px;
                 }
             }
 
-            @media screen and (max-width: 1490px){
+            @media screen and (max-width: 1575px){
                 .container {
-                    width: 1350px;
                     font-size: 14px;
                 }
             }
 
-            @media screen and (max-width: 1420px){
+            @media screen and (max-width: 1460px){
                 .container {
-                    width: 1250px;
                     font-size: 13px;
                 }
             }
 
-            @media screen and (max-width: 1310px){
+            @media screen and (max-width: 1360px){
                 .container {
-                    width: 1200px;
-                    font-size: 12.5px;
+                    font-size: 12px;
                 }
             }
 
             @media screen and (max-width: 1260px){
                 .container {
-                    width: 1100px;
-                    font-size: 12px;
-                }
-            }
-
-            @media screen and (max-width: 1185px){
-                .container {
-                    width: 1000px;
                     font-size: 11px;
                 }
             }
 
-            @media screen and (max-width: 1060px){
+            @media screen and (max-width: 1175px){
                 .container {
-                    width: 900px;
+                    font-size: 10px;
+                }
+            }
+
+            @media screen and (max-width: 1070px){
+                .container {
+                    font-size: 9px;
+                }
+            }
+
+            @media screen and (max-width: 950px){
+                .container {
+                    font-size: 8px;
+                }
+            }
+
+            @media screen and (max-width: 870px){
+                .container {
+                    font-size: 7.5px;
                 }
 
                 .resources{
@@ -111,39 +110,46 @@ const HoWork = () => {
                 }
             }
 
-            @media screen and (max-width: 940px){
+            @media screen and (max-width: 800px){
                 .container {
-                    width: 800px;
+                    font-size: 7px;
                 }
             }
 
-            @media screen and (max-width: 830px){
+            @media screen and (max-width: 730px){
                 .container {
-                    width: 700px;
+                    font-size: 6px;
                 }
             }
 
-            @media screen and (max-width: 720px){
+            @media screen and (max-width: 640px){
                 .container {
-                    width: 600px;
+                    font-size: 5.5px;
                 }
             }
 
-            @media screen and (max-width: 620px){
+            @media screen and (max-width: 570px){
                 .container {
-                    width: 500px;
+                    font-size: 5px;
                 }
             }
 
             @media screen and (max-width: 520px){
                 .container {
-                    width: 400px;
+                    font-size: 4.5px;
                 }
             }
 
-            @media screen and (max-width: 425px){
+            @media screen and (max-width: 455px){
                 .container {
-                    width: 100px;
+                    font-size: 4px;
+                }
+            }
+
+            @media screen and (max-width: 410px){
+                .container {
+                    font-size: 3.5px;
+                    min-width: 400px;
                 }
             }
         `}</style>
