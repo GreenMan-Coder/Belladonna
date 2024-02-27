@@ -15,7 +15,12 @@ const OurServices = ({ image, row, sub, title, paragraph, href }) => {
             justify-items: center;
             align-items: center;
             box-sizing: border-box;
-            width: 80%;
+            width: 100%;
+            max-width: 1590px;
+            min-width: 400px;
+            max-height: 1080px;
+            min-height: 530px;
+            outline: 3px solid red;
         }
     `}</style>
     </section>

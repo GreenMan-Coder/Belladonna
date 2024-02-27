@@ -40,47 +40,52 @@ const Description = ({ sub, title, paragraph, href }) => {
             box-sizing: border-box;
             grid-row: 1/2;
             grid-column: 1/2;
-            margin: 0;
-            padding: 0;
             color: var(--light-purple);
-            font-size: 5em;
+            font-size: 1.7em;
+            align-self: end;
         }
         h1{
             grid-row: 2/3;
             grid-column: 1/2;
             font-weight: 700;
-            font-size: 5em;
-            margin: 0;
-            padding: 0;
+            font-size: 3.5em;
             box-sizing: border-box;
             color: var(--normal-purple);
+            align-self: start;
         }
         .nets{
             grid-row: 2/3;
             grid-column: 1/2;
             box-sizing: border-box;
-            height: 30%;
             align-self: center;
+            position: relative;
+            bottom: 10%;
             display: flex;
-            flex-direction: row;
         }
         p{
-            margin: 0;
-            padding: 0;
-            align-self: flex-start;
+            align-self: end;
             grid-row: 2/3;
             grid-column: 1/2;
-            box-sizing: border-box;
-            overflow: hidden;
+            font-size: 1.3em;
             color: var(--normal-purple);
+            box-sizing: border-box;
+            padding-right: 30%;
         }
         .know{
             align-self: center;
             grid-row: 3/4;
             grid-column: 1/2;
             font-weight: 700;
-            box-sizing: border-box;
+            font-size: 1.5em;
             text-decoration: none;
+            position: relative;
+            bottom: 15%;
+        }
+
+        @media screen and (max-width: 1250px){
+          .nets{
+            bottom: 3.8em;
+        }
         }
     `}</style>
     </div>
