@@ -4,7 +4,7 @@ const Nav = () => {
     return <nav>
         <ul>
             <CustomLink href="/" to="Inicio" legacyBehavior/>
-            <CustomLink href="/Depilacion" to="Depilacion" legacyBehavior/>
+            <CustomLink href="/Depilacion" to="Depilación" legacyBehavior/>
             <CustomLink href="/Nosotros" to="Nosotros" legacyBehavior/>
             <CustomLink href="/Contacto" to="Contacto" legacyBehavior/>
         </ul>

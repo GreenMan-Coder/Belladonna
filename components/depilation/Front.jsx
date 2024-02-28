@@ -1,34 +1,35 @@
-import { useState } from "react"
-import HowWork from "./HowWork"
+import { useState } from 'react'
+import HowWork from './HowWork'
 
 const Front = () => {
-  const [hoveredBox, setHoveredBox] = useState(null);
+    const [hoveredBox, setHoveredBox] = useState(null)
 
-  const handleMouseEnter = (boxId) => {
-    setHoveredBox(boxId);
-  };
+    const handleMouseEnter = (boxId) => {
+        setHoveredBox(boxId)
+    }
 
-  const handleMouseLeave = () => {
-    setHoveredBox(null);
-  };
+    const handleMouseLeave = () => {
+        setHoveredBox(null)
+    }
 
-  return <article className="container">
-    <h1>depilación belladonna</h1>
-    <h2>Exclusivo para mujeres</h2>
-    <div className="paragraph">
-      <h3>Descubre una experiencia de depilación con cera única. <br/>¡Déjanos consentirte!</h3>
-    </div>
-    {hoveredBox === '2' ? <h4 className="service">Queremos brindarte un servicio de depilación con cera de la más alta calidad.</h4> : hoveredBox === '0' ? <h4 className="follow">Después de la depilación, nos mantendremos en contacto para verificar la evolución de la piel.</h4> : hoveredBox === '1' ? <h4 className="location">Confirmamos tu cita vía WhatsApp y nuestra profesional brindará un excelente servicio. ¡Visitanos!</h4> : <h4>&bull; ¿Cómo trabajamos? &bull;</h4>}
-    <HowWork left="0%" id='2' handleMouseEnter={handleMouseEnter} handleMouseLeave={handleMouseLeave}/>
-    <HowWork left="15%" id='0' handleMouseEnter={handleMouseEnter} handleMouseLeave={handleMouseLeave}/>
-    <HowWork left="-15%"id='1' handleMouseEnter={handleMouseEnter} handleMouseLeave={handleMouseLeave}/>
+    return <article className="container">
+        <h1>depilación belladonna</h1>
+        <h2>Exclusivo para mujeres</h2>
+        <div className="paragraph">
+            <h3>Descubre una experiencia de depilación con cera única. <br/>¡Déjanos consentirte!</h3>
+        </div>
+        {hoveredBox === '2' ? <h4 className="service">Queremos brindarte un servicio de depilación con cera de la más alta calidad.</h4> : hoveredBox === '0' ? <h4 className="follow">Después de la depilación, nos mantendremos en contacto para verificar la evolución de la piel.</h4> : hoveredBox === '1' ? <h4 className="location">Confirmamos tu cita vía WhatsApp y nuestra profesional brindará un excelente servicio. ¡Visitanos!</h4> : <h4>&bull; ¿Cómo trabajamos? &bull;</h4>}
+        <HowWork left="0%" id='2' handleMouseEnter={handleMouseEnter} handleMouseLeave={handleMouseLeave}/>
+        <HowWork left="15%" id='0' handleMouseEnter={handleMouseEnter} handleMouseLeave={handleMouseLeave}/>
+        <HowWork left="-15%"id='1' handleMouseEnter={handleMouseEnter} handleMouseLeave={handleMouseLeave}/>
 
-    <style jsx>{`
+        <style jsx>{`
       .container {
         display: grid;
         grid-template-rows: 1fr 0.5fr 1fr;
         justify-items: center;
         align-items: center;
+        height: calc(100vh - 5em);
       }
       h1{
         grid-row: 1/2;
@@ -104,6 +105,6 @@ const Front = () => {
         text-align: center;
       }
     `}</style>
-  </article>
+    </article>
 }
 export default Front
