@@ -17,7 +17,6 @@ const ResourcesCard = ({ url, title, text }) => {
             justify-items: center;
             align-items: center;
             border-radius: 15px;
-            box-shadow: 0 5px 15px 1px var(--dark-purple);
         }
         .card-content{
             box-sizing: border-box;
@@ -50,7 +49,7 @@ const ResourcesCard = ({ url, title, text }) => {
             font-size: 1.8em;
             font-weight: 700;
             color: var(--purple-blanco);
-            z-index: 2;
+            z-index: 1;
             transform: translateY(0%);
             transition: transform 0.5s;
             background: var(--normal-purple);

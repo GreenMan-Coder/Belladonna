@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import WhatsappButton from '../components/WhatsappButton'
+import About from '../components/front-page/About'
 import HoWork from '../components/front-page/HoWork'
 import OurServices from '../components/front-page/OurServices'
 import Super from '../components/front-page/Super'
@@ -19,7 +20,7 @@ const Index = () => {
         <HoWork />
         <h1 className="depilation-title">Entre mujeres, servicio de nivel superior. ¡Agenda tu cita ahora!</h1>
         <OurServices row="5/6" image="/img/front-page/depilacion.jpeg" sub="Servicio exclusivo para mujeres" title="Depilación con cera" paragraph="Descubre la excelencia en depilación con cera para todo el cuerpo." href={1}/>
-        {/* <About/> */}
+        <About/>
         <WhatsappButton href="https://wa.me/message/D4KMZ4C5TFU5N1"/>
         <style jsx>{`
             .how-work-title {

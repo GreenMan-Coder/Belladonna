@@ -15,12 +15,83 @@ const OurServices = ({ image, row, sub, title, paragraph, href }) => {
             justify-items: center;
             align-items: center;
             box-sizing: border-box;
-            width: 100%;
+            width: 98%;
             max-width: 1590px;
             min-width: 400px;
             max-height: 1080px;
-            min-height: 530px;
-            outline: 3px solid red;
+            margin-bottom: 8em;
+        }
+
+        @media screen and (max-width: 1640px) {
+            .container{
+                font-size: 15px;
+            }
+        }
+
+        @media screen and (max-width: 1250px) {
+            .container{
+                font-size: 15px;
+            }
+        }
+
+        @media screen and (max-width: 1065px) {
+            .container{
+                font-size: 13.5px;
+            }
+        }
+
+        @media screen and (max-width: 920px) {
+            .container{
+                font-size: 12px;
+            }
+        }
+
+        @media screen and (max-width: 860px) {
+            .container{
+                font-size: 11px;
+            }
+        }
+
+        @media screen and (max-width: 860px) {
+            .container{
+                font-size: 11px;
+            }
+        }
+
+        @media screen and (max-width: 780px) {
+            .container{
+                font-size: 10px;
+            }
+        }
+
+        @media screen and (max-width: 700px) {
+            .container{
+                font-size: 9px;
+            }
+        }
+
+        @media screen and (max-width: 620px) {
+            .container{
+                font-size: 8px;
+            }
+        }
+
+        @media screen and (max-width: 550px) {
+            .container{
+                font-size: 7px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .container{
+                font-size: 6px;
+            }
+        }
+
+        @media screen and (max-width: 420px) {
+            .container{
+                font-size: 5.5px;
+            }
         }
     `}</style>
     </section>

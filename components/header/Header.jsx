@@ -18,7 +18,7 @@ const Header = () => {
             background-color: var(--purple-blanco);
             top: 0;
             gap: 2rem;
-            z-index: 1;
+            z-index: 2;
           }
     `}</style>
     </header>
