@@ -10,7 +10,7 @@ const CustomLink = ({ href, to }) => {
             a {
                 padding: 2rem;
                 color: var(--normal-purple);
-                font-size: 1rem;
+                font-size: 1em;
             }
       ` }</style>
     </li>

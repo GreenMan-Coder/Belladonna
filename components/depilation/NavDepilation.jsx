@@ -6,6 +6,7 @@ const NavDepilation = ({ text, id, setcardSelected }) => {
                 display: grid;
                 justify-items: center;
                 align-items: center;
+                padding: 3em 0;
             }
             h3{
                 text-transform: uppercase;

@@ -10,16 +10,15 @@ const Nav = () => {
         </ul>
 
         <style jsx>{`
-          ul {
-            display: flex;
-          }
-
-          @media screen and (max-width: 870px) {
             ul {
-                display: none;
+                display: flex;
             }
-        }
 
+            @media screen and (max-width: 870px) {
+                ul {
+                    display: none;
+                }
+            }
         `}</style>
 
     </nav>

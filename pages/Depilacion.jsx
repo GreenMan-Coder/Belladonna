@@ -3,7 +3,6 @@ import { useState } from 'react'
 import DescriptionCard from '../components/depilation/DescriptionCard'
 import Front from '../components/depilation/Front'
 import NavDepilation from '../components/depilation/NavDepilation'
-import About from '../components/front-page/About'
 import Logo from '../components/header/Logo'
 import Nav from '../components/header/Nav'
 
@@ -32,7 +31,7 @@ const Depilacion = () => {
             {cardSelected === 5 ? <Front /> : cardSelected ? <DescriptionCard cardSelected={cardSelected}/> : <Front />}
         </div>
         <div className="aboutContainer">
-            <About/>
+            {/* <About/> */}
         </div>
         <style jsx>{`
             .container {
@@ -40,8 +39,9 @@ const Depilacion = () => {
                 background-color: var(--purple-blanco);
                 display: grid;
                 grid-template-columns: 0.15fr 1fr;
-                grid-template-rows: 0.2fr 1fr;
-                height: 100vh;
+                max-width: 1590px;
+                min-width: 400px;
+                margin: auto;
             }
             header{
                 grid-column: 2/3;
@@ -52,18 +52,73 @@ const Depilacion = () => {
                 grid-column: 1/2;
                 border-radius: 0 15px 0 0;
                 background-color: var(--light-pink);
-                height: 100%;
                 width: 100%;
                 display: grid;
             }
             .wrapper{
                 grid-column: 2/3;
-                box-sizing: border-box;
                 display: grid;
-                position: relative;
+                height: calc( 100vh - 5.3em);
+                max-height: 1000px;
+                min-height: 400px;
             }
             .aboutContainer{
                 grid-column: 1/3;
+                outline: 1px solid black;
+            }
+
+            @media screen and (max-width: 1200px){
+                .menu{
+                    font-size: 15px;
+                }
+            }
+
+            @media screen and (max-width: 1130px){
+                .menu{
+                    font-size: 14px;
+                }
+            }
+
+            @media screen and (max-width: 1030px){
+                .menu{
+                    font-size: 13px;
+                }
+            }
+
+            @media screen and (max-width: 1000px){
+                .menu{
+                    font-size: 12px;
+                    height: 70%;
+                    align-self: center;
+                    border-radius: 0 15px 15px 0;
+                }
+            }
+
+            @media screen and (max-width: 870px){
+                .container {
+                    grid-template-columns: 1fr;
+                    grid-template-rows: auto auto 1fr;
+                }
+
+                header{
+                    grid-column: 1/3;
+                    margin: 0 0 3em 0;
+                }
+
+                .menu{
+                    grid-column: 1/3;
+                    align-self: start;
+                    display: flex;
+                    gap: 7%;
+                    justify-content: center;
+                    height: 100%;
+                    border-radius: 15px;
+                }
+
+                .wrapper{
+                    grid-column: 1/3;
+                    display: grid;
+                }
             }
         `}</style>
     </section>

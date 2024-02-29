@@ -24,87 +24,129 @@ const Front = () => {
         <HowWork left="-15%"id='1' handleMouseEnter={handleMouseEnter} handleMouseLeave={handleMouseLeave}/>
 
         <style jsx>{`
-      .container {
-        display: grid;
-        grid-template-rows: 1fr 0.5fr 1fr;
-        justify-items: center;
-        align-items: center;
-        height: calc(100vh - 5em);
-      }
-      h1{
-        grid-row: 1/2;
-        grid-column: 1/2;
-        margin: 0;
-        padding: 0;
-        font-size: 4.5em;
-        color: var(--normal-purple);
-        text-transform: capitalize;
-      }
-      h2{
-        margin: 0;
-        padding: 0;
-        grid-row: 1/2;
-        grid-column: 1/2;
-        align-self: center;
-        position: relative;
-        top: 27%;
-        font-size: 2em;
-        color: var(--light-purple);
-      }
-      .paragraph{
-        grid-row: 2/3;
-        grid-column: 1/2;
-        position: relative;
-        width: 95%;
-        height: 65%;
-        display: grid;
-        align-items: center;
-        justify-items: center;
-        background-color: var(--light-pink);
-        border-radius: 5px;
-      }
-      .paragraph::before,
-      .paragraph::after {
-        content: "";
-        position: absolute;
-        left: 0px;
-        right: 0px;
-        height: 5px;
-        background-color: var(--light-pink);
-        opacity: 0.5;
-      }
-      .paragraph::before {
-        top: -7px;
-      }
-      .paragraph::after {
-        bottom: -7px;
-      }
-      .paragraph h3{
-        margin: 0;
-        padding: 0;
-        font-size: 1.5em;
-        text-align: center;
-        color: var(--normal-purple);
-      }
-      h4{
-        grid-row: 3/4;
-        grid-column: 1/2;
-        align-self: start;
-        position: relative;
-        font-size: 1.5em;
-        color: var(--tone-pink);
-        font-weight: 900;
-      }
-      .service, .follow, .location{
-        grid-row: 3/4;
-        grid-column: 1/2;
-        align-self: start;
-        position: relative;
-        font-size: 1.5em;
-        font-weight: 100;
-        text-align: center;
-      }
-    `}</style>
+            .container {
+                display: grid;
+                grid-template-rows: 1fr 0.5fr 1fr;
+                justify-items: center;
+                align-items: center;
+            }
+            h1{
+                grid-row: 1/2;
+                grid-column: 1/2;
+                font-size: 6em;
+                color: var(--normal-purple);
+                text-transform: capitalize;
+            }
+            h2{
+                grid-row: 1/2;
+                grid-column: 1/2;
+                align-self: center;
+                position: relative;
+                top: 2.2em;
+                font-size: 2em;
+                color: var(--light-purple);
+            }
+            .paragraph{
+                grid-row: 2/3;
+                grid-column: 1/2;
+                position: relative;
+                width: 95%;
+                height: 65%;
+                display: grid;
+                align-items: center;
+                justify-items: center;
+                background-color: var(--light-pink);
+                border-radius: 5px;
+            }
+            .paragraph::before,
+            .paragraph::after {
+                content: "";
+                position: absolute;
+                left: 0px;
+                right: 0px;
+                height: 5px;
+                background-color: var(--light-pink);
+                opacity: 0.5;
+            }
+            .paragraph::before {
+                top: -7px;
+            }
+            .paragraph::after {
+                bottom: -7px;
+            }
+            .paragraph h3{
+                margin: 0;
+                padding: 0;
+                font-size: 1.5em;
+                text-align: center;
+                color: var(--normal-purple);
+            }
+            h4{
+                grid-row: 3/4;
+                grid-column: 1/2;
+                align-self: start;
+                position: relative;
+                top: 1em;
+                font-size: 1.5em;
+                color: var(--tone-pink);
+                font-weight: 900;
+                padding: 0 1.3em;
+            }
+            .service, .follow, .location{
+                grid-row: 3/4;
+                grid-column: 1/2;
+                align-self: start;
+                position: relative;
+                font-size: 1.5em;
+                font-weight: 100;
+                text-align: center;
+            }
+
+            @media screen and (max-width: 1200px){
+                .container{
+                    font-size: 15px;
+                }
+
+                h4{
+                    top: 2em;
+                }
+            }
+
+            @media screen and (max-width: 1130px){
+                .container{
+                    font-size: 14px;
+                }
+            }
+
+            @media screen and (max-width: 1030px){
+                .container{
+                    font-size: 13px;
+                }
+            }
+
+            @media screen and (max-width: 1000px){
+                .container{
+                    font-size: 12px;
+                }
+            }
+
+            @media screen and (max-width: 870px){
+                .container{
+                    font-size: 11px;
+                    grid-template-rows: auto auto auto;
+                }
+
+                h1{
+                    align-self: center;
+                }
+
+                h2{
+                    top: 2em;
+                }
+            }
+
+
+        `}</style>
     </article>
 }
 export default Front
