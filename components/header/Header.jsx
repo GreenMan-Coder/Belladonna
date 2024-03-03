@@ -19,6 +19,7 @@ const Header = () => {
             top: 0;
             gap: 2rem;
             z-index: 2;
+            width: 100%;
           }
     `}</style>
     </header>
