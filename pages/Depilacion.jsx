@@ -30,9 +30,6 @@ const Depilacion = () => {
         <div className="wrapper">
             {cardSelected === 5 ? <Front /> : cardSelected ? <DescriptionCard cardSelected={cardSelected}/> : <Front />}
         </div>
-        <div className="aboutContainer">
-            {/* <About/> */}
-        </div>
         <style jsx>{`
             .container {
                 font-family: var(--font);
@@ -118,6 +115,13 @@ const Depilacion = () => {
                 .wrapper{
                     grid-column: 1/3;
                     display: grid;
+                    height: calc( 100vh - 12em);
+                }
+            }
+
+            @media screen and (max-width: 520px) {
+                .menu{
+                    font-size: 11px;
                 }
             }
         `}</style>

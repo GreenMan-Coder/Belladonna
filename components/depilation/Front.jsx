@@ -19,9 +19,9 @@ const Front = () => {
             <h3>Descubre una experiencia de depilación con cera única. <br/>¡Déjanos consentirte!</h3>
         </div>
         {hoveredBox === '2' ? <h4 className="service">Queremos brindarte un servicio de depilación con cera de la más alta calidad.</h4> : hoveredBox === '0' ? <h4 className="follow">Después de la depilación, nos mantendremos en contacto para verificar la evolución de la piel.</h4> : hoveredBox === '1' ? <h4 className="location">Confirmamos tu cita vía WhatsApp y nuestra profesional brindará un excelente servicio. ¡Visitanos!</h4> : <h4>&bull; ¿Cómo trabajamos? &bull;</h4>}
-        <HowWork left="0%" id='2' handleMouseEnter={handleMouseEnter} handleMouseLeave={handleMouseLeave}/>
-        <HowWork left="15%" id='0' handleMouseEnter={handleMouseEnter} handleMouseLeave={handleMouseLeave}/>
-        <HowWork left="-15%"id='1' handleMouseEnter={handleMouseEnter} handleMouseLeave={handleMouseLeave}/>
+        <HowWork pos="start" id='1' handleMouseEnter={handleMouseEnter} handleMouseLeave={handleMouseLeave}/>
+        <HowWork pos="center" id='2' handleMouseEnter={handleMouseEnter} handleMouseLeave={handleMouseLeave}/>
+        <HowWork pos="end" id='0' handleMouseEnter={handleMouseEnter} handleMouseLeave={handleMouseLeave}/>
 
         <style jsx>{`
             .container {
@@ -51,7 +51,7 @@ const Front = () => {
                 grid-column: 1/2;
                 position: relative;
                 width: 95%;
-                height: 65%;
+                height: 50%;
                 display: grid;
                 align-items: center;
                 justify-items: center;
@@ -142,6 +142,36 @@ const Front = () => {
 
                 h2{
                     top: 2em;
+                }
+            }
+
+            @media screen and (max-width: 870px){
+                .container{
+                    font-size: 10px;
+                }
+            }
+
+            @media screen and (max-width: 670px){
+                .container{
+                    font-size: 9px;
+                }
+            }
+
+            @media screen and (max-width: 590px){
+                .container{
+                    font-size: 8px;
+                }
+            }
+
+            @media screen and (max-width: 520px){
+                .container{
+                    font-size: 7px;
+                }
+            }
+
+            @media screen and (max-width: 460px){
+                .container{
+                    font-size: 6px;
                 }
             }
 

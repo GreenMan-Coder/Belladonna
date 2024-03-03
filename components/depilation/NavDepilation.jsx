@@ -6,7 +6,6 @@ const NavDepilation = ({ text, id, setcardSelected }) => {
                 display: grid;
                 justify-items: center;
                 align-items: center;
-                padding: 3em 0;
             }
             h3{
                 text-transform: uppercase;
@@ -17,6 +16,12 @@ const NavDepilation = ({ text, id, setcardSelected }) => {
 
             h3:hover{
                 font-weight: 900;
+            }
+
+            @media screen and (max-width: 870px){
+              article{
+                padding: 1.5em 0;
+              }
             }
         `}</style>
     </article>

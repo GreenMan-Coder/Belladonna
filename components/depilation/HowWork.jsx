@@ -1,4 +1,4 @@
-const HowWork = ({ left, id, handleMouseEnter, handleMouseLeave, active, children }) => {
+const HowWork = ({ pos, id, handleMouseEnter, handleMouseLeave, active, children }) => {
     return <div className="container" onMouseEnter={() => handleMouseEnter(id)} onMouseLeave={handleMouseLeave}>
 
         {id === '1'
@@ -12,9 +12,11 @@ const HowWork = ({ left, id, handleMouseEnter, handleMouseLeave, active, childre
                 grid-column: 1/2;
                 position: relative;
                 top: 20%;
-                left: ${left};
-                width: 8%;
-                height: 30%;
+                justify-self: ${pos};
+                width: 7em;
+                height: 5em;
+                box-sizing: border-box;
+                margin: 0 20em;
                 background-color: var(--normal-purple);
                 clip-path: polygon(50% 0%, 100% 38.2%, 80.9% 100%, 19.1% 100%, 0% 38.2%);
                 transform: rotate(180deg);
@@ -41,6 +43,14 @@ const HowWork = ({ left, id, handleMouseEnter, handleMouseLeave, active, childre
                 top: 5%;
                 transform: rotate(180deg);
                 fill: var(--normal-purple);
+            }
+
+            @media screen and (max-width: 870px){
+              .container{
+                width: 10em;
+                height: 8em;
+                margin: 0 10em;
+              }
             }
         `}</style>
     </div>
