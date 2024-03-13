@@ -12,7 +12,7 @@ const Post = () => {
         <style jsx>{`
             .container {
                 width: 100%;
-                height: 100%;
+                height: 29em;
                 display: grid;
                 justify-items: center;
                 align-items: center;

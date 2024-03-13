@@ -17,7 +17,7 @@ const PayMethods = ({ image, tam }) => {
                 background-attachment: local;
                 width: 9em;
                 height: 100%;
-                background-size: ${image === 'url(/img/front-page/nequi.png)' ? '5em' : image === 'url(/img/front-page/pse.png)' ? '8.5em' : image === 'url(/img/front-page/daviplata.png)' ? '8em' : '7em'};
+                background-size: ${image === 'url(/img/front-page/nequi.png)' ? '2.8em' : image === 'url(/img/front-page/pse.png)' ? '6em' : image === 'url(/img/front-page/daviplata.png)' ? '5em' : '4em'};
             }
 
             @media screen and (max-width: 870px){

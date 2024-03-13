@@ -70,7 +70,9 @@ const About = ({ row, title, text, imagen, colImg, colText }) => {
             @media screen and (max-width: 870px){
                 .container {
                     grid-template-columns: 1fr;
-                    grid-template-rows: auto auto auto;
+                    grid-template-rows: auto auto;
+                    height: 25vh;
+                    min-height: 250px;
                 }
 
                 .image{

@@ -21,7 +21,7 @@ const Nets = () => {
         </div>
         <style jsx>{`
             .container {
-                height: 33em;
+                height: 31em;
                 max-height: 1080px;
                 min-height: 400px;
                 width: 100%;

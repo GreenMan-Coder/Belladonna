@@ -8,10 +8,10 @@ const HoWork = () => {
             <ResourcesCard url="url(/img/front-page/cera.jpeg)" title="DEPILACIÓN" text="Queremos brindarte un servicio de depilación con cera de la más alta calidad. Nuestra especialista se encargará de minimizar cualquier molestia y asegurar que tu piel quede perfecta."/>
             <ResourcesCard url="url(/img/front-page/folow.jpeg)" title="SEGUIMIENTO" text="Posterior a la depilación, mantendremos contacto contigo para verificar la evolución de la piel y estar al tanto de cualquier consulta adicional que puedas tener."/>
             <div className="payment">
-                <PayMethods image="url(/img/front-page/pesoscop.png)" tam="85%"/>
-                <PayMethods image="url(/img/front-page/pse.png)" tam="110%"/>
-                <PayMethods image="url(/img/front-page/nequi.png)" tam="70%"/>
-                <PayMethods image="url(/img/front-page/daviplata.png)" tam="95%"/>
+                <PayMethods image="url(/img/front-page/pesoscop.png)" />
+                <PayMethods image="url(/img/front-page/pse.png)" />
+                <PayMethods image="url(/img/front-page/nequi.png)" />
+                <PayMethods image="url(/img/front-page/daviplata.png)" />
             </div>
         </div>
         <style jsx>{`

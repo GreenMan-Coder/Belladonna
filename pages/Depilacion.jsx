@@ -3,11 +3,14 @@ import { useState } from 'react'
 import DescriptionCard from '../components/depilation/DescriptionCard'
 import Front from '../components/depilation/Front'
 import NavDepilation from '../components/depilation/NavDepilation'
+import Footer from '../components/footer/Footer'
 import Logo from '../components/header/Logo'
 import Nav from '../components/header/Nav'
+import MobileNav from '../components/header/mobileNav'
 
 const Depilacion = () => {
     const [cardSelected, SetcardSelected] = useState(false)
+    const [openMenu, setopenMenu] = useState(false)
 
     return <section className="container">
         <Head>
@@ -16,10 +19,15 @@ const Depilacion = () => {
             <meta name="viewport" content="width=device-width, initial-scale=1" />
             <link rel="icon" href="/favicon.ico" />
         </Head>
+
         <header>
-            <Logo/>
-            <Nav/>
+            <Logo openMenu={openMenu}/>
+            <Nav openMenu={openMenu}/>
+            <div className="logo">
+                <MobileNav setopenMenu={setopenMenu} openMenu={openMenu}/>
+            </div>
         </header>
+
         <div className="menu">
             <NavDepilation text="Información" id={5} setcardSelected={SetcardSelected}/>
             <NavDepilation text="cuerpo completo" id={1} setcardSelected={SetcardSelected}/>
@@ -27,8 +35,13 @@ const Depilacion = () => {
             <NavDepilation text="bikini" id={3} setcardSelected={SetcardSelected}/>
             <NavDepilation text="inferior" id={4} setcardSelected={SetcardSelected}/>
         </div>
+
         <div className="wrapper">
             {cardSelected === 5 ? <Front /> : cardSelected ? <DescriptionCard cardSelected={cardSelected}/> : <Front />}
+        </div>
+
+        <div className="footer">
+            <Footer/>
         </div>
         <style jsx>{`
             .container {
@@ -44,6 +57,7 @@ const Depilacion = () => {
                 grid-column: 2/3;
                 justify-self: center;
                 display: flex;
+                justify-content: center;
             }
             .menu{
                 grid-column: 1/2;
@@ -61,7 +75,13 @@ const Depilacion = () => {
             }
             .aboutContainer{
                 grid-column: 1/3;
-                outline: 1px solid black;
+            }
+
+            .footer{
+                grid-row: 3/4;
+                grid-column: 1/3;
+                box-sizing: border-box;
+                margin-top: 4em;
             }
 
             @media screen and (max-width: 1200px){
@@ -94,12 +114,16 @@ const Depilacion = () => {
             @media screen and (max-width: 870px){
                 .container {
                     grid-template-columns: 1fr;
-                    grid-template-rows: auto auto 1fr;
+                    grid-template-rows: auto auto 1fr auto;
                 }
 
                 header{
                     grid-column: 1/3;
-                    margin: 0 0 3em 0;
+                    margin: 0 0 1em 0;
+                    width: 100%;
+                    gap: 1.3em;
+                    align-items: center;
+                    height: 7em;
                 }
 
                 .menu{
@@ -117,6 +141,20 @@ const Depilacion = () => {
                     display: grid;
                     height: calc( 100vh - 12em);
                 }
+
+                .footer{
+                    grid-row: 4/5;
+                }
+            }
+
+            @media screen and (max-width: 580px) {
+                .logo{
+                    display: grid;
+                    justify-items: center;
+                    align-items: center;
+                    box-sizing: border-box;
+                    padding-top: 2em;
+                }
             }
 
             @media screen and (max-width: 520px) {
@@ -124,6 +162,19 @@ const Depilacion = () => {
                     font-size: 11px;
                 }
             }
+
+            @media screen and (max-width: 550px) {
+                .footer{
+                    font-size: 13px;
+                }
+            }
+
+            @media screen and (max-width: 450px) {
+                .footer{
+                    font-size: 11px;
+                }
+            }
+
         `}</style>
     </section>
 }

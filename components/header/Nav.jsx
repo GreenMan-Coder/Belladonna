@@ -1,6 +1,6 @@
 import CustomLink from './customLink'
 
-const Nav = () => {
+const Nav = ({ openMenu }) => {
     return <nav>
         <ul>
             <CustomLink href="/" to="Inicio" legacyBehavior/>
@@ -14,10 +14,20 @@ const Nav = () => {
                 display: flex;
             }
 
+            @media screen and (max-width: 1490px) {
+                nav{
+                    display: grid;
+                    align-items: center;
+                }
+            }
+
             @media screen and (max-width: 870px) {
                 ul {
-                    display: none;
+                    display: ${openMenu ? 'flex' : 'none'};
                 }
+            }
+            @media screen and (max-width: 415px){
+
             }
         `}</style>
 

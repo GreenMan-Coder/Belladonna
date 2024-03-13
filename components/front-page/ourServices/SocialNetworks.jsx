@@ -3,7 +3,7 @@ const SocialNetworks = ({ children, marg, tam, href }) => {
         {children}
         <style jsx>{`
         .container {
-            width: 2.5em;
+            width: 2em;
             display: grid;
             align-items: center;
             box-sizing: border-box;

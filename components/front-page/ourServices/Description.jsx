@@ -41,14 +41,14 @@ const Description = ({ sub, title, paragraph, href }) => {
             grid-row: 1/2;
             grid-column: 1/2;
             color: var(--light-purple);
-            font-size: 1.7em;
+            font-size: 1.4em;
             align-self: end;
         }
         h1{
             grid-row: 2/3;
             grid-column: 1/2;
             font-weight: 700;
-            font-size: 3.5em;
+            font-size: 3em;
             box-sizing: border-box;
             color: var(--normal-purple);
             align-self: start;
@@ -66,7 +66,7 @@ const Description = ({ sub, title, paragraph, href }) => {
             align-self: end;
             grid-row: 2/3;
             grid-column: 1/2;
-            font-size: 1.3em;
+            font-size: 1.2em;
             color: var(--light-purple);
             box-sizing: border-box;
             padding-right: 20%;

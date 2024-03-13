@@ -1,48 +1,69 @@
 import Email from '../components/contacto/Email'
 import Nets from '../components/contacto/Nets'
+import Footer from '../components/footer/Footer'
 import Header from '../components/header/Header'
 
 const Contacto = () => {
     return <section className="container">
-        <Header/>
+        <div className="header">
+            <Header/>
+        </div>
         <div className="wrapper">
             <Nets/>
             <Email/>
         </div>
+        <div className="footer">
+            <Footer/>
+        </div>
         <style jsx>{`
             .container {
                 display: grid;
-                grid-template-rows: auto auto;
+                grid-template-rows: auto auto auto;
                 justify-items: center;
                 align-items: center;
+                box-sizing: border-box;
+                margin: auto;
+                height: 100vh;
+                min-height: 450px;
+                min-width: 400px;
+                max-width: 1590px;
+            }
+            .header{
+                grid-row: 1/2;
+                width: 100%;
             }
             .wrapper{
                 display: flex;
                 gap: 1em;
-                min-width: 400px;
-                max-width: 1590px;
+                box-sizing: border-box;
+                margin-bottom: 5em;
+            }
+
+            .footer{
+                width: 100%;
+                align-self: end;
             }
 
             @media screen and (max-width: 1480px){
-                .wrapper{
+                .container{
                     font-size: 15px;
                 }
             }
 
             @media screen and (max-width: 1150px){
-                .wrapper{
+                .container{
                     font-size: 14px;
                 }
             }
 
             @media screen and (max-width: 1065px){
-                .wrapper{
+                .container{
                     font-size: 13px;
                 }
             }
 
             @media screen and (max-width: 915px){
-                .wrapper{
+                .container{
                     font-size: 12px;
                 }
             }
@@ -57,25 +78,25 @@ const Contacto = () => {
             }
 
             @media screen and (max-width: 580px){
-                .wrapper{
+                .container{
                     font-size: 11px;
                 }
             }
 
             @media screen and (max-width: 575px){
-                .wrapper{
+                .container{
                     font-size: 10px;
                 }
             }
 
             @media screen and (max-width: 490px){
-                .wrapper{
+                .container{
                     font-size: 9px;
                 }
             }
 
             @media screen and (max-width: 430px){
-                .wrapper{
+                .container{
                     font-size: 8px;
                 }
             }

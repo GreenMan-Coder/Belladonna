@@ -29,8 +29,8 @@ const Index = () => {
                 align-self: center;
                 text-align: center;
                 box-sizing: border-box;
-                padding: 5em 5em;
-                font-size: 3em;
+                padding: 2.5em 5em 5em 5em;
+                font-size: 2em;
                 font-weight: 700;
                 min-width: 400px;
             }
@@ -42,7 +42,7 @@ const Index = () => {
                 text-align: center;
                 box-sizing: border-box;
                 padding: 5em 5em;
-                font-size: 3em;
+                font-size: 2em;
                 font-weight: 700;
                 min-width: 400px;
             }
@@ -51,18 +51,6 @@ const Index = () => {
                 .page{
                     font-size: 15px;
                 }
-            }
-
-            @media screen and (max-width: 1335px) {
-              .how-work-title{
-                font-size: 2.9em;
-              }
-            }
-
-            @media screen and (max-width: 1288px) {
-              .how-work-title{
-                font-size: 2.8em;
-              }
             }
 
             @media screen and (max-width: 1250px) {
@@ -74,24 +62,6 @@ const Index = () => {
             @media screen and (max-width: 1080px) {
                 .page{
                     font-size: 12px;
-                }
-            }
-
-            @media screen and (max-width: 995px) {
-              .how-work-title{
-                font-size: 2.65em;
-              }
-            }
-
-            @media screen and (max-width: 945px) {
-              .how-work-title{
-                font-size: 2.48em;
-              }
-            }
-
-            @media screen and (max-width: 905px) {
-                .depilation-title{
-                  font-size: 2.48em;
                 }
             }
 
@@ -111,12 +81,6 @@ const Index = () => {
                 .page{
                     font-size: 9px;
                 }
-            }
-
-            @media screen and (max-width: 945px) {
-              .how-work-title{
-                font-size: 2.37em;
-              }
             }
 
             @media screen and (max-width: 630px) {
@@ -143,10 +107,22 @@ const Index = () => {
               }
             }
 
+            @media screen and (max-width: 480px) {
+              .page{
+                  font-size: 7px;
+              }
+            }
+
             @media screen and (max-width: 470px) {
               .depilation-title{
                   font-size: 2.1em;
                 }
+            }
+
+            @media screen and (max-width: 430px) {
+              .page{
+                  font-size: 6.5px;
+              }
             }
 
             @media screen and (max-width: 405px) {
