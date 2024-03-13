@@ -14,6 +14,13 @@ const About = () => {
             display: grid;
             grid-template-rows: auto auto;
         }
+
+        @media screen and (max-width: 870px){
+          .container{
+            height: 80vh;
+            grid-template-rows: 1fr 0.1fr;
+          }
+        }
     `}</style>
     </section>
 }

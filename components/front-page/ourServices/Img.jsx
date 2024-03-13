@@ -32,6 +32,13 @@ const Img = ({ image }) => {
           }
         }
 
+        @media screen and (max-width: 870px){
+          .container{
+            height: 35em;
+            width: 30em;
+          }
+        }
+
         @media screen and (max-width: 620px) {
           .container{
             height: 29em;

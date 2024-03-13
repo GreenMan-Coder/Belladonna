@@ -71,6 +71,16 @@ const Super = () => {
                 }
             }
 
+            @media screen and (max-width: 870px) {
+                main{
+                    height: calc(100vh - 11em);
+                    background-position: center;
+                    background-size: cover;
+                    max-height: 1300px;
+                    min-height: 510px;
+                }
+            }
+
             @media screen and (max-width: 540px) {
                 span{
                     padding-left: 1em;

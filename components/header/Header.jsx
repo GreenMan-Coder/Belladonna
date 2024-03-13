@@ -7,7 +7,6 @@ const Header = () => {
     const [openMenu, setopenMenu] = useState(false)
 
     return <header>
-
         <Logo openMenu={openMenu}/>
         <Nav openMenu={openMenu}/>
         <MobileNav setopenMenu={setopenMenu} openMenu={openMenu}/>
@@ -15,6 +14,7 @@ const Header = () => {
             header{
                 position: sticky;
                 display: flex;
+                justify-content: space-between;
                 align-items: center;
                 justify-content: center;
                 background-color: var(--purple-blanco);
@@ -31,9 +31,6 @@ const Header = () => {
                 }
             }
 
-            @media screen and (max-width: 430px){
-
-            }
     `}</style>
     </header>
 }

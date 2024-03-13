@@ -1,4 +1,4 @@
-const PayMethods = ({ image, tam }) => {
+const PayMethods = ({ image }) => {
     return <section className="container">
         <div className="child" title="Método de pago aceptado"></div>
         <style jsx>{`
@@ -21,8 +21,12 @@ const PayMethods = ({ image, tam }) => {
             }
 
             @media screen and (max-width: 870px){
+                .container{
+                  min-height: 9em;
+                }
+
                 .child{
-                    background-size: ${image === 'url(/img/front-page/nequi.png)' ? '3.5em' : image === 'url(/img/front-page/pse.png)' ? '8em' : image === 'url(/img/front-page/daviplata.png)' ? '9em' : '6em'};
+                    background-size: ${image === 'url(/img/front-page/nequi.png)' ? '5em' : image === 'url(/img/front-page/pse.png)' ? '10em' : image === 'url(/img/front-page/daviplata.png)' ? '8.5em' : '8em'};
                 }
             }
         `}</style>

@@ -22,67 +22,100 @@ const Description = ({ sub, title, paragraph, href }) => {
         }
         <p>{paragraph}</p>
         <Link href={href} legacyBehavior>
-            <a className="know">¡Conoce más!</a>
+            <a className="know">¡Conoce más aquí!</a>
         </Link>
         <style jsx>{`
-        .container {
-            grid-column: 2/3;
-            justify-self: center;
-            align-self: center;
-            box-sizing: border-box;
-            width: 100%;
-            height: 100%;
-            position: relative;
-            display: grid;
-            grid-template-rows: 1fr 2fr 1fr;
-        }
-        h3{
-            box-sizing: border-box;
-            grid-row: 1/2;
-            grid-column: 1/2;
-            color: var(--light-purple);
-            font-size: 1.4em;
-            align-self: end;
-        }
-        h1{
-            grid-row: 2/3;
-            grid-column: 1/2;
-            font-weight: 700;
-            font-size: 3em;
-            box-sizing: border-box;
-            color: var(--normal-purple);
-            align-self: start;
-        }
-        .nets{
-            grid-row: 2/3;
-            grid-column: 1/2;
-            box-sizing: border-box;
-            align-self: center;
-            position: relative;
-            bottom: 10%;
-            display: flex;
-        }
-        p{
-            align-self: end;
-            grid-row: 2/3;
-            grid-column: 1/2;
-            font-size: 1.2em;
-            color: var(--light-purple);
-            box-sizing: border-box;
-            padding-right: 20%;
-        }
-        .know{
-            align-self: center;
-            grid-row: 3/4;
-            grid-column: 1/2;
-            font-weight: 700;
-            font-size: 1.5em;
-            color: var(--normal-purple);
-            text-decoration: none;
-            position: relative;
-            bottom: 15%;
-        }
-    `}</style>
+            .container {
+                grid-column: 2/3;
+                justify-self: center;
+                align-self: center;
+                box-sizing: border-box;
+                width: 100%;
+                height: 100%;
+                position: relative;
+                display: grid;
+                grid-template-rows: 0.5fr 1fr 1fr;
+            }
+            h3{
+                box-sizing: border-box;
+                grid-row: 1/2;
+                grid-column: 1/2;
+                color: var(--light-purple);
+                font-size: 1.4em;
+                align-self: end;
+            }
+            h1{
+                grid-row: 2/3;
+                grid-column: 1/2;
+                font-weight: 700;
+                font-size: 3em;
+                box-sizing: border-box;
+                color: var(--normal-purple);
+                align-self: start;
+            }
+            .nets{
+                grid-row: 2/3;
+                grid-column: 1/2;
+                box-sizing: border-box;
+                align-self: center;
+                position: relative;
+                bottom: 10%;
+                display: flex;
+            }
+            p{
+                align-self: end;
+                grid-row: 2/3;
+                grid-column: 1/2;
+                font-size: 1.2em;
+                color: var(--light-purple);
+                box-sizing: border-box;
+                padding-right: 20%;
+            }
+            .know{
+                align-self: center;
+                grid-row: 3/4;
+                grid-column: 1/2;
+                font-weight: 700;
+                font-size: 1.5em;
+                color: var(--normal-purple);
+                text-decoration: none;
+                position: relative;
+                bottom: 15%;
+            }
+
+            @media screen and (max-width: 870px){
+                .container{
+                    height: 45em;
+                    grid-template-rows: 1fr 2fr 1fr;
+                }
+
+                h3{
+                    align-self: end;
+                    font-size: 1.45em;
+                }
+                h1{
+                    font-size: 3.3em;
+                    align-self: start;
+                }
+                .nets{
+                    align-self: center;
+                    position: relative;
+                    bottom: 25%;
+                    display: flex;
+                }
+                p{
+                    align-self: center;
+                    position: relative;
+                    top: 2em;
+                    font-size: 1.5em;
+                }
+                .know{
+                    align-self: start;
+                    font-size: 1.8em;
+                    bottom: 0;
+                }
+            }
+        `}</style>
     </div>
 }
 export default Description

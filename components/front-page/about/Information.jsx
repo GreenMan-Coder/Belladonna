@@ -43,6 +43,34 @@ const Information = ({ sub, title, paragraph, href }) => {
                 top: .15em;
                 width: 0.8em;
             }
+
+            @media screen and (max-width: 870px){
+                hgroup{
+                    height: 40em;
+                    width: 90%;
+                }
+
+                h3{
+                    grid-row: 1/2;
+                    grid-column: 1/2;
+                    font-size: 2em;
+                }
+
+                h2{
+                    grid-row: 2/3;
+                    grid-column: 1/2;
+                    font-size: 3em;
+                }
+                p{
+                    grid-row: 2/3;
+                    grid-column: 1/2;
+                    align-self: center;
+                    font-size: 1.45em;
+                }
+                a{
+                    font-size: 1.8em;
+                }
+            }
     `}</style>
     </hgroup>
 }

@@ -69,6 +69,26 @@ const Index = () => {
                 .page{
                     font-size: 11px;
                 }
+                .how-work-title {
+                    padding: 0 3em;
+                    height: 100vh;
+                    font-size: 3.1em;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    min-height: 300px;
+                    max-height: 1200px;
+                }
+                .depilation-title{
+                    height: 75vh;
+                    padding: 0 3em;
+                    font-size: 3.1em;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    min-height: 400px;
+                    max-height: 700px;
+                }
             }
 
             @media screen and (max-width: 795px) {
@@ -90,9 +110,9 @@ const Index = () => {
             }
 
             @media screen and (max-width: 575px) {
-              .page{
-                  font-size: 7.5px;
-              }
+                .page{
+                    font-size: 7.5px;
+                }
             }
 
             @media screen and (max-width: 526px) {

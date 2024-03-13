@@ -38,6 +38,22 @@ const Post = () => {
                 position: relative;
                 bottom: 3em;
             }
+
+            @media screen and (max-width: 870px){
+                .container{
+                    height: 45em;
+                    align-self: center;
+                    grid-template-rows: 0.3fr 1fr;
+                }
+                h1{
+                    font-size: 4em;
+                }
+
+                .info{
+                    bottom: 0;
+                    margin-left: 0;
+                }
+            }
         `}</style>
     </section>
 }

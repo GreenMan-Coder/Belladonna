@@ -18,7 +18,6 @@ const OurServices = ({ image, row, sub, title, paragraph, href }) => {
             width: 98%;
             max-width: 1590px;
             min-width: 400px;
-            max-height: 1080px;
             margin-bottom: 8em;
         }
 
@@ -46,9 +45,13 @@ const OurServices = ({ image, row, sub, title, paragraph, href }) => {
             }
         }
 
-        @media screen and (max-width: 860px) {
+        @media screen and (max-width: 870px) {
             .container{
-                font-size: 11px;
+                margin-bottom: 0;
+                height: 100vh;
+                grid-template-columns: 1fr 1fr;
+                min-height: 400px;
+                max-height: 1500px;
             }
         }
 
