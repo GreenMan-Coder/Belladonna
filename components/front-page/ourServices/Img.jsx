@@ -27,22 +27,28 @@ const Img = ({ image }) => {
         }
 
         @media screen and (max-width: 920px){
-          .container{
-            height: 30em;
-          }
+            .container{
+                height: 30em;
+            }
         }
 
         @media screen and (max-width: 870px){
-          .container{
-            height: 35em;
-            width: 30em;
-          }
+            .container{
+                grid-column: 1/2;
+                align-self: center;
+                justify-self: center;
+                position: relative;
+                top: 30px;
+                height: 25em;
+                width: 90%;
+                margin: 0;
+                border-radius: 0px;
+            }
         }
 
-        @media screen and (max-width: 620px) {
-          .container{
-            height: 29em;
-          }
+        @media screen and (max-width: 380px) {
+            .container{
+                top: 0;
         }
 
     `}</style>

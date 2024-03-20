@@ -17,7 +17,7 @@ const OurServices = ({ image, row, sub, title, paragraph, href }) => {
             box-sizing: border-box;
             width: 98%;
             max-width: 1590px;
-            min-width: 400px;
+            min-width: 350px;
             margin-bottom: 8em;
         }
 
@@ -47,11 +47,12 @@ const OurServices = ({ image, row, sub, title, paragraph, href }) => {
 
         @media screen and (max-width: 870px) {
             .container{
+                position: relative;
                 margin-bottom: 0;
                 height: 100vh;
-                grid-template-columns: 1fr 1fr;
-                min-height: 400px;
-                max-height: 1500px;
+                grid-template-columns: 1fr;
+                max-height: 1080px;
+                min-height: 510px;
             }
         }
 
@@ -67,33 +68,22 @@ const OurServices = ({ image, row, sub, title, paragraph, href }) => {
             }
         }
 
-        @media screen and (max-width: 700px) {
-            .container{
+        @media screen and (max-width: 500px) {
+          .container{
                 font-size: 9px;
             }
         }
 
-        @media screen and (max-width: 620px) {
-            .container{
+        @media screen and (max-width: 420px) {
+          .container{
                 font-size: 8px;
             }
         }
 
-        @media screen and (max-width: 550px) {
-            .container{
+        @media screen and (max-width: 380px) {
+          .container{
                 font-size: 7px;
-            }
-        }
-
-        @media screen and (max-width: 480px) {
-            .container{
-                font-size: 6px;
-            }
-        }
-
-        @media screen and (max-width: 420px) {
-            .container{
-                font-size: 5.5px;
+                height: 95vh;
             }
         }
     `}</style>

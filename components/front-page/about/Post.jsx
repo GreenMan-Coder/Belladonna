@@ -54,6 +54,16 @@ const Post = () => {
                     margin-left: 0;
                 }
             }
+
+            @media screen and (max-width: 700px) {
+                .container{
+                    height: auto;
+                }
+                .info{
+                    grid-template-columns: 1fr;
+                    height: 35em;
+                }
+            }
         `}</style>
     </section>
 }

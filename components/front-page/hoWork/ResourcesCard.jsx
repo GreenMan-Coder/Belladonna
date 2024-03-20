@@ -127,12 +127,14 @@ const ResourcesCard = ({ url, title, text }) => {
                     background-size: cover;
                     background-position: center;
                     background-attachment: local;
+                    height: 25em;
+                    align-self: center;
                 }
 
                 h2{
                     padding: 10px 15px;
                     bottom: 25%;
-                    font-size: 2.5em;
+                    font-size: 2.4em;
                 }
                 .card-content:hover h2{
                     transform: translateY(0%);
@@ -141,8 +143,44 @@ const ResourcesCard = ({ url, title, text }) => {
                 }
 
                 p{
-                    font-size: 2em;
+                    font-size: 1.9em;
                 }
+            }
+
+            @media screen and (max-width: 870px) and (max-height: 800px){
+                .container {
+                    height: 20em;
+                }
+            }
+
+            @media screen and (max-width: 870px) and (max-height: 710px){
+                .container {
+                    height: 17em;
+                }
+            }
+
+            @media screen and (max-width: 730px){
+                .container {
+                    font-size: 7px;
+                }
+            }
+
+            @media screen and (max-width: 730px){
+              .container {
+                height: 64%;
+              }
+            }
+
+            @media screen and (max-width: 455px){
+              .container {
+                height: 75%;
+              }
+            }
+
+            @media screen and (max-width: 390px){
+              .container {
+                font-size: 6px;
+              }
             }
         `}</style>
     </section>

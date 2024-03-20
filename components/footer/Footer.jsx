@@ -55,6 +55,15 @@ const Footer = () => {
             p svg{
                 width: 1.4em;
             }
+            span{
+              font-size: 1.2em;
+            }
+
+            @media screen and (max-width: 870px){
+              .container{
+                font-size: 12px;
+              }
+            }
         `}</style>
     </footer>
 }

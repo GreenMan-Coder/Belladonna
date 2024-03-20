@@ -23,12 +23,15 @@ const HoWork = () => {
                 font-family: var(--font);
                 box-sizing: border-box;
                 max-width: 1590px;
+                min-width: 350px;
+                min-height: 300px;
+                max-height: 1200px;
                 margin: auto;
             }
             .resources{
                 align-self: center;
                 width: 100em;
-                height: 28em;
+                height: 28rem;
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr 0.3fr;
                 grid-template-rows: 1fr;
@@ -123,6 +126,15 @@ const HoWork = () => {
                 .container {
                     font-size: 6px;
                 }
+                .resources{
+                    font-size: 7px;
+                }
+            }
+
+            @media screen and (max-width: 700px){
+                .resources{
+                    width: 90%;
+                }
             }
 
             @media screen and (max-width: 640px){
@@ -152,7 +164,6 @@ const HoWork = () => {
             @media screen and (max-width: 410px){
                 .container {
                     font-size: 3.5px;
-                    min-width: 400px;
                 }
             }
         `}</style>

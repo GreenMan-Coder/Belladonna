@@ -32,7 +32,7 @@ const Index = () => {
                 padding: 2.5em 5em 5em 5em;
                 font-size: 2em;
                 font-weight: 700;
-                min-width: 400px;
+                min-width: 350px;
             }
 
             .depilation-title{
@@ -44,7 +44,7 @@ const Index = () => {
                 padding: 5em 5em;
                 font-size: 2em;
                 font-weight: 700;
-                min-width: 400px;
+                min-width: 350px;
             }
 
             @media screen and (max-width: 1480px) {
@@ -70,8 +70,8 @@ const Index = () => {
                     font-size: 11px;
                 }
                 .how-work-title {
-                    padding: 0 3em;
-                    height: 100vh;
+                    padding: 0 2em;
+                    height: calc( 100vh - 2.5em);
                     font-size: 3.1em;
                     display: flex;
                     justify-content: center;
@@ -80,14 +80,24 @@ const Index = () => {
                     max-height: 1200px;
                 }
                 .depilation-title{
-                    height: 75vh;
-                    padding: 0 3em;
+                    padding: 0 2em;
+                    height: calc( 100vh - 2.5em);
                     font-size: 3.1em;
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    min-height: 400px;
-                    max-height: 700px;
+                    min-height: 300px;
+                    max-height: 1200px;
+                }
+            }
+
+            @media screen and (max-width: 805px) {
+                .how-work-title {
+                    font-size: 3em;
+                }
+
+                .depilation-title{
+                    font-size: 3em;
                 }
             }
 
@@ -103,52 +113,72 @@ const Index = () => {
                 }
             }
 
-            @media screen and (max-width: 630px) {
-              .page{
-                  font-size: 8px;
-              }
+            @media screen and (max-width: 665px) {
+                .page{
+                    font-size: 8px;
+                }
             }
 
-            @media screen and (max-width: 575px) {
+            @media screen and (max-width: 585px) {
                 .page{
                     font-size: 7.5px;
                 }
             }
 
-            @media screen and (max-width: 526px) {
-              .how-work-title{
-                font-size: 2em;
-              }
+            @media screen and (max-width: 550px) {
+                .page{
+                    font-size: 7px;
+                }
             }
 
-            @media screen and (max-width: 545px) {
-              .how-work-title{
-                font-size: 1.7em;
-              }
-            }
-
-            @media screen and (max-width: 480px) {
-              .page{
-                  font-size: 7px;
-              }
+            @media screen and (max-width: 500px) {
+                .page{
+                    font-size: 6px;
+                }
             }
 
             @media screen and (max-width: 470px) {
-              .depilation-title{
-                  font-size: 2.1em;
+                .depilation-title{
+                    font-size: 2.1em;
+                }
+
+                .depilation-title{
+                    font-size: 2.1em;
                 }
             }
 
             @media screen and (max-width: 430px) {
-              .page{
-                  font-size: 6.5px;
-              }
+                .page{
+                    font-size: 6.5px;
+                }
+                .how-work-title{
+                    font-size: 2.6em;
+                    padding: 0 1.1em;
+                }
+                .depilation-title{
+                    font-size: 2.6em;
+                    padding: 0 1.1em;
+                }
             }
 
-            @media screen and (max-width: 405px) {
-              .how-work-title {
-                  padding: 6rem 3rem;
-              }
+            @media screen and (max-width: 410px) {
+                .how-work-title {
+                    font-size: 2.5em;
+                }
+
+                .depilation-title{
+                    font-size: 2.5em;
+                }
+            }
+
+            @media screen and (max-width: 385px) {
+                .how-work-title {
+                    font-size: 2.3em;
+                }
+
+                .depilation-title{
+                    font-size: 2.3em;
+                }
             }
     `}</style>
     </div>

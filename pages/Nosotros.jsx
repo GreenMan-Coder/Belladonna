@@ -25,6 +25,7 @@ const Nosotros = () => {
             }
             .header{
                 grid-row: 1/2;
+                top: 0;
                 box-sizing: border-box;
                 margin-bottom: 5em;
             }
@@ -69,6 +70,16 @@ const Nosotros = () => {
             @media screen and (max-width: 870px){
                 .container{
                     font-size: 10.5px;
+                }
+                .header{
+                  position: fixed;
+                  top: 0;
+                  width: 100%;
+                }
+                h1{
+                  width: 100%;
+                  height: 3em;
+                  padding-top: 3em;
                 }
             }
 

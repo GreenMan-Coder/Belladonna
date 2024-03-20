@@ -8,7 +8,7 @@ const Super = () => {
 
         <style jsx>{`
             main {
-                height: 34.3em;
+                height: 34.3rem;
                 background-image: url(/img/front-page/super1.png);
                 background-repeat: no-repeat;
                 background-position: right;
@@ -20,13 +20,14 @@ const Super = () => {
                 align-items: center;
                 box-sizing: border-box;
                 max-width: 1590px;
-                min-width: 400px;
+                min-width: 350px;
                 margin: auto;
                 position: relative;
             }
 
             .title {
-                width: 80%;
+                width: 90%;
+                min-width: 250px;
             }
 
             h1 {
@@ -55,7 +56,7 @@ const Super = () => {
                 opacity: 0.8;
                 width: 100%;
                 border-radius: 15px 15px 0 0;
-                font-size: 1.5em;
+                font-size: 1.6em;
                 padding: 2rem;
             }
 
@@ -73,27 +74,107 @@ const Super = () => {
 
             @media screen and (max-width: 870px) {
                 main{
-                    height: calc(100vh - 11em);
+                    height: calc(100vh - 6em);
                     background-position: center;
                     background-size: cover;
-                    max-height: 1300px;
+                    max-height: 1080px;
                     min-height: 510px;
+                    font-size: 16px;
                 }
-            }
-
-            @media screen and (max-width: 540px) {
                 span{
-                    padding-left: 1em;
+                    padding: 0;
+                    position: relative;
+                    left: -1em;
+                }
+
+                p{
+                    font-size: 1.4em;
                 }
             }
 
-            @media screen and (max-width: 480px) {
-                p {
-                  padding: 1rem;
+            @media screen and (max-width: 785px) {
+                main{
+                    font-size: 15px;
+                }
+            }
+
+            @media screen and (max-width: 760px) {
+                main{
+                    font-size: 14px;
+                }
+            }
+
+            @media screen and (max-width: 700px) {
+
+            }
+
+            @media screen and (max-width: 675px) {
+                main{
+                    font-size: 13px;
+                }
+                .title h1{
+                    font-size: 6em;
+                }
+            }
+
+            @media screen and (max-width: 630px) {
+                .title{
+                    font-size: 12px;
+                }
+            }
+
+            @media screen and (max-width: 585px) {
+                .title{
+                    font-size: 11px;
+                }
+                main{
+                    height: calc(100vh - 4em);
+                }
+            }
+
+
+
+            @media screen and (max-width: 530px) {
+                .title{
+                    font-size: 10px;
+                }
+                p{
+                    padding: 2rem 1rem;
+                }
+            }
+
+            @media screen and (max-width: 455px) {
+                .title{
+                    font-size: 9px;
+                }
+                p{
+                    padding: 2rem .8rem;
+                }
+            }
+
+            @media screen and (max-width: 440px){
+              .title{
+                    font-size: 8px;
               }
             }
 
+            @media screen and (max-width: 425px){
+                p{
+                    font-size: 1.2em;
+                }
+            }
 
+            @media screen and (max-width: 390px){
+                .title h1{
+                    font-size: 6em;
+                }
+            }
+
+            @media screen and (max-width: 360px){
+              .title{
+                    font-size: 7.2px;
+              }
+            }
     `}</style>
     </main>
 }

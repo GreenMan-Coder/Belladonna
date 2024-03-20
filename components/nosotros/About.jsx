@@ -16,7 +16,7 @@ const About = ({ row, title, text, imagen, colImg, colText }) => {
                 grid-row: ${row};
                 height: 25em;
                 width: 100%;
-                min-width: 400px;
+                min-width: 350px;
                 max-width: 1590px;
                 position: relative;
                 display: grid;
@@ -71,7 +71,7 @@ const About = ({ row, title, text, imagen, colImg, colText }) => {
                 .container {
                     grid-template-columns: 1fr;
                     grid-template-rows: auto auto;
-                    height: 25vh;
+                    height: 80vh;
                     min-height: 250px;
                 }
 
@@ -87,6 +87,9 @@ const About = ({ row, title, text, imagen, colImg, colText }) => {
                 p{
                     padding: 0;
                     padding: 0 2em;
+                }
+                h1{
+                  font-size: 3em
                 }
             }
 

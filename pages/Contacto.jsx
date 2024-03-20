@@ -1,4 +1,3 @@
-import Email from '../components/contacto/Email'
 import Nets from '../components/contacto/Nets'
 import Footer from '../components/footer/Footer'
 import Header from '../components/header/Header'
@@ -10,7 +9,6 @@ const Contacto = () => {
         </div>
         <div className="wrapper">
             <Nets/>
-            <Email/>
         </div>
         <div className="footer">
             <Footer/>
@@ -25,7 +23,8 @@ const Contacto = () => {
                 margin: auto;
                 height: 100vh;
                 min-height: 450px;
-                min-width: 400px;
+                max-height: 1450px;
+                min-width: 350px;
                 max-width: 1590px;
             }
             .header{
@@ -70,8 +69,6 @@ const Contacto = () => {
 
             @media screen and (max-width: 870px){
                 .wrapper{
-                    display: grid;
-                    grid-row-gap: 10em;
                     box-sizing: border-box;
                     margin-top: 5em;
                 }

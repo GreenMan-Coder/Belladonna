@@ -46,7 +46,7 @@ const Information = ({ sub, title, paragraph, href }) => {
 
             @media screen and (max-width: 870px){
                 hgroup{
-                    height: 40em;
+                    height: 100%;
                     width: 90%;
                 }
 
@@ -69,6 +69,27 @@ const Information = ({ sub, title, paragraph, href }) => {
                 }
                 a{
                     font-size: 1.8em;
+                }
+            }
+
+            @media screen and (max-width: 700px){
+                hgroup{
+                    height: 100%;
+                }
+
+                h3{
+                    align-self: center;
+                }
+
+                h2{
+                    position: relative;
+                    top: -15px;
+                }
+                p{
+                    align-self: end;
+                }
+                a{
+                    align-self: center;
                 }
             }
     `}</style>

@@ -85,6 +85,12 @@ const Nets = () => {
                     width: 70%;
                 }
             }
+
+            @media screen and (max-width: 380px){
+                .postNets{
+                    grid-column-gap: 6%;
+                }
+            }
         `}</style>
     </section>
 }
