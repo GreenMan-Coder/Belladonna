@@ -46,7 +46,7 @@ const ResourcesCard = ({ url, title, text }) => {
                 bottom: 15%;
                 grid-row: 1/2;
                 align-self: end;
-                font-size: 1.4em;
+                font-size: 2em;
                 font-weight: 700;
                 color: var(--purple-blanco);
                 z-index: 1;
@@ -84,42 +84,49 @@ const ResourcesCard = ({ url, title, text }) => {
             }
 
             @media screen and (max-width: 1640px){
-            .card-content:hover h2{
-                transform: translateY(-230%);
-            }
-            }
-
-            @media screen and (max-width: 1475px){
-            h2{
-                padding: 20px 15px;
-            }
-            .card-content:hover h2{
-                transform: translateY(-280%);
-            }
+                .card-content:hover h2{
+                    transform: translateY(-260%);
+                }
             }
 
             @media screen and (max-width: 1475px){
-            .card-content:hover h2{
-                transform: translateY(-250%);
-            }
-            }
-
-            @media screen and (max-width: 1170px){
-            .card-content:hover h2{
-                transform: translateY(-220%);
-            }
-            }
-
-            @media screen and (max-width: 1060px){
-            .card-content:hover h2{
-                transform: translateY(-200%);
-            }
+                .container{
+                    height: 80%;
+                    align-self: center;
+                }
+                h2{
+                    padding: 20px 15px;
+                }
+                .card-content:hover h2{
+                    transform: translateY(-350%);
+                }
             }
 
-            @media screen and (max-width: 950px){
-            .card-content:hover h2{
-                transform: translateY(-180%);
+            @media screen and (max-width: 1175px){
+                .container{
+                    height: 65%;
+                }
+                .card-content:hover h2{
+                    transform: translateY(-280%);
+                }
             }
+
+            @media screen and (max-width: 1070px){
+                .container{
+                    height: 55%;
+                }
+                .card-content:hover h2{
+                    transform: translateY(-240%);
+                }
+            }
+
+            @media screen and (max-width: 1070px){
+                .container{
+                    height: 50%;
+                }
+                .card-content:hover h2{
+                    transform: translateY(-230%);
+                }
             }
 
             @media screen and (max-width: 870px){

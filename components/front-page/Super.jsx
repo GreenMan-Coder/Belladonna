@@ -66,6 +66,14 @@ const Super = () => {
                 }
             }
 
+            @media screen and (max-width: 965px) {
+              main {
+                height: 500px;
+                background-position: right;
+                background-size: contain;
+            }
+            }
+
             @media screen and (max-width: 890px) {
                 span{
                     padding-left: 2em;

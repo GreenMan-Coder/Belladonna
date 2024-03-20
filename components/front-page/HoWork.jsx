@@ -75,17 +75,27 @@ const HoWork = () => {
                 .container {
                     font-size: 11px;
                 }
+                .payment{
+                  height: 80%;
+                  align-self: center;
+                }
             }
 
             @media screen and (max-width: 1175px){
                 .container {
                     font-size: 10px;
                 }
+                .payment{
+                    height: 65%;
+                }
             }
 
             @media screen and (max-width: 1070px){
                 .container {
                     font-size: 9px;
+                }
+                .payment{
+                    height: 55%;
                 }
             }
 
