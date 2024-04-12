@@ -1,18 +1,18 @@
-require("dotenv").config();
-const AWS = require("aws-sdk");
+require('dotenv').config()
+const AWS = require('aws-sdk')
 
 AWS.config.update({
-  accessKeyId: 'AKIAZ7EIG4J4AIJ3DXUC',
-  secretAccessKey: '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',
-  region: 'us-east-1',
-});
+    accessKeyId: 'AKIAZ7EIG4J4AIJ3DXUC',
+    secretAccessKey: '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',
+    region: 'us-east-1'
+})
 
-const s3 = new AWS.S3();
+const s3 = new AWS.S3()
 
-const dynamodb = new AWS.DynamoDB.DocumentClient();
+const dynamodb = new AWS.DynamoDB.DocumentClient()
 
 module.exports = {
-  s3,
-  AWS,
-  dynamodb,
-};
+    s3,
+    AWS,
+    dynamodb
+}
