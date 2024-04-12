@@ -28,4 +28,4 @@ jobs:
         with:
           ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: gh-pages
-          FOLDER: pages
+          FOLDER: pages/index.jsx
